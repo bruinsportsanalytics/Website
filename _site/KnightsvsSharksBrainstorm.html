@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">How the Sharks’ Versatility Led them to the Conference Finals</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/haleyrao">Haley Rao</a>
+                      
+                    
+                      
+                      
+                    , <a href="http://www.bruinsportsanalytics.com/kristenahmann">Kristen Ahmann</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/joedunham">Joe Dunham</a>
+                      
+                    
+                  
+                  • 29 May 2019 •
+                  
+                    
+                      23 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_1.jpg" alt="cover photo"><figcaption>AP Photo/Jeff Chiu</figcaption></center>
+</figure>
+
+<p>One of the thrills of watching playoff hockey is the emotional aspect, following a team through several games against the same opponent with everything on the line, and an especially close series makes the thrill even higher. The San Jose Sharks playing the Vegas Golden Knights in the first series of the playoffs was notable for its excitement, intensity, and controversy. The series was highly anticipated as a rematch of the previous year's second round, where the Knights won in six games. This time around, the Sharks were a much improved team, adding key players Erik Karlsson and Gustav Nyquist, while Vegas had more-or-less kept the same lineup as the previous year's Stanley Cup Final-bound team, with the notable addition of top line forward Mark Stone. The Golden Knights took early control of the series, finishing Game 4 with a 3-1 lead in games won. The Sharks managed to battle back, scoring a miraculous overtime goal in Game 6 to force a deciding game in San Jose. A close, hard-fought series was expected on the outset, but the conclusion shocked everyone.</p>
+
+<p>In Game 7 versus the Golden Knights with just over ten minutes remaining in the third period, the Sharks were trailing the Knights 3-0. However, the referees made a controversial call when Pavelski was crosschecked by Cody Eakin, and Eakin subsequently received a five minute misconduct and crosschecking penalty for this offense. Though it would have been justifiable  for Eakin to receive a two minute minor penalty, many argue that a five minute major penalty was too harsh of a punishment. Pavelski did get injured by Eakin on the hit after falling awkwardly, making the situation look quite severe, but some argue that the hit itself was not worthy of a major penalty. To add insult to injury for the Knights, the Sharks scored four goals within a span of four minutes while on the power play. The call was already controversial, and since it was a major penalty, the power play did not stop when just one goal is scored. Golden Knights fans were clearly not pleased with this, losing their 3-0 lead in four minutes in the third period. Clearly, if this call were not made, chances are the Knights would have held onto the lead to win the series, but nonetheless, the Sharks capitalized on this call and went on to win the game and series in overtime.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_2.gif" alt="picture 2" style="max-width: 95%;"><figcaption><a href="https://www.youtube.com/watch?v=bYGPnFccbMk">YouTube</a></figcaption></center>
+</figure>
+
+<p>What makes the NHL playoffs so interesting, compared to the regular season, is the immense potential for adaptation over the course of a series. Overall team parity is often brought up as both a positive and negative about the league. The playoffs are unpredictable. Any team could realistically beat any other team--the recent Lightning-Blue Jackets series is a prime example. Unpredictability, however, simply a product of the role of luck in deciding a series. This is not to suggest that luck (which is really better described as random variability) is absent in the on-ice product of the NHL, or that luck is even something to be avoided in a well-designed sport. What it does suggest is that the NHL regular season is not a good predictor of playoff success because the regular season is more-or-less a completely different game. The constant variation of opposition forces teams to generally run one system that they hope would maximize their point total; i.e. the system that works the best against the most teams. In the playoffs, when a team is pitted against another seven times over the course of two weeks, teams can adjust their system to be tailored entirely to its single opponent. Perhaps more importantly, if something doesn't go as planned, the team can adapt in between games. This system of adaptation goes beyond the players, whose individual contributions toward change may be hard to quantify or even describe for an onlooker.</p>
+
+<p>A huge decider in this pivotal Sharks and Golden Knights first round playoff series was the evolving goaltending, more notably on San Jose's side. After a strong performance in Game 1, Sharks goalie Martin Jones took quite the tumble as he was even pulled from Game 2 after just under seven minutes of time on the ice. Jones continued to struggle through Game 3 and Game 4 until the Sharks faced elimination in Game 5. As the Sharks' season seemed to be over, Jones finally executed a playoff worthy performance and he carried that determination through the end of Game 7 to lift San Jose over Vegas and into the second round. However, there is still the question of how exactly did Jones break his pattern of disappointing starts to give the Sharks the ultimate edge over the Golden Knights. We'll look at the quality of shots Jones faced and the quality of goals he allowed to examine whether the Sharks' goaltender actually changed his play or if Vegas' shooters simply gave him an easier time in the later games of the series.</p>
+
+<p>Over the regular season, both Jones and Vegas' Marc-Andre Fleury eked out below average performances. However, while Fleury could be considered a mediocre goalie on the season, Jones was remarkably terrible. The Sharks' goaltender had a GSAA of -23.35 over 62 games played, meaning he allowed over 23 more goals than the average NHL goalie would have. The fact that the Sharks still finished the season with over 100 points despite Jones' abysmal performance attests to the outstanding season by the rest of the men on their roster. However, throughout the 2018-2019 season, Martin Jones faced the fourth most high danger shots of any goalie in the league with 525. The danger of a shot is measured by where it is shot from on the ice, and thus, by how much reaction time a goalie will have in order to make the save. A high danger shot will have almost no time for a goalie to get in place to make a save while a goalie should have plenty of time to set up for a low danger shot. Many hockey fanatics familiar with advanced metrics in the sport argue that what separates an elite goalie in the NHL from the average goaltender is their ability to save high danger shots. I would also argue that teams with great defenses would not allow their opponents to take many high danger shots. We all know that it is impossible to call Martin Jones an elite goalie based on his performance this season, but there is no denying that his defense is partially to blame too.</p>
+
+<p>This detrimental pattern of the Sharks allowing their opponents to take high and medium danger shots undoubtedly continued into the first round of this year's playoffs. Let's start with Game 1, where the Sharks actually had a decent start to the series, winning 5-2 at home. Jones had a solid SV% of 0.923 and he saved nine of ten high danger shots faced. The only other goal he allowed was off of a medium danger shot during a Sharks' penalty kill. In this game, Jones only allowed two goals compared to an expected goals against of 3.19, so a rather solid performance. However, this stability would not last into Game 2 of the series where things went downhill fast for the San Jose goaltender.</p>
+
+<p>Within the first 6:39 minutes of play in Game 2, Jones allowed an astonishing three goals with only .5 expected goals against. He allowed one of each high, medium, and low danger goals after facing only seven shots. We know Jones is no elite goalie as of recent, yet allowing a low danger shot to find its way into the net is a bad look in the playoffs. Even though Jones was fourth in the league for low danger goals allowed with a whopping 30 goals, there is no exception for that kind of play in the postseason. Continuing into Game 3, Jones' performance did not improve as he allowed six goals in his full 60 minutes of ice time. Of these six goals, five were scored from high danger shots and one from a medium danger shot. Almost half of the Golden Knights' 40 shots were high danger shots, and knowing Jones' lackluster performance as of late, the Sharks' defense shouldn't have let Vegas take those 17 chances to begin with.</p>
+
+<p>Game 4 in Vegas looked like the end of the road for the Sharks who lost 0-5. Martin Jones and backup Aaron Dell split time on the ice for San Jose but neither ever found their groove. All three of Aaron Dell's goals allowed came from high danger shots while Jones gave up a high danger and even a low danger shot to the Knights. Even though the two goaltenders allowed five goals, they received no help from the rest of the roster as Fleury had a shutout night. At this point in the series, the Sharks either had to make drastic changes to their play or it was Vegas' series to lose.</p>
+
+<p>Over the course of the next three games, I would argue that is was a combination of less effort by the Knights and a fire burning for redemption in Martin Jones that allowed the Sharks to bounce back from almost certain death. As the series moved back to San Jose for Game 5, the only two goals Jones allowed were during a Knights power play. He allowed no goals on 28 shots during 5-on-5 play and had an overall SV% of .938. Of course one of the goals Jones allowed was off of a low danger shot, but it is a little more forgivable once your offensive line steps up and gives you a nice cushioned lead.</p>
+
+<p>However, the final two games of the series were much closer in score and heightened in drama as both went into overtime. During Game 6, Martin Jones had over 90 minutes of ice time and allowed only one goal on 59 shots. Although Vegas' single goal of the night came on a high danger shot, the Knights took a series high 33 low danger shots compared to only nine high danger and eleven medium danger chances. This could be attributed to better Sharks defensive play but there is no doubt that Vegas' poor quality chances did not help them close out the series that night as they lost just 2 to 1.</p>
+
+<p>Game 7 featured a typical Jones performance with a SV% of .895, allowing two high danger and two medium danger goals. Yet what made the difference that night was not San Jose's goalie, but the powerplay prowess for the Sharks as Fleury gave up four of his five goals on the Knights penalty kill. Although Jones returned to his regular season self, the Sharks were still able to pull off the upset in overtime play with a tremendous offensive effort. San Jose finally found a balance between relying on Jones' goaltending and relying on their forwards' abilities and consistently adapted to ultimately come out on top.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>Coaches Peter DeBoer and Gerard Gallant exemplified this form of shifting strategies throughout their series. The nature of lines and the distribution of ice time found in hockey provides coaches the capability to completely change their approach from game to game. It cannot be stressed enough: these approaches were vastly different for the two teams in virtually every facet of the game. DeBoer and the Sharks were aggressive in their bench management, making sweeping changes to their lines and player usage in just about every game. Gustav Nyquist played on the first, second, and fourth line depending on the game in the series. Joakim Ryan's ice time varied between playing 5% of Game 1 to playing 30% of Game 3. At least one of the Sharks power play lines was tweaked prior to every game. The Golden Knights, on the other hand, were much more systematic with their approach to change. Their line combinations went nearly untouched - a Game 2 substitution of their 6th defenseman and a Game 7 return of Brandon Pirri are the only exceptions.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>"Rolling four lines" is an oft-cited goal for many teams, but perhaps none exemplified this strategy more than Vegas, particularly in Games 3 and 5. It is almost cliche to bring up this point about the Knights, but it was utilized to such an extreme level in these games that it cannot go without discussion. In Game 3, the five most-worked of Vegas' defensemen played within three minutes of ice-time of each other. Their eight most-worked forwards played within two minutes of each other. Compare this with the over-seven minute difference between the Sharks' five most-played defensemen and five minute difference for the Sharks' top-eight forwards. Also distinguishing itself from the Sharks is Vegas' first power-play unit, which featured the exact same five players in all seven games of the series. This only further shows off how differently the two teams were comprised. Both teams have significant depth through their lineups, of course, but San Jose is a team made up of bona-fide stars (Erik Karlsson, Brent Burns, Joe Pavelski, etc.) while Vegas is noteworthy in their collection of very good players that are not in the public eye as often (Paul Stastny, Reilly Smith, Jonathan Marchessault, etc.). While the Sharks were able to dynamically go after specific matchups that varied from game to game, the Knights were more comfortable staying true to their philosophy of lineup consistency.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>Partially due to playing most of the series from a deficit, San Jose was much more willing to try out new strategies than Vegas. The top line in particular is noteworthy. After a heartbreaking Game 2 loss in which the top line of Evander Kane, Tomas Hertl, and Gustav Nyquist got largely outplayed, the Sharks shifted Hertl's position from center to left wing, and replaced Nyquist's role with Joe Pavelski for Game 3. This game ended in a rout for the Knights, so the Sharks shifted again: this time bringing Hertl back to center and placing Joonas Donskoi on his wing. This, too, ended poorly for San Jose, so for Game 5, they went back to their lines from the first game. On defense, Marc-Edouard Vlasic's Game 2 injury led to significant issues for the Sharks. Vlasic, who typically plays about 40% of every game and is known for his defense-first gameplay, missed the majority of Game 2 and the entirety of Games 3 and 4. His role on the team was partially replaced by Joakim Ryan, who went from playing three minutes of Game 1 to playing nearly 20 minutes each game in Vlasic's absence. Though certainly far from the sole reason, Vlasic's absence from Games 2-4 corresponds exactly to the games Vegas won. His defense was surely missed, as these were also the only games Vegas scored five or more goals in. San Jose was also constantly innovative on the power play. The Sharks' top power play unit saw five different lineups over the seven games. Logan Couture and Tomas Hertl were the only constants on the line. The desire to try new strategies ultimately paid off, as Timo Meier was added to the top line for the first time of the series for Game 7, in which a late major penalty swung momentum heavily in the Sharks favor.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>Despite the overall lack of combination changes from the Golden Knights, the way they utilized individual players did shift in rather interesting ways as the series went on. For the purpose of this analysis, ice-time for players will be measured in percent of game played rather than their raw number of minutes played due to Games 6 and 7 going to overtime (and double overtime). As a general rule, a forward that plays 30% of the game is one that is relied on fairly heavily, as is a defenseman that plays 40% of the game. The bulk of the Knights' ice-distribution adaptations occurred within their defensive group; however, one notable exception is Cody Eakin. Eakin began the series eating up a modest 23% of ice-time before having his contributions skyrocket for Games 2 and 3 to above 30%. The remainder of the series saw his time decline slowly to near 20%. His bump in ice-time comes after scoring a goal in Game 2; his 5-on-5 play for games after this was fairly strong, boasting 64% unblocked shot attempts for (11.6 percentage points higher than average for his team) when he was in play, yet Gallant opted to utilize him less and less. Overall, however, the forward group showed remarkable consistency in their usage; ironically, it is when the Knights shifted to a more Sharks-esque reliance on top stars late in Game 7 (when Mark Stone played more minutes than any other player, including defensemen, on the team), that they were beaten in overtime by one of San Jose's depth players in Kevin LaBanc.</p>
+
+<p>Vegas' defensive group contributed to the bulk of Gerard Gallant's tinkering. The lines stayed constant after Game 1, but the amount each line was used varied wildly. Four different defensemen (Theodore, McNabb, Schmidt, and Engelland) had exactly one game in which they played 40% or more. Despite the Knights' trademark lineup consistency, there was a notable lack thereof when it came to their defensemen's time on ice. Vegas relied on a different player to take on the bulk of the work just about every night. Their philosophy in this regard depended on the state of the game. In the three particularly close games (Games 2, 6, and 7), Brayden McNabb saw his minutes skyrocket. His single point in the series hardly stands out as impressive - compared to his typical partner Shea Theodore with eight points - but his controlled, puck-possession style of play gained Gallant's favor in these critical games. Over the seven games, when McNabb was on the ice, the Knights took over 56% of unblocked shot attempts (easily the highest of their four top defensemen); he also finished with a plus-minus of four, the highest on the team.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_7.png" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>McNabb's fluctuation of ice time is a microcosm of Vegas' changes toward the end of the series. The Knights began the series with their trademark quickness, seamlessly transitioning out of the neutral zone and generating quality chances on the rush. In Games 1-4, eight of their nine 5-on-5 goals were scored off rush opportunities. In the last three games, this skillful play vanished. They scored no 5-on-5 goals off transition plays in these games. This dramatic shift is shocking but can be explained by the adaptation of the Sharks and lack thereof from the Knights. Vegas did not change their top three offensive lines once the entire series, and the Sharks, at least in transition, figured out how to subdue them. Yet, more so than the disappearance of speed from Vegas' game, it is special teams failure that can show Gallant's faults. At first glance, this claim seems wildly inaccurate when referring to the power play. The Knights did score seven power play goals in the series, after all. What this does not show is the neglect to adapt to changing defensive strategies. Vegas' top power play unit remained constant in each game, manned by Stone, Pacioretty, Stastny, Theodore, and Tuch. In Games 1-4, they managed a whopping five power play goals from this line alone. Then, they never scored again. Worse, even, the line gave up the Game 6 shorthanded goal in double overtime to lose the game. The penalty kill shows the opposite story. The Sharks scored two goals in Games 1-4 against the Vegas penalty kill. They then scored two more in Games 5 and 6, before Vegas gave one of the worst defensive performances ever against the Sharks late five minute power play in Game 7, costing themselves four goals and ultimately their season. All controversy on this call aside, it is clear that more than just Martin Jones's increased performance is to be blamed for the Golden Knights blowing a 3-1 series lead.</p>
+
+<p>After the Sharks won the series against the Knights, they went on to play the Avalanche in another tight and thrilling series, which featured many striking similarities to the first round. Taking a look at how San Jose's performance continued into the second round serves to further highlight their ability to adapt, and it provides grounds for greater appreciation for how they came back to defeat the Knights. Against the Avalanche, continuing to adapt to the unexpected was a must, with two key offensive players, Joe Pavelski and Joonas Donskoi, out for much of the series with injuries. Despite having these assets out of the lineup, DeBoer was able to tinker with lineups and other players were able to step up, keeping the Sharks alive. Similarly to the Knights series, the Avalanche series went out to seven games, with both teams having moments of dominance, looking like either team could proceed to the conference finals. The Sharks ended up coming out on top in Game 7, but not without more controversy.</p>
+
+<p>In the Avalanche series, the Sharks again had some major luck in Game 7. In the second period, the Avalanche scored a goal to equalize the game at two goals each. Though it was seemingly a good goal, the Sharks challenged to review the goal. After review, the referees concluded that the Avalanche forward Gabriel Landeskog who was just finishing his shift was offside, disallowing the goal. Although Landeskog had no involvement in the play and was just about to enter the bench, his skates were still on the ice, making the Avalanche offside. The Sharks maintained momentum after this call, winning the game 3-2 to close out the series. Although both the call versus the Knights and the call versus the Avalanche were considerably justifiable, there is no doubt that these two calls contributed to the success of the Sharks in the otherwise even series. This reinforces the unpredictable and random nature of the playoffs, where one lucky call can determine the winner of the whole series.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_8.gif" alt="picture 8" style="max-width: 95%;"><figcaption><a href="https://www.youtube.com/watch?v=4QbgWMNbEow">YouTube</a></figcaption></center>
+</figure>
+
+<p>Another prominent parallel between the Sharks' series against the Golden Knights and the series against the Avalanche is the dominance of two defensemen, Brent Burns and Erik Karlsson. Against the Golden Knights, Brent Burns and Erik Karlsson played an integral role on both the defensive side and offensive side, and this continued into the series versus the Avalanche. DeBoer relied heavily on the two during both series, Burns clocking in a total of 409.58 minutes and Karlsson clocking in 345.15 minutes. Karlsson dealt with a groin injury for most of the year, but he still managed to tally nine points against the Knights and three against the Avalanche. Aside from simply looking at points by player, one way to measure and compare the performances of players is to use the Corsi statistic, which computes the total number of shots for, missed shots for, and blocked shot attempts divided by the total number of shots against, missed shots against, and blocked shot attempts against. The relative Corsi statistic for each player can also be looked at, which takes each players' Corsi statistic and compares it to the rest of the team's Corsi statistic. Out of the top six defensmen on the Sharks, the average relative Corsi statistic during the Knights Series was a -5.86, but Karlsson had a 1.78 relative Corsi statistic. Aside from Burns, Karlsson was the only defenseman with a positive Corsi statistic, showing his dominant possession over the Golden Knights and showing his ability to work as an attacking minded defenseman. Furthermore, during the regular season, Karlsson averaged only .849 points per game, but in the first series of the playoffs, he was averaging 1.286. His veteran status might have given him an edge in the first round against the Knights, but in the succeeding round, his six years of experience in playoff hockey did not give him any leverage, averaging just under half a point. Though Karlsson saw a decrease in points during round two of the playoffs, possibly caused by a flare-up with his groin injury, he still contributed immensely to the Shark's defensive efforts, playing an average 40% of each game while only conceding 1.14 goals against on average per game when on the ice.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_9.png" alt="picture 9" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Burns, in contrast to Karlsson, started out in the first round with only four points and then dominated in the second round with a total of ten points. In the first game against the Knights, Burns, like Karlsson, started off very effective offensively, tallying a goal and an assist. However, in subsequent games, Burns was less effective due to the fact that the Knights gave him full pressure and little space to attack. Like the rest of the team, Burns was shut down by the Knights, but nonetheless his attacking side started to show in Game 6 and Game 7, earning points in back-to-back games. In the second series, however, Colorado gave Burns much more space to attack, and Burns started to completely dominate offensively. In game one, he totalled one goal and three assists, meaning he was involved in four out of the five goals that the Sharks scored. This showed the strength of not just Burns, but also the Vlasic-Burns partnership that continued to succeed offensively and defensively in Game 2, where Burns tallied two goals and an assist.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_10.png" alt="picture 10" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>Not only did Burns and Vlasic dominate in the attacking zone, but they were also the stand-out pairing in the defensive zone. Altogether, through the series against the Avalanche when Burns and Vlasic were on the ice together, they only let in six goals out of the seventeen scored. Considering this was the most popular defensive pairing utilized by DeBoer, with Burns and Vlasic playing 46% and 40% of the game respectively, it shows their dominance in the defensive third and their effectiveness as a pair. Therefore, it is clear the return of Vlasic after his absence in Game 2 through Game 4 against the Knights and his partnership with Burns positively drove both the Sharks' offense and defense.</p>
+
+<p>It is perhaps too harsh to suggest that the Sharks triumphed over the Golden Knights due to their superior ability to adapt as the series went on. After all, even if one accepts this as truth, they still by all accounts should have lost in Game 7 if it were not for a poor penalty call that they had no control over. Despite this, it is unfortunate that, for many, the series will be remembered and defined by that penalty instead of by the drastic performance turnaround in net or the reversal of special teams proficiency between the two teams. Regardless of the outcome, this was objectively a series of fantastic play from incredibly talented players. The dramatic conclusion will be a mainstay of highlight reels and rule debates for years to come, but the variation of styles and willingness to experiment are the greater takeaway, and one that may be a prelude to the future of NHL playoff coaching.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>
