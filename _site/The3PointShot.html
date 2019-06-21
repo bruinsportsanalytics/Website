@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">The Three Point Shot & the NBA</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/maxblane">Max Blane</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/bornanazari">Borna Nazari</a>
+                      
+                    
+                  
+                  • 21 Apr 2019 •
+                  
+                    
+                      5 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+<center><img class="materialboxed responsive-img" src ="/assets/3ptShot/cover.jpg" alt="cover photo"><figcaption>(Source: WBUR)</figcaption></center>
+</figure>
+
+<p>The 3-point shot, instituted into the NBA in 1979, significantly impacted the future and the direction of the league. In the shot's inaugural year, Hubie Brown's '79-80 Hawks attempted a season total of 75 three-pointers, making just 13, for a three-point shooting percentage of 17.33%. This equates to an average of 1 three pointer made every 6 games. That same Hawks team went on to the Eastern Conference Semifinals with an overall record of 50-32. 38 years later, on March 3rd 2018, over one half of the Houston Rockets' total shots in their three point victory over the Boston Celtics came from beyond the arc, as they attempted 49 three-pointers, compared to just 38 mid-range shots/layups.</p>
+
+<p>The league average field goal percentage from 3-point territory landed around 28% for the 1979-80 season (the first season in which 3-Point statistics were calculated), with an average of 2.8 attempts per game. This indicates that teams on average sunk only 4/5 of a three pointer per game. The league average 3-point percentage for this year, the 2018-2019 season, falls around 35.43%; equating to about 11.1 threes made per game. Stars like James Harden and Damian Lillard are now shooting over 600 threes per season.</p>
+
+<p>In order to take a look at the change in frequency of the three-point shot since the NBA began to compile statistics on the stat in 1980, we found league-wide averages in 3-pointers attempted per game.</p>
+
+<p>These results are shown in the bar graph, while the year-to-year percentage changes in 3PA are shown in the line graph below.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/3ptShot/pic_1.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/3ptShot/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>As the two graphs above indicate, the amount of three point shots has been steadily increasing with each new season. These results got us interested into thinking about the 3-point vs. 2-point shot discussion... and we decided to try and identify if one shot or the other maximized the amount of points that a team scores in a given game.</p>
+
+<p>We developed the following formula (expressed in two ways):</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/3ptShot/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>
+<h4><b><u>Qualifications:</u></b></h4>
+<ol>
+	<li>The number 88.96 represents the average of the Total Shots taken by a team so far for the 2018-2019 season</li>
+	<li>The value x is equal to the number of 3-pointers attempted by a team in a game</li>
+	<li>The value (88.96 - x) is equal to the number of 2-pointers attempted by a team in a game</li>
+</ol>
+</p>
+<hr>
+
+<p>Calculating the results for each of the teams in the NBA for the 2018-2019 season provides us with just two results: shooting only 2's or shooting only 3's will produce the greatest profit in terms of points scored for each individual team. The reason for the two-result system occurring is a result of the graph above producing a line. The line will either produce an upward sloping or downward sloping graph which means that the maximization can only occur at one of the two endpoints: all threes, or all twos.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/3ptShot/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption>WolframAlpha.com</figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/3ptShot/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption>WolframAlpha.com</figcaption></center>
+</figure>
+
+
+<p>The results are separated into the two-column table below:</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/3ptShot/pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>Analytically, as proven by the above data, for two-thirds of NBA teams, the formula above produces results that indicate that shooting strictly three point shots would give those teams the best possible chance to win. However, this formula looks at the game of basketball with tunnel vision, combining mid-range shots and layups into the generic category "two point shots" and comparing them directly with three point shots.</p>
+
+<p>Although an interesting perspective, and one that could convince a team to shoot strictly from beyond the arc, certain analytical formulas such as the one we crafted above do not take some important factors into account. For example, there are many times that driving into the paint for a layup, or drawing a foul, constitute important situational basketball moves. The game, at its core, is not as simple as the debate between mid-range shots and three point shots. If a team is down double digits with a minute to go, the smart basketball move for a team, even one who fell into the left column of the above table, like the Bucks or the Mavericks, would be to shoot 3's to try and spur some luck and climb back into a game. However, if only down by 1 or 2 with less than a minute to go, even for a team like the Warriors or the Celtics who fall into the right column of the above table, the smart basketball move often includes shooting a mid-range shot, drawing a foul, or going in for a layup.</p>
+
+<p>Fundamentally, there exists another side against the argument that the 3 point shot is always the best choice for a team. For example, when we look back at the era of basketball in the early 2000's, there were many who criticized how "iso driven" and slow paced the game was. Now, in today's day and age, we are starting to hear more murmurs that the 3 point shot is encouraging bad basketball. Not every team has a James Harden or Stephen Curry that can carry the load day in and day out from beyond the arc, thus raising the point that the emphasis on the 3 point shot is going overboard. It has the potential to cause decreases in efficiency, as players who simply don't have the capability to launch from long range will be swallowed up by the continual wave that is the fad of three-point shot.</p>
+
+<p>It was this emphasis on the three-ball that cost the Houston Rockets a spot in the 2018 NBA Finals, as we all remember from the infamous Game 7 against the Golden State Warriors in the 2018 Western Conference Finals:</p>
+
+
+<div class="video-container"><iframe width="1425" height="641" src="https://www.youtube.com/embed/Jox6ggZpxnI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+<p>Some old basketball junkies argue that the level of entertainment was higher when watching two big men physically battle under the block and do acrobatic layups, cuts, and dunks. Ratings in basketball have <a href="https://www.sportsbusinessdaily.com/Journal/Issues/2019/02/18/Media/NBA-ratings.aspx">decreased recently</a>, which poses an important question: Why? Although the younger generations and millennials (cord cutters) may be entertained by players launching up crazy, low percentage shots, the older generation (those who still watch cable TV) may not be too fond of this. Is the three point shot just a fad? Will the league turn back to its traditional ways? The answer to this question is unknown, but each side certainly has its merits. Analytically, facts do show that teams are better off shooting the 3, but does that take player personnel into account? It certainly changes the way basketball should be taught at the lower levels. If the current trend continues, the old classic "layup lines" may change into 3 point shot warmups. So what do you think? Are you <b><i>Team Analytics</i></b> or <b><i>Team Fundamentals</i></b>?</p>
+
+<p>Click on this link to vote: <a href="https://www.strawpoll.me/17803568/r">https://www.strawpoll.me/17803568/r</a></p>
+
+
+
+
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

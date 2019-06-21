@@ -1,0 +1,24 @@
+
+@media only screen and (min-width: 768px) {
+    #bloghome {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }   
+    .excerptpics {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .excerptpics {
+        max-width: 95%;
+        left: 50px;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">The Impact of Pitches Seen on Offensive Production</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/maxblane">Max Blane</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/bornanazari">Borna Nazari</a>
+                      
+                    
+                  
+                  • 23 Jan 2019 •
+                  
+                    
+                      6 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/pitch_off/cover.png" alt="cover photo"><figcaption></figcaption></center>
+</figure>
+
+<p>Due to the effects of a major knee surgery suffered during a September 2016 matchup vs. the <i>Toronto Blue Jays</i>, and a reinjury that was followed by a second surgery in April of 2017, the 2018 season came and went with Boston Red Sox second baseman Dustin Pedroia compiling thirteen total plate appearances; he accumulated just a single hit.</p>
+
+<p>Though the Boston Red Sox went on to capture their 9th World Series Championship, the team's first since 2013 and 4th since 2000, they had to do so without contributions from the 2007 American League Rookie of the Year and 2008 AL MVP.</p>
+
+<p>The team's journey through the playoffs this past season featured series wins against the 100-win Yankees 3-1, the 103-win Astros 4-1, and the NL Champion, 92-win Dodgers 4-1. The team, without Pedroia in the lineup, had to instead rely on a platoon at second base that featured utility man Brock Holt, natural third baseman Eduardo Nunez and 36-year old midseason acquisition Ian Kinsler (who, as of December 14th, 2018, is no longer on the team).</p>
+
+<p>Pedroia, the face of Boston's franchise until the arrival of 2018 MVP Mookie Betts, is locked up under contact until 2022. Signing for 8 years, $110 Million during the summer of 2013, even Pedroia indicated a sense of uncertainty about his longevity to reporters, stating "<a href="https://www.google.com/url?q=https://www.usatoday.com/story/sports/mlb/redsox/2013/07/24/red-sox-dustin-pedroia-finalize-110m-8-year-deal/2583911/&sa=D&ust=1548303230749000">I don't know if I'll be done by then, man</a>".</p>
+
+<p>In a league where the average age of a player on a given team lands between a minimum of 26.2 (Chicago White Sox) and a maximum of 30.3 (Toronto Blue Jays), the Red Sox must decide whether to implement the 35-year old Pedroia immediately into the starting lineup as the everyday second baseman for 2019, or stick with the Brock Holt (30yrs)/Eduardo Nunez (31yrs) platoon at the position.</p>
+
+<p><a href="https://www.google.com/url?q=https://www.boston.com/sports/boston-red-sox/2018/06/07/dustin-pedroia-injury-red-sox-future&sa=D&ust=1548303230750000">The Boston Herald's Jason Mastrodonato reports that there exists just six full-time position players 35 or older in the major leagues this past year -- of which five are designated hitters</a>.</p>
+
+<p>In complying with this statistic, it would certainly be easy for the Red Sox to maintain the playoff platoon, or turn to a younger substitute in the form of Michael Chavis (23), Marco Hernandez (26) or Tzu-Wei Lin (24). With that being said, it will be difficult for the club to sit Pedroia on a regular basis as a result of his previous success in the league, his leadership value, and the fact that the team still owes him roughly 40 million dollars on his current deal.</p>
+
+<p>Watching Red Sox games throughout the years, Dustin Pedroia can be seen taking the first pitch of many at-bats, even though the offering will often come directly down the heart of the plate. In contrast to pitches later in his at-bats, Pedroia acts generally unprepared for the first delivery, doing minimal set-up before the pitch is fired, as if he has no intention to swing at all.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/r7TbWAOhZXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+<p>As our research indicates, there may exist a different offensive approach that can keep Pedroia relevant in the Red Sox lineup by boosting his productivity at the plate.</p>
+
+<p>Below we have two graphs: one showing Pedroia's year by year Offensive Wins above Replacement and the other Pedroia's Pitches seen Per Plate Appearance average (P/PA) for each season.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/pitch_off/pic1.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/pitch_off/pic2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Looking in depth at the statistical side of Pedroia's production, it became noticeable that some sort of trend exists between an increasing average of Pitches Seen per Plate Appearance and a decreasing yearly Offensive Wins Over Replacement.</p>
+
+<p>We then conducted a significance test, comparing Pedroia's <b>P/PA</b> during his <b>2008 MVP season</b> (in which he saw his 2nd highest oWAR and his lowest P/PA) to his <b>average career P/PA</b>.</p>
+
+<p>The t-test, satisfying all conditions of normality, independence, and randomization, indicated a low enough p-value, and therefore established a significant difference in Dustin Pedroia's plate approach in his 2008 MVP season compared to the rest of his career as a whole. This suggests an explanation for the differences seen in production levels year-to-year.</p>
+
+<p>For further evidence into the relationship, we developed a line graph comparing the two variables to each other, placing oWAR on the y-axis, and P/PA on the x-axis.</p>
+
+<p>The implementation of a line of best fit produced the following graph:</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/pitch_off/pic3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Although not a perfectly negative correlation, the slope of -1.45 and R-squared value of 0.017 indicate that P/PA is a factor that impacts oWAR, but is not the <b>only</b> influencer that determines Pedroia's offensive production.</p>
+
+<p>As is evidenced through the t-test and analytical graphs, Dustin Pedroia has often experienced more success when he sees less pitches per each individual plate appearance. We equate the term "success" numerically with the value of oWAR in order to develop a clear understanding of his offensive productivity and results.</p>
+
+<p>WAR is the value (in wins) lost by a team if a player gets injured, and thus replaced, in a given season. The point of WAR isn't meant to be an exact measure, but rather an estimate of a particular player's value to their team. Below are the attached equations that are used to calculate both a player's total WAR and their oWAR:</p>
+
+<p><i>WAR = (Batting Runs + Baserunning Runs + <b>Fielding Runs</b> + Positional Adjustment + League Adjustment +Replacement Runs) / (Runs Per Win)</i></p>
+
+<p><i>oWAR= (Batting Runs + Baserunning Runs + Positional Adjustment + League Adjustment +Replacement Runs) / (Runs Per Win)</i></p>
+
+<p>As is shown by the bold term, the lone difference between WAR and oWAR is that oWAR does not include the amount of fielding runs that the player has saved/contributed.</p>
+
+<p>As a result of Pedroia's increased success at the plate with a decreased number of pitches seen, it would be advantageous to <span style="text-decoration: underline;">move Pedroia down towards the bottom of the order</span>, but still <span style="text-decoration: underline;">keep him in the everyday lineup</span>. In reference to his positioning in the batting order, often times, the role of batters at the top of the order is to tire out the starting pitcher by seeing more pitches. For the Red Sox to maximize both team success and individual success, an ideal spot for Pedroia to bat in the batting order would be the <i>7th spot</i>. The 7th position, taken up by hitters such as Jason Kipnis (CLE), Dexter Fowler (STL), and Daniel Murphy (WSH/CHC) is often given to older, yet still impactful players, who hit mostly for contact at this point in their careers. This spot in the order would allow Pedroia to be more aggressive early in the count, giving him a better chance to make a difference when provided with everyday playing time.</p>
+
+<p>However, Red Sox Manager Alex Cora should be careful about his usage of Pedroia at second base on a regular basis. Instead, using Pedroia in the DH spot semi-regularly will maximize his chances to produce offensively without wearing him down, a beneficial move with respect to his injury-filled past.</p>
+
+<p>Pedroia's production at second base, indicated by his dWAR (Defensive Wins Above Replacement) seemingly peaked in the 2014 season, when it maxed out at a career high of 2.5 and won him his 3rd Gold Glove Award. Since then, in seasons in which he has eclipsed 90 games, he has posted dWAR's of 0.0, 1.8 and 0.1. His diminishing value at second base shows that the Red Sox would not be taking a serious hit by playing a replacement once or twice in a given series, and would, by placing him in the DH spot, retain his health for both when he does play second, and for his frequent plate appearances.</p>
+
+<p>Lastly, seeing less pitches in each at bat will also limit Pedroia's opportunity for injury at the plate (less pitches seen, less chance to get HBP).</p>
+
+<p>Dustin Pedroia, still an offensive weapon for the Boston Red Sox should be provided regular playing time, whether at DH or at second base, for seasons to come. With his playing time, Pedroia should make an effort to restore his approach highlighted during his 2008 MVP year, as an aggressive hitter early in the count.</p>
+
+
+
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

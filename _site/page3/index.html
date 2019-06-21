@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+
+  </head>
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="body">
+
+      <head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+  <link rel="stylesheet" href="/css/blog.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+  <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    
+
+</head>
+
+<body>
+<div class="wrapper">
+  <main>
+    <div id="bloghome">
+      <section class="module content">
+        <div id="consult" style="width: 50%; float: left;">Official Consulting Partners of <b>USA Hockey</b><img src="assets/usa_hockey.png" style="max-width: 10%; max-height: 20%;"></div>
+        <div id="github-link" style="width: 32%; float: right">
+          <a href="https://github.com/bruinsportsanalytics/Resource-Folder">Our Resource Folder on GitHub</a><br>
+        </div>
+        <br><br>
+        <figure>
+            <center><img src="/assets/bsa_full_1819.png" alt="BSA Logo" style="max-width: 95%;">
+              <figcaption></figcaption>
+            </center>
+          </figure>
+          <!--
+         <div id="hm description">
+          <center><h2 style="color: #ffab40;">Data Journalism</h2></center>
+          <hr>
+        </div>
+      -->
+
+          <div id="posts">
+            
+            <h2 ><a href="/kmeansAllNBA">Constructing My All-Time NBA Lineup Through K-Means Clustering</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                      
+                    
+                    
+                  • 30 Nov 2018 •
+                    
+                      
+                        15 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/kmeansAll/cover.png" alt="cover photo"></center><p>It's a debate that pervades all cultures, ages and creeds. From every barbershop to lunch table in the world, the question rings&#58; what is your best all-time starting five? Who can construct the best lineup to put on the hardwood using any player from any time?</p>
+                  
+            <h2 ><a href="/jaredGoffStory">Bust to Beast: The Jared Goff Story</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/anirudhmani">Anirudh Mani</a>
+                      
+                    
+                    
+                  • 29 Nov 2018 •
+                    
+                      
+                        10 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/goffStory/pic_8.png" alt="cover photo"></center><p>Jared Goff's rookie year was anything but positive. After taking nearly half of the season to earn the starting job, his performance caused major concern for the future. As noted in a May 2017 Rotoworld article, Goff's rookie season was historically bad&#58; "Of the 49 rookie quarterbacks to make at least seven starts since 2000, Goff posted the fourth-lowest touchdown total (five), sixth-lowest YPA (5.31), 15th-worst QB rating (63.6) and 22nd-worst completion percentage (54.6)." Coming into the 2017 NFL football season, some even postulated that new coach Sean McVay might select QB Sean Mannion to lead the team.</p>
+                  
+            <h2 ><a href="/ballonDOr">2018 Ballon d'Or: A Look at the Contenders and their Numbers</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/vedantsahu">Vedant Sahu</a>
+                      
+                    
+                    
+                  • 28 Nov 2018 •
+                    
+                      
+                        15 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/messiDor/cover.jpg" alt="cover photo"></center><p>On December 3, 2018, the French publication France Football will announce the winner of this year's Ballon d'Or, which translates to the "Golden Ball". The award, which recognizes the best male footballer in the world, has been around for a while now.  In fact, this will be the 53rd time that it will be awarded. Every year, the speculation around who the eventual winner will be creates a ton of buzz, and this year is no different. Before we join in on that hype train, let's take a look at how the "Golden Ball" has exchanged hands over the last of couple of years.</p>
+                  
+            <h2 ><a href="/NHLContracts">Can the Toronto Maple Leafs Pay Up?</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/joedunham">Joe Dunham</a>
+                      
+                    
+                    
+                  • 28 Nov 2018 •
+                    
+                      
+                        9 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/nhlCon/pic_1.jpeg" alt="cover photo"></center><p>It's no secret that William Nylander has held out on signing a contract with the Toronto Maple Leafs. As a restricted free agent about to enter into his first non-entry level NHL contract, Nylander is very limited in his options, sign with the Leafs, or don't play at all. Players rarely choose not to play at all, with many top six players opting for bridge deals - three-to-four year contracts typically valued far less than they wish in exchange for an opportunity to prove themselves more capable of a future contract more extensive in both term and salary. It is also common for players to begin negotiations asking for high pay, only to settle for what they were actually hoping for. What makes Nylander's situation unique isn't that he reportedly asked for upward of $8 million per year (money typically reserved for roughly top two talent on a team), but that he has not since backed down and signed for less. Against everyone's expectations, it is now late November, the Leafs have played over a quarter of the season, and they are still without the 22 year old Swede.</p>
+                  
+            <h2 ><a href="/jokicRisingStar">The NBA’s ‘Perfect Game’ by One of Basketball’s Rising Superstars</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/chadshimozaki">Chad Shimozaki</a>
+                      
+                    
+                    
+                  • 24 Nov 2018 •
+                    
+                      
+                        5 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/jokicRS/pic_2.png" alt="cover photo"></center><p>In baseball, a "perfect game" is achieved when a pitcher does not allow an opposing player to reach base -27 up, 27 down. While basketball does not have an easily recognizable equivalent, NBA fans were treated to a perfect game this season on Oct. 20. In an easily overlooked rout of the Phoenix Suns, Nikola Jokic recorded a 31-point triple-double with no turnovers while shooting a perfect from the field (11-11), joining Wilt Chamberlain as one of the only two players to ever achieve such a feat, according to a tweet from @ESPNStatsInfo.</p>
+                  
+            <h2 ><a href="/powerlifting">Raw Powerlifting is Coming at Full Force</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/qijingyap">Qi Jing Yap</a>
+                      
+                    
+                    
+                  • 20 Nov 2018 •
+                    
+                      
+                        13 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/plift/cover.jpeg" alt="cover photo"></center><p>On first glance, powerlifting appears to be a sport destined for greatness, featuring incredible feats of strength through the squat, bench, and deadlift, some of the most ubiquitous exercises in the gym. In addition to that, the basic rules of the sport are mind-numbingly simple to understand - the best of three attempts at each lift are added together to form a total, which is then compared among competitors in the same weight class. In the right moments, the battle to become the strongest lifter can play out in dramatic conditions, such as John Haack's 315kg (694lb) pull at 83kg (183lb) to secure the IPF World Classic Powerlifting Championships title.</p>
+                  
+            <h2 ><a href="/mexicanStyle">How 'Mexican Style' Came Back to Haunt GGG</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                      
+                    
+                    
+                  • 26 Oct 2018 •
+                    
+                      
+                        10 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/mexicanS/image11.png" alt="cover photo"></center><p>The success of a boxer comes down to not only how he can fight, but also how he can spread his brand. The man from Kazakhstan known around the world today as 'GGG' did not have traction in the popularity department for a massive portion of his fighting career. After an incredible amatuer career of 350 fights, Gennady Golovkin's professional career stalled for years due to promotional issues. In 2012, already 30 years of age, Golovkin finally decided to take his career to the United States under a new promoter. At the time, his record was 23-0 with 20 knockouts and he was already the WBA Middleweight Champion. Because of his dangerous record and lack of popularity, the top fighters in the division heavily avoided him for years.</p>
+                  
+            <h2 ><a href="/vegasGK">Vegas Golden Knights: The Most Successful Expansion Team in NHL History</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                      
+                    
+                    
+                  • 08 Jun 2018 •
+                    
+                      
+                        9 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/vegas/cover.jpg" alt="golden knights"></center><figcaption>The Associated Press</figcaption><p>This wasn’t supposed to happen. The first major professional sports team to ever grace the city of Las Vegas wasn’t supposed to be this good. Hockey wasn’t meant to be played in the desert. A team full of disposable parts and cast-offs wasn’t supposed to mesh this well together. It must be a fluke.</p>
+                  
+            <h2 ><a href="/pred_NBA_salaries_journey">BSA Exclusive: Our Journey Through Research</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/konnermacias">Konner Macias</a>
+                      
+                    
+                      
+                      
+                    , <a href="http://www.bruinsportsanalytics.com/benmessinger">Ben Messinger</a>
+                      
+                    
+                      
+                      
+                    , <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/ronaqvirdi">Ronaq Virdi</a>
+                      
+                    
+                    
+                  • 03 Jun 2018 •
+                    
+                      
+                        13 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/salJourney/avgSalDensity.png" alt="Salary Distribution"></center><figcaption></figcaption><p>With this article, we hope to detail our process as members of Bruin Sports Analytics to work towards getting a well-done research paper completed, with guidance given by our club advisor, Professor Almohalwas of the UCLA Statistics department. We wish to detail our journey, and all the lessons we have taken from each one to move us closer to completing our desired task. In hopes of creating a paper worthy of being published in an official sports analytics journal, we have decided to take more time in working towards our final result. However, we have decided to write this extended article to provide a checkpoint of where currently stand in hopes for others to get inspired to do research as an undergrad, and learn more about the interesting attempts we have tried to solve our problem.</p>
+                  
+            <h2 ><a href="/oakAs">Early Overachievers: The 2018 Oakland Athletics</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                      
+                    
+                    
+                  • 30 May 2018 •
+                    
+                      
+                        10 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/oakland/cover.jpeg" alt="A's teammates"></center><figcaption><i>The Mercury News</i>; from L to R, Matt Chapman, Matt Olson, and Marcus Semien</figcaption><p>At the beginning of the 2018 MLB season, many experts thought the Oakland Athletics would once again sport one of the worst records in baseball. According to Baseball Prospectus, the Athletics were projected to have a 76-86 record this year, which would be a miniscule improvement from their 75-87 record last year. The oddsmakers at Bovada had even lower expectations for the squad, as the over/under for their win total was set at 74.5. Given that the team has been in the American League West cellar for three years straight, even the most optimistic A’s fans had to acknowledge that a playoff appearance might not be in order for at least a couple of years. So, you can’t really blame all the people who slept on the A’s going into the season, especially since Oakland didn’t do much over the offseason to improve themselves. But, the A’s have given their fans some hope with their impressive start to the season; after the first 54 games of the campaign, Oakland stands at 28-26, good for a .519 win percentage. People around the game might be surprised at this kind of run, but when looking at the roster makeup and the major statistics on both sides of the ball, one can better understand why the A’s are experiencing this kind of success.</p>
+                  
+            
+            
+          <center>
+          <div class="pagination">
+            
+              <a href="/page2" class="previous">&laquo; Previous</a>
+            
+        
+            <span class="page_number">Page: 3 of 5</span>
+        
+            
+              <a href="/page4" class="next">Next &raquo;</a>
+            
+          </div>
+        </center>
+        </ul>
+          </div>
+      </section>
+    </div>
+  </main>
+
+</div>
+</body>
+
+
+
+      <hr>
+      <!---
+      <center>
+      <div class="newsletter-container">
+            <form action="https://getsimpleform.com/messages?form_api_token=cdd07db5b90f967b9271a5c7ef3fd573" method="post">
+              <ul>
+                <input type="email" placeholder="Email:" id="email" style="font-family: Roboto Slab, serif;"/>
+                <input type="submit" value="Subscribe" id="submit" style="font-family: Roboto Slab, serif;" />
+              </ul>
+            </form>
+          </div>
+        </center>
+      -->
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center>
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+    </div>
+  </body>
+</html>

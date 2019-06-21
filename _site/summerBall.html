@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Can Summer Ball Indicate Professional Success?</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/haleyrao">Haley Rao</a>
+                      
+                    
+                  
+                  • 03 Dec 2018 •
+                  
+                    
+                      4 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <p>Every summer, hundreds of college baseball players participate in summer leagues around the country. One of the most acclaimed of these leagues is the Cape Cod Baseball League, which consists of 10 teams across the Cape Cod peninsula. Collegiate summer leagues have support from both Major League Baseball and the NCAA, and are intended to help advance players from the collegiate to professional level.</p>
+
+<p>As of October 2015, 1155 past players from the Cape Cod Baseball League had made an appearance in at least one MLB game. Some veterans in this group include household names like Rich Hill, Chase Utley, and George Springer. Looking at the Boston Red Sox 2018 World Series Roster, 8 out of 25 players, including World Series MVP Steve Pearce, participated in the Cape Cod Baseball League. There are more veterans of this summer league on the Boston Red Sox than any other major league team. When Chris Sale played for the Yarmouth-Dennis Red Sox in 2009, he was third in ERA and recorded the most strikeouts throughout the season. Could there be a correlation between performance in summer leagues like the CCBL and professional success?</p>
+
+<p>To keep it simple, we'll focus on batting performance as an indicator of potential in the MLB. With the wide acceptance of advanced analytics in baseball, more attention has been placed on batting statistics like slugging and on-base percentage, as opposed to the unreliable statistic of batting average. Slugging and on-base percentage are more precise and accurate measurements for offensive production; they reward batters who make it on base and thus those who create more scoring opportunities. OPS combines these two statistics into one. Although this stat unfairly weighs OBP and SLG as equal (and according to Fangraphs, OBP is about 1.8 times more important than SLG), OPS still paints an accurate picture of a player's offensive abilities.</p>
+
+<p>At the collegiate and professional levels, a high mark in this category indicates tremendous offensive power. Accordingly, players in the Cape Cod Baseball League who eclipse their teammates and opponents in offensive categories have a promising future. Let's look at the top batting performers in the CCBL from 2004-2013 and analyze how the performance of eventual professional players compares to the top performers in the years they played on the Cape.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sumBall/pic1.jpg" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>In the graph above, OPS is plotted against the number of RBIs for the top 10 batters of each season of the CCBL from 2004 to 2013. The blue dots represent the players who achieved tremendous success in the MLB; these players include Jason Kipnis, Buster Posey, and Jackie Bradley Jr. A trend line for the professional players models the positive relationship between the number of RBIs and OPS. For every increase in OPS by .041, players are predicted to get an RBI. The blue dots tend to be clustered close to the regression line and the eventual MLBers who did well in the CCBL had more than 20 RBIs and an OPS higher than 0.900.</p>
+
+<p>It's obvious that the eventual pros did not blow away their competitors in offensive production. However, there does seem to be a balance between OPS and RBIs that makes a player excel beyond the collegiate level. Let's use the regression line for the eventual MLB players to see how players from the 2018 season of the CCBL compare.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sumBall/pic2.jpg" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The positive relationship between OPS and RBI remains, but there are only a handful of players with more than 20 RBIs and an OPS over .900. Let's look at some of the players from last year's CCBL that meet these criteria.</p>
+
+<p>In the 2018 season of the Cape Cod League, Austin Shenton of the Wareham Gatemen was third in batting with an average of .349 and an OPS of .940. Last year at Florida International University, he batted an astounding .344 with OPS of .941. Shenton was named the Postseason MVP for the CCBL 2018 playoffs as he lead the Wareham Gatemen to the championship. D1Baseball predicted he would be a breakout player this summer. They also detailed Shenton's incredibly mental approach to the game which no doubt had an impact on his performance.</p>
+
+<p>Ranked above Shenton in CCBL batting average was Matthew Barefoot of the Hyannis Harbor Hawks who lead the league with a whopping .379.He also led the league with a .474 OBP, reaching base on almost half of his plate appearances. In 2017, Barefoot batted .335 with OPS of .937 for Campbell University and he helped propel the team into the spring NCAA tournament. With little expertise on defense, Barefoot may struggle to get to the majors. However, his batting performance was sure to get the scouts' attention.</p>
+
+<p>Lastly, we'll look at Noah Campbell from the University of South Carolina. He crushed the Cape Cod Baseball League with a .636 slugging percentage, that's .063 more than the next closest player. He was also third in the league with an on-base percentage of of .456. At South Carolina last year, Campbell batted .286 with OPS of .752. He doesn't boast the highest batting average, but his immense power hitting ability blows everyone else away. Aside from a finger injury last March, there is little doubt surrounding Campbell. He is a force both offensively and defensively and has unquestionable potential.</p>
+
+<p>While in his season in the Cape Cod Baseball League, World Series Champion Jackie Bradley Jr. was impressive with 14 RBIs and a .717 OPS, yet he didn't outshine his competitors offensively. He didn't outperform our highlighted 2018 CCBL players either. However, with his relentless work ethic, Bradley made it to the major leagues and was the definition of clutch in this past world Series. He possessed that x-factor needed to excel in professional baseball. Shenton, Barefoot, and Campbell undoubtedly have the offensive power to do damage in the MLB, and their work ethics show promise for professional success.</p>
+
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

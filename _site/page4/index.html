@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+
+  </head>
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="body">
+
+      <head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+  <link rel="stylesheet" href="/css/blog.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+  <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    
+
+</head>
+
+<body>
+<div class="wrapper">
+  <main>
+    <div id="bloghome">
+      <section class="module content">
+        <div id="consult" style="width: 50%; float: left;">Official Consulting Partners of <b>USA Hockey</b><img src="assets/usa_hockey.png" style="max-width: 10%; max-height: 20%;"></div>
+        <div id="github-link" style="width: 32%; float: right">
+          <a href="https://github.com/bruinsportsanalytics/Resource-Folder">Our Resource Folder on GitHub</a><br>
+        </div>
+        <br><br>
+        <figure>
+            <center><img src="/assets/bsa_full_1819.png" alt="BSA Logo" style="max-width: 95%;">
+              <figcaption></figcaption>
+            </center>
+          </figure>
+          <!--
+         <div id="hm description">
+          <center><h2 style="color: #ffab40;">Data Journalism</h2></center>
+          <hr>
+        </div>
+      -->
+
+          <div id="posts">
+            
+            <h2 ><a href="/defChamp">Does Defense Really Win Championships? An In-Depth Analysis of the NBA Playoffs</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/donvu">Don Vu</a>
+                      
+                    
+                    
+                  • 22 May 2018 •
+                    
+                      
+                        14 min read
+                      </h6>
+                      <img class="excerptpics" src ="/assets/defense/cover.jpg" alt="2004 Pistons"></center><figcaption>Jed Jacobsohn/Getty Images</figcaption><p>With 2 minutes left on the clock, Richard Hamilton stepped up to the free throw line.  He dribbled the ball a few times and calmly knocked down both shots to seal one of the most stunning upsets in playoff history.  The Detroit Pistons had defeated the heavily favored Los Angeles Lakers to become the 2004 NBA Champions.  Hardly anyone could have predicted that this team would overcome the combined talents of Kobe Bryant and Shaquille O’Neal along with the brilliance of Phil Jackson.  Most analysts give credit to the outstanding defense the Pistons displayed.  Though their offense just placed 7th, this Pistons team had the best ranked defense throughout the playoffs and actually had the highest average defensive rating in postseason history.</p>
+                  
+            <h2 ><a href="/zverevGS">Why Has Alexander Zverev Failed to Deliver at Grand Slams?</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/kevinhahn">Kevin Hahn</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                      
+                    
+                    
+                  • 09 May 2018 •
+                    
+                      
+                        8 min read
+                      </h6>
+                      <img class="excerptpics" src ="/assets/zverev/cover.png" alt="zverev backhand"></center><figcaption></figcaption><p>Since 2004, the ATP “World Number 1” ranking in tennis has been controlled by four men. In fact, no one else has been able to even enter the top 2 over the last decade and a half. But all good things must come to an end. The Big Four are not getting any younger, and they cannot sustain this era of unparalleled dominance forever. So what’s next for men’s tennis? Who will take up the mantle of world number 1 after Federer, Nadal, Djokovic, and Murray can no longer play as they have? Look no further than Alexander “Sascha” Zverev Jr, the 21 year old German youngster who took the tennis world by storm this past year. Of all of the “Next Gen” players on tour, Zverev has made the most progress as he is currently ranked number 3 in the world. In 2017, at just 20 years old, he legitimized his potential for greatness when he finished the year at world number 4. Along the way, he captured 5 singles titles overall, including 2 Masters 1000 titles over Djokovic and Federer in each final, respectively.</p>
+                  
+            <h2 ><a href="/kenDerby">Kentucky Derby 2018: History, Trends, and Predictions</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                      
+                    
+                    
+                  • 01 May 2018 •
+                    
+                      
+                        7 min read
+                      </h6>
+                      <img class="excerptpics" src ="/assets/kent/cover.jpg" alt="Horses Charging"></center><p>Described as “The Most Exciting Two Minutes in Sports”, the Kentucky Derby never fails to capture the attention of sports and gambling enthusiasts alike each May. First held in 1875, the world famous race at Churchill Downs has become ingrained in American sports culture. Thoroughbreds that have gone on to become immortalized in history used the Derby as a stepping stone to greatness. The 144th Kentucky Derby will take place on Saturday, May 5.</p>
+                  
+            <h2 ><a href="/nflDraft">NFL Draft 2018: Bruin Prospects</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                      
+                    
+                    
+                  • 20 Apr 2018 •
+                    
+                      
+                        22 min read
+                      </h6>
+                      <img class="excerptpics" src ="/assets/nflDraft/cover.png" alt="NFL Draft Logo"></center><p>It’s that time of year, again. The 2018 NFL Draft is right around the corner, as the event will take place this year on April 26th in Arlington, Texas at the Dallas Cowboys’ stadium. The draft is a chance for all teams to improve in their own ways; teams at the top of the draft like the Cleveland Browns have to fill a litany of position needs, while teams at the bottom of the draft like the Super Bowl LII Champion Philadelphia Eagles just need to polish their already strong squads. The draft is also a crucial time for general managers around the league, who all bear the responsibility of determining the fates of their respective teams for many years to come.</p>
+                  
+            <h2 ><a href="/uclaGym">UCLA Gymnastics: Analysis and Optimal Lineups Heading into Championship Meets</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                      
+                    
+                    
+                  • 22 Mar 2018 •
+                    
+                      
+                        11 min read
+                      </h6>
+                      <img class="excerptpics" src ="/assets/gymnastics/cover.jpg" alt="UCLA Gymnastics girl"></center><p>The most exciting time of the year for women’s collegiate gymnastics is just around the corner. UCLA, currently ranked 3rd in the country, will compete for a conference, regional, and hopefully national championship in the coming weeks. Boasting a roster littered with former Olympians and elite gymnasts, the Bruins are in a great position to challenge Oklahoma, LSU, and the rest of the best programs in America for a NCAA title.</p>
+                  
+            <h2 ><a href="/blakegriffin">Blake Griffin: Sharpshooter or Bricklayer?</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                      
+                    
+                    
+                  • 11 Mar 2018 •
+                    
+                      
+                        5 min read
+                      </h6>
+                      <img class="excerptpics" src ="/assets/griffin/image4.png" alt="Blake Griffin"></center><p>From a decorated high-school recruit, to Naismith College Player of the Year, to apparent resuscitator of the Dunk Contest, to slugger of an equipment manager, to highly controversial trade chip, Blake Griffin’s basketball career has had quite the peaks and valleys.</p>
+                  
+            <h2 ><a href="/sunsRockets">An In-Depth Comparison of the 06-07 Phoenix Suns and 17-18 Houston Rockets</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/ronaqvirdi">Ronaq Virdi</a>
+                      
+                    
+                      
+                      
+                    , <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/benmessinger">Ben Messinger</a>
+                      
+                    
+                    
+                  • 09 Mar 2018 •
+                    
+                      
+                        16 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/dantoni/cover.png" alt="Nash/Harden"></center><p>In Game 6 of the 1998 NBA Finals, Michael Jordan’s last game in a Chicago Bulls jersey, the Bulls attempted 67 field goals in the entire game, including only 10 three-point attempts. Fast forward to 2017-18, and the Houston Rockets are <i>averaging</i> 42.6 three-point field goal attempts per game. In the 20 years since Jordan’s last game, saying that professional basketball has changed would be an understatement. In today’s NBA, the “pace and space” style of play with an emphasis on a primary ball handler surrounded by shooters is the norm; all 30 teams are attempting at least 22 three-point field goals per game compared to the 2004 season, where only one team attempted more than 22 per game. Many of the offensive principles that are prevalent throughout the league can be attributed to current Rockets head coach, Mike D’Antoni. D'Antoni's success with the mid 2000s “Seven Seconds or Less” Phoenix Suns has had a lasting impact on the league today, as many of the same offensive philosophies have been commandeered by other coaches.</p>
+                  
+            <h2 ><a href="/cristiano">An In-Depth Analysis of Cristiano Ronaldo</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/kevinhahn">Kevin Hahn</a>
+                      
+                    
+                      
+                      
+                    , <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/subashraman">Subash Sundar Raman</a>
+                      
+                    
+                    
+                  • 08 Mar 2018 •
+                    
+                      
+                        12 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/cristiano/ronaldo1.png" alt="Cristiano Ronaldo"></center><p>One of the greatest players of this generation, Portuguese and Real Madrid forward Cristiano Ronaldo has been the topic of discussion among football pundits. The five time Ballon d’or winner has been struggling in the 2017-18 season to replicate his incredible goal scoring performances from previous seasons. With its star player facing a slump, Real Madrid is also going through a rough patch this season, currently sitting in 3rd place, 15 points off the current leader, Barcelona. As things stand, Real Madrid could be facing its worst finish in a long time, having finished outside the top 2 only once in the last 10 years. </p>
+                  
+            <h2 ><a href="/mcconnell">TJ McConnell Should Not Be In the NBA</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/zanewinston">Zane Winston</a>
+                      
+                    
+                    
+                  • 01 Mar 2018 •
+                    
+                      
+                        5 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/mcconnell/tj.png" alt="TJ McConnell"></center><p>Quite frankly, TJ McConnell shouldn't be in the NBA. He has proven us wrong time and time again; he started his college career at Duquesne, he wasn't drafted, he was picked up as a rotation player on the worst team in the league, and he's a short point guard who can't shoot threes. That's not to say that he's a bad player; he averages 24.5 minutes per game on a Sixers team likely to make the playoffs. </p>
+                  
+            <h2 ><a href="/joeThornton">Joe Thornton: The Bearded Legend</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                      
+                    
+                    
+                  • 27 Feb 2018 •
+                    
+                      
+                        11 min read
+                      </h6>
+                      <img class="excerptpics" src ="/assets/thornton/cover_1.jpg" alt="Bearded Hockey Player"></center><p>Throughout his 20 years in the National Hockey League (NHL), Joe Thornton has proven time and time again that he is one of hockey’s best players. Drafted first overall in the 1997 NHL Draft by the Boston Bruins, Thornton was highly-touted, but nobody thought he would turn out to be such a legendary player. With a large frame and an insane ability to distribute the puck to his teammates, he has been and continues to be remarkably consistent. As a result, he has won numerous awards, including the Hart Memorial Trophy (League MVP), the Art Ross Trophy (Most Points), 6 All-Star Team nominations, and a gold medal at the 2010 Olympics with Team Canada.</p>
+                  
+            
+            
+          <center>
+          <div class="pagination">
+            
+              <a href="/page3" class="previous">&laquo; Previous</a>
+            
+        
+            <span class="page_number">Page: 4 of 5</span>
+        
+            
+              <a href="/page5" class="next">Next &raquo;</a>
+            
+          </div>
+        </center>
+        </ul>
+          </div>
+      </section>
+    </div>
+  </main>
+
+</div>
+</body>
+
+
+
+      <hr>
+      <!---
+      <center>
+      <div class="newsletter-container">
+            <form action="https://getsimpleform.com/messages?form_api_token=cdd07db5b90f967b9271a5c7ef3fd573" method="post">
+              <ul>
+                <input type="email" placeholder="Email:" id="email" style="font-family: Roboto Slab, serif;"/>
+                <input type="submit" value="Subscribe" id="submit" style="font-family: Roboto Slab, serif;" />
+              </ul>
+            </form>
+          </div>
+        </center>
+      -->
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center>
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+    </div>
+  </body>
+</html>

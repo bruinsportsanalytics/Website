@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">UCLA Gymnastics: Analysis and Optimal Lineups Heading into Championship Meets</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                      
+                    
+                  
+                  • 22 Mar 2018 •
+                  
+                    
+                      11 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/gymnastics/cover.jpg" alt="Gymnastics Girl"></center>
+</figure>
+
+<p>The most exciting time of the year for women’s collegiate gymnastics is just around the corner. UCLA, currently ranked #3 in the country, will compete for a conference, regional, and hopefully national championship in the coming weeks. Boasting a roster littered with former Olympians and elite gymnasts, the Bruins are in a great position to challenge Oklahoma, LSU, and the rest of the best programs in America for a NCAA title.</p>
+
+<p>Gymnastics is somewhat of a niche sport, holding especially true for the college scene. Most people hear about it every four years during the Olympics, then don’t think twice after. What a shame. Collegiate gymnastics showcases some of the top athletes in the world performing difficult routines to near (and sometimes complete) perfection. The technical side of the sport is daunting, but after attending just a few meets, one will find themselves playing the part of ‘judge’ to surprisingly good accuracy.</p>
+
+<p>Before diving into the analytics, here is a rundown of the important details. There are 62 Division-I schools. At the end of the regular season and conference championships, the top 36 are distributed among six regional championships, the top two finishers of each advancing to the national championship. The major conferences such as Pac-12, SEC, Big-12, etc. are at least partially represented, though not every school has a gymnastics program. Rankings are all that matter; win/loss record is not important. Schools will compete against each other, but average total score is the key component during regular season. Specifically, the RQS system is used. Take the top 3 away meet scores, then the next highest three, subtract the maximum score, and average the remaining five. This system is used to ensure that ‘overscoring’ at home meets is taken into account and consistently scoring high is rewarded. Most schools will compete on a weekly basis from early January to late March for a total of around a dozen meets before postseason.</p>
+
+<p>Meets are structured as follows. There are four events: Vault, uneven bars, balance beam, and floor exercise. The home team starts on vault and visitors on bars, eventually cycling through each. With alternating performances, there is little time between routines. Typically, six gymnasts from each team will compete on an event, the highest five scores being counted and the lowest dropped. Every routine is scored out of 10.0. The best gymnasts will usually hit around 9.900 or above. Weaker gymnasts will post 9.600-9.700s. For the top teams, the standard is very high with little margin for error. Anything below a 9.850 is a score that would prefer to be dropped, and programs are counting on a few individuals to hit the 9.950+ range. Each apparatus is scored out of 50, with the total score out of 200. Heading into postseason, Oklahoma is currently ranked #1 with an RQS of 198.120.</p>
+
+<p>The difference between gymnastics and most other sports is apparent. Theoretically, each routine is independent. There is no direct interaction between teams, no offensive or defensive strategies, nothing one opponent can do to affect the performance of the other. Gymnastics is a team sport in the sense that scores are aggregated, but the actual ‘gameplay’ is purely individualistic. 
+That makes the statistics simple. All we care about is the score given to a gymnast by the judges. It is subjective, and sometimes actual performance and the score received don’t seem to align. But that’s a whole other topic. For simplicity’s sake, we are going to assume every score is fairly accurate. Here is a look at UCLA’s scores by meet this season.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/gymnastics/pic1.png" alt="Total Scores"></center>
+</figure>
+
+
+<p>Noticeable improvement by week as the season progresses. This is to be expected. Early in the year, it takes a few weeks to shake off the rust and get back into competition mode after a long offseason. Additionally, freshmen are making their first starts with no prior exposure to NCAA gymnastics. Coaches are experimenting with different lineups, and overall everyone is trying to get into a groove. The continued improvement even in the final weeks of the regular season bodes well for UCLA moving forward. How does this break down by event?</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/gymnastics/pic2.png" alt="Scores by Event"></center>
+</figure>
+
+<p>Pretty consistent across the board. The Bruins are ranked 2nd in the country on vault, 4th on bars, 2nd on beam, and 1st on floor (RQS). They have no glaring weaknesses and have shown the capability of putting up 49.500+ on each event at least once this season. Note that the sum of the dots for each meet number is the total score. The higher and closer together they are, the better. Meet 11, the last home one of the season, was their best in terms of total score and balance of all four scores.</p>
+
+<h4>
+    <b>Analysis by Event</b>
+</h4>
+
+<p>We will go through each event to determine the top gymnasts (score-based) and possible lineup strategies heading into the championship meets. A few statistics you will see below: Adjusted mean. Often, ‘event RQS’ is used to rank gymnasts individually. But this throws away a lot of the data. The sample size is already small, so I created this adjusted mean number that will keep most of the data. It is simply the mean of all scores for an event, dropping the lowest if the gymnast has at least five starts, and two lowest if the gymnast has at least 10 starts. This is done to account for the occasional failed routine that will severely affect the total average. Upper 50% mean is the mean of scores in the 50th percentile or above (i.e. 6 starts = mean of top 3). This is akin to ‘potential’. A high U50% mean indicates the gymnast is capable of putting up big scores. Paired with standard deviation, a risk/reward outlook can be visualized as seen below.</p>
+
+<h4>
+    <b>Vault</b>
+</h4>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/gymnastics/pic3.jpg" alt="Vault Scores"></center>
+</figure>
+
+<p>UCLA has a balanced vault lineup. The top 5 are established and include two freshmen in Nia Dennis and Pauline Tratz. For Nia in particular, this is her best event thus far out of the four. Senior Napualani Hall is serving as a vault specialist this year (i.e. the only event she regularly competes on). Along with Felicia Hano, she has the most difficult vault; but with a 10.0 start value, the highest potential score.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/mPvcgyahFCM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>Kyla Ross is rock solid as always, we will see later on why she has been UCLA’s best all-around gymnast. Katelyn Ohashi started a few times earlier in the season, but it appears Anna Glenn has a hold of that sixth spot in the lineup. Sonya Meraz and Gracie Kramer have each had a pair of starts as well. It will be interesting to see if Madison Kocian steps in at some point. She is nursing a shoulder injury and has only competed on beam and floor this season, but was a staple in last year’s vault lineup. Otherwise, the top 6 looks to be set.</p>
+
+<p>Optimal Lineup: Felicia Hano – Kyla Ross – Napualani Hall – Nia Dennis – Pauline Tratz – Anna Glenn</p>
+
+<h4>
+    <b>Bars</b>
+</h4> 
+
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/gymnastics/pic4.jpg" alt="Bars Scores"></center>
+</figure>
+
+<p>The bars are UCLA’s most top heavy event. Five gymnasts have started all 11 meets and there is little in the way of depth. The chief cause is again, injuries. Stella Savvidou was a regular last year but redshirted this season. Madison Kocian’s success on bars is well documented (Olympic silver medalist), but that shoulder injury has restricted her. Perhaps we see her this postseason, as it’s been hinted at before.</p>
+
+<p>Kyla Ross stands out as a big score performer, and rightfully so. She has a 10.0 this season and three in her career on this event. She is the epitome of consistency and delivers nothing less than near-perfect routines week in and week out. Tied for second in the country, she is also the defending NCAA champion on bars.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/ZoeukuLZQNQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>Peng-Peng Lee does not fall far behind. The sixth year senior is a fan favorite and performs some of the most difficult routines in college gymnastics. Along with Kyla, she is one of five gymnasts to notch a perfect 10 this season and has three to her name at UCLA. And this isn’t even her best event.</p>
+
+<p>Nia Dennis, JaNay Honest, and Katelyn Ohashi have started all 11 meets as well. This is JaNay’s third straight year of starting at least 11 meets on bars. She does not have the highest upside, but provides consistently solid scores in the mid-to-high 9.800s range. Katelyn returned to this event and struggled early on, but has been very good of late. She is one of the classic risk/reward plays.</p>
+
+<p>Aside from those five regulars, the sixth spot appears up for grabs. If Madison Kocian is healthy enough she will surely fill it. Otherwise, Sonya Meraz, Savannah Kooyman, Anna Glenn, and Felicia Hano have all performed at least once this season.</p>
+
+<p>Optimal Lineup: Kyla Ross – Peng-Peng Lee – Nia Dennis – JaNay Honest – Katelyn Ohashi – Sonya Meraz/Madison Kocian</p>
+
+<h4>
+    <b>Beam</b>
+</h4>
+
+<p>For all the stigma surrounding balance beam, UCLA is remarkably consistent and has the highest pure average score in the country. This is the one event where all of the Bruins most technically skilled gymnasts are starters. Leading the way is Peng-Peng Lee, who has one of the most iconic beam mounts you will see.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/ni_vfla_rUw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>Peng is #2 in the country on beam and has three perfect scores this year. She has only gotten below 9.925 twice in ten starts. Katelyn Ohashi was an excellent beam worker her first two years and has picked up right where she left off. She’s right behind Peng at #3 in the country. Grace Glenn has competed on only this event, but has made it count performing in every meet and standing at #5 in the country. Her twin sister Anna Glenn did well in her beam debut a couple weeks ago. Madison Kocian has a role in this lineup, although her scores are slightly down from last year (remember the shoulder). Brielle Nguyen served as lead off for most of the season but her numbers have slipped of late, failing to record above 9.850 in her last five starts. She is on the bubble and could be competing with Anna Glenn for that sixth spot down the stretch. Whatever the case, there are plenty of options for this lineup.</p>
+
+<p>Optimal Lineup: Peng-Peng Lee – Katelyn Ohashi – Grace Glenn – Kyla Ross – Madison Kocian – Brielle Nguyen</p>
+
+<h4>
+    <b>Floor</b>
+</h4>
+
+<p>And finally we get to floor. UCLA’s signature event and the apparatus where the toughest decisions will need to be made. Ten different gymnasts have started at least one time on floor, and only two are virtual locks to be in the lineup this April. Katelyn Ohashi and Felicia Hano have separated themselves from the rest, posting ridiculous scores on a very consistent basis. Katelyn is #2 on floor and has three 10.0s. In her last seven starts, she has not scored below a 9.925.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/Z150ZbLF-9I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>Freshman Pauline Tratz has excelled in this event as well. Kyla Ross is steady as always, and Madison Kocian will likely be a fixture after returning to floor midseason. The looming decision to be made for that sixth spot appears to be between Gracie Kramer, Nia Dennis, and Sonya Meraz. It could depend on the meet to see which one draws into the lineup. For regionals, the Bruins don’t necessarily need to score their highest possible, which is why it could pay off to go with the most consistent in Sonya Meraz. For nationals, it will take gymnasts performing to their highest potential to beat the powerhouses. Massive scores are needed, possibly opening the door for the upside start in Gracie Kramer.</p>
+
+<p>Optimal Lineup: Katelyn Ohashi – Felicia Hano – Kyla Ross – Pauline Tratz – Madison Kocian – Gracie Kramer/Sonya Meraz</p>
+
+<h4>
+    <b>Recap</b>
+</h4>
+
+<p>Here are the full lineups listed again.</p>
+
+<p><u>Vault</u>:Felicia Hano – Kyla Ross – Napualani Hall – Nia Dennis – Pauline Tratz – Anna Glenn</p>
+<p><u>Bars</u>:Kyla Ross – Peng-Peng Lee – Nia Dennis – JaNay Honest – Katelyn Ohashi – Sonya Meraz/Madison Kocian</p>
+<p><u>Beam</u>:Peng-Peng Lee – Katelyn Ohashi – Grace Glenn – Kyla Ross – Madison Kocian – Brielle Nguyen</p>
+<p><u>Floor</u>:Katelyn Ohashi – Felicia Hano – Kyla Ross – Pauline Tratz – Madison Kocian – Gracie Kramer/Sonya Meraz</p>
+
+<p>Kyla Ross will be likely be doing all-around, which she has done eight times this year. Interesting storylines to follow include Madison Kocian’s potential return to the bars, and the decision to be made regarding floor lineup. We will see who delivers clutch performances late in the season and how the freshmen handle increased pressure. UCLA will need to be firing on all cylinders to come out of St. Louis with a national championship on April 21st.</p>
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

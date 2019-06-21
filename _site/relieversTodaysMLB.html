@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Relievers in Today's MLB</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                      
+                    
+                  
+                  • 05 Dec 2018 •
+                  
+                    
+                      6 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/relievMLB/pic1.jpg" alt="cover photo"><figcaption>Sports Illustrated</figcaption></center>
+</figure>
+
+<p>In Major League Baseball (MLB), a reliever is defined as any pitcher who is substituted for a starting pitcher to help finish a game. Ideally, even as of a few years ago, relievers were meant to be brought in after the starter had pitched at least 6 or more innings. However, as the game has evolved, relievers have expanded their respective roles. For instance, teams like the Tampa Bay Rays have implemented relievers in a starting role, where the relievers are known as "openers." Starters, who used to go much deeper in the game, are being pulled in the 5th inning--sometimes earlier--more often than ever. After all, starters are limited to a certain number of pitches, meaning that you'll rarely see pitchers venture into triple-digit pitch counts to prevent injuries that may require Tommy John surgery. Consequently, relievers are being used more often and for longer periods of time. But, the volatility amongst MLB relievers hasn't gone away, which means consistency might be hard to find in a reliever. This variability brings about an important question for MLB front offices: is it worth paying extra for free agent relievers in today's game? Through an examination of past and present player salaries and performance, I will try to see whether inflated salaries for relievers are really worth it.</p>
+
+<p>To put it frankly, relievers are receiving all-time high salaries. Front offices are willing to spend top dollar on the best arms available, even if this strategy might be a risky proposition. One good example is how the Colorado Rockies spent over $100 million on just their relievers over the 2018 offseason. That was more than twice the amount they spent on starters! In fact, the Rockies were 1 of 7 MLB franchises to commit more money to their bullpen than their starting pitchers this past offseason. To further demonstrate the increasing value of relievers, I looked at top reliever salaries from the 2011 and 2018 MLB seasons on Spotrac.com.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/relievMLB/pic2.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/relievMLB/pic3.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Here, we see that the top relievers of 2018 received much more money than their counterparts from 2011. For instance, Aroldis Chapman and Kenley Jansen both earned upwards of $80 million contracts in 2018, while the top breadwinner from 2011, Jake Peavy, earned a mere $52 million contract, even though he also started a fair share of games. Moreover, David Robertson, who earned the 5th-most money of 2018 relievers, equaled the earnings of the 3rd highest-paid 2011 reliever, Francisco Cordero. And if we take into account the context of some of these contracts, the results might even be more revealing. After all, David Robertson isn't even an elite reliever on his own team, as the Yankees arguably have better relievers in Aroldis Chapman, Dellin Betances, and Chad Green, among others. On the other hand, all five names listed from the 2011 season were all top dogs in their respective bullpens. This example gives average fans a better idea of just how drastically reliever salaries have shifted upwards over the past few years.</p>
+
+<p>One way to account for the spike in reliever salaries has been their increased usage in games throughout the league. Based on data from fangraphs.com, I created visualizations of total reliever innings pitched and wins from the years 2008-2018 to demonstrate the uptick in reliever usage recently.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/relievMLB/pic4.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Back in 2008, relievers completed just over 15,000 cumulative innings, which was still a lot for that era in baseball. Just look at the 2009 to 2014 seasons, where the cumulative innings pitched by relievers didn't even match the 2008 campaign. However, the most recent four seasons all had dramatic upticks in innings pitched for relievers league-wide. As a result, in the 2018 season, relievers nearly posted a whopping 17,500 innings, which is over 2,000 innings more than in 2008. Correspondingly, we saw many of the same trends with reliever wins. First of all, there was a bit of a lull in wins earned from 2008 all the way up to 2014. However, from 2015 to 2018, there has been a gradual increase in reliever wins. In fact, the ascent from 2017 to 2018 is extremely relevant; after a slight dip from 2016 to 2017, the 2018 season had over 100 more reliever wins than the previous campaign.</p>
+
+<p>Even though reliever usage has definitely increased in recent times, relievers are still extremely volatile. To examine this assumption, I took a look at the 2008 and 2018 seasons for reliever data on fangraphs.com; specifically, I examined earned run averages (ERAs), which are a measure of how effective a pitcher is during his time in games. Since the goal of a pitcher is to allow as few runs as possible, low ERAs are indicative of good pitching. High ERAs, on the other hand, show that the pitcher is rather ineffective.</p>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/relievMLB/pic5.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>To make these scatterplots, I first filtered each season's set of relievers by only including those who have pitched at least 60 innings. This still gives a relatively large pool of relievers, but it doesn't have an excessive amount of guys. Then, I plotted with the x-axis being ERA and the y-axis being IP to find the spreads of ERAs and correlations between ERA and IP for both seasons. For the 2008 season, there were 92 qualifying relievers with 60+IP, yet none of them exceeded 90 IP. The ERAs ranged from 1.33 all the way up to 6.08, but the median ERA was 3.515. The standard deviation of the 2008 ERAs was 1.09, which is pretty high given the relatively low median ERA. As for the correlation coefficient between IP and ERA for the 2008 season, it was a mere 0.07, which demonstrates a very weak correlation between the two variables. Therefore, just because a reliever pitched more innings did not mean that he would be more effective in terms of ERA for the 2008 season. As for the 2018 season, there were 89 qualifying relievers with 60+IP, but unlike in 2008, there were three relievers that exceeded 90 innings pitched. The ERAs also had a similarly wide range to the 2008 season, going from a low of 0.78 to a high of 5.42, while the median was a pedestrian 3.23. So, the ERAs for 2018 relievers are slightly lower than those for 2008 relievers, but the ranges are very comparable. The ERAs of 2018 relievers varied with a standard deviation of 0.90, which suggests that the variability of performance amongst relievers has somewhat declined since 2008, but one would question whether this is enough of a dip in the standard deviation of ERAs to forecast a further decrease in reliever volatility. With respect to the correlation coefficient between the 2018 ERAs and IP, it was -0.14, which again suggests a fairly weak correlation between the two variables. Clearly, reliever performance has a similar level of variability in the 2018 season when compared to relievers from the 2008 season.</p>
+
+<p>Overall, through an examination of reliever data from recent MLB seasons, we saw that although there has been an appreciable increase in both reliever pay and usage on the diamond, there was still too much variability among ERAs and not enough correlation between usage and effectiveness to suggest that relievers should be paid any more than they currently are being paid. No doubt, relievers are changing the game by taking the weight off starters and even opening games at times; this theory would have been shot down even a few years ago, and there are still a fair share of critics who ascribe to old-fashioned baseball and an aberration for all things analytics. And even though ERAs and standard deviations of ERAs have technically lowered since 2008, the variability from reliever to reliever is still too noticeable for front offices to be handing out such large sums of money to middle-of-the-road bullpen guys. Personally, I'd like to see how relievers do over the next few years before making any snap decisions about whether or not they are as effective as some MLB executives believe. Only time will tell if these relievers are worth all the hype.</p>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

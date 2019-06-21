@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Constructing My All-Time NBA Lineup Through K-Means Clustering</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                      
+                    
+                  
+                  • 30 Nov 2018 •
+                  
+                    
+                      15 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/cover.png" alt="cover photo"><figcaption>Original photo courtesy of USA Today. Photoshop courtesy of Cindy Zhu.</figcaption></center>
+</figure>
+
+<p>It's a debate that pervades all cultures, ages and creeds. From every barbershop to lunch table in the world, the question rings: what is your best all-time starting five? Who can construct the best lineup to put on the hardwood using any player from any time?</p>
+
+<p>It's a question that will never have a definitive answer, unless we somehow found the ability to travel through time. We could always do NBA 2K simulations, but we all know about how dubious that game is in mirroring real-life basketball scenarios. The argument is also almost entirely subjective, since there is no definitive consensus on a ranking of NBA players throughout history. Your dream lineup could wildly differ from someone else's based on when you grew up watching basketball, your affinity for statistical analyses of players versus the eye test, a preference of offense over defense (or vice versa), or many other factors.</p>
+
+<p>I figured that I would bring a novel approach to the age-old question by tackling it with some machine learning concepts. K-Means Clustering is an unsupervised algorithm that aims to find k groups in unlabeled data based on feature similarity. Each group, or cluster, that the algorithm creates has a centroid, whose features define each cluster. Thus, each point in the data is grouped based on minimal distance from one of the k centroids. An example of an interesting application of the algorithm is using it to group NBA players with comparable play-styles based on their statistical similarities, as done <a href="https://fastbreakdata.com/classifying-the-modern-nba-player-with-machine-learning-539da03bb824">here</a>. I decided to take it a step further; instead of using all NBA players, what if we only clustered a subset of the absolute best NBA players, then chose players from our clusters of player types to come up with an optimal all-time starting lineup?</p>
+
+<p>First, I scraped basic and advanced statistics from basketball-reference.com from the 1979-80 to the 2017-18 seasons. I used these seasons because the 1979-80 season was the first season where the 3-point line was introduced; thus, all of the advanced statistics for players from that season onwards are complete. Then, I scraped a list of 905 All-Stars from the same range of seasons and matched them up to their season statistics. My rationale in using only the All-Stars for this analysis was to only have the best of the best available for me to ultimately choose my lineup from.</p>
+
+<p>The data had 40 variables, which would have been too many features to use for clustering due to the potential of <a href="http://www.visiondummy.com/2014/04/curse-dimensionality-affect-classification/">overfitting</a> (the model would take into account all of the specific kinks in our data). By principal components analysis, I reduced the 40 variables down to 3; these 3 variables explained 62.42% of the variance in the data. While most would generally reduce the data down to 2 components, the first 2 principal components only explained 49.87% of the variance in the data in this case. Thus, I decided to use an extra component to carry out clustering, even if that meant possibly overfitting the data to some degree.</p>
+
+<p>I then ran the k-means algorithm on the data. I decided on an optimal number of clusters of 7 via silhouette scores, which tell us how close a given point in a cluster is to its neighboring clusters. Since we want the clusters to be partitioned well, we want clusters to be further away from neighboring clusters, and therefore want a high average silhouette score, which was achieved with 7 clusters. Here is a visualization of the clusters in a 3-dimensional space, plotted based on the 3 principal components:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/pic_1.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+
+<p>The algorithm partitioned the players into 7 cluster of sizes 186, 115, 153, 75, 139, 95, and 142. These clusters measured 70.9% of the variance in the data (between sum of squares/total sum of squares ratio). I decided to look through the players in each cluster to get a sense of the kinds of players that the algorithm grouped together. Also, to help understand the clusters better, I found the players closest to the centroid of each cluster (through minimum Euclidean distance) to see which kinds of players were closest to the defining features of that cluster. Here are my summarized results:</p>
+
+<h4><b>Cluster 1: Either Not There Yet, or Already Been There</b></h4>
+
+<p>Closest-to-Centroid: <i>Eddie Johnson (1981)</i></p>
+
+<p>Notable Players: <i>Allen Iverson (2009), Carmelo Anthony (2015-17), Clyde Drexler (1986, 93-94, 96), Dennis Johnson (1980-82, 85), Dwyane Wade (2014, 16), Isiah Thomas (1982, 87-92, 93), Jason Kidd (1998, 2000-02, 04, 08), Joe Johnson (2007-11, 14), John Wall (2014-16), Kobe Bryant (1998, 2016), Kyrie Irving (2013-14), Julius Erving (1986-87)</i></p>
+
+<p>This cluster features a lot of players who were either young at the time and had not quite reached their apex (such as younger versions of Kobe, Isiah Thomas and Kyrie Irving) or old and declining (such as Dr. J and Allen Iverson in their last few seasons, and the Carmelo Anthony of recent years). Still, there are some pretty great players here, like Jason Kidd and Isiah Thomas in their respective primes.</p>
+
+<h4><b>Cluster 2: Cream of the Crop Big Men</b></h4>
+
+<p>Closest-to-Centroid: Annalittucks, Erneh!!!!!! (<i>Charles Barkley, 1995</i>)</p>
+
+<p>Notable Players: <i>Anthony Davis (2014, 17-18), Charles Barkley (1987-90, 92-93, 95-96), David Robinson (1990-96, 98, 2000), Hakeem Olajuwon (1985-90, 92-96), Kareem Abdul-Jabbar (1980-83, 85), Karl Malone (1988-89, 91-98, 2000), Kevin Garnett (2003-06), Moses Malone (1981-83, 85), Patrick Ewing (1989-92, 94), Shaquille O'Neal (1993-96, 98, 2000, 03-06), Tim Duncan (1998, 2000-05, 07)</i></p>
+
+<p>Now, here is a cluster with some exciting results. The common thread that connects this group is fairly obvious: very high-quality big guys. You really couldn't go wrong with any choice here, as there are tons of dominant, MVP-caliber behemoths.</p>
+
+<h4><b>Cluster 3: Not-as-Good Big Men</b></h4>
+
+<p>Closest-to-Centroid: <i>Marques Johnson (1986)</i></p>
+
+<p>Notable Players: <i>Amar'e Stoudemire (2009-11), Blake Griffin (2011-13), Chris Bosh (2006-08, 10-12), Chris Webber (2000-02), Jack Sikma (1981-85), James Worthy (1981, 86-89, 90), Jermaine O'Neal (2002-05, 07), Joel Embiid (2018), Kevin McHale (1984, 89-91), Kevin Garnett (1997-98, 2000-02, 07), LaMarcus Aldridge (2012-16, 18), Larry Bird (1980-81), Moses Malone (1986-89), Patrick Ewing(1988, 93, 95-96), Tim Duncan (2006, 2008-10, 13) Yao Ming (2006, 08-09)</i></p>
+
+<p>There is a clear talent gap here in comparison to the previous cluster. Not only do we see inferior players here, but we also see some repeats of players in their statistically less productive seasons. Still, just as with cluster 1, there are still some great players here (like one of my favorite players of all time, <a href="https://www.youtube.com/watch?v=M5px4_cy_Qw">Chris Bosh</a>).</p>
+
+<h4><b>Cluster 4: Jacks of All Trades</b></h4>
+
+<p>Closest-to-Centroid: <i>Chris Mullin (1990)</i></p>
+
+<p>Notable Players: <i>Chris Paul (2008-09), Dirk Nowitzki (2003, 05-07), Dwyane Wade (2006-07, 09-11), Gilbert Arenas (2006), Grant Hill (1997), James Harden (2013, 15-18), Kawhi Leonard (2017), Kevin Durant (2010, 12-14, 16-18), Kobe Bryant (2003, 06-08), Larry Bird (1985-88), LeBron James (2005-18), Magic Johnson (1987, 1990), Michael Jordan (1985, 87-97), Russell Westbrook (2015-17)</i></p>
+
+<p>Here are some of the guys that the basketball world would consider some of the most elite, MVP-calibre players in the history of the game. Most of these players are guard/wing types, with the exception of the occasional Dirk Nowitzki (who, in many ways, statistically resembles a wing player in his scoring methods). Just as with cluster 2, most choices here are respectable stars.</p>
+
+<h4><b>Cluster 5: Pure Scorers</b></h4>
+
+<p>Closest-to-Centroid: <i>Jim Paxson (1983)</i></p>
+
+<p>Notable Players: <i>Allen Iverson (2000-06, 08), Carmelo Anthony (2007-08, 10-14), Clyde Drexler (1988-91), Demar DeRozan (2016-18), Dirk Nowitzki (2002, 04, 08-11), Dominique Wilkins (1986-91, 93-94), George Gervin (1980-84), Gilbert Arenas (2007), Kobe Bryant (2001-02, 04-05, 09, 11-13), Larry Bird (1984, 90), Michael Jordan (1998, 2002), Paul Pierce (2002-03, 06), Russell Westbrook (2011-13, 18), Stephon Marbury (2001), Steve Francis (2003), Tracy McGrady (2001-02, 04-07), Vince Carter (2000-01, 05-07)</i></p>
+
+<p>In this cluster, we have a good amount of high volume scorers in their primes. In today's environment of NBA analysis where efficiency is heralded as king, I think this list of players would give Advanced NBA Twitter a collective aneurysm. Still, many of these players are bonafide studs, and a volume scorer can serve a great function on a team (especially in an all-time lineup, where we can assign their roles to our liking).</p>
+
+<h4><b>Cluster 6: Defensive Bigs</b></h4>
+
+<p>Closest-to-Centroid: <i>Chris Bosh (2014)</i></p>
+
+<p>Notable Players: <i>Alonzo Mourning (2002), Andre Drummond (2016, 18). Ben Wallace (2004-06), Bill Laimbeer (1983-84, 87), Charles Oakley (1994), Chris Bosh (2013-14), Dennis Rodman (1990, 92), Dikembe Mutombo (1992, 95-98, 2000-02), Draymond Green (2016-18), Dwight Howard (2007, 13-14), Joakim Noah (2013-14), Kevin Garnett (2009, 10-11, 13), Robert Parish (1985-87, 90-91), Shaquille O'Neal (2007, 09), Tim Duncan (2011, 15)</i></p>
+
+<p>A lot of the players we look back on for their defense pop up here, including Charles Oakley, Dennis Rodman, Bill Laimbeer and Ben Wallace. It is also interesting to note that some great big men in the later stages of their careers are present, such as past-their-primes Kevin Garnett and Tim Duncan. This makes sense, as a defensive-minded big is often the role a once-marquee big man plays once they take a backseat from their previous alpha role on a team.</p>
+
+<h4><b>Cluster 7: 3&D(istributor?)</b></h4>
+
+<p>Closest-to-Centroid: <i>Peja Stojakovic (2002)</i></p>
+
+<p>Notable Players: <i>Chauncey Billups (2006-10), Chris Paul (2011-16), Damian Lillard (2014-15, 18), Deron Williams (2010-11), Gary Payton (1995-98, 2000), Gordon Hayward (2017), Jimmy Butler (2015), John Stockton (1989-97, 2000), Kemba Walker (2017-18), Klay Thompson (2015-16), Kyle Lowry (2016-18), Kyrie Irving (2015, 17-18), Magic Johnson (1980, 83-86, 88, 91), Paul George (2014, 16, 18), Paul Pierce (2005, 08, 10-11), Peja Stojakovic (2002-04), Ray Allen (2000-02, 04-06, 08-09, 11), Reggie Miller (1990, 95-96, 98, 2000), Scottie Pippen (1995-97), Stephen Curry (2014-15, 17-18), Steve Nash (2002-03, 05-06, 08, 10, 12)</i></p>
+
+<p>This was probably the most fascinating cluster, as it had a mix of two somewhat distinct player types: distributors and 3&D wings. To further investigate, I carried out a method recommended by <a href="https://medium.com/square-corner-blog/so-you-have-some-clusters-now-what-abfd297a575b">this article</a> to extract feature importance in clusters. First, I constructed a random forest model that predicted the probability of every player belonging to the 7th cluster. Then, using a built-in function in the randomForest library in R, I saw which variables were most important in construction of the model. This showed me that in determining whether a player was in the 7th cluster or not, the two most important variables were 2 Pointers Attempted Per Game and 3-Point Attempt Rate (percentage of field goal attempts that were 3-pointers). Here are boxplots of those variables across all clusters:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/pic_2.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/pic_3.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>As we can see, in most cases, players in cluster 7 took less 2-pointers than players in other clusters, and generally took far more 3-pointers than players in other clusters. Generally, floor generals might not take as many 2-pointers as other players since they are looking more to move the ball than score for themselves. However, they are often good spot-up shooters from the arc, since those are the open shots they get when the defense collapses. On the other hand, a sniper from 3-point land will obviously be more inclined to take more 3-pointers and less 2-pointers to help their team with that sweet extra point. Thus, it makes sense that the clustering algorithm would group dimers and 3-point specialists together.</p>
+
+<p>After making sense of each cluster, I had to choose the five clusters that I would pick players from for my ultimate starting lineup. I did not consider players from clusters 1 and 3 in my lineup construction, since the players in those clusters were either inferior to players in other clusters or displayed redundant skillsets. Here are my picks:</p>
+
+<h4><b>G: Magic Johnson (1986)</b></h4>
+
+<p><i>Cluster 7: 3&D(istributor?)</i></p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/pic_4.png" alt="picture 1" style="max-width: 95%;"><figcaption>Peter Read Miller, Sports Illustrated</figcaption></center>
+</figure>
+
+<p>Magic Johnson is, indisputably, one of the greatest point guards of all time. I wanted a floor general from my lineup who is not only an excellent passer but can also completely shut down the opposing point guard on defense. At 6'9 and 215 pounds, and a season where he lead the league in assists, Magic fits the perfect mold for my team's point guard.</p>
+
+<h4><b>G: Michael Jordan (1996)</b></h4>
+
+<p><i>Cluster 4: Jacks of All Trades</i></p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/pic_5.png" alt="picture 1" style="max-width: 95%;"><figcaption>Walter Iooss Jr., Sports Illustrated</figcaption></center>
+</figure>
+
+<p>This was a tough one, and likely a divisive pick. Cluster 4 had absolutely excellent players, with the two highlights being LeBron James and Michael Jordan in their prime seasons. Now, my picking of MJ over LeBron here is not representative of my stake in the GOAT debate. I just thought that for this team, LeBron's talents might not be the greatest fit with Magic at the helm, especially considering how supremely talented they both are as passers. For my second guard spot, I valued a guy who could score from anywhere on the floor, no matter who is guarding him or what the time on the clock is. I think no one in the history of basketball fits this profile better than Michael Jeffrey Jordan (in my <a href="https://www.youtube.com/watch?v=Lk6uKC4nJ-U">Skip Bayless voice</a>). And what better version of MJ to pick than him in the 1995-96 season, when he lead the Bulls to a legendary 72-10 record and finished the job in the playoffs (<a href="https://www.youtube.com/watch?v=wgVOgGLtPtc">something that a certain other team couldn't do</a>).</p>
+
+<h4><b>F: Larry Bird (1984)</b></h4>
+
+<p><i>Cluster 5: Pure Scorers</i></p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/pic_6.png" alt="picture 1" style="max-width: 95%;"><figcaption>Focus on Sport/Getty</figcaption></center>
+</figure>
+
+<p>I really wanted a player here who could play the ultimate second banana to Michael Jordan. I wanted the absolute peak form of the 3&D archetype, so that this lineup could have one player who could always be a consistent scorer on the wing via spot-up shooting or the occasional iso, so as to lay some of the stress off MJ. Think of Klay Thompson, but on steroids. To fill this role, I took 1984 MVP Larry Bird. In looking at the players in the "Pure Scorers" cluster, the Laker stan in me really wanted to take the rightful MVP of the 2006 NBA season, Kobe Bryant. However, Bird was the better shooter, would likely be more willing to accept a secondary role on a team, and also had a bigger body to guard opposing wings. Am I relegating Larry Bird to a role that is far beneath his belt? Perhaps. But I feel putting him in a position like this would maximize his talents to the nth degree, since he would not have to carry the load he was used to on this team.</p>
+
+<h4><b>F: Draymond Green (2017)</b></h4>
+
+<p><i>Cluster 6: Defensive Bigs</i></p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/pic_7.png" alt="picture 1" style="max-width: 95%;"><figcaption>The Associated Press</figcaption></center>
+</figure>
+
+<p>Here is my truly controversial pick. I definitely wanted a player from the "Defensive Bigs" cluster in my lineup, since having a good defender in the interior is so important in the NBA game. However, I wanted someone with at least a little bit of offensive prowess, just so that he could hit the occasional three or make a nice wing pass every once in a while. Thus, I narrowed my selections down to Draymond Green and Robert Parish. From here, I had to decide which I valued more: a defensive Swiss Army knife with good passing ability or a quick paint presence who could stretch the floor. Ultimately, I went with 2017 Defensive Player of the Year Draymond Green. I am certainly influenced by the "switch everything" philosophy that has permeated basketball in recent years, but I do think it is a sound defensive strategy that is bound to lead to success. And with this lineup, we now have four relatively big-bodied players who can switch 1-4 pretty easily, anchored by <a href="https://www.youtube.com/watch?v=C7KICA7KNqs">one of the smartest, most vocal defensive leaders</a> I have personally witnessed play basketball. On top of his defensive prowess, he can also step out beyond the arc every now and then, and also make some <a href="https://www.youtube.com/watch?v=ruEfcAgebzU">truly excellent passes</a> in the flow of the offense.</p>
+
+<h4><b>C: Shaquille O'Neal (2000)</b></h4>
+
+<p><i>Cluster 2: Cream of the Crop Big Men</i></p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/pic_8.png" alt="picture 1" style="max-width: 95%;"><figcaption>Andrew D. Bernstein, Getty Images</figcaption></center>
+</figure>
+
+<p>One of the most dominant big men of all time. Need I say more? Shaquille O'Neal, in his MVP season, was a force to be reckoned with on both ends of the floor. Having Shaq in the paint is one of the best insurance policies this lineup could have. Jordan and Bird both having off nights? Feed the ball to Shaq down low and let him feast. In his prime, Shaq could also <a href="https://youtu.be/tGHv_Mst5P8">hold his own against some of the greatest big men of all time</a>.  A crafty player somehow gets through the rotating carousel of my four elite defenders? Let him try to finish over Shaq in the paint. Especially given that this was the season he turned up his defensive intensity and earned his first NBA All-Defensive Team selection, he would be quite menacing for opposing players near the basket.</p>
+
+<p>Overall, I think my lineup would stack up well against anyone else's all time starting five. On the offensive side, I have three of the most dominant bucket-getters in the history of basketball in Jordan, Bird and Shaq, arguably the greatest floor general of all time in Magic and an excellent secondary distributor to keep the ball rolling in Draymond. On the defensive end, I have four of the smartest and most tenacious defenders to ever play the game, with enough size to seamlessly switch onto any guard or forward thrown at them, PLUS The Big Aristotle lurking in the paint. I promise you, no one is scoring on this lineup.</p>
+
+<p>If we go by the clusters, my lineup has an amazing distributor, a jack of all trades, a pure scorer, a defensive big and a cream-of-the-crop big. If this isn't a formula for a wonderfully balanced all-time starting lineup, I don't know what is. I am quite pleased with the team I have constructed, and would be willing to take on a debate with any challengers who have a starting five that they think could beat mine.</p>
+
+<p>Really though, <i>who is scoring on these guys?</i></p>
+
+<p>If you're interested in my code, you can check it out <a href="https://github.com/nikhil348/K-Means-Article">here</a>. I've included my data as well, so that you can take a stab at this and try to construct a lineup to rival mine if you'd like.</p>
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

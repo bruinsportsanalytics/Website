@@ -1,0 +1,15 @@
+- title: Blog
+  url: /blog/index.html
+  permalink: /blog/
+- title: Research
+  url: /research/index.html
+  permalink: /research/
+- title: About
+  url: /about/index.html
+  permalink: /about/
+  sublinks:
+    - title: Officers
+      url: /officers/index.html
+    - title: separator
+    - title: Speakers
+      url: /speakers/index.html

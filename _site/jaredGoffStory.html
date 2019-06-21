@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Bust to Beast: The Jared Goff Story</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/anirudhmani">Anirudh Mani</a>
+                      
+                    
+                  
+                  • 29 Nov 2018 •
+                  
+                    
+                      10 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <p>Jared Goff's rookie year was anything but positive. After taking nearly half of the season to earn the starting job, his performance caused major concern for the future. As noted in a May 2017 <a href="http://www.rotoworld.com/articles/nfl/72405/57/nfls-best-qb-situations-2017?pg=3">Rotoworld article</a>, Goff's rookie season was historically bad: "Of the 49 rookie quarterbacks to make at least seven starts since 2000, Goff posted the fourth-lowest touchdown total (five), sixth-lowest YPA (5.31), 15th-worst QB rating (63.6) and 22nd-worst completion percentage (54.6)." Coming into the 2017 NFL football season, some even postulated that new coach Sean McVay might select QB Sean Mannion to lead the team.</p>
+
+<p>Two years later, and the narrative surrounding Goff has changed tremendously. Not only is he at the helm of the new generation of a great Rams offense, but his numbers are also at the top of the league. In addition to grading out as the 3rd best quarterback by Pro Football Focus (behind Drew Brees and Patrick Mahomes), Goff is 3rd in QBR, Yards Thrown, and Yards per Attempt. Even as part of a star studded team which boasts Todd Gurley, Aaron Donald, and Brandin Cooks, Goff is third in MVP odds at +1600.</p>
+
+<p>With such a rapid improvement in quarterback performance, there are many possible explanation for such success. It seems clear that while the improvements in skill position talent and scheme have allowed Goff to flourish, he has also seen a natural progression in performance that showcases the talent that got him drafted number one overall.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/goffStory/pic_1.png" alt="picture 1" style="max-width: 95%;"><figcaption>Todd Gurley and Robert Woods are two of Goff's biggest weapons in a stacked offense</figcaption></center>
+</figure>
+
+<h4><b>Theory #1: Goff is a product of the playmakers around him</b></h4>
+
+<p>When a quarterback has both the Offensive Player of the Year (Todd Gurley) and Defensive Player of the Year (Aaron Donald) on their team, it would seem likely that their success is largely based on the skill players around them. In fact, when Goff began to succeed in the 2017 season, much of his role seemed to be due to handing the ball off or throwing screen passes to Gurley.</p>
+
+<p>However, Goff's role in the offense is far larger than handoffs, bubble screens and short passes. In fact, according to Pro Football Focus, Jared Goff leads the NFL this season with 29 "big time throws", which are throws that "require special ball placement and timing down the field." Another great statistic that indicates that Goff is not simply a dink and dunk player is the Next Gen Stat "Air Yards to the Sticks." This statistic indicates how far in the air a quarterback throws the ball beyond the first down marker.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/goffStory/pic_2.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>The variable dAYTS represents the change in the statistic over the last two years (between Goff's rookie year and current year), and the graph shows all quarterbacks over the last two years. While this is not a great measurement of quarterback performance, since it measures attempts rather than completions, it does show that Goff is pushing the ball further down the field rather than sticking with short throws.</p>
+
+<p>When looking at the actual number, Goff went from -2.1 to 0.0 in AYTS, exhibiting a huge jump of 2.1 air yards. What's most important to note regarding this is that even as the skill of the position players around Goff has improved, the throws he has started to attempt have been further down the field. Usually, a system quarterback with good skill position players will have a negative AYTS because they will rely on the skill player to gain the yards. To contrast with Goff, you can look at Eli Manning's value of -2.3 AYTS this year. While both players have dynamic running backs with pass catching ability (Gurley and Barkley) as well as talented receivers (Beckham and Cooks), Manning's AYTS is 2.3 yards lower than Goff's. This shows that Goff has innate skill in his game that is outside the talent around him.</p>
+
+<p>General Manager Les Snead made a key move during the 2017 NFL offseason by signing All-Pro tackle Andrew Whitworth. Coming off a season in which tackle Greg Robinson gave up 8 sacks and 40 QB pressures on pass blocking plays (according to <a href="https://www.profootballfocus.com/news/pro-ranking-all-32-nfl-offensive-lines-this-season">Pro Football Focus</a>), the Rams recognized the need to protect their young quarterback. The improvement of the line has been clear, as they currently rank as the <a href="https://www.profootballfocus.com/news/pro-2018-nfl-offensive-line-rankings-all-32-teams-units-after-week-12">number 2</a> overall offensive line unit in the league according to Pro Football Focus. The biggest beneficiary of the improved offensive line has been Jared Goff, specifically in the amount of time he has to throw.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/goffStory/pic_3.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+
+<p>With a greater amount of time to throw, quarterbacks are able to sit back in the pocket and make better throws. While not all great quarterbacks need time to throw, allowing them to be in a pocket with more time and less pressure is usually a recipe for success. Therefore, while Goff has improved his own game in terms of decision-making and down the field throwing, he has also benefited from improved offensive line personnel.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/goffStory/pic_4.png" alt="picture 1" style="max-width: 95%;"><figcaption>Head Coach Sean McVay has helped turn around Goff's career</figcaption></center>
+</figure>
+
+<h4><b>Theory #2: Goff is a product of the McVay's Offensive Scheme</b></h4>
+
+<p>Sean McVay, hired as the youngest ever head coach in 2017, quickly turned around the offense. After concerns over a limited track record, McVay silenced the critics by turning the Rams from the lowest scoring offense in 2016 to the highest scoring offense in 2017, a historically unprecedented improvement. With Goff improving under McVay's system, the media rushed to categorize Goff a "system quarterback". However, McVay himself has scoffed at the claim, stating Goff does the majority of the on the field work: "<a href="https://www.therams.com/news/goff-unbothered-by-talk-of-system-qb">He's making the throws, he's making the calls at the line of scrimmage, he's making the calls in the huddle.</a>" The best way to determine how much of Goff's success is due to McVay is to compare his performance with a previous quarterback's performance with McVay at the helm. The following graph compares Kirk Cousins' 2016 season (with McVay as Offensive Coordinator) with Jared Goff's 2018 season.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/goffStory/pic_5.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>The graph indicates that Goff is a statistically superior version of Cousins in nearly every category. Goff has nearly identical Aggressiveness and Completion Percentages, but has a greater Rating and QBR. DVOA and VOA, statistics measuring a quarterbacks performance against a defense compared to a theoretical backup, also conclude that Goff has performed at a greater level than Cousins. However, it should be stated that part of this better performance can be attributed to the better talent surrounding Goff.</p>
+
+<p>A perfect example of the combination between McVay's offensive scheme marrying Goff's precision passing came in the earlier this year in a Thursday Night Football game against the Minnesota Vikings. After faking the handoff to Todd Gurley, Goff waits in the pocket while reading the defense. Soon, he sees Cooper Kupp streaking down the field covered by linebacker Anthony Barr. Recognizing the mismatch, Goff catches Kupp perfectly in stride as he runs in for a touchdown.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pGtHAWxEtSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>McVay's offensive genius used Gurley to bait the defensive line into thinking it was a run play, while sending other wide receivers Robert Woods and Brandin Cooks streaking towards the left side of the field. Gurley, running a wheel route, drew safety Harrison Smith, which opened up the entire right side of the field to Kupp. However, Goff still needed to place the ball correctly in order to allow Kupp to make the catch and score. McVay deserves credit for putting Goff in a position to succeed, but by no means does he baby him with an offense any quarterback could execute. Rather, McVay has crafted an offense that maximizes the abilities of Goff.</p>
+
+<h4><b>Theory #3: Goff has independently improved over the last two years</b></h4>
+
+<p>Turn on the tape of Goff as a rookie and you'll see a player who is making erratic short throws, running for his life, and forcing the issue. Watch the tape of Goff this year and the change is dramatic. Goff stands with poise, fires dimes, and nearly always makes the right read.</p>
+
+<p>One statistic that can show this change is the next generation statistic known as "Aggressiveness Percentage." According to the Next Gen Stats glossary, "aggressiveness tracks the amount of passing attempts a quarterback makes that are into tight coverage, where there is a defender within 1 yard or less of the receiver at the time of completion or incompletion." Therefore, aggressiveness is a good measurement of proper decision making, as an aggressive quarterback takes more risks and therefore has a greater chance of turning the ball over.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/goffStory/pic_6.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>Over the last two seasons, Goff has had one of the sharpest drops in aggressiveness. He went from leading the league with more than one-fourth of his passes being within 1 yard or less of a defender to a reasonable 14.7% in 2018. This would indicate that Goff has become more comfortable with his offense and is not forcing passes into tight windows.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/goffStory/pic_7.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+	
+
+
+<p>In addition to being less reckless with the football, Goff's passer rating has improved by nearly 50 points over the last two years. Once again, his improvement leads all quarterbacks over the two year period. The basic formula for passer rating attempts to maximize touchdowns, completions and yards while minimizing attempts and interceptions. On a more holistic level, Goff's quarterback performance has gone from one of the worst in the league to one of the best in the league.</p>
+
+<p>One play that truly shows the improvement Goff has made from his rookie season came in a week 4 game against the Minnesota Vikings. Rather than throw the ball out of bounds or overshoot the receiver, Goff floats a spiraling ball over two defenders right into the hands of Cooper Kupp for the touchdown.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/_zyUKe7u9Ws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>That play highlighted the marquee game of Goff's young career. Putting up a statline of 465 yards on 26 completions, 5 touchdowns and 0 interceptions, Goff became the 70th quarterback in NFL history to earn a perfect passer rating in a game. Even more impressive, according to a <a href="https://twitter.com/ESPNStatsInfo/status/1045513608426184704?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1045513608426184704&ref_url=https%3A%2F%2Ftwitter.com%2FESPNStatsInfo%2Fstatus%2F1045513608426184704">tweet by @ESPNStatsandInfo</a>, Goff was the first quarterback to throw 400+ yards and 5 TD on 3 days of rest. No matter how good an offensive scheme is, pure talent is necessary to put on a performance like that.</p>
+
+<p>The article attempted to find a totalizing theory for Goff's rapid improvement, but the truth of the matter is that all have validity. It's obvious that surrounding Goff with a better offensive line, more explosive wide receivers, and a stacked defensive line will improve his numbers. However, similar talent situations exists on other teams (such as Dallas and New York), and those teams clearly do not have the same level of success. Obviously having a genius mind like Sean McVay calling the shots allows Goff to be put in good schematic situations with easy reads and throws. However, Goff still represents an improvement over McVay's previous quarterback, Kirk Cousins. In addition, Goff's abysmal rookie season has several confounding variables- an incompetent head coach, a lack of an offensive line and terrible game scripts that forced Goff to make plays he wasn't able to. Any quarterback could have success under McVay's system, but Goff's performance doesn't fit the mold of a system quarterback. He has been able to transcend defensive schemes and produce big plays, something he couldn't do before. Therefore, Goff's improvement is a combination of the talent and coach around him along with the innate skill he possesses as a franchise quarterback.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/goffStory/pic_8.png" alt="picture 1" style="max-width: 95%;"><figcaption>Goff celebrates a touchdown in a Rams win over Kansas City in Week 11</figcaption></center>
+</figure>
+
+<p>Jared Goff may not have the arm talent of Patrick Mahomes, the dual-threat ability of Deshaun Watson, or the toughness of Carson Wentz, but the Rams did not make a mistake by using their first overall pick on him in the 2016 draft. He has shown massive improvement, topping the league in terms of change in nearly every single statistical category. The Rams have their quarterback for the future, and their window for a Super Bowl run is wide open.</p>
+
+<p><i>*Next Gen Stats as of Week 10 in the 2018 NFL Season</i></p>
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

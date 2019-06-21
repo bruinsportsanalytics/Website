@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">The issues with the Duckworth-Lewis-Stern Method</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/vedantsahu">Vedant Sahu</a>
+                      
+                    
+                  
+                  • 28 May 2019 •
+                  
+                    
+                      10 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/cover.jpg" alt="cover photo"><figcaption>Jonny Bairstow batting against Chennai Super Kings in an IPL 2019 game (Credits: in.com)</figcaption></center>
+</figure>
+
+<p>With the Indian Premier League wrapped up and the ICC World Cup just on the horizon, the cricket fever is definitely reaching its peak. As more and more people turn towards cricket to keep themselves entertained over the summer, it is probably safe to say that people who have been newly introduced to the sport won’t find it particularly easy to follow. While cricket is an already complicated game to begin with, there is one notorious component of the game that even most seasoned cricket fans fail to completely grasp - the Duckworth-Lewis-Stern (DLS) method.</p>
+
+<h3>What is the Duckworth-Lewis-Stern Method?</h3>
+
+<p>At the heart of it, cricket is all about scoring more runs than the opponent. While test cricket has more flexibility in how this can be achieved, limited overs cricket (ODIs and Twenty-20s) is more straightforward in terms of the objective of the game. You have a certain number of overs available to you and you try to score as many runs as you can. Where the DLS method comes in is in the event of any interruptions during the game, most likely rain, which restricts the match from being completed in its entirety. In such a scenario, the number of overs that either one or both of the teams will face is adjusted, in order to finish the game in time, and the DLS method is used to accordingly adjust the score that the team batting second would require to win.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic1.jpg" alt="picture 1" style="max-width: 95%;"><figcaption>Frank Duckworth and Tony Lewis (Credits: The Telegraph)</figcaption></center>
+</figure>
+
+<p>The DLS method is based on the principle that in a limited overs match, a team has two ‘resources’ available to them. The first one is the number of overs that they still have to face and the second is the number of wickets that they have left. It is easy to see that a team’s final score is strongly dependent on how many resources they have left at a particular stage of the game. Obviously, a team with more overs left will face more deliveries, and hence will have more chances to score. As for the wickets remaining, a team with more wickets can afford to take more risks and bat more aggressively, hence boosting their score.</p>
+
+<p>These two points manifest themselves in a resource table, which provides the percentage of resources that a team has at different points of the game. Another peculiarity of cricket shows up here because in all international and first-class matches, the ‘Professional Edition’ of the system is used, which is not publicly available. Due to the presence of such a black box in the DLS calculations, I’m restricted to the use of the ‘Standard Edition’ for my analysis. The difference between these is that the ‘Professional Edition’ takes into account the score of the team batting first and makes slight adjustments to the resource table accordingly, while the ‘Standard Edition’ doesn’t take this into consideration. The ‘Standard Edition’ showed huge deviations in high scoring games and the switch to the ‘Professional Edition’ has helped fix this issue.</p>
+
+<p>The DLS method was formulated to be used for 50-over games, but with the inception of the now incredibly popular Twenty-20 (T20) format, the method has been used in this format of the game as well. While it was devised considering the moderate scoring rates in 50-over games, the fact that the same formulation is being used for the much more explosive 20-over format does raise some concerns and this is exactly what I hope to investigate in this article. The relative importance of wickets and overs remaining was calibrated for the 50-over format and critics often point out that wickets are relatively less valuable in the shorter format of the game, making the DLS method less accurate. The ‘Standard Edition’ resource table scaled for a T20 game is shown below.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic2.jpg" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<h3>How is the Duckworth-Lewis-Stern Method used?</h3>
+
+<p>The DLS Method is based around this straightforward equation:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The par score is the number of runs that the team batting second has to score in order to tie the game up. For instance, a game between Rising Pune Supergiants and the Kolkata Knight Riders during IPL 2016 was interrupted by rain at the end of the 18th over during Rising Pune Supergiants’ innings due to which Kolkata Knight Riders could only bat for 9 overs. As a result, their target was reduced to 66. This is slightly higher than a target of 61, which is what would have been obtained using the ‘Standard Edition’.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic4.png" alt="picture 4" style="max-width: 95%;"><figcaption>Scorecard for the game (Credit: ESPN Cricinfo)</figcaption></center>
+</figure>
+
+<h3>How effective is the Duckworth-Lewis-Stern Method?</h3>
+
+<p>Looking at the <a href="https://www.kaggle.com/imrankhan17/t20matches">dataset of over 6000 Twenty-20 matches played between 2003 and 2017</a>, we can see that the split between the games won by teams batting first and those won by the team fielding first is pretty even. This holds true even for games which were interrupted due to rain and required the use of the DLS method.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic5.jpg" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>But when we focus just on the games played in the <a href="https://www.kaggle.com/manasgarg/ipl">Indian Premier League between 2008 and 2018</a>, we see a huge disparity in the split. While the games played under normal conditions are more or less equally distributed in terms of whether teams batting first or second got the spoils, when we look at the matches in which the DLS method came into play, the team fielding first alarmingly won 74% of the time. It is important to note that this is based on a small sample size of merely 19 games, but the fact that this divide is present, does point towards a systemic issue in the DLS method which fails to account for the explosiveness and rapidly fluctuating nature of a T20 game.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic6.jpg" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The original Duckworth-Lewis Method used a score of 245 as the average score in a 50-over game in its formulation. This translates to a run rate (average runs scored per over) of 4.90. Looking at the first innings scores for Indian Premier League games, we see that the average runs scored is 162.11, which translates to a run rate of 8.11. This is significantly higher than what the norm was when Duckworth and Lewis came up with their formulation. This does give some validity to the argument made about the number of overs remaining being a significantly more valuable resource in a T20 game than it is in its 50-over counterpart. The boxplot below shows just how high the scores in T20 games can get.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic7.jpg" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>To get a better sense of whether the resource table fits well for a T20 game, I used data from the IPL games to see what the DLS method predicted the score to be for teams batting first based on the resources they had left at the end of the first half of their innings, i.e. 10 overs. The scores that the teams batting second achieved have been ignored because their strategy is often dictated by what the target is. For instance, a team chasing a lower target might chose to play conservatively and score at a rate slower than they normally would. Hence, they don’t provide an accurate representation of a team’s use of its resources.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic8.jpg" alt="picture 8" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>For a fair and accurate system, one would expect the predicted scores to be close to the actual scores and the error (actual score - predicted score) to have a mean near 0 along with a small standard deviation. While the scatterplot looks pretty evenly distributed, an in-depth analysis shows that the DLS method underestimated the final score in a staggering 59.39% of the games. The histogram, which shows the distribution of the error, does follow a Gaussian distribution, but it is easily noticeable that it is not centered around 0. The mean of the error is actually 4.44, which is pretty impressive, but the standard deviation comes out to be a disappointing 26.29. These predictions are based on the Standard Edition and even though the Professional Edition will allegedly provide better results, this does point towards systemic errors in the DLS method vis-à-vis its use in T20 games.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic9.jpg" alt="picture 9" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Another criticism that the DLS method faces is that it fails to account for the individuality of the players. A loss of wicket is treated the same in terms of the resources lost regardless of the player who was actually dismissed. This is not representative at all of what transpires over the course of an actual game. An in-form, experienced batsman is likely to do way more damage and both the teams are aware of this fact. The dismissal of a set batsman who’s been at the crease and been performing well can turn the game completely on its head, whereas the loss of the wicket of someone who isn’t at the top of his game will probably won’t have that deep of an impact on the game. So the fact that the DLS method provides equal weights to each batsman is slightly troubling.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic10.png" alt="picture 10" style="max-width: 95%;"><figcaption>David Warner's contribution to Sunrisers Hyderabad's 2019 IPL total</figcaption></center>
+</figure>
+
+<p>Looking at the most recent season of the Indian Premier League, we can see that David Warner, who was the highest run scorer in the tournament, was responsible for an impressive 35.5% of his team’s total score in the 12 games that he played. Similarly, Kings XI Punjab’s K.L. Rahul alone scored 24.4% of the 2429 runs that the team accumulated over their 14 games. Taking into consideration the enormous contributions that these players made to their teams, it does seem unfair that the DLS assigns a weight of only a few percent to their wickets. A similar argument could be made for bowlers as well. Jasprit Bumrah’s brilliant bowling at the death was a key factor in Mumbai Indians’ winning performances. So the fact that his over is just as valuable as that of any other bowler shows another considerable discrepancy in the DLS method.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/duckworth/pic11.png" alt="picture 11" style="max-width: 95%;"><figcaption>K.L. Rahul's contribution to Kings XI Punjab's 2019 IPL total</figcaption></center>
+</figure>
+
+<h3>So what can be done?</h3>
+
+
+<p>The DLS Method is certainly an improvement on its predecessors, but that does not excuse the inherent issues that it has. With so much data being kept track of, building a system which incorporates batsmen’s strike rates, bowlers’ economy, and their averages is becoming more and more feasible. At least in the highest level of the game, making use of the numerous statistical tools and the plethora of available player and match data seems to be a logical step. Granted this would make the system even less transparent and more complex to understand, the stakes are so high that it surely warrants an attempt. Cricket is a sport where the tide can turn in a matter of a few deliveries, so it is obviously near impossible to account for each and every scenario. However, that does not mean that the current system cannot be improved. An overhaul is needed, but as for now, just hope that the rain gods are kind when you watch your favorite team play their next game.</p>
+
+<p>Further Reading: Check out this <a href="https://www.stat.sfu.ca/content/dam/sfu/stat/alumnitheses/2011/M.Sc%20thesis-%20Gamage%20Harsha%20Perera_FINAL.pdf">M.Sc thesis by Harsha Perera</a> focusing on the Duckworth-Lewis Method in T20 Cricket. Keep in mind that this was published in 2011, before Professor Stern became the custodian of the method.</p>
+
+<p>Hopefully I will have updated <a href="https://github.com/Vedant-Sahu?tab=repositories">my GitHub</a>, so that you can check out the analysis that I did and get the code for the plots that I made.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

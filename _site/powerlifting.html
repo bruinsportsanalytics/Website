@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Raw Powerlifting is Coming at Full Force</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/qijingyap">Qi Jing Yap</a>
+                      
+                    
+                  
+                  • 20 Nov 2018 •
+                  
+                    
+                      13 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/plift/cover.jpeg" alt="cover photo"><figcaption>9for9 Media</figcaption></center>
+</figure>
+
+<h3><b>Introduction to the sport</b></h3>
+
+<p>On first glance, powerlifting appears to be a sport destined for greatness, featuring incredible feats of strength through the squat, bench, and deadlift, some of the most ubiquitous exercises in the gym. In addition to that, the basic rules of the sport are mind-numbingly simple to understand - the best of three attempts at each lift are added together to form a total, which is then compared among competitors in the same weight class. In the right moments, the battle to become the strongest lifter can play out in dramatic conditions, such as John Haack's 315kg (694lb) pull at 83kg (183lb) to secure the IPF World Classic Powerlifting Championships title.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/p3vR-OFazyU?start=226" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>On the other hand, powerlifting has largely flown under the radar, only garnering appeal from fellow competitors and precious few others. While the sport has been a mainstay of both the Special Olympics and the Summer Paralympics (bench-only) since 1991 and 1984 respectively, the International Olympic Committee (IOC) has yet to recognize a single governing body for powerlifting. In contrast, powerlifting's more acrobatic sibling Olympic weightlifting has origins in the inaugural 1896 Games, becoming a regular of mainstream sports consciousness and featuring a much more <a href="https://www.youtube.com/watch?v=2X0iGnQgvXo">raucous</a> global fanbase.</p>
+
+<p>Why has this been the case? One plausible reason could stem from the problem of standardization. Powerlifting is heavily divided into scores of different international federations, which all contain different technical nuances and standards in their rules. To complicate matters even further, different federations also exist at the national level, most of them affiliated with an international body. Indeed, on last count no fewer than 14 different international federations and 34 in the United States alone were listed on <a href="https://www.openpowerlifting.org/">openpowerlifting.org</a>. We can thus understand the IOC's reluctance to recognize one particular governing body for powerlifting when so many of them exist out there.</p>
+
+<h3><b>Lift Proportions in Powerlifting by Equipment Categories</b></h3>
+
+<p>Because of the complicated state of federations in powerlifting, we will work only with results from USA Powerlifting (USAPL) meets and the USA affiliate of the International Powerlifting Federation (IPF). There are a few compelling reasons for this choice. Firstly, the IPF is the only international federation that continues to drug-test their athletes under World Anti-Doping Agency (WADA) regulations. Becoming WADA-compliant places the IPF in pole position in becoming recognized by the IOC in the future, a concrete path for powerlifting to attain mainstream popularity. Additionally, the USAPL in particular has a strong reputation for strictly enforcing refereeing regulations, which ensures that the meet results were consistent. Finally and certainly most significantly, the USAPL is also the federation that <a href="https://www.instagram.com/uclapowerlifting/">UCLA Powerlifting</a> competes in (no bias was formed in the construction of this sentence).</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/plift/pic_1.jpg" alt="picture 1" style="max-width: 95%;"><figcaption>(Author of this article with mediocre lifts pictured back row, third from left) (credit: UCLA Powerlifting)</figcaption></center>
+</figure>
+
+
+<p>USAPL meets fall into two equipment categories, Raw and Equipped. In raw lifting, the only equipment allowed are knee sleeves, wrist wraps and a lifting belt. However, in equipped lifting the use of assistive equipment such as squat, bench or deadlift suits and knee wraps are permitted in competition. To obtain a quantitative measure of the resultant differences between the two categories at the highest level, data only from the past 10 years of the annual National competitions was used. I filtered the winners of the Junior (19-23) and Open (24+) divisions, generally considered to be the most competitive populations, obtaining the mean proportion of the total split by each lift.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/plift/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption>Lifts</center>
+</figure>
+
+
+<p>The results may not seem significant initially, with only a maximum difference of 4.5% separating the average raw and equipped deadlift. However, we must also remember that these are measures of individual lifts as a proportion of a total. When directly comparing the different categories to each other, we observe that from raw to equipped, our squat proportion increases by 6.96% and bench proportion by 8.77%, both non-negligible amounts. Interestingly, we see a dramatic drop in the prominence of the deadlift in equipped lifting, with the proportion of its total falling by 10.9% when compared to the raw deadlift.</p>
+
+<p>This discrepancy can be explained by the mechanics of the supportive gear used in the Equipped category. These assist a lift by storing elastic energy during the descent, allowing lifters to utilize this force on the ascent to overcome weights far beyond their 'natural' capabilities. The perfect example of this can perhaps be found in Chen Wei-Ling's unbelievable 210kg (463lb) squat, more than 4 times her bodyweight. After struggling to walk out with the weight on her back, Chen's descent is noticeably slow and controlled as she fights against the elastic resistance of both her squat suit and knee wraps. Once she begins to stand up with the weight, the stored energy gives her the 'pop' out of the bottom position to complete the lift successfully. While a similar concept also applies to the bench, the deadlift exercise is unique. Unlike the squat and the bench where the weight is lowered then raised, the weight begins stationary on the floor before the deadlift begins. As a result, the elastic energy stored on the descent by a deadlift suit only really occurs as the lifter reaches down to the barbell, a meagre amount when juxtaposed against the enormous boost that squat and bench suits provide.</p>
+
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/HVk7bpHYBdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>A great way to illustrate this even further is to scrutinize lifters who compete in both categories. Elite powerlifter Blaine Sumner competed at Raw Nationals in 2014, hitting (more than) respectable numbers of 400/240/335 kg (882/529/738 lbs) for the squat, bench and deadlift respectively. Just two years later, he competed at Equipped Nationals instead, posting up an astronomical total of 445/375/355 kg (981/826/782 lbs). While Sumner's squat and bench went up by 11.25% and 56.25%, his deadlift only saw a slight improvement of 5.97%. This may seem like an extreme case, but top equipped lifters like Sumner see even more drastic improvements on their squat and bench than on their deadlift when switching over from raw lifting precisely because they recognize the technical proficiency required in mastering how best to use their equipment to extract the maximum poundage possible.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/NfLxhHIyHw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/M67nuMWUNqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+<h3><b>Lift Proportions in Powerlifting by Level of Expertise</b></h3>
+
+<p>Here, I have a confession to make. My initial plan was to examine how the proportions of the three lifts change when contrasting the general population of powerlifting competitors with those at the elite level. To my surprise, the lift proportions of the Open and Junior division winners at national competitions differed only slightly from the pool of all USAPL lifters. This is especially the case for raw powerlifting.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/plift/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption>Lifts</center>
+</figure>
+
+
+<p>Before analyzing the data, I hypothesized that raw lifters with proportionally bigger deadlifts would end up prevailing in powerlifting competitions more often. Since the deadlift is the final event in a powerlifting meet, serious competitors are aware of the exact amount of weight they need to prevail over the tight competition. It would seem to follow that those with strong deadlifts would have the opportunity to hit these numbers much more often. In contrast, a lifter with a strong squat or bench might not have as good a sense of how much more weight they need to lift over their competition to maintain their advantage going into the final deadlifts. Obviously, this theory was quickly debunked. Rather, it seems like world class lifters come in all shapes and forms, regardless of individual greatness or lack thereof in any single lift.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/hmyflzmPFGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>Despite having a relatively subpar bench that placed him 30th out of 32 competitors, Matt Sohmer's massive squat and deadlift were enough to secure him the victory in the 120kg weight class during the 2018 Raw Nationals.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/y_rDcuWpKrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>Jennifer Thompson, who won 9 consecutive Raw National titles in her weight class from 2009 - 2017, is well-known in the powerlifting community for benching about 6.4 standard deviations over the mean.</p>
+
+<p>Our equipped data tells a similar story, but differences in the squat, bench and deadlift proportions are slightly more pronounced, where accomplished equipped lifters have a higher squat and bench proportion of their total. These findings are not surprising. As alluded to earlier, the addition of assistive equipment as a new variable creates a new technical challenge for lifters, creating an environment where top lifters do have to not only have the raw strength to complete a lift, but also make full use of their equipment to reap the most reward.</p>
+
+<p>In conclusion, it is still apparent that no matter the equipment category, differences in proportion-of-total between the general population and the best lifters in the USAPL are not significant enough to establish a case for any single lift's importance over the others. This has promising implications for the average lifter. Rather than wasting needless time and effort worrying whether any particular weak lift is holding your powerlifting total back, our findings suggest that training hard and letting your lifts develop and grow over time naturally as you gain strength will serve you well.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/HjSdkJcZK5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>Despite only placing 3rd for squat and bench and 4th for deadlift, Bryce Lewis' consistency was enough to secure him the victory in the IPF Raw Worlds 105kg weight class. Being a well-balanced lifter isn't all that bad!</p>
+
+<h3><b>Powerlifting's Growth</b></h3>
+
+<p>With all that said and done, why bother to devote so much time in analyzing a fringe sport like powerlifting? Let's take a look at powerlifting's popularity from 1997 till today.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/plift/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>The exponential rise of the number of participants in USAPL meets appears to have its origins from 2013 and accelerated from 2014 to 2018 (updated to 21st October, 2018), color-coded in blue in the graph. While certainly not currently at the forefront of sporting prominence, the USAPL has displayed an impressive track record in growing interest in powerlifting. However, this overall picture can be deceiving.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/plift/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/plift/pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The two graphs above showcase a stunning disparity in the fortunes of raw and equipped powerlifting respectively. Indeed, it is raw powerlifting that was enjoyed an explosion of growth, making up the bulk of the complete population and thus really the driving factor towards the upward of USAPL competitors. On the other hand, while equipped lifting was much more prevalent in the beginning years of the federation, its numbers were eventually superseded by raw powerlifting. Additionally, the number of powerlifters each year in this category have actually dropped every year since 2014.</p>
+
+<p>Rather than immediately form a conjecture to explain the current state of equipped lifting, we first look to explain the rise of raw powerlifting. Simply put, raw powerlifting has one of the lowest barriers for entry in sports both cost and convenience-wise - besides a lifting singlet, everything else is optional. Because of this, most view raw lifting as a 'true' test of real strength by the human body alone, thus gravitating towards it. This has been facilitated by the growing prominence of the fitness industry in general, where popular mainstream YouTube stars often collaborate with raw powerlifters to provide advice that people looking to train for general strength to learn from. Some of these figures themselves choose to dabble in raw powerlifting because of its ease of access.</p>
+
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/_rqe3IItJ04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>Popular fitness YouTuber Omar Isuf collaborates with the owner of Barbell Brigade, a popular strength gym in Los Angeles. In this video, Omar extolled the virtues of powerlifting for a better body, a topic that attracts mass appeal.</p>
+
+<p>In contrast to raw lifting, the appeals of equipped lifting lie in pushing one's body beyond their limits and moving weights that others can only dream of (watch that Chen Wei-Ling squat video again). The importance of technical mastery over equipment could perhaps thus have alienated people interested in getting into powerlifting for the sole purpose of getting stronger, who view the category as an unnecessary complication. From an anecdotal perspective, many people that I know have expressed similar doubts over the effectiveness of equipped powerlifting in demonstrating true strength. At the end of the day, it is still worrying to see the stagnant state of equipped powerlifting. While it may certainly be true that this aspect of the sport doesn't emphasize pure strength as much, I have personally drawn inspiration watching the mental fortitude of these lifters. Take Dmytro Semenenko for example. After enduring catastrophic equipment failure at the bottom of his second squat, he added an additional 5kg onto the bar and promptly smashes the lift for a world record. Moments like these add to the excitement of powerlifting and the potential downfall of equipped lifting would thus be a huge loss.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/I5zUmdXXD8Y?start=38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+<p>So much attention has been devoted to the growth of participants in powerlifting because of how critical this is for the sport. As a case study, let us examine the best squats of the 83kg Men's weight class from past Raw Nationals. This data was further filtered to include only the top 20 lifters of the Open and Junior categories to ensure that the highest levels of competition are selected to be represented.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/plift/pic_7.png" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>Over the last 7 years, we can clearly see that both the median and highest squat weight have increased consistently, with the exception of the median squat weight 2017-2018 (while not discernible from the graph, even the highest squat weight has improved from 300kg in 2016 to 300.5kg in 2017, and to 301kg in 2018). It is highly plausible that the accelerated baseline interest in raw powerlifting played a role in driving top-end competitiveness forwards steadily over time, something worth taking note of as powerlifting becomes even more popular.</p>
+
+<h3><b>Conclusion</b></h3>
+
+<p>Even within powerlifting itself, we can see nuances between the raw and equipped categories. The former focuses on raw strength (as the name implies), and the latter requires an additional degree of technical skill to truly perform as well as possible. Consequently, raw lifters tend to have their deadlift represented strongly as a proportion as their total, while equipped lifters see greater gains in their squat and bench, lifts that see the largest enhancements from assistive gear. However, it also seems as if the proportions of each individual lift towards the total isn't as relevant to the average powerlifting enthusiast, who could benefit more towards simply training to the best of their ability.</p>
+
+<p>The differences between raw and equipped has also resulted in far different rates of growth, which we can attribute to increased perceptions of powerlifting as a pure strength sport, a mindset that raw powerlifting serves far better than equipped powerlifting. Together with raw's far greater accessibility for general strength trainees, it is no wonder that the popularity of raw powerlifting has surged at a staggering rate while equipped powerlifting has stagnated. Overall, the growth of powerlifting is critical because this helps to push the ceiling of the sport even further, allowing us to see even crazier weights lifted that not only generate massive entertainment, but also fulfilment in pushing the strength limits of the human body.</p>
+
+<p>Powerlifting is a relatively new sport. Therefore, I believe that there is abundant potential for further data analysis in the future, whether that be generating an <a href="https://www.strongerbyscience.com/whos-the-most-impressive-powerlifter/">accurate method to compare relative strength levels between weight classes</a> or means to use data to compare the training methods themselves even. These possibilities become even more relevant when considering the fact that in 2017, the IPF was able to receive official <a href="https://www.powerlifting.sport/federation/presidents-corner/presidents-corner-detail.html?tx_news_pi1%5Bnews%5D=207&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=de329d8a86a39c27610df738e303f536">FISU recognition</a> (International University Sports Federation), an organization recognized by the IOC. Steps like these brings about renewed hopes of future IOC recognition and possible future acceptance of powerlifting as a mainstream strength sport in its own right.</p>
+
+<p>This article uses data from the OpenPowerlifting project, <a href="https://www.openpowerlifting.org">https://www.openpowerlifting.org</a>. A copy of the data can be found at <a href="https://gitlab.com/openpowerlifting/opl-data">https://gitlab.com/openpowerlifting/opl-data</a>.</p>
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

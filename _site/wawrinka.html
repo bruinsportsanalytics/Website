@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">An In-Depth Analysis of Stan Wawrinka</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/kevinhahn">Kevin Hahn</a>
+                      
+                    
+                  
+                  • 27 Jan 2018 •
+                  
+                    
+                      9 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/wawrinka.png" alt="Stan Wawrinka"></center>
+    <figcaption>Stan Wawrinka hoisting his first ever U.S. Open trophy (Photo by Elsa/Getty Images)</figcaption>
+</figure>
+<p>
+    In the era of the Big Four, tennis has seldom seen a Grand Slam Championship claimed by a player not named Novak Djokovic, Roger Federer, Andy Murray, or Rafael Nadal. The Big Four have won 50 of the last 58 Grand Slam tournaments, dating back to the 2003 Wimbledon. Ever since then, the spotlight in men’s tennis has only shifted between these four champions. With a combined career record of 3443-782 (81.5%) and a combined total of $377,087,356 in prize money, the Big Four have dominated tennis in a way never before seen in the sport. However, despite such dominance, it may be time to start considering that world tennis may really have a Big Five.
+</p>
+<p>
+    Of the 8 Grand Slam trophies that weren’t hoisted by a member of tennis’ elite quartet, only one player has won more than one: Stan Wawrinka. Winning the 2014 Australian Open, 2015 French Open, and 2016 U.S. Open, all against the incumbent ATP world number 1 (each a Big Four member), Wawrinka has made an interesting case to be categorized with the rest of the Big Four. In the Winter of 2017, at the age of 32, Wawrinka nearly opted to retire after a knee surgery that ended his 2017 campaign. If he were to retire, where would his career stack up against those of the Big Four? Looking closely at Wawrinka’s career, it is clear that he has not exhibited the same dominance as the Big Four, but his level of play at times may be the closest resemblance to a member of the Big Four since the group took the reigns of the men’s game in 2003.
+</p>
+<h4>Consistently Inconsistent</h4>
+<p>
+    A late bloomer, Stan did not win his first Grand Slam until he was 28 years old. Up until that point, he had only ever made it to one semi-final of a Grand Slam (U.S. Open, 2013). By the time he captured his first Slam, the Big Four already had total control of the sport, having won a combined total of 38 Slams. Wawrinka has not been able to make up for this late arrival to the party, for he has not won more Grand Slams than any member of the Big Four:
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/graph1.png" alt="Graph 1"></center>
+</figure>
+<p>
+    With Djokovic, Federer, and Nadal in double digits and Murray winning the Wimbledon twice alongside his U.S. Open title, it is clear that Wawrinka should not be placed above any member of the Big Four in terms of Slam success. While he may have as many Slam titles as Andy Murray, there are other aspects of the careers of the Big Four that put them in a league of their own, apart from Wawrinka.
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/novak.png" alt="Novak Djokovic"></center>
+    <figcaption>Novak Djokovic hoisting the ATP World Tour Finals Trophy (from bettingtips365.net)</figcaption>
+</figure>
+<p>
+    The ATP World Tour is comprised of many singles tournaments apart from Grand Slams. Alongside the four Slams, the tour each year contains 9 ATP Masters 1000 tournaments, 13 ATP 500 series tournaments, and 40 ATP 250 series tournaments throughout the year. The Big Four have dominated on all of these levels, while Wawrinka pales in comparison:
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/graph2.png" alt="Total ATP Titles"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Although Wawrinka has won as many Slams as Murray, Murray and the rest of the Big Four have displayed unparalleled victory throughout their careers in all other phases of the tour as well. But a comparison of total singles titles still does not cover the substantially large gap between the Big Four and Wawrinka. Any top rated player can win a singles title with a week or two of exceptional tennis (most tournaments are just one week long), so it is also important to consider success in individual marquee matchups as well as the quality of opposition that the Big Four and Wawrinka have played. Here are the winning percentages of these five men against players who were ranked in the top 10 at the time of the match:
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/graph3.png" alt="Winning Percentage"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    The Big Four win well above 50% of such matches, while Wawrinka is below 40%. To place these percentages and overall significance of performances in individual matches into grand perspective, one only needs to turn to the Elo ratings. The Elo ratings rate players solely on the quality of their opposition in every match throughout their careers, irrespective of the round or tournament that each match took place. Here are the cumulative Elo rankings of active men’s tennis players:
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/graph4.png" alt="Elo"></center>
+    <figcaption></figcaption>
+</figure>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/graph5.png" alt="Players ranked by Elo"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    The Big Four live up to the name, as they are the top four Elo ranked players on tour by more than 100 points. Wawrinka, however, sits at ninth place, once again miles behind any kind of Big Five.
+</p>
+<hr />
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/winners.png" alt="Winners"></center>
+    <figcaption>The Big Four have been able to defeat one another in Grand Slam finals (from howtheyplay.com)</figcaption>
+</figure>
+<p>
+    Despite his lacking in every comparison with the Big Four thus far, to truly put himself in a position to be on the same level as the Big Four, Wawrinka must at least be able to compete against them in individual matchups. If he has a strong track record against the Big Four over his career, he may have a case to make. Placing Wawrinka in a group of five along with the members of the Big Four, here are the win percentages of each of these five men against the other four: 
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/stats.png" alt="Win Percentage"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    The Big Four have competed against one another relatively well, with Djokovic, Federer, and Nadal winning above 50% of these matches and Murray winning 37.9%. Wawrinka has not come close to matching that level of competition against them, winning merely 22.6% of his matches against the Big Four and having a losing record against every one of them. But even this poor showing in individual matches against the Big Four is still not the most glaring issue when considering Wawrinka’s place among them.
+</p>
+<p>
+    The word that many people associate with the Big Four is “dominance”. Federer, Nadal, Djokovic, and Murray have not only dominated the sport for over a decade, but also consistently done so. This is where Wawrinka’s biggest shortcoming becomes clear. In the last thirteen years, no player outside of the Big Four has held the coveted ATP World Number 1 ranking. Each of the Big Four have not only reached the top of the ATP rankings, but have also held that spot for a substantial amount of time. Wawrinka is still yet to even be ranked number 2 in the world (his career high ranking is number 3 on 27 January 2014): 
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/weeks1.png" alt="Weeks at Number 1"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    The World Number 1 ranking does not simply answer the question “Who is the best tennis player in the world?”. It answers the question of which player has demonstrated the most consistency across all phases of the ATP tour in a given calendar year. The Big Four have all done this for large chunks of weeks, sometimes years, at a time. The rankings are updated every Monday of the year, but Wawrinka has never hit the number 1 mark once. This signifies his lack of consistency and ability to keep up the brilliant tennis that he has put on display at times. Tennis is a taxing sport. Mentally and physically, fatigue can lower players’ performance levels as the year-long grind of tournaments and frequent traveling eventually catches up to them. Wawrinka may understandably be a victim of such fatigue as each tournament passes, but the Big Four have proven to be immortal to such things. 
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/wimbledon.png" alt="Wimbledon Winners"></center>
+    <figcaption>Left to right: Federer, Nadal, Djokovic, and Murray each holding the prestigious Wimbledon Championship trophy (from tt.tennis-warehouse.com)</figcaption>
+</figure>
+<p>
+    In essentially every phase of the sport, the Big Four are in a world of their own, far away from every other player on Earth, and that includes Stan Wawrinka. There was never a Big Five and there likely will never be one in this golden age of men’s tennis. 
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/vilas.png" alt="Guillermo Vilas"></center>
+    <figcaption>(By Verhoeff, Bert / Anefo)  </figcaption>
+</figure>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/kodes.png" alt="Jan Kodes"></center>
+    <figcaption>(from Getty/Pat Scala) </figcaption>
+</figure>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/stanslice.png" alt="Stan Slicing a Ball"></center>
+    <figcaption>(from kodes-tennis.com)</figcaption>
+</figure>
+<p>
+    While he may not be near the Big Four in any way, Wawrinka is certainly the closest to knocking on the door, for he has set many interesting and accomplished records in tennis history. He is the only player to have won multiple Grand Slam titles in Slams that featured all members of the Big Four. Although the number 1 ranking continues to elude Wawrinka, he may possibly go down as the greatest player to have never reached the apex of men’s tennis. The only man to have not only amassed more Grand Slam titles but also to have never been ranked world number 1 is Argentine player Guillermo Vilas (left), who won 4 Grand Slam titles and only reached a career-high ranking of 2, despite significant controversy. By the end of his career, Vilas had made 8 Grand Slam finals, facing similarly high qualities of opposition with the likes of Bjorn Borg, Jimmy Connors, and Mats Wilander. Intriguingly, Wawrinka can be thought of as the modern version of Guillermo Vilas in men’s tennis. Neither Vilas nor Wawrinka have won a Wimbledon title. Both have excelled on clay, possess a one-handed backhand, and a baseline-dominant play style. The following charts below show that both have enjoyed relatively similar success in Grand Slam tournaments. Unlike Wawrinka’s late blossoming, Vilas’ came during his mid-to-late twenties:
+</p>
+<h5>Vilas</h5>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/vilasrecord.png" alt="Vilas record"></center>
+    <figcaption></figcaption>
+</figure>
+<h5>Wawrinka</h5>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/stanrecord.png" alt="Stan's record"></center>
+    <figcaption></figcaption>
+</figure>
+<p>Wawrinka is the first player in the Open Era since Jan Kodeš (right) to have won 3 Grand Slam singles titles without ever being ranked higher than world number 3. Kodes never won a U.S. Open, let alone even played in an Australian Open. Furthermore, Kodes never beat an incumbent world number 1 in any of his 3 Grand Slam championships. Here is a rankings trendline of the three players by age:</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/atpchart.png" alt="ATP Rankings"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    A potential Wimbledon title in the future for Wawrinka would not just make him the first of these 3 players to complete the Career Grand Slam, but also make him only the 9th man in history to do so.
+</p>
+<figure>
+    <center><img class="materialboxed" src ="/assets/stananalysis/stanwins.png" alt="Stan Winning a Clay court title"></center>
+    <figcaption>(from tennisworldusa.org)</figcaption>
+</figure>
+<p>
+    There is no doubt that Wawrinka is a fantastic tennis player and a champion in his own right. To compare him to the Big Four would be a disservice to him, as the seemingly unfair control that the Big Four have had over tennis make his very significant accomplishments seem far less significant. He does not belong with the Big Four, but the fact that he has accomplished as much as he has in such an era says a lot about his ability to make the most of the hand that he has been dealt. Looking ahead, Stan Wawrinka’s days on the ATP tour might be numbered, but his inconsistency and unpredictability may just result in even more unprecedented success in an already decorated career.
+</p>
+<div id="cited">
+    <p>
+            Sources: ATP, tennisabstract.com
+    </p>
+  </div>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

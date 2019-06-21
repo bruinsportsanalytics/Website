@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">An In-Depth Comparison of the 06-07 Phoenix Suns and 17-18 Houston Rockets</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/ronaqvirdi">Ronaq Virdi</a>
+                      
+                    
+                      
+                      
+                    , <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/benmessinger">Ben Messinger</a>
+                      
+                    
+                  
+                  • 09 Mar 2018 •
+                  
+                    
+                      16 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/dantoni/cover.png" alt="Cover Nash/Harden"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>In Game 6 of the 1998 NBA Finals, Michael Jordan’s last game in a Chicago Bulls jersey, the Bulls attempted 67 field goals in the entire game, including only 10 three-point attempts. Fast forward to 2017-18, and the Houston Rockets are <i>averaging</i> 42.6 three-point field goal attempts per game. In the 20 years since Jordan’s last game, saying that professional basketball has changed would be an understatement. In today’s NBA, the “pace and space” style of play with an emphasis on a primary ball handler surrounded by shooters is the norm; all 30 teams are attempting at least 22 three-point field goals per game compared to the 2004 season, where only one team attempted more than 22 per game. Many of the offensive principles that are prevalent throughout the league can be attributed to current Rockets head coach, Mike D’Antoni. D'Antoni's success with the mid 2000s “Seven Seconds or Less” Phoenix Suns has had a lasting impact on the league today, as many of the same offensive philosophies have been commandeered by other coaches.</p>
+
+<p>D’Antoni’s two most successful stints as an NBA head coach have been with the Steve Nash-led Suns and the current Houston Rockets, whose offensive play style and shot distribution looks like something from a MIT Sloan Conference research report. This piece compares and contrasts the 2006-07 Suns with this year’s Rockets, trying to find parallels between the two squads. We uncover how similar the two teams truly are and analyze whether the shortcomings of those Suns teams have been solved with the current Rockets team.</p>
+
+<h4>
+    <b>PLAYER COMPARISONS</b>
+</h4>
+
+<h4>
+    Steve Nash/James Harden
+</h4>
+
+<p>In early 2017, Rockets head coach Mike D’Antoni praised James Harden as the best playmaker he’d been around. D’Antoni’s comment raised some eyebrows- while Harden is inarguably a great playmaking guard, D’Antoni also had the pleasure of coaching legendary floor general Steve Nash with Phoenix from 2004 to 2008. Since the greatness of a playmaker can be judged on the success of their team, by comparing Nash’s and Harden’s stats in their teams’ best seasons, we can determine whether one was truly the better playmaker under D’Antoni.</p>
+
+<p>Coming off his second MVP season, Steve Nash scored 18.6 points per game in 2006-07. One of the purest shooters the league has ever seen, Nash was a model of efficiency, recording a field goal percentage of 53.2 percent, to go with 45.5 percent from three and 89.9 percent from the free throw line. In fact, Nash was a four-time member of the 50-40-90 club (50% on field goals, 40% on 3-pointers and 90% on free throws over one season), though he narrowly missed that milestone in 2006-07. Nash was able to bury mid-range shots off picks with ease, and, more impressively, would frequently take difficult off-balance threes after running his man off a pick.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/S732UyJ9fJs?start=233" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>Nash averaged 11.6 assists per game, which led the league that year. Not only did Nash score efficiently, but he did an excellent job taking care of the basketball, with an assist-to-turnover ratio of 3.08.</p>
+
+<p>In addition to hitting teammates like Amar’e Stoudemire on the roll, Nash was a maestro finishing close to the basket out of the pick-and-roll, shooting 65.9 percent at the rim that season. He was known for his nifty maneuvers such as this double-pump scoop layup.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/zUXZB-SZRp8?start=131" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>Advanced statistics further illustrate Nash’s value during the 2006-07 season. His true shooting percentage, which is a comprehensive measure for scoring efficiency, was 65.4 percent. Nash had a player impact estimate (PIE) of 16.5, which means that he contributed 16.5% of his team’s positive achievements.</p>
+
+<p>James Harden’s contributions as a teammate nearly rival those of Nash’s, with 8.9 assists per game and an assist-to-turnover ratio greater than 2. His plus/minus rating (how the team performs when he’s on the floor) of 7.8 is very similar to Nash’s 8.0, and Harden has an even higher PIE of 19.4.</p>
+
+<p>While the stats show that Harden is almost as good a passer and ball handler as Nash, scoring the basketball is where Harden distinguishes himself. Not only is Harden leading the league with 31.4 points per game in 2017-18, but he is doing so with elite efficiency. He has a true shooting percentage of 62.4 percent and is knocking down 86.4 percent of his free throws. Harden is attempting nearly eleven three pointers per game, converting 38.4 percent of his tries.</p>
+
+<p>The box plus/minus statistic illustrates how many points per 100 possessions a player contributed above the league average. Due to his scoring, Harden’s league-leading box plus/minus of 11.1 dwarfs Nash’s 2006-07 figure of 3.8.</p>
+
+<p>Nash had a sixth-sense for finding teammates, elite efficiency, and the ability to knock down jumpers. During his prime, he was considered the league’s best point guard and one of its most valuable players. Nevertheless, Harden’s resume as a traditional point guard stacks up well compared with Nash, and Harden is clearly a far more gifted scorer. That scoring ability further opens up the floor for Harden to create opportunities for his teammates. Though D’Antoni’s declaration in favor of Harden was controversial, the statistics give merit to the argument that Harden, the presumed 2017-18 MVP, is the best point guard the coach has seen.</p>
+
+<h4>
+    Amar’e Stoudemire/Clint Capela
+</h4>
+
+<p>Amar’e Stoudemire was a powerful, athletic finisher around the rim. Pairing him with Nash’s legendary passing ability created many highlight plays, and was one of the biggest parts of the mid-2000s Suns’ success. The pick-and-roll combination of Nash and Stoudemire was impossible for teams to defend because Nash was so good at penetrating and sucking in the defense, that he could easily weave passes to Stoudemire rolling to the basket. And if opposing teams were in fact able to prevent Nash from finding his big man, they’d be leaving Nash’s other teammates open for jumpers. Below is a great example of their chemistry in the pick-and-roll. Nash gets a quick screen from Stoudemire, who slips the screen, quickly rolling to the basket. Nash then weaves the ball behind his back through 3 defenders to hit Stoudemire with a perfect pass.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/zUXZB-SZRp8?start=85" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>While not quite the athlete Stoudemire was, Clint Capela plays a similar role for D’Antoni’s Rockets. The Harden-Capela pick-and-roll, where the two have great chemistry, is a favorite in Houston. Harden is so good at scoring in the lane with his seemingly-endless bag of tricks, that both defenders often stick with Harden when he uses Capela’s screens. Once he has drawn Capela’s defender, Harden only needs to lob it up to his center for easy dunks.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/CTS-_dlnwow?start=28" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<h4>
+    Shawn Marion/Trevor Ariza
+</h4>
+
+<p>Shawn Marion, a versatile wing, was an invaluable part of the Phoenix machine. He was considered a top-20 player in the mid-2000s, making two All-NBA third teams. In 2006-07, he averaged 17.5 points per game on better than 52 percent shooting despite his memorably unorthodox shot mechanics. In addition to his offensive contributions, Marion was an expert wing defender whose greatest value was perhaps his ability to switch onto multiple positions.</p>
+
+<p>Defensively, Trevor Ariza is reminiscent of Shawn Marion, athletic at 6-foot-8, and a tenacious wing with the ability to defend guards and forwards. Ariza, while not the volume scorer Marion was, adds value with his career 35 percent three point shooting. This type of wing player with the ability to score and defend is necessary in D’Antoni’s system, evidenced by the fact that both Marion and Ariza logged upwards of 34 minutes a night.</p>
+
+<h4>
+    Leandro Barbosa/Eric Gordon
+</h4>
+
+<p>Nearly every truly great team features a scoring punch off the bench. For the Suns, that was Leandro Barbosa. Coming off the bench in 62 games in 2006-07, when he won Sixth Man of the Year, Barbosa put up 18.1 points per game on 48 percent shooting.</p>
+
+<p>Eric Gordon plays the same role for D’Antoni’s Houston squad. The reigning Sixth Man of the Year, he’s averaging 18.5 points on 42 percent shooting, coming off the bench in 30 of 52 games so far.</p>
+
+<h4>
+    Raja Bell/PJ Tucker
+</h4>
+
+<p>Raja Bell was a two-time All-Defensive team honoree who drew the assignment of the opponent’s best player every night. He also served as the team’s enforcer, and gained a reputation for making some very “physical” plays.</p>
+
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/7V8ZukXsWmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>PJ Tucker fills the gutsy, gritty defender role for the Rockets. While he doesn’t carry the “dirty” label that Bell did, Tucker has the reputation of being a physical wing player who isn’t intimidated by anybody in the league.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/HLhuoUZ3S0k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<h4>
+    <b>OFFENSIVE STYLE</b>
+</h4>
+
+<p>As a coach, it is no secret that defense is not Mike D’Antoni’s main priority. Since day one, D’Antoni has been an offensive-minded coach, with his teams performing most strongly on that end. He famously crafted the “Seven Seconds or Less” Offense, in which his players, led by Steve Nash, would push the pace and try to score very quickly. At the height of the offense’s prominence, the 2006-07 Phoenix Suns ranked 3rd in pace in the NBA.</p>
+
+<p>Over a decade later, Mike D’Antoni coaches another distinguished offense with a supremely talented, primary cornerstone in James Harden. While Harden has, in many ways, filled the Nash role in the D’Antoni offense, D’Antoni has adapted his offense to today’s NBA landscape to maximize its success.</p>
+
+<p>For one, the NBA now shoots more threes than ever, with the amount of three-pointers taken steadily increasing every season. The Suns attempted 24 three-pointers per game in the 2006-07 season. This ranked second in the league at the time; in today’s NBA, they would rank 27th out of all teams, with only the Kings, Wolves and Knicks trailing. As seen through these charts, while the 2006-07 Suns scored only 26.1% of their points from beyond the arc, three-pointers comprise 40.9% of Houston’s scoring. Even though the Rockets still have 20 games left in the season as of this writing, they have made 963 three-point field goals, which is 22.7% more than the 785 that the 2006-07 Suns had in the entire season.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/dantoni/byShot.png" alt="Points by Shot"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Furthermore, to adapt to this team’s strengths, Mike D’Antoni has let James Harden play to his own offensive strengths, not restricting him to the same style of play that Nash had. As previously mentioned, Harden is a markedly better scorer than Nash ever was. While Nash was a strong scorer, he was never as prolific as James Harden, who employs a variety of dribble moves to doom his defenders. His specialties include a deadly Euro step and step back jumper that have put him in the 96.7th percentile in isolation scoring this season. Just look at how he put Wesley Johnson on skates this past week.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/yrjWseovjXw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>Harden does not only score in isolation, though. As illustrated by the chart below, his offensive repertoire is extremely diverse, and he still retains the D’Antoni tradition of scoring creatively out of the pick-and-roll; well enough to put him in the 61.5th percentile of scoring by being the ball-handler in the pick-and-roll.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/dantoni/plays.png" alt="Harden Plays"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>A key difference between the offensive systems of the 2006-07 Suns and this year’s Rockets is the presence of Chris Paul. In Nash’s stints with the Suns, he never had the luxury of playing with another all-time-great guard who could help shoulder some of the offensive load. However, in Harden and Paul, D’Antoni has two superstar guards at his disposal, which makes the Rockets a very scary team.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/dantoni/table.png" alt="TABLE"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>As seen in the table above, these two are elite in scoring in many different ways. More importantly, though, the two seem to fill in some of the holes within each other’s games. For example, while Chris Paul is a below average transition player in the league at about the 43rd percentile, Harden is above average at about the 57th percentile. And though Harden is a below average scorer in post-up situations at the 43rd percentile, Paul is above average at around the 62nd percentile. Their synergistic relationship will help them in the playoffs, when they can run a variety of plays that adapt to each of their strengths.</p>
+
+<p>The Harden-Paul tandem can serve up some devastating situations for a defense to handle. Take this play against the Bucks as an example, where DeAndre Liggins has two choices: close out hard on Paul, who is shooting 38% from 3 this season, or prevent an open Harden, who is also shooting 38% from 3 this season, from shooting a 3-pointer. He is damned either way, and Paul buries the wide-open jumper.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/Fz7MnXJ5bL4?start=45" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<h4>
+    <b>FRONT OFFICE</b>
+</h4>
+
+<p>While the players and the coaching staff of a team are the main catalysts for overall success, the importance of a reliable front office, including a competent general manager and a deep-pocketed owner, cannot be overlooked. Just look at Kevin Garnett’s time in Minnesota, LeBron James’ first tenure with the Cavs, or even Anthony Davis’ situation with the current Pelicans.</p>
+
+<p>In 2006 offseason, then-Suns GM Steve Kerr did very little in terms of upgrading the roster. He signed Jalen Rose and Jumaine Jones that offseason to fill in open slots at the end of the Suns bench. The Suns decided to rely on their six key players from the previous season (Nash, Stoudemire, Barbosa, Marion, Bell, and Diaw).</p>
+
+<p>Conversely, Morey made a conscious effort to improve his team with a plethora of offseason acquisitions. On top of signing Harden to a monster contract extension and acquiring PJ Tucker, Tarik Black, and Luc Mbah a Moute over the summer, he also added arguably one of the best point guards in NBA history in Chris Paul. During the season, Morey also signed Gerald Green and claimed Joe Johnson after he was bought out by the Kings.</p>
+
+<p>For the Suns, the lack of impactful acquisitions was a major factor in their limited rotation. Mike D’Antoni has always taken flak for playing his main guys too many minutes and not utilizing his bench, and this trend was epitomized by the 06-07 Suns. The Suns played six players (the five starters and Barbosa) over 31.1 minutes per game. Besides the those six, no one else cracked more than 18.1 minutes per game. Conversely, with all their acquisitions, the Rockets rotation goes nearly 10 deep, with each of those 10 guys averaging over 22 minutes per game.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/dantoni/sunsMins.png" alt="Suns Minutes"></center>
+    <figcaption></figcaption>
+</figure>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/dantoni/rocketsMins.png" alt="Rockets Minutes"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>For the Suns, the lack of depth did not affect them very much in the regular season as they won 61 games, but their lack of depth hurt them in the postseason. As expected, the Suns relied even more heavily on their top six guys in the playoffs: Shawn Marion, who was already one of the <a href="https://stats.nba.com/leaders/?Season=2006-07&SeasonType=Regular%20Season&StatCategory=MIN">league leaders in regular season minutes per game</a>, averaged over 41 minutes in the playoffs. In the first round the Suns easily beat a weak Lakers team. However, in the second round against the third-seeded Spurs, the Suns’ lack of depth was apparent. The two teams split the first four games of the series, but the turning point came at the end of Game 4 when the Spurs’ Robert Horry shoved Nash into the scorer’s table. This led to a skirmish on the court with multiple technical fouls, and Stoudemire and Diaw received Game 5 suspensions for leaving the Suns bench during the altercation.</p>
+
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/t3LjDlMd12g?start=45" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<p>For a team that relied so heavily on its starters, it was crushing to lose two of its main rotation players. On top of that, Jalen Rose or Jumaine Jones trying to fill the shoes of Stoudemire and Diaw was only going to exacerbate the issue further. It can be argued that Diaw and Stoudemire’s recklessness in getting suspended cost the Suns the series, but at some point the lack of depth needed to be addressed by the front office.</p>
+
+<p>This year, Morey has shown that he learned from his team’s underachievement in last year’s playoffs, the trends among the league’s other top teams, and mistakes made by previous teams like the 2006-07 Suns. One of the main concerns from the previous season was that Harden was worn out heading into the playoffs. Whether it was injury, fatigue, or simply pressure getting the best of him, Harden was not the MVP candidate that he was in the regular season in the2017 playoffs. To address this issue, Morey brought in Chris Paul to take some of the ball handling duties off of Harden. On top of that, Paul, who has long been considered one of the best leaders in the NBA (though maybe not in his last couple seasons with the Clippers), brings a locker room presence to a <a href="http://bleacherreport.com/articles/2737286-kevin-mchale-says-james-harden-not-a-leader-for-rockets">team that needed a vocal leader</a>.</p>
+
+<p>The next area that Morey addressed was bringing in spot-up shooters who could fit into the Rockets drive-and-kick offensive scheme. PJ Tucker, Gerald Green, Luc Mbah a Moute, and Joe Johnson are all guys who don’t need the ball much on offense and can knock down spot-up threes off of Harden and Paul dribble drives. D’Antoni has done a much better job this season of monitoring minutes for his top guys and utilizing his deeper bench, which is the fourth-best in the league according to <a href="http://bleacherreport.com/articles/2748208-nba-metrics-101-ranking-top-10-benches-in-the-nba">Bleacher Report</a>. It will be interesting to see how D’Antoni manages minutes in the playoffs and whether he trusts the role players that Morey acquired in a seven game series.</p>
+
+<p>One of the most important reasons why the Rockets placed heavy emphasis on building their bench and acquiring skilled “three and D” type players is specifically to beat the Warriors. After the Warriors dismantled the Cavs in last year’s Finals en route to a 16-1 playoff record, Morey mentioned <a href="https://www.thedreamshake.com/2017/6/13/15792650/daryl-morey-we-have-something-up-our-sleeve-houston-rockets">"increasing the risk profile”</a> in order to beat a team like the Warriors. The Rockets now have three legitimate isolation players (Harden, Paul, Joe Johnson) who they can rely on for buckets in playoff games that slow down and require strong half-court execution.</p>
+
+<p>In terms of defense, guys like PJ Tucker (who will almost certainly provoke Draymond Green into a fight at some point in a series), Mbah a Moute, and Gerald Green can be used to switch onto Kevin Durant or Klay Thompson. On top of that, Chris Paul, one of the best defensive point guards in the NBA, has always relished the chance to guard Steph Curry. As well as the Rockets have performed in the regular season, the true measure of their team and Morey’s decision making will come in a playoff series against the Warriors.</p>
+
+<h4>
+    <b>CONCLUSION</b>
+</h4>
+
+<p>By all measures, this year’s Rockets are a superior team to the 2006-07 Suns. Morey has eliminated roster depth concerns, and alleviated postseason stress on James Harden by adding a second bona fide superstar guard, a luxury Steve Nash never had. The Rockets are loaded with pieces specifically intended to stop the Warriors potent offense, and it has worked to this point- Houston won the season series against Golden State, 2-1. Houston also has several players capable of scoring in isolation possessions down the stretch in slower-paced playoff games, which was an area where the Suns struggled. It remains to be seen, however, whether these calculated improvements will propel the Rockets past several other formidable championship contenders.</p>
+
+<div id="cited">
+    <p>
+        All statistics courtesy of NBA.com and basketball-reference.com.
+	Images courtesy of Getty Images
+    </p>
+  </div>
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

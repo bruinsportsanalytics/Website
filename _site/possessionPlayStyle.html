@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">How Effective is a Possession-Based Play Style in the UEFA Champions League?</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/farazmurshed">Faraz Murshed</a>
+                      
+                    
+                  
+                  • 04 Dec 2018 •
+                  
+                    
+                      6 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <p>In soccer, there is no club competition that rivals the prestige and history of the UEFA Champions League (UCL). Each year, the highest ranked teams from all European leagues automatically qualify or enter the preliminary stages of this tournament. In the end, 32 teams participate in a grueling group stage, where every team plays each other twice. The top two teams from all 8 groups make the first knockout stage. Each knockout matchup has two games, other than the final which has one. As a result, the UCL format generally ensures that the team who wins must consistently play well.</p>
+
+<p>To win the UCL, a team must have a strategy that is effective enough to overcome the lengthy group stage, three 2-legged knockout ties, and a high-pressure final match against another top team. Over the years, no system has been as romanticized as one that is possession-based. Teams such as the Netherlands national team of the 70s, the World Cup-winning Spanish national team, and Barcelona in the 21st century have been famed for their successful application of this strategy. More recently, Manchester City has dominated the English Premier League with coach Pep Guardiola, renowned for this system, at the helm. In this article, I will attempt to analyze if a play style centered around possession is truly the best method for guaranteeing success in the UCL. Statistics from the 2017-18 edition of the competition will be used for analysis.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/possStyle/pic1.jpg" alt="picture 1" style="max-width: 95%;"><figcaption>Real Madrid celebrates their third UCL title in a row - Source: Fox Sports</figcaption></center>
+</figure>
+
+<center><p><b>Measuring Performance of All Teams</b></p></center>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/possStyle/pic2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<center><p>Key for "Stage Reached" Variable</p></center>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/possStyle/pic3.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>Before analysis can be performed, there must be a variable present to measure the level of success of teams in the competition. As a result, a quantitative variable is created to indicate the progression of a club. As indicated by the table above, any value equal to or greater than 3 demonstrates that a team qualified for the knockout stage of the 2017-18 UEFA Champions League.</p>
+
+<p>The possession percentage is the most basic way of modeling a team's strategy. The histogram shows that the possession splits of sides will generally remain closer to 50/50, especially as teams in the competition are generally of comparable ability. However, being at or above a possession percentage of 50 seems to almost ensure a knockout round place. Every team that made the quarter-finals, other than Juventus, had at least a percentage of 50. On the other hand, a clear outlier is Benfica, who finished last in their group with a 54.7% possession per game.</p>
+
+<p>A comparison between Chelsea and Benfica demonstrates how play style is not the sole deciding factor in team success. Chelsea averaged 47.2% possession per game but scored 2.1 goals per game, whereas Benfica had a measly average of 0.2 goals per game. What this proves is that retaining the ball for the majority of the match means nothing unless a team is able to create and finish opportunities. In theory, greater possession should translate to more chances created, which would lead to more goals being scored. However, the case of Benfica, who finished the group stage with 6 losses in 6 matches, demonstrates that a team's finishing ability also plays a large part in their potential success. Furthermore, the correlation between possession and team success tapers off as the competition progresses. This hints at the notion that teams who can retain the ball well are able to fend off weaker teams, but are not ensured victory against stronger opposition. This is understandable, as top clubs and top players are able to create chances with less opportunity.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/possStyle/pic4.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>A quick look at the relationship between the amount of shots taken and the stage reached shows that there is not a very high correlation between taking shots and winning matches, as many teams are averaging similar numbers of shots while reaching different stages of the competition. Clearly, both the quality of the shots a team takes and the finishing capabilities of the players must impact the level of success.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/possStyle/pic5.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>As predicted, finishing remains a vital part of the game. No team who scored one goal or less made it out of the group stage. Teams who are making the later stages are also scoring more in general. However, as with the analysis of possession percentages, the correlation weakens as the competition progresses towards the knockouts. Performing well in these categories seems to indicate that a team should progress out of the groups, but not necessarily that they will last much longer. The two outliers on the high scoring end of the spectrum are Liverpool, who was a finalist, and PSG, who went out in the first knockout stage. Still, the opposite is not true, as teams who are reaching the latter stages must be performing adequately in terms of these statistics.</p>
+
+<center><p><b>Analyzing the Performance of the Finalists</b></p></center>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/possStyle/pic6.jpg" alt="picture 2" style="max-width: 95%;"><figcaption>Gareth Bale of Real Madrid attempts an audacious goal against Liverpool - Source: Le Parisien</figcaption></center>
+</figure>
+
+<p>In the final of the 2017-18 UCL, Real Madrid and Liverpool faced off in what turned out to be the former's third straight title, a truly astonishing feat. Real Madrid came in with a squad teeming with experienced stars. Their preferred midfield trio of Luka Modric, Toni Kroos, and Casemiro continually dominated the opposition with their intelligent movement and creative passing. Liverpool found success due to their high-octane offense, featuring speedy players such as Mohamed Salah and Sadio Mane.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/possStyle/pic7.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The table above displays some interesting points of data. Real Madrid ranks 11th in the number of long balls per game, whereas Liverpool ranks 3rd. This is the one passing statistic in the table that is generally known to have an adverse effect on the overall possession of a team, as long-range passing is riskier and carries a lower rate of success. Furthermore, Liverpool falls out of the top 10 in three of the primary possession statistics. These trends demonstrate that Liverpool ignored the allure of a possession-based style in favor of a fast-paced system. They were clearly effective as well, as the team placed similarly to Real Madrid in the rankings for goals and created shots.</p>
+
+<p>A possession-based play style remains a viable option for a team searching for a fruitful strategy, but there is only a certain stage a concentration on this strategy can take a club. Weaker teams can be defeated through dedication to this style, but stronger sides will be able to counterattack more effectively. As a result, knockout round success is difficult to predict based on the metrics provided in this article alone. There is no consistent "winning formula" for success in the Champions League, which is a testament to the difficulty that comes with winning the competition. For the knockout stages, teams must find a system that works best for the players they have. Possession was the primary focus of this article, but deeper studies of counterattacking and defensive approaches would allow for a better understanding of what is truly the best strategy for succeeding in the UCL.</p>
+
+<p>Source for Data: WhoScored.com</p>
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

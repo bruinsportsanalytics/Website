@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Vegas Golden Knights: The Most Successful Expansion Team in NHL History</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                      
+                    
+                  
+                  • 08 Jun 2018 •
+                  
+                    
+                      9 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/vegas/cover.jpg" alt="golden knights"></center>
+    <figcaption>The Associated Press</figcaption>
+</figure>
+
+<p>This wasn’t supposed to happen. The first major professional sports team to ever grace the city of Las Vegas wasn’t supposed to be this good. Hockey wasn’t meant to be played in the desert. A team full of disposable parts and cast-offs wasn’t supposed to mesh this well together. It must be a fluke.</p>
+
+<p>The Vegas Golden Knights have been bombarded with these narratives all season, brushing them aside with every milestone attained, every record broken. They are for real. If finishing with 109 points atop the Pacific division and fifth in the league didn’t convince you, their playoff run sure did. Stanley Cup Finalists. Western Conference Champions. Not a bad inaugural season for the NHL’s newest franchise.</p>
+
+<p>No one saw this coming in the offseason of last year. Preseason odds given to Vegas to win the Stanley Cup ranged from 300-1 to 500-1. Almost every expert, media personality, and journalist had the team as a cellar dweller who would be vying for a favorable position in the draft lottery come April; not cruising to home-ice advantage in the playoffs. Ironically, the city of Las Vegas was facing one of its biggest potential losses in betting history as the Knights were on the brink of a Cup win.</p>
+
+<p>To all the fans who stuck with them from the beginning, through all the adversity… yeah, no. The unprecedented success of the Golden Knights has brought to the forefront a recurring theme: Sports aren’t always fair. Kevin Durant joining the Golden State Warriors. The college football playoff selection process when it comes to non-power-5 teams (read: UCF). The list goes on. Do you think fans of the St. Louis Blues, who have never won a Cup and haven’t made it to the Finals in 48 years, have a soft spot for Vegas? Or fans of the Florida Panthers, who have gone 21 years without winning a single playoff series?</p>
+
+<p>Here is how one of the greatest sports stories of this millennium unfolded.</p>
+
+<p>The first thing to look at is roster composition. Although teams were not able to protect as many players as in previous expansion drafts, general manager George McPhee didn’t exactly have a cupboard full of exciting star talent to choose from. Each team was allowed to protect seven forwards, three defensemen, and one goaltender, or eight skaters regardless of position and one goaltender. There were some minor rules such as the requirement to expose at least two forwards and one defenseman who played 40 or more games in the previous season, but nothing that would make an organization have to give up a perennial superstar.</p>
+
+<p>Mock drafts had the team chalk full of fringe top-6 forwards, borderline top-4 defensemen and a slew of young but unproven wildcards. And that is how the actual draft appeared to go down last summer. Pundits lamented the mediocre, uninspiring collection of players. Sure, the future looked bright with some exciting prospects and draft picks to develop in coming years. But there was no indication that this team would be competing for a Stanley Cup in their first season.</p>
+
+<p>
+Enter an offense that would see the emergence of new, elite talent, a goaltender with a history of success playing the best hockey of his career, and a coach whose system is very much compatible with the ‘speed and skill’ style of the modern NHL.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/vegas/pic1.png" alt="golden knights"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>William Karlsson turned into an elite goal scorer seemingly overnight. He failed to top 10 goals in each of his first three seasons in the NHL with Anaheim and Columbus. Moves to Vegas and pots 43, third in the league behind only Alex Ovechkin, one of the best scorers of all time, and young phenom Patrik Laine. Even worse for Columbus, they traded Vegas two high draft picks to select Karlsson (and take on a bad contract to provide salary cap relief).</p>
+
+<p>Many on the Vegas roster who had breakout seasons took advantage of increased responsibility, leading to more ice time, powerplay time, etc. Karlsson played nearly 19 minutes per game, on the first powerplay unit, compared to 13-14 minutes and almost no PP time with Columbus. This is a recipe for increased production, regardless of the player. A 23.4 shooting percentage is unsustainable, so some type of regression is expected next year. But scoring 40+ goals in a season doesn’t happen by accident. Karlsson is one of the top young players in the game today and a building block for Vegas going forward.</p>
+
+<p>Jonathan Marchessault was similarly involved in a trade that would help Florida clear out a bad contract. In hindsight, that did not turn out so well for the Panthers. Every dollar counts in the salary cap era, and it’s clear that teams have made it a top priority to manage their money. Vegas took advantage of this because they have plenty of cap space; no superstars means no reason to sign anyone to albatross contracts. Karlsson is a restricted free agent and is due to get paid this offseason, but they locked up Marchessault to a six year, $5 million per deal that is looking like it could be an absolute steal.</p>
+
+<p>
+Vegas was competitive right off the bat. By midseason mark, they created a sizable gap from first to second in the Pacific and never relinquished it.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/vegas/pic2.png" alt="golden knights"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>The Golden Knights boasted a record of 29-10-2 at T-Mobile Arena on the Las Vegas strip. Only Winnipeg and Pittsburgh had more wins at home. The theory of ‘Vegas Flu’ has been tossed around, where visiting teams would succumb to the atmosphere/distractions of the city on nights before playing the Knights. But nearly every game has been sold out and their 103.9% average capacity is fourth in the league. Ticket prices are not cheap either. Extravagant pregame shows, boisterous locals, and the support of a city riding a wave of anomalous success has created significant home ice advantage.</p>
+
+<p>Advanced hockey analytics paint a favorable picture of the Knights as well.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/vegas/pic3.png" alt="golden knights"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>The scope of quality hockey statistics is not nearly at the level of basketball, and nowhere close to baseball. The sport is more fluid than either of those two, and parallels soccer in its low scoring nature. How do you judge a team’s overall strength? Goals scored and against is the obvious answer, but there are only a few hundred of those per team, per season. Largely influenced by random fluctuations and ‘puck luck’, the sample size over a single year is not enough to draw definitive conclusions.</p>
+
+<p>Instead of looking at goals, shots (on goal, blocked, missed net) have been used as a proxy for puck possession. Generally, if a team has more shot attempts for than against, they probably have the puck more. The graph above uses scoring chances, which are shot attempts from dangerous scoring locations. 5v5 indicates these are even strength scoring chances. Further adjustments such as taking into account the score of the game (a team with the lead tends to sit back and defend it, hence the trailing team will get a skewed percentage of chances) can also be made.</p>
+
+<p>The highlighted regions of the graphic above are top-5 and bottom-5 indicators. While Vegas does not lie in any of the blue, they are in the fourth quadrant (‘Good’), generating more scoring chances per 60 minutes and allowing less than league average. It’s important to not put too much stock into any one statistic. Calgary and Carolina look like superb teams here, but neither made the postseason (due to a combination of mediocre goaltending and scoring ineptitude).</p>
+
+
+<p>A record of 20-6-3 against Pacific division rivals foreshadowed good things to come in the playoffs. The overwhelming factor in Vegas’ run to the Stanley Cup Final was the play of their goaltender, Marc-Andre Fleury.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/vegas/pic4.png" alt="golden knights"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Fleury has been the face of the franchise from the beginning. After losing his starting job to the younger Matt Murray in Pittsburgh, he was clearly the best available netminder up for selection. The first overall pick in the 2003 Entry Draft, ‘The Flower’ has enjoyed a decorated career. Three Stanley Cups, 404 wins (11th all time). He posted career highs in save percentage and goals against average in Vegas’ inaugural season. A concussion caused him to miss two months early in the year or he might’ve topped his previous high of 42 wins. Remarkably, the Golden Knights hardly missed a beat despite being down to their fourth string goalie at one point.</p>
+
+<p>The first playoff series in franchise history would come against Los Angeles: A veteran team that has won two Cups in recent years, and usually turns it up a notch in the postseason. It was a goaltending duel from start to finish. Kings goalie Jonathan Quick, 2012 Conn Smythe winner, did everything he could to give his team a chance to win. Unfortunately for him, the Kings offense scored 3 goals in 4 games and were shutout twice by Fleury in a sweep for Vegas.</p>
+
+<p>Next up was San Jose. Okay, this was a real playoff team. Coming of a sweep of their own against Anaheim, the Sharks will put Vegas in their place. Nope. The Knights jumped out to a 4-0 lead just 12 minutes into the series, completely outclassing the Sharks 7-0 in Game 1. It would go six games, but on the back of Marc-Andre Fleury, Vegas proved too much for San Jose to overcome.</p>
+
+<p>The Western Conference Final would pit them against the Jets. The Pacific Division was weak this year; this was the true Cup contender that would end the Knights Cinderella run. Negative. Vegas won four straight after dropping Game 1 in Winnipeg. Fleury did not allow more than two goals in games 2 through 5.</p>
+
+<p>Miraculously, an expansion team was heading to the Stanley Cup Finals. Only the Washington Capitals, a franchise with a long history of playoff disappointment, stood in their way. They were not favorites to come out of the East, and Vegas had defeated them in both matchups during the regular season. Surely the Knights were destined to achieve the unthinkable and make quick work of them…</p>
+
+<p>Funny how sports work sometimes.</p>
+
+<p>Fleury fell back down to Earth. Heading into the SCF, he was on track to have the best playoff run by a goaltender in terms of save percentage since the 2005 lockout (at least 10GP). His numbers fell off a cliff against Washington, although he was hardly to blame for the series loss. Vegas’ defense was carved up by the Capitals attack, leaving Fleury out to dry. Caps goalie Braden Holtby stole the spotlight. Evgeny Kuznetsov had the most productive spring since Evgeni Malkin and Sidney Crosby of the ’08-09 Penguins. Alex Ovechkin, starved of postseason success throughout his career, played inspired hockey to lead Washington to its first Stanley Cup in franchise history. There are very few people in the entirety of the sports world who deserved a championship more than him.</p>
+
+<p>Although this incredible run by Vegas did not get its storybook ending, their inaugural season was an overwhelming success. They’ve accomplished more in one year than many teams have in decades. With a core of young studs, a franchise goaltender, and plenty of cap space, it will be an exciting summer and future for the Golden Knights.</p>
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

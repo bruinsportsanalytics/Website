@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Why Anthony Davis and the Pelicans Failed</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/chadshimozaki">Chad Shimozaki</a>
+                      
+                    
+                  
+                  • 09 Feb 2019 •
+                  
+                    
+                      8 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/ad_pels/cover.jpg" alt="cover photo"><figcaption></figcaption></center>
+</figure>
+
+<p>Despite having one of the top-five players in the NBA, the New Orleans Pelicans struggled for seven years to surround <a href="https://stats.nba.com/player/203076/">Anthony Davis</a> with enough talent to consistently make the playoffs. In 2015, the Pelicans - without <a href="https://stats.nba.com/player/201950/">Jrue Holiday</a> - were swept by the first iteration of the current Warriors Dynasty. Davis's only other postseason appearance came in 2018, when the Pelicans upset the 3-seed Portland Trailblazers in a stunning sweep. Although the Pelicans lost to the Warriors again in the next round, their second round exit was viewed as a success after the enormous loss of DeMarcus Cousins in late January due to a ruptured Achilles.</p>
+
+<p>However, the Pelicans' success did not continue into the 2018-2019 season. After the Pelicans dropped to 22-28 and 5.5 games out of the playoffs, "The Brow" decided he had seen enough and requested a trade.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/ad_pels/pic1.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The Pelicans "entertained" several trade offers from the Los Angeles Lakers, but ultimately decided to keep Davis until the offseason when the Celtics can enter the bidding, hoping for more lucrative offers. Davis has made it clear he intends to play for the Pelicans the rest of the season since he is still under contract, and the Pelicans "plan to allow Davis back into the lineup for the rest of the season", according to Wojnarowski. Despite this, the Pelicans are still six games out of the 8-seed and behind the Kings, Lakers, Mavericks, and Timberwolves. Unless the Pelicans go an a magical run, they will likely still miss the playoffs.</p>
+
+<p>The easiest explanation for the Pelicans' struggles this season is a constant plague of injuries to key rotation pieces. Davis, <a href="https://stats.nba.com/player/202703/">Nikola Mirotic</a>, and <a href="https://stats.nba.com/player/203901/">Elfrid Payton</a> all sustained serious injuries, missing 14, 23, and 36 games so far this season, respectively. They have only deployed one of their ideal fives of Payton, Holiday, <a href="https://stats.nba.com/player/202734/">E'Twaun Moore</a>, Mirotic/<a href="https://stats.nba.com/player/203944/">Julius Randle</a>, and Davis in 11 games this season and were 7-4 in such games (the Pelicans dealt Nikola Mirotic to the Milwaukee Bucks on the morning of the NBA trade deadline on February 7).</p>
+
+<p>But every team encounters injuries - the Nuggets led the West for most of the first half of the season despite injuries to <a href="https://stats.nba.com/player/203914/">Gary Harris</a>, <a href="https://stats.nba.com/player/203115/">Will Barton</a>, and <a href="https://stats.nba.com/player/200794/">Paul Millsap</a> because of the <a href="http://www.bruinsportsanalytics.com/jokicrisingstar">brilliance of Nikola Jokic</a>. <a href="https://stats.nba.com/player/201935/">James Harden</a> took injuries to <a href="https://stats.nba.com/player/101108/">Chris Paul</a>, <a href="https://stats.nba.com/player/201569/">Eric Gordon</a>, and <a href="https://stats.nba.com/player/203991/">Clint Capela</a> in stride and averaged 43.6 (!) points per game in January. However, most (if not all) NBA experts would agree that Davis is a better two-way player than Jokic and Harden, so how did the Pelicans fall to the 13-seed in the Western Conference?</p>
+
+<p>One reason is the Pelicans lacked much of any depth this season beyond Davis, Holiday, Randle, and Mirotic. The Pelicans' bench only scores 30.7 points per game, ahead of only the Rockets and Warriors.</p>
+
+<p>E'twaun Moore was scorching from three in October and November, but has been in a major slump since. <a href="https://stats.nba.com/player/203121/">Darius Miller</a>, <a href="https://stats.nba.com/player/1628402/">Frank Jackson</a>, and <a href="https://stats.nba.com/player/204025/">Tim Frazier</a> have averaged 31, 20, and 17 minutes over the Pelicans' last 15 games.</p>
+
+<p>One bright spot is that <a href="https://stats.nba.com/player/1626143/">Jahil Okafor</a> has stepped up admirably in Davis's absence and improved his defense from <a href="https://stats.nba.com/player/202683/">Enes Kanter</a> levels of unplayable to sneakily impressive. Opponents are shooting only 48.4% on shots within 6 feet of the rim against Okafor (a better mark than <a href="https://stats.nba.com/player/203497/">Rudy Gobert</a>, <a href="https://stats.nba.com/player/1626167/">Myles Turner</a>, and Davis), per NBA.com.</p>
+
+<p>The Pelicans' second best player, Jrue Holiday, is averaging 20.9 points, 8 assists, and 5.1 rebounds per game this season. In the last nine games without Davis, Holiday has kept the Pelicans in every game, with five of their six losses in that span decided by only six points or less.</p>
+
+<p>When either Davis or Holiday sat out this season, the Pelicans had an abysmal point differential (points scored - points allowed): -5.1 when Holiday played without Davis and -21.4 when Davis played without Holiday. The Pelicans had a net rating[1] of 10.1 and an offensive rating of 115.3 when both Holiday and Davis shared the floor, ranking 15th and 7th in the NBA, respectively, out of 84 pairs of teammates who have played at least 1000 minutes this season, per NBA.com.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/ad_pels/pic2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The Pelicans' inability to surround Davis with consistent talent the last seven years is a result of a series of poor decisions and win-now moves. For example, in 2015, the Pelicans resigned <a href="https://stats.nba.com/player/201600/">Omer Asik</a> to a five-year, $60 million deal and <a href="https://stats.nba.com/player/201582/">Alexis Ajinca</a> to a four-year, $20.2 million contract, severely depleting their cap space. In 2016, the Pelicans let Eric Gordon and <a href="https://stats.nba.com/player/201583/">Ryan Anderson</a> leave in free agency to become key rotation shooters for the Houston Rockets. The Pelicans also signed <a href="https://stats.nba.com/player/203524/">Solomon Hill</a> for $48 million over four years, further restricting their cap space.</p>
+
+<p>The only first round pick New Orleans has drafted in that span was <a href="https://stats.nba.com/player/1627741/">Buddy Hield</a> in 2016, who the Pelicans proceeded to trade at the trade deadline in 2017. Hield is currently having a breakout season with the Sacramento Kings, canning 3.4 three pointers per game (behind only <a href="https://stats.nba.com/player/201939/">Stephen Curry</a>, James Harden, and <a href="https://stats.nba.com/player/202331/">Paul George</a>) on 45.5% shooting from behind the arc. Hield is a consistent threat from deep, something the Pelicans have desperately lacked around Anthony Davis.</p>
+
+<p>The Pelicans did make some good moves. Trading for DeMarcus Cousins was an unexpected gamble that looked promising until Cousins ruptured his Achilles. In the summer of 2017, the Pelicans signed <a href="https://stats.nba.com/player/200765/">Rajon Rondo</a> to a one-year deal. Shortly after Cousins tore his Achilles, the Pelicans traded for Nikola Mirotic, who seamlessly paired alongside Anthony Davis. The quartet of Rondo, Holiday, Mirotic, and Davis propelled the Pelicans to a 20-11 record and the 6-seed in the Western Conference.</p>
+
+<p>During the 2018 offseason, the Pelicans did not re-sign Rondo or Cousins (who signed with the Warriors after not receiving other serious offers), instead signing Payton and Randle.</p>
+
+<p>The main issue with the Pelican's 2018-2019 roster was three of their best four players are most comfortable playing power forward or center, so Alvin Gentry hesitated playing Mirotic, Randle, and Davis all at the same time. In the few games between Mirotic's return and Davis's finger injury, the Pelicans experimented with an enormous lineup, featuring all of Holiday, Mirotic, Davis, and Randle at the same time. In the 58 minutes those four shared the court, the Pelicans had a net rating of 17.1 (the Warriors' lineup of Curry, Klay Thompson, Kevin Durant, and Draymond Green have a net rating of 15.1 this season). Had the Pelicans not been decimated by injuries and continued deploying their ultra-big lineup, they may have remained closer in the playoff race and Davis may have waited to divulge his desire to be traded. Instead, the Pelicans were forced to look towards the future and traded Mirotic to the Bucks for four future second round picks.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/ad_pels/pic3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/ad_pels/pic4.png" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/ad_pels/pic5.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The other reason for the Pelicans' struggles this season is an absurd inability to execute in close games. The Pelicans have lost 22 out of the 32 games in which the score is within five points with five minutes or less remaining, the second-worst winning percentage ahead of only the last place New York Knicks.</p>
+
+<p>In these "clutch situations", the Pelicans have been outscored by 59 points (second-worst), have a -21.5 net rating (second-worst), an offensive rating of 86.4 (worst), shot 35.6% from the field (worst), and shot 14.8% from three (worst).</p>
+
+<p>The Pelicans foul opponents too much, with opponents attempting 7.2 free throws for every 10 field goal attempts in clutch situations, per NBA.com.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/ad_pels/pic6.png" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>With Davis returning to the lineup, some Pelicans fans might be hoping for a magical run that lifts New Orleans back into the playoffs and changes Davis's mind about wanting a trade. ESPN's BPI Playoffs Odds estimates the Pelicans have a 9.5% chance at making the playoffs, while FiveThirtyEight projects the Pelicans to have a 12% chance of making the playoffs. If the Pelicans can stay healthy and perform better in close games, Anthony Davis is the superstar who could pull off such a ridiculous feat with only 27 games remaining.</p>
+
+<p>However, the most likely ending to this fiasco is the Pelicans missing the playoffs and reopening trade discussions with teams around the draft and free agency. The Celtics hold the best potential return for Davis if they include <a href="https://stats.nba.com/player/1628369/">Jayson Tatum</a> with <a href="https://stats.nba.com/player/203935/">Marcus Smart</a>, <a href="https://stats.nba.com/player/201143/">Al Horford</a>, and multiple future first round picks. The Lakers "kitchen sink" offer of <a href="https://stats.nba.com/player/1627742/">Brandon Ingram</a>, <a href="https://stats.nba.com/player/1628366/">Lonzo Ball</a>, <a href="https://stats.nba.com/player/1628398/">Kyle Kuzma</a> and their own first round picks will most likely still be available. Another team not on <a href="https://twitter.com/ShamsCharania/status/1092505032199688192">Davis's list</a> may shock the league and go all-in for a year to convince Davis to resign. Regardless, the Pelicans must maximize the return on their superstar, and when they get the next "Anthony Davis", they better not waste it.</p>
+
+<p><i>Statistics updated through February 6, 2019</i></p>
+
+<p>________________</p>
+
+<p>[1] Net rating is one of the best indicators of a team's success, representing the difference between a team's offensive rating and defensive rating, where offensive and defensive ratings are the number of points scored and the number of points allowed per 100 possessions, respectively.</p>
+
+
+
+
+
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

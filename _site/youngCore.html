@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Keys to Success for the Young Lakers Core</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/justinyee">Justin Yee</a>
+                      
+                    
+                  
+                  • 03 Dec 2018 •
+                  
+                    
+                      6 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <p>With Lebron coming to Los Angeles, the expectations surrounding the Lakers havent't been this high since the Kobe Bryant, Dwight Howard, and Steve Nash team-up. After missing the playoffs for blank consecutive years, the Lakers look to make a playoff run and possibly contend for a championship title with the addition of the NBA's most prominent star. In addition to Lebron James, the Lakers added notable veterans such as Rajon Rondo, Javale McGee, and Lance Stephenson. However, the Lakers remain at their core a very young team, with blossoming players with high potentials. These young players who look to be the future of the franchise are Brandon Ingram, Kyle Kuzma, Josh Hart, and Lonzo Ball. In this article, I will focus on these young players, analyzing their individual game log data I retrieved from <a href="https://www.basketball-reference.com/">Basketball-Reference.com</a> and using John Hollinger's Game Score statistic as a metric in determining the success each player had the last 2017-18 season in each game they played in. Game Score is a more complex metric that was designed to roughly estimate the success of a player's single game. If you are interested in knowing how Game Score is exactly calculated, you can find the informaion in this <a href="https://www.nbastuffer.com/analytics101/game-score/">link</a>. My goal in analyzing this data is to highlight the strengths and weaknesses of each player from the perspective of exactly how each succeeded relative to their average performances of the season.</p>
+
+<h4><b>Why GameScore</b></h4>
+
+<p>I made the choice of analyzing the young core's strengths and weaknesses through the lens of GameScore based upon GameScore's reptuable history and also based upon a convenience standpoint.</p>
+
+<p>John Hollinger, the man who devised the formula for GameScore, is known as an early leader of basketball analytics, and is currently the Vice President of Basketball Operations for the Memphis Grizzlies. To verify the accuracy of Gamescore as a metric for individual success, I found that two of the most iconic individual performances, Michael Jordan's 69 point, 18 rebound game against Cleveland in 1990 and Kobe Bryant's 81 point game against Toronto in 2006, were the highest GameScores since 1983.</p>
+
+<p>Conveniently, Basketball-Reference.com provides individual player boxscore data with GameScore included. Thus, GameScore became both a logical and convenient choice to use as a measurement of individual success for the young Lakers core.</p>
+
+<h4><b>Exploring the Data</b></h4>
+
+<p>To start my stastical analyisis, I began by exploring the data. First, we can take a quick look at the distributions of Game Score for each player, as well as comparing the mean Game Score for each player in the following charts.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/youngC/pic1.png" alt="picture 1" style="max-width: 95%;"><figcaption>lonzowire.usatoday.com</figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/youngC/pic2.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>From these histograms, we can notice that the distribution of the Game Score's were roughly similiar to normal distributions with the exception of outliers. We want to capture what the greatest predictors are of each individual's Game Score relative to their own average performance on the year. In other words, we want to find out exactly what that player did exceptionally well or exceptionally poorly to merit a good or bad game score.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/youngC/pic3.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>In the above chart we can see the average Game Scores for each player for the 2017-2018 season. Visually, we can see that the young core all have about the same average Game Scores, with the exception of Hart, who played the least amount of minutes.</p>
+
+<h4><b>Methodology and Rationale</b></h4>
+
+<p>From a statistical standpoint, my primary methodology predicting the Game Score statstic using variables from the game logs as my predictive variables through a multiple linear regression model. The rationale behind choosing such a model is for interperatable purposes, as it is clear from the output of this model the effects of each variable in predicting the statistic Game Score.</p>
+
+<p>An essential part of building these models is the question of normalizing the data. Ultimately, I decided I wanted to normalize by individual since this will tell us what the individual should work on more for their own personal game, not compared to everyone else.</p>
+
+<p>To build the models, I tested the subsets up to a total of five predictors through an exhaustive search, choosing the model with the highest adjusted R2. If you are interested in learning more about the models built or datasets you can visit the datasets and code on my <a href="https://github.com/jgyee/BSA-Young-Lakers-Data-Game-Score-Analysis">github</a>. The following charts below summarize my results for these models.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/youngC/pic4.png" alt="picture 1" style="max-width: 95%;"><figcaption>lonzowire.usatoday.com</figcaption></center>
+</figure>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/youngC/pic5.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<h4><b>Finding the Keys to Success</b></h4>
+
+<p>Let us now break up the models and analyze each separately, giving recommendations to each player their "keys to success", and what parts of their game they should work on more, basing our suggestions on the coefficients of the models.</p>
+
+<p>For Hart, his field goal atempts most drastically affects his Gamescore negatively relative to his fellow teammates, meaning he should <b>focus on better shot attempts</b>. The other coefficients of Hart's model rank all fairly high compared to the rest of the young core, alluding to Hart's strong overall game and lack of offensive deficiencies.</p>
+
+<p>For Kuzma, his turnovers most adversely affect his Gamescore negatively in comparison to the other players, meaning he should focus on being more careful with the ball. In addition, his field goal attempts do not dramatically decrease his Gamescore compared to his fellow teammates. These two factors may be indicative of Kuzma <b>continuing to be aggressive shooting the ball</b>, but to temper that aggression with more patience when driving or passing, which can lead to costly turnovers.</p>
+
+<p>For Ingram, his field goals most positively improve his performance, so he should focus on staying aggressive and <b>being a primary scoring option</b>. His free throw coefficient is lagging behind that of Kuzma and Hart. To improve, he can focus on drawing more fouls and get to the line more. Additionally, he can <b>improve his free throw percentage</b>, so that when he does get to the line, he converts those attempts into points.</p>
+
+<p>For Ball, his assists and steals most positively affect his Gamescore relative to the other three players. Unsurprisingly, Lonzo's passing is the strongest part of his game and contributes to the majority of his success in his best games. For him to succeed, he must <b>keep his assists up</b>, maintain aggressive on defensive possessions, as well as <b>improve on his scoring ability.</b></p>
+
+<p>Looking across the various models, we have noticed some differences between the players. These results are somewhat suprising, as they give us a different perspective than looking at a player's overall season statistics, such as Josh Hart's 47% FG% on the season telling us that he is an efficient scorer. This compared to Lonzo Ball's shockingly-low 36% FG% from last season. However, we must keep in mind that these statistics are normalized, so they are adjusted for in respect to that player's average performance. This is the key lens of our models we must look through in order to interpret and know why the results are the way they are.</p>
+
+<h4><b>Conclusion and Further Remarks</b></h4>
+
+<p>There are two key aspects of our analysis that differentiate it from the typical, more basic analysis of a player's performance. From the perspective of looking at singular games rather than a whole season, we can find different results that may give us deeper insight into the success of these players solely on a game-to-game basis. Addtionally, choosing to normalize based on that player's own performances, we can see statistical differences in their own games rather than comparing it to a metric of other players, such as league averages for box-score statistics. I hope by reaading this article, you have gained some extra insight into the games of the Young Lakers Core. If you wish to read more about further remarks and potential pitfalls, please check out my <a href="https://github.com/jgyee/BSA-Young-Lakers-Data-Game-Score-Analysis">github</a>.</p>
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

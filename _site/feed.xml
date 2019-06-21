@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-31T16:11:47-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bruin Sports Analytics</title><author><name>Bruin Sports Analytics</name></author><entry><title type="html">The issues with the Duckworth-Lewis-Stern Method</title><link href="http://localhost:4000/DuckworthLewisSternMethod" rel="alternate" type="text/html" title="The issues with the Duckworth-Lewis-Stern Method" /><published>2019-05-28T22:16:59-07:00</published><updated>2019-05-28T22:16:59-07:00</updated><id>http://localhost:4000/DuckworthLewisSternMethod</id><content type="html" xml:base="http://localhost:4000/DuckworthLewisSternMethod">&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/cover.jpg&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;Jonny Bairstow batting against Chennai Super Kings in an IPL 2019 game (Credits: in.com)&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With the Indian Premier League wrapped up and the ICC World Cup just on the horizon, the cricket fever is definitely reaching its peak. As more and more people turn towards cricket to keep themselves entertained over the summer, it is probably safe to say that people who have been newly introduced to the sport won’t find it particularly easy to follow. While cricket is an already complicated game to begin with, there is one notorious component of the game that even most seasoned cricket fans fail to completely grasp - the Duckworth-Lewis-Stern (DLS) method.&lt;/p&gt;
+
+&lt;h3&gt;What is the Duckworth-Lewis-Stern Method?&lt;/h3&gt;
+
+&lt;p&gt;At the heart of it, cricket is all about scoring more runs than the opponent. While test cricket has more flexibility in how this can be achieved, limited overs cricket (ODIs and Twenty-20s) is more straightforward in terms of the objective of the game. You have a certain number of overs available to you and you try to score as many runs as you can. Where the DLS method comes in is in the event of any interruptions during the game, most likely rain, which restricts the match from being completed in its entirety. In such a scenario, the number of overs that either one or both of the teams will face is adjusted, in order to finish the game in time, and the DLS method is used to accordingly adjust the score that the team batting second would require to win.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic1.jpg&quot; alt=&quot;picture 1&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Frank Duckworth and Tony Lewis (Credits: The Telegraph)&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The DLS method is based on the principle that in a limited overs match, a team has two ‘resources’ available to them. The first one is the number of overs that they still have to face and the second is the number of wickets that they have left. It is easy to see that a team’s final score is strongly dependent on how many resources they have left at a particular stage of the game. Obviously, a team with more overs left will face more deliveries, and hence will have more chances to score. As for the wickets remaining, a team with more wickets can afford to take more risks and bat more aggressively, hence boosting their score.&lt;/p&gt;
+
+&lt;p&gt;These two points manifest themselves in a resource table, which provides the percentage of resources that a team has at different points of the game. Another peculiarity of cricket shows up here because in all international and first-class matches, the ‘Professional Edition’ of the system is used, which is not publicly available. Due to the presence of such a black box in the DLS calculations, I’m restricted to the use of the ‘Standard Edition’ for my analysis. The difference between these is that the ‘Professional Edition’ takes into account the score of the team batting first and makes slight adjustments to the resource table accordingly, while the ‘Standard Edition’ doesn’t take this into consideration. The ‘Standard Edition’ showed huge deviations in high scoring games and the switch to the ‘Professional Edition’ has helped fix this issue.&lt;/p&gt;
+
+&lt;p&gt;The DLS method was formulated to be used for 50-over games, but with the inception of the now incredibly popular Twenty-20 (T20) format, the method has been used in this format of the game as well. While it was devised considering the moderate scoring rates in 50-over games, the fact that the same formulation is being used for the much more explosive 20-over format does raise some concerns and this is exactly what I hope to investigate in this article. The relative importance of wickets and overs remaining was calibrated for the 50-over format and critics often point out that wickets are relatively less valuable in the shorter format of the game, making the DLS method less accurate. The ‘Standard Edition’ resource table scaled for a T20 game is shown below.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic2.jpg&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;h3&gt;How is the Duckworth-Lewis-Stern Method used?&lt;/h3&gt;
+
+&lt;p&gt;The DLS Method is based around this straightforward equation:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The par score is the number of runs that the team batting second has to score in order to tie the game up. For instance, a game between Rising Pune Supergiants and the Kolkata Knight Riders during IPL 2016 was interrupted by rain at the end of the 18th over during Rising Pune Supergiants’ innings due to which Kolkata Knight Riders could only bat for 9 overs. As a result, their target was reduced to 66. This is slightly higher than a target of 61, which is what would have been obtained using the ‘Standard Edition’.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Scorecard for the game (Credit: ESPN Cricinfo)&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;h3&gt;How effective is the Duckworth-Lewis-Stern Method?&lt;/h3&gt;
+
+&lt;p&gt;Looking at the &lt;a href=&quot;https://www.kaggle.com/imrankhan17/t20matches&quot;&gt;dataset of over 6000 Twenty-20 matches played between 2003 and 2017&lt;/a&gt;, we can see that the split between the games won by teams batting first and those won by the team fielding first is pretty even. This holds true even for games which were interrupted due to rain and required the use of the DLS method.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic5.jpg&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But when we focus just on the games played in the &lt;a href=&quot;https://www.kaggle.com/manasgarg/ipl&quot;&gt;Indian Premier League between 2008 and 2018&lt;/a&gt;, we see a huge disparity in the split. While the games played under normal conditions are more or less equally distributed in terms of whether teams batting first or second got the spoils, when we look at the matches in which the DLS method came into play, the team fielding first alarmingly won 74% of the time. It is important to note that this is based on a small sample size of merely 19 games, but the fact that this divide is present, does point towards a systemic issue in the DLS method which fails to account for the explosiveness and rapidly fluctuating nature of a T20 game.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic6.jpg&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The original Duckworth-Lewis Method used a score of 245 as the average score in a 50-over game in its formulation. This translates to a run rate (average runs scored per over) of 4.90. Looking at the first innings scores for Indian Premier League games, we see that the average runs scored is 162.11, which translates to a run rate of 8.11. This is significantly higher than what the norm was when Duckworth and Lewis came up with their formulation. This does give some validity to the argument made about the number of overs remaining being a significantly more valuable resource in a T20 game than it is in its 50-over counterpart. The boxplot below shows just how high the scores in T20 games can get.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic7.jpg&quot; alt=&quot;picture 7&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;To get a better sense of whether the resource table fits well for a T20 game, I used data from the IPL games to see what the DLS method predicted the score to be for teams batting first based on the resources they had left at the end of the first half of their innings, i.e. 10 overs. The scores that the teams batting second achieved have been ignored because their strategy is often dictated by what the target is. For instance, a team chasing a lower target might chose to play conservatively and score at a rate slower than they normally would. Hence, they don’t provide an accurate representation of a team’s use of its resources.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic8.jpg&quot; alt=&quot;picture 8&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For a fair and accurate system, one would expect the predicted scores to be close to the actual scores and the error (actual score - predicted score) to have a mean near 0 along with a small standard deviation. While the scatterplot looks pretty evenly distributed, an in-depth analysis shows that the DLS method underestimated the final score in a staggering 59.39% of the games. The histogram, which shows the distribution of the error, does follow a Gaussian distribution, but it is easily noticeable that it is not centered around 0. The mean of the error is actually 4.44, which is pretty impressive, but the standard deviation comes out to be a disappointing 26.29. These predictions are based on the Standard Edition and even though the Professional Edition will allegedly provide better results, this does point towards systemic errors in the DLS method vis-à-vis its use in T20 games.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic9.jpg&quot; alt=&quot;picture 9&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Another criticism that the DLS method faces is that it fails to account for the individuality of the players. A loss of wicket is treated the same in terms of the resources lost regardless of the player who was actually dismissed. This is not representative at all of what transpires over the course of an actual game. An in-form, experienced batsman is likely to do way more damage and both the teams are aware of this fact. The dismissal of a set batsman who’s been at the crease and been performing well can turn the game completely on its head, whereas the loss of the wicket of someone who isn’t at the top of his game will probably won’t have that deep of an impact on the game. So the fact that the DLS method provides equal weights to each batsman is slightly troubling.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic10.png&quot; alt=&quot;picture 10&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;David Warner's contribution to Sunrisers Hyderabad's 2019 IPL total&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Looking at the most recent season of the Indian Premier League, we can see that David Warner, who was the highest run scorer in the tournament, was responsible for an impressive 35.5% of his team’s total score in the 12 games that he played. Similarly, Kings XI Punjab’s K.L. Rahul alone scored 24.4% of the 2429 runs that the team accumulated over their 14 games. Taking into consideration the enormous contributions that these players made to their teams, it does seem unfair that the DLS assigns a weight of only a few percent to their wickets. A similar argument could be made for bowlers as well. Jasprit Bumrah’s brilliant bowling at the death was a key factor in Mumbai Indians’ winning performances. So the fact that his over is just as valuable as that of any other bowler shows another considerable discrepancy in the DLS method.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/duckworth/pic11.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;K.L. Rahul's contribution to Kings XI Punjab's 2019 IPL total&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;h3&gt;So what can be done?&lt;/h3&gt;
+
+
+&lt;p&gt;The DLS Method is certainly an improvement on its predecessors, but that does not excuse the inherent issues that it has. With so much data being kept track of, building a system which incorporates batsmen’s strike rates, bowlers’ economy, and their averages is becoming more and more feasible. At least in the highest level of the game, making use of the numerous statistical tools and the plethora of available player and match data seems to be a logical step. Granted this would make the system even less transparent and more complex to understand, the stakes are so high that it surely warrants an attempt. Cricket is a sport where the tide can turn in a matter of a few deliveries, so it is obviously near impossible to account for each and every scenario. However, that does not mean that the current system cannot be improved. An overhaul is needed, but as for now, just hope that the rain gods are kind when you watch your favorite team play their next game.&lt;/p&gt;
+
+&lt;p&gt;Further Reading: Check out this &lt;a href=&quot;https://www.stat.sfu.ca/content/dam/sfu/stat/alumnitheses/2011/M.Sc%20thesis-%20Gamage%20Harsha%20Perera_FINAL.pdf&quot;&gt;M.Sc thesis by Harsha Perera&lt;/a&gt; focusing on the Duckworth-Lewis Method in T20 Cricket. Keep in mind that this was published in 2011, before Professor Stern became the custodian of the method.&lt;/p&gt;
+
+&lt;p&gt;Hopefully I will have updated &lt;a href=&quot;https://github.com/Vedant-Sahu?tab=repositories&quot;&gt;my GitHub&lt;/a&gt;, so that you can check out the analysis that I did and get the code for the plots that I made.&lt;/p&gt;</content><author><name>Vedant Sahu</name></author><summary type="html">With the Indian Premier League wrapped up and the ICC World Cup just on the horizon, the cricket fever is definitely reaching its peak. As more and more people turn towards cricket to keep themselves entertained over the summer, it is probably safe to say that people who have been newly introduced to the sport won’t find it particularly easy to follow. While cricket is an already complicated game to begin with, there is one notorious component of the game that even most seasoned cricket fans fail to completely grasp - the Duckworth-Lewis-Stern (DLS) method.</summary></entry><entry><title type="html">What It Takes To Be World Number 1: An Analysis of the ATP Tour</title><link href="http://localhost:4000/ATPTour" rel="alternate" type="text/html" title="What It Takes To Be World Number 1: An Analysis of the ATP Tour" /><published>2019-05-27T21:41:31-07:00</published><updated>2019-05-27T21:41:31-07:00</updated><id>http://localhost:4000/ATPTour</id><content type="html" xml:base="http://localhost:4000/ATPTour">&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/cover.png&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+&lt;p&gt;When it comes to individual sports, the title of “World Number One” is the ultimate feat an athlete can achieve. Tennis may be the most popular example of such a sport, as it is played worldwide and is heavily driven by rankings from its lowest tiers to the professional stage. While the World Number One and other top players are very famous and appear in widely-known tournaments, the complex structure of men’s professional tennis and its ranking system are by no means common knowledge. The Association of Tennis Professionals (ATP) is the governing body that organizes the events and rankings that tennis fans are so familiar with. ATP tennis is unique in that it runs year-round with a higher activity level than most other professional sports, as tournaments take place on a weekly basis. While the four Grand Slams are the most prestigious of these events, every tournament throughout the year can impact a player’s world ranking.&lt;/p&gt;
+
+&lt;p&gt;The ATP Tour, the circuit that men's professional tennis runs on, consists of several tiers that vary in prestige and quality of competition. The tier of a given tournament determines how many ATP points a player earns for winning matches in that tournament. The four main playing fields are the ATP 250, ATP 500, ATP Masters 1000, and Grand Slams. A player can participate in as many tournaments as he wants, but outside of Slams and Masters, only his six best results from all other events will count towards his ranking points. The number of points a player receives at an event increases as he wins more rounds, with the winner receiving the number of points indicated by the tournament's tier (the winner of a Slam gets 2000). Furthermore, the ranking system runs on a rolling basis and players must constantly defend the points they have. Essentially, a player only gains points from a tournament if he makes it to a further round than he did at that tournament the year before. If he cannot do this, he loses the points he failed to defend (or breaks even if he has the same result as he did a year prior). Through this point system, at the beginning of each week, the player with the most ATP points is the current World Number One.&lt;/p&gt;
+
+&lt;p&gt;The system is very straightforward, but becoming World Number One is easier said than done. Since the conception of this ranking system in 1973, only 26 men have sat atop the perch of men's tennis. Considering the rigid structure of the ATP Tour, scheduling is crucial to a player's road to relevance. To reach number one in the rankings, the question that players should ask themselves is, &quot;How can I optimize my ATP schedule to maximize the points I earn?&quot;&lt;/p&gt;
+
+&lt;p&gt;In recent years, there has been a noticeable trend in the activity level of the reigning World Number One:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;div style=&quot;width:50%; float: left;&quot;&gt;
+		&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic1.png&quot; alt=&quot;picture 1&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;width:50%; float:right&quot;&gt;
+		&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic2.png&quot; alt=&quot;picture 2&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;p&gt;Year by year, the World Number Ones are generally finishing with more points despite playing fewer tournaments per year. It is clear that careful selectivity plays a key role in the path to the top. Attending a large number of tournaments is unnecessary if a player can plan his year out in such a way that he maximizes his performance in the events that he does attend. For instance, going deep in a Masters 1000 is far more valuable than trying to win two ATP 250 tournaments in the same time span. To further examine such selective scheduling among top players, we need not look past the last fifteen years. This era of tennis has featured an unprecedented control of the top spot by three players who are clearly a cut above the rest.&lt;/p&gt;
+
+&lt;h3&gt;The Big Three&lt;/h3&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Time Magazine&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Of the 782 weeks from 2004 to 2018, Roger Federer, Novak Djokovic, and Rafael Nadal have combined to hold the number one ranking for 738 weeks. While they are all brilliant tennis players who are capable of racking up points through talent alone, sustaining that level of success over the course of nearly two decades requires intelligent tour scheduling as well. Looking back to the 2004 season (the first full year where all three played tour level matches), here is how the Big 3 have split up their tours:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Time Magazine&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;When gunning for world number one, the Grand Slams and almost all Masters events are essentially non-negotiable. However, the attendance of the Big 3 at 250 and 500 events is extremely similar as well. Although these lower-level events are the most abundant on tour, the fact that all three of them play roughly four per year suggests that they do not place much value on these tournaments. While these events offer ample opportunities to gain chunks of points quite easily, the Big 3 most likely use them as tuneups to keep themselves in form as they head into the top-tier tournaments. Consequently, the line between the lower two tiers becomes blurred as the Big 3 categorize them under one umbrella.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, there are notable similarities in the way that the Big 3 space out their tournaments. Below are maps that depict the activity levels of each of the Big 3 based on the ATP points they earned each week in the years that they finished as World Number One:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic6.png&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic7.png&quot; alt=&quot;picture 7&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;One thing that jumps out is the way that all three of them make it a point to be active in the weeks leading up to Grand Slams and then rest in the weeks following them. Coming off of a one-month layover from the previous season, they all play an ATP 250 tournament in the two weeks right before the Australian Open. Similarly, they all play nearly the entire month of May heading into the French Open. Because clay is a slower surface that requires lots of stamina and the clay court season is relatively short compared to the hard court swings, they need to gain as much match play as possible on the red dirt before Roland Garros rolls around. Moreover, this pattern of tuning up for Slams is especially clear during August, as they each play at least two tournaments to prepare for the U.S. Open at the end of the month. The time leading up to Wimbledon is unique in that there is less than a month between it and the conclusion of the French Open. Regardless, the Big 3 still make sure to squeeze in exactly one grass tournament during this brief period. Given that grass is the fastest surface and favors shorter points, it does not require as much conditioning as clay. Therefore, one week on and one week off allows them to achieve the optimal balance between getting in form for Wimbledon and having ample recovery time from Roland Garros.&lt;/p&gt;
+
+&lt;p&gt;Once the Slams have finished, the Big 3 take their rest. After the Australian Open, Wimbledon, and U.S. Open, they all take at least two weeks off. As discussed earlier, the time after the French Open is an exception because of how quickly Wimbledon arrives, so they have no choice but to play a tune-up grass tournament immediately after Roland Garros (although they still make sure to take a week off). The tournaments that take place immediately after Slams conclude are of little to no benefit for the Big 3. To them, the entire purpose of smaller events is to build up their confidence and sharpen their form heading into the larger ones. Therefore, resting after Slams is the most practical course of action, especially since all three of them are over 30 years of age.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic8.png&quot; alt=&quot;picture 8&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Federer, Nadal, and Djokovic all specialize on different surfaces (grass, clay, and hard court respectively) and possess strikingly distinct play styles. Despite these differences, they demonstrate a clear similarity with the way that they cater their tournament scheduling to the Grand Slams. From a simple mathematical perspective, this is a sound formula for capitalizing on the limited opportunities they have throughout the year to reap the largest rewards on the tour. But not everyone is talented enough to take this approach.&lt;/p&gt;
+
+&lt;h3&gt;What About Everyone Else?&lt;/h3&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic9.png&quot; alt=&quot;picture 9&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The aforementioned formula makes plenty of sense, provided that the player in question is actually capable of consistently going deep in Grand Slams. Unfortunately, for most of the world, this is not the case. The Big 3 have claimed the lion's share of Grand Slam success for the last fifteen years. Of the 60 Grand Slams from 2004 to 2018, the Big 3 have won 50. On top of that, only four Grand Slam finals since 2004 have not featured a member of the Big 3. This level of dominance does not exist in any other sport and has completely shut down the natural transition from one generation to the next that sports typically go through. No player born in the 1990's or later has ever won a Grand Slam. In fact, only two have ever made it to a Grand Slam final. Essentially, Grand Slam trophies are a distant dream for the mere mortal tennis players of today's world. In order to stay alive in the race for World Number One, the rest of the top ten players must offset this deficit by playing many more tournaments in general. Below is a display of the paths that the Big 3 took last year to earn their ATP Points compared to those of five other top 10 players: Alexander Zverev, Kevin Anderson, Dominic Thiem, Kei Nishikori, and John Isner.&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;div style=&quot;width:50%; float: left;&quot;&gt;
+		&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic10.png&quot; alt=&quot;picture 10&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;width:50%; float:right&quot;&gt;
+		&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic11.png&quot; alt=&quot;picture 11&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/div&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;center&gt;-&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;The workload disparity between the two parties is quite glaring. While the Big 3 had long, flat periods and moved up large chunks at a time, the other top ten players' paths were very busy. At a substantially high rate, they generally moved up small steps at a time in order to counteract the Grand Slam points that the Big 3 consistently racked up. On average, these five players roughly played 3 ATP 250 events and 5.5 ATP 500 events last year while the Big 3 averaged only 0.3 250s and 2 500s. Through such a high attendance rate, Alexander Zverev was able to finish within 40 points of Roger Federer for the number 3 spot, with Djokovic and Nadal at 1 and 2 respectively. It should be noted that Federer is 37 years old and has generally skipped the entire clay court season the last few years whereas Zverev is 22 years young and extremely hungry to become the face of men's tennis one day. That is no knock against Zverev; this high-frequency strategy makes plenty of sense for young players whose bodies can handle 25+ tournaments per year. And for those especially talented youngsters like Zverev and Thiem, it's the only chance they have of fighting for World Number One.&lt;/p&gt;
+
+&lt;p&gt;Overall, the approach that the rest of the top ten players take to shoot for World Number One is very different from that of the Big 3. While the Big 3 focus their entire year on the four Slams, there is a consensus among the rest of the tour in that the Slam trophies are extremely difficult for them. Despite being years younger, they would need the stars to align in order to outsmart Federer, outwork Nadal, or outclass Djokovic over five sets. So instead of banking on Slams, they feed on the many other tournaments throughout the year in order to get themselves within striking distance of a top ranking.&lt;/p&gt;
+
+&lt;h3&gt;No Way Around Perfection&lt;/h3&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic12.png&quot; alt=&quot;picture 12&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Naturally, becoming World Number One ultimately comes down to a matter of who collects the most ATP points. A player who wins six ATP 500 events and makes it to the semi-finals of all of the Masters events and Grand Slams already has more than 9000 points, which is generally enough to contend for World Number One. But in reality, there is a limit to how much one can game the system. In the history of tennis, there has only been one man (Marcelo Rios) to hold the number one ranking without ever winning a Grand Slam in his career. As obvious as it may sound, becoming World Number One requires sensational tennis, far beyond what that player normally puts on display. The Elo Rating System is an all-encompassing metric that calculates the relative skill levels of players based on factors such as quality of opposition and magnitude of matches won. Below is a comparative chart (dating back to 1973) of the Elo ratings of every year-end World Number One that year relative to his career Elo:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic13.png&quot; alt=&quot;picture 13&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;The average career Elo of all Year-End World Number Ones since 1973 is 2092.58, so the fact that players improve their Elo ratings by hundreds of points in their number one years underscores just how much they elevated their levels of play. We should acknowledge the two negative bars at the end that represent Nadal's 2017 and Djokovic's 2018 seasons. They finished those years with lower Elo ratings than years prior, but these lesser versions of themselves were still easily enough to end those years at atop the rankings. Generally speaking, World Number Ones reach new heights en route to claiming the ATP's top spot.&lt;/p&gt;
+
+&lt;h3&gt;2000 is the Magic Number&lt;/h3&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ATPTour/pic14.png&quot; alt=&quot;picture 14&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;As we've discussed, the ATP tour has many layers, all of which factor into a player's world ranking. But it is clear that the road to World Number One goes through the Grand Slams. It is no coincidence that the Big 3 have won 52 combined Slams and controlled the number one ranking for almost 95% of the last fifteen years. Despite the efforts of other top players who play far more tournaments to make up for the Slams, the 2000 points gained from these four events is still too much to overcome.&lt;/p&gt;
+
+&lt;p&gt;Once the Slams have separated the contenders from the rest of the pack, the remaining tour events then determine who belongs at the top. Stan Wawrinka and Andy Murray each have 3 Grand Slam titles, yet their careers have played out quite differently. Outside of the Slams, Murray has won 42 titles, 14 of which are Masters, whereas Wawrinka has won just 13 titles, only one of which is a Masters. Not surprisingly, Murray was the World Number One for 41 straight weeks, while Wawrinka has never even reached number 2. Slams are paramount, but what truly separates the top player from everyone else is the full body of work over 52 weeks. So, the next time you see a World Number One on TV, you'll have a better understanding of exactly how much weight that title carries.&lt;/p&gt;
+
+&lt;p&gt;Sources: ESPN, ATPTour, UltimateTennisStatistics&lt;/p&gt;</content><author><name>Kevin Hahn</name></author><summary type="html">When it comes to individual sports, the title of “World Number One” is the ultimate feat an athlete can achieve. Tennis may be the most popular example of such a sport, as it is played worldwide and is heavily driven by rankings from its lowest tiers to the professional stage. While the World Number One and other top players are very famous and appear in widely-known tournaments, the complex structure of men’s professional tennis and its ranking system are by no means common knowledge. The Association of Tennis Professionals (ATP) is the governing body that organizes the events and rankings that tennis fans are so familiar with. ATP tennis is unique in that it runs year-round with a higher activity level than most other professional sports, as tournaments take place on a weekly basis. While the four Grand Slams are the most prestigious of these events, every tournament throughout the year can impact a player’s world ranking.</summary></entry><entry><title type="html">Home Runs in the Air</title><link href="http://localhost:4000/homerunsInTheAir" rel="alternate" type="text/html" title="Home Runs in the Air" /><published>2019-05-26T11:05:40-07:00</published><updated>2019-05-26T11:05:40-07:00</updated><id>http://localhost:4000/homerunsInTheAir</id><content type="html" xml:base="http://localhost:4000/homerunsInTheAir">&lt;style&gt;
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+&lt;/style&gt;
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/inTheAir/cover.jpg&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;CBS Denver&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Every year, it seems that home runs become more and more prevalent in the modern version of Major League Baseball. After all, in recent years, more players seem to be following the Three True Outcomes when they go up to hit: a strikeout, a walk, or a home run. These outcomes seem rare because they do not require the involvement of any defensive players besides the pitcher and catcher; however, hitters are making these outcomes more common due to an increased motivation to hit home runs. Analytics in the past several years have advocated for batters to try to hit more home runs with the end goal of increasing the expected amount of runs scored; players and managers alike have been heavily influenced by the analytics revolution, as they want to gain any kind of competitive advantage they can. &lt;a href=&quot;https://www.google.com/url?q=https://www.washingtonpost.com/news/fancy-stats/wp/2018/05/04/mlb-batters-are-recording-more-strikeouts-than-hits-thats-a-big-problem-thats-unlikely-to-soon-change/?utm_term%3D.1d9a326c2ab5&amp;sa=D&amp;ust=1558897379200000&quot;&gt;In fact, players are following these analytics to such an extent that they are sacrificing batting average and on base percentage as a direct result of strikeouts&lt;/a&gt;; as players try to hit the ball farther, they are more likely to swing and miss, which explains the uptick in strikeouts.&lt;/p&gt;
+
+&lt;p&gt;With this drastic increase in long balls, some analysts have decided to focus some attention on perhaps one of the &quot;easiest&quot; places to hit homers: Coors Field in Denver, Colorado. Due to the mile-high altitude in Denver, the home of the MLB's Colorado Rockies, people often say the ball travels farther than usual due to the thin air. Although thinner air is known to provide less resistance against a ball in flight, thus allowing for more carry, this has not been substantiated by proper evidence. Thus, I carried out a hypothesis test to examine whether hitters are truly taking advantage of the thinner air in Denver versus other venues. To do this, I identified and analyzed veteran hitters with these qualifications: they played at least 2 seasons with the Rockies and at least 2 seasons with another team, they played in the big leagues for at least 6 years, they were not pitchers, and they had at least one season with more than 5 home runs. This ensured that I could compare home run statistics between sizable samples for seasons with the Rockies versus seasons without them, and I could have presumably less volatile data with veterans who have more established careers. Once this was done, I found the average home run total with the Rockies using the data for the veterans' time with the Rockies and do the same for their time on other teams. I did this by taking the total home run counts and dividing them by the number of player seasons. Since some seasons are shorter than others due to injuries and other issues, I accounted for this issue by taking the total number of games played and dividing it by 162 (games in a full season) to obtain a more accurate measure of seasons. Then, I compared these averages and made a determination as to whether or not the average home runs hit with the Rockies versus the home run average on other teams is large enough where we can say that hitters are truly taking advantage of the thin Colorado air.&lt;/p&gt;
+
+&lt;p&gt;For starters, out of the 564 players in the history of the Rockies franchise, I referenced the Rockies' team site to look at the tenures of all the players with the Rockies, other teams, and in the league overall. In the end, I manually identified only 37 players that met my qualifications. The vast majority of these qualified players were ones I had heard of before, but there were a handful that were playing long before I was born. I then went to baseball-reference.com to examine the hitting statistics for each of these 37 players, and after some web scraping and data processing, I added up their home runs, games played, and seasons played for their careers in Colorado in one table and did the same in another table for time played elsewhere. Here is what I found for time played in Colorado:&lt;/p&gt;
+
+&lt;center&gt;
+	&lt;table style=&quot;width:100%&quot;&gt;
+		&lt;tr&gt;
+		&lt;th&gt;Games Played&lt;/th&gt;
+		&lt;th&gt;Home Runs&lt;/th&gt;
+		&lt;th&gt;Seasons Played&lt;/th&gt;
+		&lt;th&gt;Home Runs per Season&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;16226&lt;/td&gt;
+		&lt;td&gt;2266&lt;/td&gt;
+		&lt;td&gt;100.1605&lt;/td&gt;
+		&lt;td&gt;22.62369&lt;/td&gt;
+	&lt;/tr&gt;
+		&lt;/table&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Over the course of 16226 games played, hitters who played for the Colorado Rockies hit a grand total of 2266 home runs. Now, this was over the course of 160 seasons, but to get a more accurate measure of seasons by dividing games played by 162, I got a smaller total of roughly 100 seasons. To find the average number of home runs hit per season, I divided the total home runs hit by the full seasons played; ultimately, I found that this group of players averaged roughly 22.6 home runs per full season, which is a little higher than what I expected, especially when considering the results for the players' time with other teams. Here is what I found for their hitting statistics elsewhere:&lt;/p&gt;
+
+&lt;center&gt;
+	&lt;table style=&quot;width:100%&quot;&gt;
+		&lt;tr&gt;
+		&lt;th&gt;Games Played&lt;/th&gt;
+		&lt;th&gt;Home Runs&lt;/th&gt;
+		&lt;th&gt;Seasons Played&lt;/th&gt;
+		&lt;th&gt;Home Runs per Season&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;33437&lt;/td&gt;
+		&lt;td&gt;3593&lt;/td&gt;
+		&lt;td&gt;206.4012&lt;/td&gt;
+		&lt;td&gt;17.40784&lt;/td&gt;
+	&lt;/tr&gt;
+		&lt;/table&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Now, this was a much larger sample size with 33427 games played and a little over 206 full seasons played elsewhere. So, we obtained a higher raw total of home runs with 3593 dingers, but after averaging this value, we find that this group of hitters averaged roughly 17.4 home runs per full season elsewhere, which is quite the drop-off from their statistics in Colorado. In fact, the difference in average home runs per full season turned out to be +5.2 HR/season in favor of Colorado. To further examine this difference, I looked at a couple of visuals to see the difference in home run distributions for both scenarios:&lt;/p&gt;
+
+
+&lt;figure&gt;
+		&lt;div style=&quot;width:50%; float: left;&quot;&gt;
+				&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/inTheAir/pic1.png&quot; alt=&quot;picture 1&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+		&lt;/div&gt;
+		&lt;div style=&quot;width:50%; float:right&quot;&gt;
+				&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/inTheAir/pic2.jpg&quot; alt=&quot;picture 2&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+		&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;These graphs represent all of the individual home run totals per actual season played, which means that I left the data as is and didn't normalize seasons with low game totals. So, some bubbles might be misleading because they are lower than they should be, but the graphs should give the reader an accurate portrayal of the differences between hitters playing for Colorado versus playing elsewhere. Clearly, there are a lot more seasons in the elsewhere graph where hitters aren't eclipsing 10 home runs. Numerically speaking, roughly 60% of seasons elsewhere resulted in a season with less than 10 home runs, in comparison to a 49% figure for Colorado. Also, despite the discrepancy in sample size in favor of the elsewhere graph, the Colorado graph actually has&lt;b&gt; more&lt;/b&gt; 30+ HR seasons (23) than seasons elsewhere (18). Clearly, hitters playing for Colorado seemingly had the upper hand when it came to long shots. This idea is further emphasized in a couple of boxplots comparing the two scenarios.&lt;/p&gt;
+
+
+&lt;figure&gt;
+		&lt;div style=&quot;width:50%; float: left;&quot;&gt;
+				&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/inTheAir/pic3.png&quot; alt=&quot;picture 3&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+		&lt;/div&gt;
+		&lt;div style=&quot;width:50%; float:right&quot;&gt;
+				&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/inTheAir/pic4.png&quot; alt=&quot;picture 4&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+		&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here, we have a couple of boxplots that further emphasize the discrepancy in home run totals between the two scenarios. Again, these visualizations represent home runs in each actual season, so I didn't manipulate these graphs in any way. Through a quick observation, one can notice that there are more outliers (denoted by circles) in the elsewhere graph, which means that it was more unusual to see home run totals above the highest whisker (horizontal line), which was roughly 35 home runs. On the other hand, the highest whisker for the Rockies graph was just over 47 home runs, which is why this higher threshold yielded only one outlier, a 49-home run season by Larry Walker back in 1997. So, even though 35+ home run seasons were unusual outside of Colorado, they were not at all unusual for hitters during their time with the Rockies. Furthermore, by looking at the stripes on the graphs, we can deduce the median home runs hit per season for each scenario. However, since these graphs did not account for full-season (162 game) totals, I calculated median values that accounted for full seasons by applying a multiplicative factor to these medians. For seasons in Colorado, the adjusted median value for home runs hit per season was roughly 15.97 home runs, while the adjusted median dipped down to 12.48 home runs per season. Again, we see that players hit more home runs on average while playing for Colorado as opposed to elsewhere.&lt;/p&gt;
+
+&lt;p&gt;The final step of this exploratory analysis was carrying out a hypothesis test for a difference in home run averages between the two scenarios. To do this, I found a t-statistic, which was the difference in home run averages divided by the standard error. In this case, the standard error was found by using the standard deviations of the home runs for the different scenarios and the number of player seasons as the sample sizes. In the end, I obtained a t-statistic of 4.82, and as a result, I obtained a p-value of approximately 0.0000007, which is extremely small. In layman's terms, this 0.0000007 figure represents the chance that the average home runs from the Colorado scenario ended up being as great or greater than the observed difference we had of 5.2 home runs per full season &lt;b&gt;if&lt;/b&gt; the averages from both scenarios were actually equal for all hitters. Therefore, since this is such a small probability, we can conclude that, on average, players for Colorado hit more home runs per season than those who play elsewhere.&lt;/p&gt;
+
+&lt;p&gt;With this in mind, we can now affirm what many have already suspected: playing for the Colorado Rockies augments an average Major League player's home run statistics by a significant margin. Because of this, hitters in Colorado should be aware that the ball will in fact carry farther than in other venues, so unlike many players today, they should ease up on their swings. Not only can they reduce the likelihood of a strikeout, but they also won't lose much when it comes to their chances of hitting the long ball, especially when you consider the increasing power of today's hitters (just look at Giancarlo Stanton). As for Colorado pitchers, they must keep in mind the increased likelihood of home runs in Colorado, so to prevent home run opportunities, they would be well served to keep the ball low and pitch away from the well-known power hitters. Plus, when it comes to aging veteran free agents who want to pad their stats and make a case for the Hall of Fame, they should consider playing their last days in Colorado, where home runs are easier to come by than elsewhere. Nelson Cruz is a good candidate for the aging veteran; while he has enjoyed great success throughout his career, he should finish his career in Colorado, where he can produce a couple more stellar seasons at the plate and thus immortalize himself among the best hitters to ever live. Overall, Colorado truly is a hitter's paradise.&lt;/p&gt;</content><author><name>Alex Veroulis</name></author><summary type="html">Every year, it seems that home runs become more and more prevalent in the modern version of Major League Baseball. After all, in recent years, more players seem to be following the Three True Outcomes when they go up to hit&amp;#58; a strikeout, a walk, or a home run. These outcomes seem rare because they do not require the involvement of any defensive players besides the pitcher and catcher; however, hitters are making these outcomes more common due to an increased motivation to hit home runs. Analytics in the past several years have advocated for batters to try to hit more home runs with the end goal of increasing the expected amount of runs scored; players and managers alike have been heavily influenced by the analytics revolution, as they want to gain any kind of competitive advantage they can. In fact, players are following these analytics to such an extent that they are sacrificing batting average and on base percentage as a direct result of strikeouts; as players try to hit the ball farther, they are more likely to swing and miss, which explains the uptick in strikeouts.</summary></entry><entry><title type="html">NBA Conference Finals Preview</title><link href="http://localhost:4000/NBAConferenceFinalsPreview" rel="alternate" type="text/html" title="NBA Conference Finals Preview" /><published>2019-05-14T10:38:13-07:00</published><updated>2019-05-14T10:38:13-07:00</updated><id>http://localhost:4000/NBAConferenceFinalsPreview</id><content type="html" xml:base="http://localhost:4000/NBAConferenceFinalsPreview">&lt;center&gt;&lt;p&gt;&lt;h4&gt;Eastern Conference Finals: Bucks (1) vs. Raptors (2)&lt;/h4&gt;&lt;/p&gt;&lt;/center&gt;
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/confPrev/pic_1.jpg&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;WKTY&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Following the first ever game-winning buzzer beater in Game 7 of a playoff series, Kawhi &quot;Four-Bounce&quot; &lt;a href=&quot;https://stats.nba.com/player/202695/&quot;&gt;Leonard&lt;/a&gt; and the Toronto Raptors will face the Milwaukee Bucks, who have patiently waited for a week since defeating the Celtics last Wednesday.&lt;/p&gt;
+
+&lt;p&gt;This series will feature the two most dominant players in the playoffs thus far: Leonard and probable regular season MVP &lt;a href=&quot;https://stats.nba.com/player/203507/&quot;&gt;Giannis Antetokounmpo&lt;/a&gt;. Kawhi and Giannis lead all remaining postseason players in &lt;a href=&quot;https://stats.nba.com/players/advanced/?sort=USG_PCT&amp;dir=-1&amp;CF=MIN*GE*20&quot;&gt;usage&lt;/a&gt; (Usage Percentage), and are the first and second most &lt;a href=&quot;https://www.basketball-reference.com/playoffs/NBA_2019_advanced.html&quot;&gt;efficient&lt;/a&gt; and &lt;a href=&quot;https://stats.nba.com/players/advanced/?Season=2018-19&amp;SeasonType=Playoffs&amp;dir=-1&amp;sort=PIE&amp;CF=MIN*GE*20&quot;&gt;impactful&lt;/a&gt; players throughout the entire playoffs (Player Efficiency Rating and Player Impact Estimate), per NBA.com.&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/confPrev/pic_2.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The first two rounds of the playoffs demonstrated that both teams adapted from their regular season playing styles (as all great teams do). The Bucks began switching on defense, something they rarely did prior to the &lt;a href=&quot;https://stats.nba.com/player/202681/&quot;&gt;Kyrie Irving&lt;/a&gt; and &lt;a href=&quot;https://stats.nba.com/player/201143/&quot;&gt;Al Horford&lt;/a&gt; high pick-and-roll, in an effort to contain Irving from driving to the basket and Horford popping out for threes. The Raptors increasingly shortened their rotation and funneled their offense through Kawhi, who took a mind-boggling 39 shots in Game 7 (more than &lt;a href=&quot;https://stats.nba.com/player/203954/&quot;&gt;Joel Embiid&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/202710/&quot;&gt;Jimmy Butler&lt;/a&gt;, and &lt;a href=&quot;https://stats.nba.com/player/1627732/&quot;&gt;Ben Simmons&lt;/a&gt; COMBINED).&lt;/p&gt;
+
+&lt;h4&gt;Key Matchups&lt;/h4&gt;
+
+&lt;p&gt;&lt;u&gt;&lt;a href=&quot;https://stats.nba.com/player/203114/&quot;&gt;Khris Middleton&lt;/a&gt; vs. &lt;a href=&quot;https://stats.nba.com/player/1627783/&quot;&gt;Pascal Siakam&lt;/a&gt;&lt;/u&gt;&lt;br&gt;
+Middleton and Siakam are both future All-Stars and the second best players on their respective teams. Middleton is shooting 46.7% from behind the arc and leads all players in plus-minus during the postseason through two rounds. Siakam has struggled since injuring his calf during Game 3 against the Sixers, shooting below 36% from the field and 21% from three in that stretch.&lt;/p&gt;
+
+&lt;p&gt;Whichever &quot;Robin&quot; contributes more scoring to help ease the load of their &quot;Batman&quot; will have an enormous impact on the outcome of this series. During the regular season, Middleton shot 40.7% from behind the arc in Milwaukee wins, but only 31.6% in losses. Siakam is the Raptors' second leading scorer (20.8 PPG) behind Leonard, with no other Raptor scoring more than 13 points per game in the postseason.&lt;/p&gt;
+
+&lt;p&gt;On defense, Middleton was the primary option to cover Leonard during three regular season matchups and will likely share the bulk of the responsibility of guarding the Raptors' most versatile scorer with Antetokounmpo and &lt;a href=&quot;https://stats.nba.com/player/202703/&quot;&gt;Nikola Mirotic&lt;/a&gt;. Siakam defended Giannis on 93 possessions over three regular season matchups and will be one of the many bodies trying to slow down Antetokounmpo (good luck!). The Raptors have the most bodies outside of Golden State to deal with Giannis in Siakam, Leonard, &lt;a href=&quot;https://stats.nba.com/player/1628384/&quot;&gt;OG Anunoby&lt;/a&gt; (when he returns), &lt;a href=&quot;https://stats.nba.com/player/201188/&quot;&gt;Marc Gasol&lt;/a&gt;, and &lt;a href=&quot;https://stats.nba.com/player/201586/&quot;&gt;Serge Ibaka&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;&lt;a href=&quot;https://stats.nba.com/player/202339/&quot;&gt;Eric Bledsoe&lt;/a&gt; vs. &lt;a href=&quot;https://stats.nba.com/player/200768/&quot;&gt;Kyle Lowry&lt;/a&gt;&lt;/u&gt;&lt;br&gt;Both Bledsoe and Lowry have disappeared for entire games during this playoffs, and are shooting a nearly identical 27.9% and 28.1% from deep this postseason.&lt;/p&gt;
+
+&lt;p&gt;Bledsoe was largely outplayed by &lt;a href=&quot;https://stats.nba.com/player/201588/&quot;&gt;George Hill&lt;/a&gt; against the Celtics, scoring in the single digits in two of the five games. Bledsoe is at his best when he is attacking the rim and defending the opposing team's point guard at the other end.&lt;/p&gt;
+
+&lt;p&gt;Despite Lowry's struggles and recent heckling on social media, he actually leads the Raptors in plus-minus during the playoffs and makes winning plays. In Game 3 of the Raptors' first round series against the Magic, &lt;a href=&quot;http://www.espn.com/video/clip?id=26563042&quot;&gt;Lowry sprinted in from the center court logo to grab an offensive rebound&lt;/a&gt; with 18 seconds left in a one possession game. In the final 90 seconds of Game 7 against the Sixers, &lt;a href=&quot;https://www.nba.com/raptors/video/teams/raptors/2019/05/13/2605242/1557711820439-nba-hil-190512-siakam-and-onedigital-2605242&quot;&gt;Lowry intercepted a pass intended for Embiid&lt;/a&gt; several feet beyond the three point line knowing the shot clock was winding down, leading to a breakaway layup for Siakam that would put the Raptors up by four. Both point guards have underperformed on offense thus far in the postseason, but are always an excellent front line for the &lt;a href=&quot;https://stats.nba.com/teams/advanced/?sort=DEF_RATING&amp;dir=-1&quot;&gt;top two defenses in the league&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Antetokounmpo vs. Leonard&lt;/u&gt;&lt;br&gt;Giannis and Kawhi are two of the best forwards playing right now no matter how you rank them with &lt;a href=&quot;https://stats.nba.com/player/2544/&quot;&gt;Lebron James&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/201142/&quot;&gt;Kevin Durant&lt;/a&gt;, and &lt;a href=&quot;https://stats.nba.com/player/202331/&quot;&gt;Paul George&lt;/a&gt;. The Greek Freak continues to replicate &lt;a href=&quot;https://stats.nba.com/player/406/career/&quot;&gt;Shaq-like numbers&lt;/a&gt; scoring 14.2 points per game on 68.8% shooting less than 5 feet from the basket, while the Klaw just scored the &lt;a href=&quot;https://twitter.com/sportscenter/status/1127770482902806528?s=21&quot;&gt;third most points in a playoff series&lt;/a&gt; &lt;i&gt;ever&lt;/i&gt;.&lt;/p&gt;
+
+&lt;p&gt;Kawhi is a two-time Defensive Player of the Year and Giannis may be the runner up for the same award this year. It will be a treat if we get to see two of the most versatile defenders guard each other consistently throughout this series.&lt;/p&gt;
+
+&lt;h4&gt;Prediction&lt;/h4&gt;
+
+&lt;p&gt;The Raptors are shooting 32.7% from behind the arc in the playoffs. If Lowry, Siakam, &lt;a href=&quot;https://stats.nba.com/player/201980/&quot;&gt;Danny Green&lt;/a&gt;, Ibaka, Gasol, and &lt;a href=&quot;https://stats.nba.com/player/1627832/&quot;&gt;Fred VanVleet&lt;/a&gt; cannot hit open threes at a higher clip, the Raptors won't be able to keep up with the Bucks' offense, second-best in the playoffs behind only Golden State. Toronto's seven game slugfest against the Sixers forces a short turnaround for the Raptors. Bucks in 6.&lt;/p&gt;
+
+&lt;h4 style=&quot;font-size: 2rem&quot;&gt;Western Conference Finals: Warriors (1) vs. Trail Blazers (3)&lt;/h4&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/confPrev/pic_3.jpg&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;NBC Sports&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The Warriors vanquishing the Rockets for the fourth time in five years was the storyline of the weekend until &lt;a href=&quot;https://stats.nba.com/player/203468/&quot;&gt;CJ McCollum&lt;/a&gt; and Leonard's late game heroics capped off an exhilarating second round.&lt;/p&gt;
+
+&lt;p&gt;The Portland Trail Blazers are back in the conference finals for the first time since 2000. After getting swept by the Pelicans a year ago, many fans and media said to &quot;blow it up&quot;. After &lt;a href=&quot;https://stats.nba.com/player/203994/&quot;&gt;Jusuf Nurkic&lt;/a&gt; broke his leg, most said &quot;the Blazers will be lucky if they make it out of the first round&quot;. But Portland's dynamic backcourt and supporting cast have justified keeping this consistent 50-win team together. &lt;a href=&quot;https://stats.nba.com/player/203081/&quot;&gt;Damian Lillard&lt;/a&gt; and the Trail Blazers have a real shot at challenging the defending champions with Durant sidelined for at least the first two games of the series.&lt;/p&gt;
+
+&lt;p&gt;With Durant out, &lt;a href=&quot;https://stats.nba.com/player/201939/&quot;&gt;Stephen Curry&lt;/a&gt; and &lt;a href=&quot;https://stats.nba.com/player/202691/&quot;&gt;Klay Thompson's&lt;/a&gt; usage skyrocket. The number of plays that end with Curry taking a shot, getting to the free throw line, or turning the ball over when Durant sits increase from 23.2% to 33.2%. His number of isolations also spike as his percentage of unassisted field goals increase from 51.6% to 64.3%. Similar to Curry, Thompson's usage increases from 17.7 % to 33.2% and his percentage of unassisted field goals triples from 11.5% to 33.3% when Durant is out, per NBA.com.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;div style=&quot;width:50%; float: left;&quot;&gt;
+			&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/confPrev/pic_4.png&quot; alt=&quot;picture 4&quot; style=&quot;height: 300px;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;width:50%; float:right&quot;&gt;
+	&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/confPrev/pic_5.png&quot; alt=&quot;picture 5&quot; style=&quot;height: 300px;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt;Key Matchups&lt;/h4&gt;
+
+&lt;p&gt;&lt;u&gt;Stephen Curry vs. Damian Lillard&lt;/u&gt;&lt;br&gt;The two greatest long distant threats in the game: Mr. Tunnel Shot and Logo &quot;Lizard&quot; Lillard. Curry and Lillard combined to shoot a surreal 41.9% on shots that were 30-39 feet from the basket during the regular season. The league average three point percentage during the 2018-2019 regular season was 35.5%.&lt;/p&gt;
+
+
+&lt;figure&gt;
+		&lt;div style=&quot;width:50%; float: left;&quot;&gt;
+				&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/confPrev/pic_6.png&quot; alt=&quot;picture 6&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+		&lt;/div&gt;
+		&lt;div style=&quot;width:50%; float:right&quot;&gt;
+				&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/confPrev/pic_7.png&quot; alt=&quot;picture 7&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;
+		&lt;/div&gt;
+&lt;/figure&gt;
+&lt;p&gt;Source: stats.nba.com&lt;/p&gt;
+&lt;p&gt;&quot;Bad shots&quot; for some players are great shots for Curry and Lillard, who force defenses to extend to nearly half court.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Klay Thompson vs. CJ McCollum&lt;/u&gt;&lt;br&gt;These two shooting guards are almost polar opposites. Thompson loves to spot up off of screens and thrives defending the opposing team's best guard (look for him and &lt;a href=&quot;https://stats.nba.com/player/2738/&quot;&gt;Andre Iguodala&lt;/a&gt; to guard both Lillard and McCollum in this series). Thompson &lt;a href=&quot;https://stats.nba.com/players/catch-shoot/?sort=CATCH_SHOOT_FGA&amp;dir=1&amp;Season=2018-19&amp;SeasonType=Playoffs&quot;&gt;led the league in catch-and-shoot attempts&lt;/a&gt; in both the regular season and the playoffs. In contrast, McCollum constantly drives for layups and step-back mid-rangers with his shorter, huskier frame. McCollum &lt;a href=&quot;https://stats.nba.com/players/drives/?sort=DRIVE_FGM&amp;dir=1&quot;&gt;leads all players in field goals made off of drives&lt;/a&gt; during the postseason.&lt;/p&gt;
+
+&lt;p&gt;Both guards were the best players in their respective close out games in the conference semifinals. Thompson scored 21 of his 27 points (7-13 on threes) in the first half of Game 6 against the Rockets, keeping the Warriors afloat as Curry struggled. In Game 7 against the Nuggets, McCollum delivered a masterpiece scoring 37 points on 17-29 shooting; however, McCollum did all of his damage from inside the arc, only darining one three. This dichotomy in playstyles is only one of the many reasons why these are two of the best and most dynamic backcourts in the NBA right now.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Small Ball vs. Kanter&lt;/u&gt;&lt;br&gt;During the 2016 Western Conference Finals, &lt;a href=&quot;https://stats.nba.com/player/202683/&quot;&gt;Enes Kanter&lt;/a&gt; was relegated to the depths of the Thunder's bench, a result of atrocious defense against the Warriors' small ball &quot;Death Lineup&quot;. Kanter's minutes evaporated as the series wore on - averaging 17 minutes during the first three games and only 8 minutes during the final four games. Kanter has a chance for revenge after signing with the Trail Blazers and emerging as an essential piece following Nurkic's injury.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stats.nba.com/player/200782/&quot;&gt;PJ Tucker&lt;/a&gt; exposed the Warriors' weakness to offensive rebounding in the second round, scrounging for five offensive rebounds in each of the Rockets' two wins. Kanter is averaging 3.6 offensive rebounds per game this postseason, third most among all players. Kanter's shoulder is something to monitor as his field goal percentage dropped from 57.4% pre-injury to 47.4% post-injury. If the Warriors neutralize Kanter as they did Clint Capela in the previous round, the Trail Blazers will be forced to turn to lineups featuring &lt;a href=&quot;https://stats.nba.com/player/202329/&quot;&gt;Al-Farouq Aminu&lt;/a&gt; or &lt;a href=&quot;https://stats.nba.com/player/1628380/&quot;&gt;Zach Collins&lt;/a&gt; at center.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;The Benches&lt;/u&gt;&lt;br&gt;The Warriors demonstrated that &quot;Strength in Numbers&quot; still existed when the bench excelled in Game 6 against the Rockets without Durant, scoring 33 points in 80 minutes. During the first five games of the series, the Warriors' bench averaged only 11.8 points over 62 minutes per game. Thompson and the Warriors' bench kept Golden State within striking distance for majority of the game so that Curry could explode for 23 points in the fourth quarter to vanquish the Rockets.&lt;/p&gt;
+
+&lt;p&gt;Thompson and Green averaged over 40 minutes per game in the second round. Curry would have as well had he not been in foul trouble during Game 6. Durant averaged 45 minutes per game before getting injured. Steve Kerr should continue to extend his rotation even after Durant returns.&lt;/p&gt;
+
+&lt;p&gt;Portland's rotation now goes nine players deep with the emergence of Zach Collins. Collins still struggles with foul trouble, but recorded nine blocks and two three pointers facing elimination in Games 6 and 7 against the Nuggets. Collins played 29 and 23 minutes, respectively, the most he has played in a two-game stretch the entire season and was a +20 in those minutes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stats.nba.com/player/203918/&quot;&gt;Rodney Hood&lt;/a&gt; has earned himself a solid place in the league during the Trail Blazers' series against the Nuggets, hitting the game winner in the quadruple overtime thriller in Game 3 and scoring 25 points facing elimination in Game 6.&lt;/p&gt;
+
+&lt;p&gt;Aminu and &lt;a href=&quot;https://stats.nba.com/player/203090/&quot;&gt;Maurice Harkless&lt;/a&gt; continue to struggle from the field, shooting a combined 39.7% from the field and 27.7% from behind the arc during the playoffs.&lt;/p&gt;
+
+&lt;h4&gt;Prediction&lt;/h4&gt;
+
+&lt;p&gt;The Trail Blazers need to steal at least one game in Oakland before Durant returns if they want to have a chance in this series - the talent disparity is too wide. Force Durant to come back early or you risk him coming back at full health and having to win four-out-of-five against the defending champions. Warriors in 5.&lt;/p&gt;</content><author><name>Chad Shimozaki</name></author><summary type="html">Following the first ever game-winning buzzer beater in Game 7 of a playoff series, Kawhi &quot;Four-Bounce&quot; Leonard and the Toronto Raptors will face the Milwaukee Bucks, who have patiently waited for a week since defeating the Celtics last Wednesday.</summary></entry><entry><title type="html">The Three Point Shot &amp;amp; the NBA</title><link href="http://localhost:4000/The3PointShot" rel="alternate" type="text/html" title="The Three Point Shot &amp; the NBA" /><published>2019-04-21T17:17:09-07:00</published><updated>2019-04-21T17:17:09-07:00</updated><id>http://localhost:4000/The3PointShot</id><content type="html" xml:base="http://localhost:4000/The3PointShot">&lt;figure&gt;
+&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/3ptShot/cover.jpg&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;(Source: WBUR)&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The 3-point shot, instituted into the NBA in 1979, significantly impacted the future and the direction of the league. In the shot's inaugural year, Hubie Brown's '79-80 Hawks attempted a season total of 75 three-pointers, making just 13, for a three-point shooting percentage of 17.33%. This equates to an average of 1 three pointer made every 6 games. That same Hawks team went on to the Eastern Conference Semifinals with an overall record of 50-32. 38 years later, on March 3rd 2018, over one half of the Houston Rockets' total shots in their three point victory over the Boston Celtics came from beyond the arc, as they attempted 49 three-pointers, compared to just 38 mid-range shots/layups.&lt;/p&gt;
+
+&lt;p&gt;The league average field goal percentage from 3-point territory landed around 28% for the 1979-80 season (the first season in which 3-Point statistics were calculated), with an average of 2.8 attempts per game. This indicates that teams on average sunk only 4/5 of a three pointer per game. The league average 3-point percentage for this year, the 2018-2019 season, falls around 35.43%; equating to about 11.1 threes made per game. Stars like James Harden and Damian Lillard are now shooting over 600 threes per season.&lt;/p&gt;
+
+&lt;p&gt;In order to take a look at the change in frequency of the three-point shot since the NBA began to compile statistics on the stat in 1980, we found league-wide averages in 3-pointers attempted per game.&lt;/p&gt;
+
+&lt;p&gt;These results are shown in the bar graph, while the year-to-year percentage changes in 3PA are shown in the line graph below.&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/3ptShot/pic_1.png&quot; alt=&quot;picture 1&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/3ptShot/pic_2.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As the two graphs above indicate, the amount of three point shots has been steadily increasing with each new season. These results got us interested into thinking about the 3-point vs. 2-point shot discussion... and we decided to try and identify if one shot or the other maximized the amount of points that a team scores in a given game.&lt;/p&gt;
+
+&lt;p&gt;We developed the following formula (expressed in two ways):&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/3ptShot/pic_3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;
+&lt;h4&gt;&lt;b&gt;&lt;u&gt;Qualifications:&lt;/u&gt;&lt;/b&gt;&lt;/h4&gt;
+&lt;ol&gt;
+	&lt;li&gt;The number 88.96 represents the average of the Total Shots taken by a team so far for the 2018-2019 season&lt;/li&gt;
+	&lt;li&gt;The value x is equal to the number of 3-pointers attempted by a team in a game&lt;/li&gt;
+	&lt;li&gt;The value (88.96 - x) is equal to the number of 2-pointers attempted by a team in a game&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;Calculating the results for each of the teams in the NBA for the 2018-2019 season provides us with just two results: shooting only 2's or shooting only 3's will produce the greatest profit in terms of points scored for each individual team. The reason for the two-result system occurring is a result of the graph above producing a line. The line will either produce an upward sloping or downward sloping graph which means that the maximization can only occur at one of the two endpoints: all threes, or all twos.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/3ptShot/pic_4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;WolframAlpha.com&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/3ptShot/pic_5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;WolframAlpha.com&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;The results are separated into the two-column table below:&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/3ptShot/pic_6.png&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Analytically, as proven by the above data, for two-thirds of NBA teams, the formula above produces results that indicate that shooting strictly three point shots would give those teams the best possible chance to win. However, this formula looks at the game of basketball with tunnel vision, combining mid-range shots and layups into the generic category &quot;two point shots&quot; and comparing them directly with three point shots.&lt;/p&gt;
+
+&lt;p&gt;Although an interesting perspective, and one that could convince a team to shoot strictly from beyond the arc, certain analytical formulas such as the one we crafted above do not take some important factors into account. For example, there are many times that driving into the paint for a layup, or drawing a foul, constitute important situational basketball moves. The game, at its core, is not as simple as the debate between mid-range shots and three point shots. If a team is down double digits with a minute to go, the smart basketball move for a team, even one who fell into the left column of the above table, like the Bucks or the Mavericks, would be to shoot 3's to try and spur some luck and climb back into a game. However, if only down by 1 or 2 with less than a minute to go, even for a team like the Warriors or the Celtics who fall into the right column of the above table, the smart basketball move often includes shooting a mid-range shot, drawing a foul, or going in for a layup.&lt;/p&gt;
+
+&lt;p&gt;Fundamentally, there exists another side against the argument that the 3 point shot is always the best choice for a team. For example, when we look back at the era of basketball in the early 2000's, there were many who criticized how &quot;iso driven&quot; and slow paced the game was. Now, in today's day and age, we are starting to hear more murmurs that the 3 point shot is encouraging bad basketball. Not every team has a James Harden or Stephen Curry that can carry the load day in and day out from beyond the arc, thus raising the point that the emphasis on the 3 point shot is going overboard. It has the potential to cause decreases in efficiency, as players who simply don't have the capability to launch from long range will be swallowed up by the continual wave that is the fad of three-point shot.&lt;/p&gt;
+
+&lt;p&gt;It was this emphasis on the three-ball that cost the Houston Rockets a spot in the 2018 NBA Finals, as we all remember from the infamous Game 7 against the Golden State Warriors in the 2018 Western Conference Finals:&lt;/p&gt;
+
+
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe width=&quot;1425&quot; height=&quot;641&quot; src=&quot;https://www.youtube.com/embed/Jox6ggZpxnI&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;Some old basketball junkies argue that the level of entertainment was higher when watching two big men physically battle under the block and do acrobatic layups, cuts, and dunks. Ratings in basketball have &lt;a href=&quot;https://www.sportsbusinessdaily.com/Journal/Issues/2019/02/18/Media/NBA-ratings.aspx&quot;&gt;decreased recently&lt;/a&gt;, which poses an important question: Why? Although the younger generations and millennials (cord cutters) may be entertained by players launching up crazy, low percentage shots, the older generation (those who still watch cable TV) may not be too fond of this. Is the three point shot just a fad? Will the league turn back to its traditional ways? The answer to this question is unknown, but each side certainly has its merits. Analytically, facts do show that teams are better off shooting the 3, but does that take player personnel into account? It certainly changes the way basketball should be taught at the lower levels. If the current trend continues, the old classic &quot;layup lines&quot; may change into 3 point shot warmups. So what do you think? Are you &lt;b&gt;&lt;i&gt;Team Analytics&lt;/i&gt;&lt;/b&gt; or &lt;b&gt;&lt;i&gt;Team Fundamentals&lt;/i&gt;&lt;/b&gt;?&lt;/p&gt;
+
+&lt;p&gt;Click on this link to vote: &lt;a href=&quot;https://www.strawpoll.me/17803568/r&quot;&gt;https://www.strawpoll.me/17803568/r&lt;/a&gt;&lt;/p&gt;</content><author><name>Max Blane</name></author><summary type="html">The 3-point shot, instituted into the NBA in 1979, significantly impacted the future and the direction of the league. In the shot's inaugural year, Hubie Brown's '79-80 Hawks attempted a season total of 75 three-pointers, making just 13, for a three-point shooting percentage of 17.33%. This equates to an average of 1 three pointer made every 6 games. That same Hawks team went on to the Eastern Conference Semifinals with an overall record of 50-32. 38 years later, on March 3rd 2018, over one half of the Houston Rockets' total shots in their three point victory over the Boston Celtics came from beyond the arc, as they attempted 49 three-pointers, compared to just 38 mid-range shots/layups.</summary></entry><entry><title type="html">An Analysis of Score Inflation in NCAA Women’s Gymnastics</title><link href="http://localhost:4000/Analysis_Score_Inflation_in_NCAA_Women" rel="alternate" type="text/html" title="An Analysis of Score Inflation in NCAA Women’s Gymnastics" /><published>2019-04-12T17:51:49-07:00</published><updated>2019-04-12T17:51:49-07:00</updated><id>http://localhost:4000/Analysis_Score_Inflation_in_NCAA_Women</id><content type="html" xml:base="http://localhost:4000/Analysis_Score_Inflation_in_NCAA_Women">&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/InflationGymnastics/cover.jpg&quot; alt=&quot;picture 1&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Bruins Nation&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As the 2019 Women's Gymnastics Championship approaches, a cloud of controversy looms over the sport. Many fans believe that the scores being handed out this year are misrepresentative of actual routines. The issue of score inflation seems to creep into every discussion about college gymnastics. Judges across the country have been put under a microscope, being scrutinized for scoring routines higher than they deserve. Among reasons to do this would be to attract more casual fans, thus increasing revenue for the NCAA. After all, who doesn't want to see a perfect 10?&lt;/p&gt;
+
+&lt;p&gt;Women's collegiate gymnastics is a niche sport, though popularity has grown in recent years (you might've seen Katelyn Ohashi's floor routine). There is limited available public data, and even less research into applying more advanced analytical techniques that are making progress in other sports. However, a great website for scoring data is &lt;a href=&quot;http://www.roadtonationals.com&quot;&gt;www.roadtonationals.com&lt;/a&gt;, the official statistical site of NCAA gymnastics. I used web scraping via Python to gather every score for every gymnast from every Division-I school from 2014-2019.&lt;/p&gt;
+
+&lt;p&gt;In stats language, this article is dealing with population parameters, not statistics of random samples. So doing fancy inference methods like t-tests and ANOVAs is not necessary. Simple descriptive statistics will tell us all we need to know about scoring and how much of an issue score inflation has, or hasn't, become.&lt;/p&gt;
+
+&lt;p&gt;For those who have not been exposed to women's gymnastics before, you are missing out. UCLA is the defending national champion and heads into the championship alongside Oklahoma on a tier above everyone else. A quick rundown of how it works: There are four events: Vault, uneven bars, balance beam, and floor. Teams cycle through these events with six gymnasts competing and the lowest score dropped. Some gymnasts are specialists on one or two events, others do All-Around (every event). Rankings for postseason are based on total team scores, wins and losses only matter in the sense that if you win, you probably got a higher score. After a conference championship, the top-32 teams advance to regionals, which is cut down to eight for semi-finals and then four for the final meet. (Note that I did not include the championship meet scores from past years in the analysis because it hasn't happened yet this year.)&lt;/p&gt;
+
+&lt;p&gt;Gymnastics is very different from other sports in the fact that you have no control over the opponent's performance. Because scores are aggregated and routines independent of each other, a lot of 'luck' is taken out of the equation. Upsets are extremely rare, and the better team almost always wins. This is not a sport kind to underdogs. The current rankings look very similar to the preseason rankings. As mentioned above, it's pretty much been a two-team race this season.&lt;/p&gt;
+
+&lt;p&gt;Scores are the only 'gameplay' variable available to work with, for better or worse. For reference, a 9.700 and above is usually considered a 'hit' routine, i.e. no major mistakes/falls. At top schools, anything below a 9.800 would prefer to be dropped. The best gymnasts consistently hit 9.900+. The argument of score inflation is that many scores that should be in the 9.700s-9.800s range end up higher, and there is a ridiculous amount of 10's given out. The latter is easier to address, so we start there.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/InflationGymnastics/pic_1.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The number of tens has been on the rise in each of the last three years, but this isn't the best way to look at things. There is variance in the total number of routines per year which may skew results. A better route is to look at the number of 10's given per 1000 routines to adjust for the different amount of routines each year.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/InflationGymnastics/pic_2.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I narrowed in on top-5 schools because they are the subject of the score inflation argument. Allegedly, some routines are given a bump based on the name/popularity of the gymnast or color of their leotard.&lt;/p&gt;
+
+&lt;p&gt;The rate of 10's being given this year is almost double that of 2014-2016. Either the best teams from 2017-2019 are just way better than those of the previous three years, or tens are being handed out more loosely. If you are comfortable saying that the talent level of top-5 schools does not change drastically year-to-year, then the arrow points to score inflation.&lt;/p&gt;
+
+&lt;p&gt;But it may not be that easy. UCLA's Kyla Ross has 14 perfect 10's this year, accounting for a large chunk of the total amount given, en route to becoming the first collegiate gymnast to record a Double Gym Slam in a single season (at least two 10's on all four events). Remove her and things look a little more normal. It could be that exceptionally skilled gymnasts like Ross and Oklahoma's Maggie Nichols are skewing the 10-counts in recent years.&lt;/p&gt;
+
+&lt;p&gt;Just looking at 10 counts disregards a lot of data. It is probably better to check the proportion of scores in certain ranges.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/InflationGymnastics/pic_3.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The proportion of routines that are given 9.900's or higher has risen for all events since 2016. In particular, beam has seen the greatest increase during this time frame. Is it due to the fact that there are more gymnasts now with better executed beam routines, or are beam scores receiving an unnecessary bump?&lt;/p&gt;
+
+&lt;p&gt;I do not know enough about the technical aspects of gymnastics to give a concrete answer. Perhaps someone who has been following the sport for a long time and watches a considerable amount of meets can say &quot;Yes, there are more gymnasts capable of putting up huge routines now than there were a few years ago&quot;. Or maybe say that is not true, and we are seeing the effects of score inflation.&lt;/p&gt;
+
+&lt;p&gt;What I can give though is evidence that this is not just a top-school debate. While Oklahoma and UCLA take a lot of flak for &quot;outrageous&quot; judging, the scores of middle-tier teams are also on the rise.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/InflationGymnastics/pic_4.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is the exact same format as the line graph above, except now looking at schools ranked 11-20 and number of scores above 9.850 per 100 routines. Beam stands out again as the most significant increase in this timeframe.&lt;/p&gt;
+
+&lt;p&gt;So if gymnasts at this level are also seeing similar tendencies in scores received, you can't really single out the best schools as beneficiaries of unfair judging. Good gymnasts are receiving higher scores in recent years, it's not a surprise that better gymnasts are receiving higher scores too.&lt;/p&gt;
+
+&lt;p&gt;It is not outlandish to suggest that gymnasts nowadays are more skilled and athletic with every passing year. We see this occurring in other sports like football and hockey. The score inflation controversy has no simple answer. We know 10's are being given out at a much higher rate. We know beam scores are on the rise. We also know that some of the best athletes this sport has seen in a long time are currently competing. Remember that a similar trend can be seen at mid-tier schools before criticizing UCLA and Oklahoma. Perhaps it is best to just sit back and enjoy the perfection.&lt;/p&gt;</content><author><name>Joey Maurer</name></author><summary type="html">As the 2019 Women's Gymnastics Championship approaches, a cloud of controversy looms over the sport. Many fans believe that the scores being handed out this year are misrepresentative of actual routines. The issue of score inflation seems to creep into every discussion about college gymnastics. Judges across the country have been put under a microscope, being scrutinized for scoring routines higher than they deserve. Among reasons to do this would be to attract more casual fans, thus increasing revenue for the NCAA. After all, who doesn't want to see a perfect 10?</summary></entry><entry><title type="html">Andy Murray: A “Big Four” Member, but the Weakest One</title><link href="http://localhost:4000/andy_murray" rel="alternate" type="text/html" title="Andy Murray: A “Big Four” Member, but the Weakest One" /><published>2019-04-03T15:40:03-07:00</published><updated>2019-04-03T15:40:03-07:00</updated><id>http://localhost:4000/andy_murray</id><content type="html" xml:base="http://localhost:4000/andy_murray">&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_1.png&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;Source: The Indian Express&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;At the end of 2016, Andy Murray raised the Paris Masters 1000 trophy after defeating John Isner in 3 sets, cementing his status as the world's No. 1 tennis player for the first time in his career. Murray had racked up 9 singles titles to end the 2016 season, including his second Wimbledon trophy and his third Grand Slam title. Murray seemed primed to dominate the tour for the next few years, but a hip injury in the middle of the 2017 season would derail what remained of that season and the next, losing the No. 1 ranking and dropping past rank 800.&lt;/p&gt;
+
+&lt;p&gt;In an emotional interview before the start of the 2019 Australian Open, Andy Murray announced to the media that he planned to retire after Wimbledon, citing that his quality of play through hip pain was not at a level he could satisfyingly sustain. In Murray's absence from the tour, the other three members of the &quot;Big Four&quot; (Roger Federer, Rafael Nadal, and Novak Djokovic) have all risen to dominance, with each player collecting 3 Grand Slam titles since the beginning of 2016. With the recent success of these players, the distance in achievements between them and Andy Murray seemed to widen and the notion of a &quot;Big Four&quot; began to dissolve into a &quot;Big Three.&quot;&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GIMgKz6UQ4s&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;However, was Murray ever a legitimate &quot;Big Four&quot; member, or was he just a really good player?&lt;/p&gt;
+
+&lt;p&gt;Let's first examine Murray's rise to dominance: 2008 - 2016.&lt;/p&gt;
+
+&lt;p&gt;In 2008, Andy Murray began his campaign as an emerging star after defeating Rafael Nadal in four sets to advance his first Grand Slam final. Although beaten by Roger Federer in straight sets, he ended his 2008 campaign sitting at No. 4 in the rankings. Along with two ATP Masters 1000 titles (Cincinnati and Madrid), Murray had established himself as a dominant player who contend with the likes of the three players ahead of him, defeating both Federer and Djokovic in those Masters 1000 tournaments. In 2009, Murray improved the consistency of quality tennis as he reached the fourth round or better at all four Grand Slams, including a semifinal berth at Wimbledon. Murray also collected six singles tournament titles - a tour-best that year- including two ATP Masters 1000 titles (Miami and Canadian Open), beating Djokovic and del Potro.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_2.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Source: DailyMail&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;From there, Murray joined Federer, Nadal, and Djokovic as the four most dominant players on the tour, the &quot;Big Four&quot;.&lt;/p&gt;
+
+&lt;p&gt;In 2010 to 2011, Murray found continued success, winning four ATP Masters 1000 titles, reaching the semifinals in all Grand Slams including a finals berth in the Australian Open, and back-to-back titles in Shanghai. Then in 2012, Murray finally won his first Grand Slam in New York, defeating Djokovic in five sets in the finals. In addition, Murray also won an Olympic gold medal in men's singles, dispatching Federer in straight sets. That year, he inched up in the rankings to No. 3.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;From 2013 to 2016, Andy Murray found himself on the precipice of a career-defining run, only to be riddled with significant injuries. He started the 2013 season winning the Brisbane title and made it to the finals of the Australian Open, defeating Federer in a 5-set thriller but then beaten by Djokovic. He then won another Masters 1000 title in Miami later that year, and won his first Wimbledon title, his second career Grand Slam. However, a back injury would hamper him, forcing him to pull out of the French Open and get surgery to fix his problem. His 2014 season was then riddled with inconsistent play, although he won a few small tournaments. He lost to Federer, Djokovic, or Nadal before ever reaching a Grand Slam final or a semifinal at a Masters 1000 and dropped to No. 6 in the rankings at the end of the year. Murray made a return to form in 2015, reaching the finals of the Australian Open and semifinals of the French Open and Wimbledon before losing to Djokovic and Federer. He also defeated Djokovic and Nadal later in the year to collect two Masters 1000 titles. He rose in the rankings back up to No. 2. 2016 saw Andy Murray in top shape, although against a tour that had an injured Federer and a struggling Nadal. Still, Murray was able to defeat Djokovic in two Master 1000 tournaments, collect his second Wimbledon and third career Grand Slam, and win his second Olympic gold medal.&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Source: USA Today&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Then, an elbow and hip injury bothered him for most of 2017, which led to inconsistent play, inability to compete at a number of major tournaments, and the loss of his No. 1 ranking. Murray only won one singles title and saw his ranking drop to No. 16. Murray got hip surgery in 2018, which meant he was unable to compete for the first half of the season. However, when he returned to action, he stumbled out opening rounds, losing to lesser-known names. Murray's magical dominance on the tour seemed to fade away.&lt;/p&gt;
+
+&lt;p&gt;Even still, Murray racked up impressive statistics during this run: 45 singles titles, a top 5 seed for most of his 2008-2016 career, 11 Grand Slam final appearances (won 3), 21 Masters 1000 final appearances (won 14), and two Olympic gold medals, a feat that no other &quot;Big Four&quot; player has matched.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_9.png&quot; alt=&quot;picture 8&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;However, it is difficult to say that Murray was ever a formidable threat to the other three players, in terms of head-to-head matchups. Murray has a 11-25 record against Djokovic, 7-17 record against Nadal, and a 11-14 record against Federer. Combined, he only wins 34.1 % of these matchups.&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_6.png&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Looking at individual achievements, Murray looks to be far behind the others. Federer has 100 singles titles, 30 Grand Slam final appearances (won 20), and 27 Masters 1000 titles. Nadal has 80 singles titles, 25 Grand Slam final appearances (won 17), and 33 Masters 1000 titles. Djokovic has 73 singles titles, 24 Grand Slam final appearances (won 15), and 32 Masters 1000 titles. With these numbers, Murray's accomplishments outside of the Olympics seem somewhat small in comparison.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_7.png&quot; alt=&quot;picture 7&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;However, Murray is far ahead of some of the tougher opponents on tour today and in prior years in individual achievements. Stan Wawrinka comes closest in comparison, with 16 career singles titles, 4 Grand Slam final appearances (won 3), and 1 Masters 1000 title. Del Potro also has a solid resume with 22 career singles titles, 1 Grand Slam, and 1 Masters 1000 title. Cilic has 18 singles titles, 1 Grand Slam, and 1 Masters 1000 title. Other solid players including Berdych, Ferrer, and Tsonga have not even won a Grand Slam in their career.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/amurray/pic_8.png&quot; alt=&quot;picture 8&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Thus, Andy Murray is a difficult player to rank among the field. He is far behind his elite peers in individual success, but he is far ahead of the rest of the tour. In fact, he wins about 78% of his matches, only bested by Federer (82%), Djokovic (83%), and Nadal (83%). The only other player with an overall winning percentage above 70% is del Potro (72%). Against top-10 players, Murray is the only other player besides Federer, Nadal, and Djokovic with a winning percentage over 50%. When healthy, Murray is at least the fourth best player on the tour.&lt;/p&gt;
+
+&lt;p&gt;While he can't necessarily defeat Federer, Nadal, and Djokovic on a consistent basis, the gap between him and the rest of the tour is so large that it is safe to conclude that Murray is definitely a clear step ahead of them. Andy Murray isn't the best of the mid-pack players; he's a legitimate &quot;Big Four&quot; contender, but he is by far the worst of the four.&lt;/p&gt;</content><author><name>Stephen Chen</name></author><summary type="html">At the end of 2016, Andy Murray raised the Paris Masters 1000 trophy after defeating John Isner in 3 sets, cementing his status as the world's No. 1 tennis player for the first time in his career. Murray had racked up 9 singles titles to end the 2016 season, including his second Wimbledon trophy and his third Grand Slam title. Murray seemed primed to dominate the tour for the next few years, but a hip injury in the middle of the 2017 season would derail what remained of that season and the next, losing the No. 1 ranking and dropping past rank 800.</summary></entry><entry><title type="html">On the Road Again: The Myth of Neutrality in NHL Scheduling</title><link href="http://localhost:4000/nhl_scheduling" rel="alternate" type="text/html" title="On the Road Again: The Myth of Neutrality in NHL Scheduling" /><published>2019-03-10T15:48:34-07:00</published><updated>2019-03-10T15:48:34-07:00</updated><id>http://localhost:4000/nhl_scheduling</id><content type="html" xml:base="http://localhost:4000/nhl_scheduling">&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling/cover.jpg&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;The Canadian Press&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With the NHL season inching closer to the playoffs, the format of the regular season is perhaps not the first thought on most fans' minds. However, this year's notable lack of inter-conference parity has drawn attention from casual and knowledgeable fans alike -- the point cutoff to make the playoffs in the Eastern Conference is currently on pace to be a relatively standard 96 points; the Western Conference, on the other hand, is on pace to have an 83 point cutoff. This would easily be the lowest bar to qualify for the postseason in the salary cap era. An 83 point team under most circumstances has well below a winning record, and would be over six games back from the eighth seed in the East. These anomalies beg the question: what factors influence a team's record at the end of the season?&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling//pic_1.png&quot; alt=&quot;picture 1&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Although skill contributes the most to a team's end-of-season record, there is always some element of luck involved. Most of the luck is &quot;earned luck,&quot; the type of luck you see when a player hits the inside of the post on a breakaway right before the other team heads down the ice and scores. It's unlucky, but if the players aim had been one centimeter better the score would've reflected it. Another type of luck has nothing to do with the on-ice play at all. In fact, it is created before the season even starts, in the form of team schedules. There is no doubt that NHL scheduling is flawed at least slightly, but it is harder to determine the extent of which it is flawed.&lt;/p&gt;
+
+&lt;p&gt;The idea that the NHL schedule is imperfect is by no means a groundbreaking claim. A perfect schedule is a rabbit hole theoretically and impossible logistically. It is, however, entirely possible to create a better schedule than the one currently in use. It should be asked, of course, what makes one schedule &quot;better&quot; than another? There are two important attributes: game balance and overall fairness. Ideal game balance would have both teams in each individual game having a theoretical 50% probability to win without regard to the actual skill of the teams. This sounds easy enough, but practically this is never true. The home team, on average, wins about 55% of NHL games, and on some nights one team will have played the prior evening and flew in the same day with little rest. Even with functionally identically-skilled teams, true 50% win probability does not really exist. Thus, focus must be placed on overall fairness of the schedule as well. Does it matter much that the home team wins more on average than the away team if, at the end of the season, each team has played the same number of home and away games? The goal of schedule-making should be to first maximize game balance, and what randomness is left over should be minimized by the overall fairness of the season. How well does the NHL achieve these goals?&lt;/p&gt;
+
+&lt;p&gt;As mentioned above, game balance is greatly impacted by the existence of home/away games. Of course, there is no way to feasibly prevent the impact of playing on home ice, but it should be noted that not all away games are created equal. Growing up as a southern California hockey fan, I would frequently hear disdain for how the Los Angeles Kings and Anaheim Ducks were treated &quot;unfairly&quot; by the schedule-makers. Southern California fans dread road trips. As a general rule, the road trips that teams in the Western Conference take tend to be long and drawn out. Eastern teams, on the other hand, experience short, frequent road trips that alternate with short homestands. Analysis of this distinction between Western and Eastern teams is not necessary; it is clear that the number and length of road trips taken by different teams is decidedly unequal, as seen below.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling//pic_2.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The number of road trips a team must take in a season varies from as few as 12 to as many as 24. The schedules these teams are given before the season begins cause drastically different playing experiences. The announcement that the NHL was expanding into Seattle in upcoming years brought this issue to light. Due to its location, Seattle would clearly be expected to be placed in the NHL's Pacific division. However, the Pacific, along with the Metropolitan and the Atlantic divisions, already contains eight teams, while the Central division only has seven. To facilitate Seattle, the Arizona Coyotes were selected to be moved from the Pacific division to the Central; however, this change angered Coyotes fans, as the move would result in a significant increase of travel time over the course of a season, likely resulting in longer average road trips.&lt;/p&gt;
+
+&lt;p&gt;To determine the effect of these differences, I gathered data from every regular season game in the salary cap era (that is, the 2005-06 season and beyond). The length of the road trip was introduced into the data by assigning a number to each of the 31,042 games (Note that each game was counted twice, once from the perspective of the home team and once from the away team). If the game was played at home, it was assigned a 0. The first game of each road trip was assigned a 1, the second game was assigned a 2, etc. Both the win-rate and average goal differential were determined for each group of games.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling//pic_3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Amazingly, despite the clear difference in the experiences of playing the first and last game of two-week long road trips that cover upwards of seven different cities in two countries, the numbers do not show any sort of trend that would suggest a team is more or less likely to win any given away game. The goal differential shows similar results:&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling//pic_4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The NHL, be it by design or by luck, has generated a system that, despite different teams playing under completely different travelling schedules, does not sacrifice overall season fairness. Fans' intuition that the southern California teams were punished by being forced to play much longer road trips than other teams was incorrect. The length of road trips does not affect team win-rate. The anger of Arizona Coyotes fans can be at least partially squelched. In similar fashion and with similar results, the length of homestands was also analyzed.&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling//pic_5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling//pic_6.png&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;While it is certainly encouraging to know that the manner in which a team's home and away games are composed in a season is not particularly important with regards to overall fairness, it is still clear in these charts that the balance of individual games is not at all perfect. It might not matter where the previous games were played, but regardless, the home team scores on average a third of a goal more than their opponents and, as a result, win a bit over 55% of their games. On top of the regular advantage stemming from just playing at home, the NHL provides minor advantages in the rules to the home team, such as the ability to make the last line change at every whistle. Despite this, the home-ice advantage has made less and less of an impact over recent years.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling//pic_7.png&quot; alt=&quot;picture 7&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With the importance of home games on the decline and the influence of road trip length nearly nonexistent, it seems fair to say that the NHL has produced a remarkably unbiased schedule. This would not be entirely correct. One variable that has a historically strong effect on team win-rate is the number of days a team gets to rest in between games. There is little difference between the performance of teams after one, two, or even five days of rest, but when teams have to play games with no day of rest in between, win-rate drops by about 5%. These back-to-back games are a byproduct of the logistics involved in creating 82-game seasons for 31 different teams that each have their own arenas scattered across a continent -- the arenas often having other events or even one or two other professional teams that occupy scheduling time. Though unavoidable, we would expect that the NHL would have each team play the same amount of back-to-back games. This is not the case.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/nhl_scheduling//pic_8.png&quot; alt=&quot;picture 8&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As seen in the chart, the number of back-to-back games a team plays in a season can vary from as little as nine to as many as sixteen. The amount of these games is also distributed rather uniformly; it is not as if there are several teams with the same number and only a few differ. Back-to-back games in a season grants some teams a points expected value which can be multiple points higher than other teams before even factoring in skill. This is a league where it is commonplace for teams to miss the playoffs by a single point -- just look at the Florida Panthers and the St. Louis Blues last season. The failure to standardize back-to-back games is much more impactful to seasons than it reasonably should be. Because they cannot be avoided, the NHL should more strictly adhere to two strategies to minimize their effect: make each team play the same number of back-to-backs, and more frequently schedule teams on back-to-backs to play each other. The first maximizes the overall fairness of the season, and the second cancels out the negative effect altogether.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, while a perfectly balanced schedule is the dream of many fans and analysts alike, it is unlikely the NHL deems maximal balance a priority. The divisional realignment of the 2013-14 season highlights the blatant disregard for unbiased scheduling. Even with a theoretically perfect schedule, it is of little benefit when the top two teams in the league are forced to play each other in the second round of the playoffs. Such a scenario has become almost expected in the last few years, and with the massive discrepancy between divisions seen this year and the plans to continue the format in the upcoming expansion, future considerations toward maximum game balance from the NHL seem grim. Nevertheless, it does not take complete realignment of formats to help fix the NHL schedule, but a change of philosophy. Even if the league does not care much about the vastly different playoff pictures of the two conferences, the schedules for the 2019-20 season should be made with reduction in back-to-back games in mind. Since the data shows that a consistent travel schedule is not necessary to create a level playing field , the NHL could take more risk with the schedule by varying the length of homestands and road trips in an attempt at making the overall season more equitable and minimizing the effect of the &quot;schedule losses&quot; resulting from back-to-back games. But until the NHL is willing to make such changes, the old adage remains; all is fair in love and war, but, for now at least, not in hockey.&lt;/p&gt;</content><author><name>Joe Dunham</name></author><summary type="html">With the NHL season inching closer to the playoffs, the format of the regular season is perhaps not the first thought on most fans' minds. However, this year's notable lack of inter-conference parity has drawn attention from casual and knowledgeable fans alike -- the point cutoff to make the playoffs in the Eastern Conference is currently on pace to be a relatively standard 96 points; the Western Conference, on the other hand, is on pace to have an 83 point cutoff. This would easily be the lowest bar to qualify for the postseason in the salary cap era. An 83 point team under most circumstances has well below a winning record, and would be over six games back from the eighth seed in the East. These anomalies beg the question&amp;#58; what factors influence a team's record at the end of the season?</summary></entry><entry><title type="html">What Happens to Jim Harbaugh in Big Games?</title><link href="http://localhost:4000/Harbaugh" rel="alternate" type="text/html" title="What Happens to Jim Harbaugh in Big Games?" /><published>2019-02-13T22:45:43-08:00</published><updated>2019-02-13T22:45:43-08:00</updated><id>http://localhost:4000/Harbaugh</id><content type="html" xml:base="http://localhost:4000/Harbaugh">&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image9.png&quot; alt=&quot;pic 1&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;After finishing the 2010 NFL season with a losing record yet again, the San Francisco 49ers finally decided it was time for a new head coach. They needed to win games to become relevant again and, more importantly, they needed to bring life back to a fan base that had not had a winning team since 2002. So they went with a man whom they thought could bring all of that to the table: Jim Harbaugh.&lt;/p&gt;
+
+&lt;p&gt;Having coached a dominant Stanford football team for years in the Pac-12, the former quarterback was primed for a head coaching job in the NFL. He brought an energy and intensity that the Forty-Niner Faithful had not seen for a very long time and in his first season, he took the Niners to the playoffs with a record of 13-3. They ultimately lost the NFC championship game to the New York Giants, but Harbaugh was the Coach of the Year and the Niners were once again in the mix of legitimate contenders.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image15.png&quot; alt=&quot;pic 2&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The very next season, after the injury of his starting quarterback midway through the season, Harbaugh saw an opportunity for even more growth and engineered the most versatile offense in the NFL with Colin Kaepernick, a hot talent from Nevada, at the wheel. The Niners eventually found themselves in Super Bowl XLVII against the Baltimore Ravens, where they would come within five yards of the trophy but eventually lose to the AFC champs. They were back in full form in 2013 but once again fell just short, this time in the NFC Championship to the Seattle Seahawks. After an injury-riddled 2014 campaign and issues within the front office, Harbaugh and the Niners organization decided to mutually part ways, but Harbaugh still had a lot of coaching left in him.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image10.png&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;He made one of the biggest splashes in college football when he announced that he would be coaching at his alma mater, the University of Michigan. With the school's excitement through the roof, Harbaugh took the losing Wolverines to the Big Ten Championship game where he would lose to the dominant Ohio State University, but go on to win the Citrus Bowl against Florida. Each year for the next three years, Harbaugh's season ended with the same result: a loss in the Big Ten Championship to Ohio State followed by a loss in a bowl game, which brings us to the present day. Jim Harbaugh is clearly an exceptional football coach, but one glaring pattern hovers over that excellence: he's never won the big game, whether it be a Super Bowl, a national title, or even a Big Ten title. So, the big question here is rather simple: why? What goes wrong for him year after year that keeps him from entering the circle of championship head coaches? Football is certainly a random and difficult sport, but considering how close he has come for so many years, it's intriguing that he may walk away from his coaching career with nothing but a Citrus Bowl trophy. To derive any kind of explanation for this, it's important to try and have a complete understanding of exactly what kind of coach Jim Harbaugh is.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image13.png&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;h4&gt;The Steroid Effect&lt;/h4&gt;&lt;/p&gt;
+
+&lt;p&gt;Whether it is in the college or professional ranks, Harbaugh has demonstrated the ability to tremendously increase the quality of his team upon arrival:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image11.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The immediate spike in regular season wins from the year before Harbaugh's arrival to his first year as head coach is clear with both the Niners and the Wolverines. There are of course many factors not related to coaching that could have caused this; often times a team can experience a turnaround as a result of some key personnel changes or recovering injured players that significantly improve the roster heading into the next season. But a closer look shows that Harbaugh was able to take squads with few expectations and low ratings, and raise their quality to elite levels. Below is a chart of the ratings of all NFL teams based on roster and performance as per this &lt;a href=&quot;https://www.pro-football-reference.com/blog/index4837.html?p=37&quot;&gt;Simple Rating System&lt;/a&gt; in 2010 versus in 2011 (Harbaugh's first year in San Francisco):&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image6.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With the dashed line representing no change in a team's quality from 2010 to 2011, Harbaugh's 49ers exceeded their previous season's performance more than any other team in the NFL. Their SRS improved by 14.1 points, 2 points more than the next best improvement. And four years later, the exact same thing happened in Ann Arbor. Below is the same metric, this time from 2014 to 2015 (Harbaugh's first year at Michigan) with all CFB teams from the Power Five Conferences shown:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image1.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With the 49ers being in the unpredictable league that is the NFL and Michigan having a drastically new roster from year to year (as is the nature of college sports), the one thing that these clubs had in common in their sudden jolts of success was Jim Harbaugh. They didn't just improve in Harbaugh's first year; they were among the highest-rated teams in their respective leagues, with the Niners being ranked 2nd in the NFC and Michigan being ranked 12th in the country. It is no coincidence that Harbaugh was the head coach as they both suddenly went from irrelevance to championship contention.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image5.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;h4&gt;Late Season Failure&lt;/h4&gt;&lt;/p&gt;
+
+&lt;p&gt;Being in championship contention is one thing and being a champion is another. Despite doing the former in an impressive fashion, Harbaugh has never really been able to do the latter.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image7.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In football, all games are subject to many factors that have absolutely nothing to do with coaching. From injuries to terrible refereeing to crowd noise, there are many ways for a football team to lose that do not result from coaching decisions. It's entirely possible that Jim Harbaugh is just the most unlucky coach of the decade when it comes to high-stakes football games, but that seems unlikely and rather bland. Thankfully, upon research, there &lt;i&gt;does&lt;/i&gt; appear to be something interesting happening with Harbaugh's play calling in big games.&lt;/p&gt;
+
+&lt;p&gt;Splitting offensive play calling in the most basic way, passing and running, the charts below show the play selection of NFL teams and Big Ten teams in the Jim Harbaugh eras:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image3.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image8.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Football is played differently in the professional ranks versus in college and the game in general has evolved over the last 8 years, but one thing is clear: Jim Harbaugh loves running the ball. The Niners under him were one of just two teams in his era that ran the ball more than they threw it. It's the focal point of his offense and he's been more committed to it than almost every other team in his league in both the NFL and NCAA. But when it comes to important games (playoff games, Big Ten title games, and bowl games), that commitment seems to disappear:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image14.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Harbaugh has coached 8 big games with the Niners and 8 with Michigan. With both teams, 7 of those 8 games featured a running percentage lower than every regular season game that year. A man who called running plays 52.3% of the time with the Niners and 59.1% of the time with the Wolverines dropped to 44.1% and 44.8% respectively in big games. This pattern is simply too glaring to ignore, and upon deeper research into these big games, an even more conclusive pattern is uncovered regarding key drives in these games. For the purpose of this article, we define a 'key drive' as the following:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;A drive on which a team must score points, whether it is to take a late lead, maintain a late lead, stay in the game, and/or reverse the momentum of the game&lt;/li&gt;
+	&lt;li&gt;A drive where the clock is not yet a factor that affects play calling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of importance is the fact that by this definition time is not a factor, so a run percentage is not skewed by the fact that when time is low, a coach will either be more inclined or less inclined than usual to run the ball depending on the score. It is also important to note that there are multiple drives per game that can be considered key drives as per the provided definition. Since the point here is to simply look at the more important drives of these important games, only one key drive from each of Harbaugh's big games is listed below:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image12.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Examining his run percentage in these specific drives, his apparent tendency to call significantly fewer running plays in big games becomes even more clear:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image2.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;While nothing can be determined with absolute certainty in football, the pattern here is quite clear. In important games Harbaugh runs the ball far less than usual, and in the important moments of those important games he runs it even less than &lt;i&gt;that&lt;/i&gt;. The 44.1% and 44.8% that he dropped to in big games with the Niners and Wolverines respectively became 22.3% and 24.1% in those key drives. In a couple of those drives, he didn't even run the ball at all. While Harbaugh has still won big games this way, it's not sustainable because it's simply not his identity, hence his failure every year to go all the way. He seems to get way more trigger-happy on the big stage, wanting to put the ball in his quarterback's hands and move it through the air in large chunks rather than methodically move it on the ground as he's used to doing.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/harbaugh/image4.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It's actually rather suiting. Jim Harbaugh can be described as an incredibly powerful steroid; he enters the locker room of a mediocre team and injects an intensity and attitude that immediately turns those players into winners. He wins games with old school football and dares the opposition to stop him. But when he gets to the big dances, he falls victim to himself. Perhaps his throwing the ball far more than usual in big games is the result of a million other small factors that just happen to create this coincidental pattern. But knowing Jim Harbaugh, it really isn't. It's the curse of his nature as a head coach. The very intensity and daring that brought him there undoes him as he goes one step too far, trying to win the game at the same speed with which he changed his team's fortunes when he took over. Jim Harbaugh's general coaching success can be attributed to many things, but a cool head has never been one of them.&lt;/p&gt;
+
+&lt;p&gt;With Ohio State head coach &lt;a href=&quot;http://www.espn.com/college-football/story/_/id/25449933/ohio-state-buckeyes-head-coach-urban-meyer-retire-coaching-rose-bowl&quot;&gt;Urban Meyer retiring&lt;/a&gt; and Clemson and Alabama not going away anytime soon, there is nothing left for Harbaugh at Michigan. It would be surprising if he's not on the move again soon, and it will be interesting to see where he ends up. The word &quot;overrated&quot; has become constantly associated with Jim Harbaugh's name, but the fact is that great football coaches are rare and there are NFL teams as well as colleges that would hire him in an instant. He may not have a great track record in postseason play, but he knows the game, he's animated on the sideline, and he winds up on national television more often than not. The entertainment value coupled with the guaranteed appearance in important games is too good to deny. Regardless of the end results, football needs Jim Harbaugh.&lt;/p&gt;
+
+&lt;p&gt;Sources: sports-reference, pro-football-reference, ESPN&lt;/p&gt;</content><author><name>Kathir Ilango</name></author><summary type="html">After finishing the 2010 NFL season with a losing record yet again, the San Francisco 49ers finally decided it was time for a new head coach. They needed to win games to become relevant again and, more importantly, they needed to bring life back to a fan base that had not had a winning team since 2002. So they went with a man whom they thought could bring all of that to the table&amp;#58; Jim Harbaugh.</summary></entry><entry><title type="html">Why Anthony Davis and the Pelicans Failed</title><link href="http://localhost:4000/adPelicansFailure" rel="alternate" type="text/html" title="Why Anthony Davis and the Pelicans Failed" /><published>2019-02-09T14:45:54-08:00</published><updated>2019-02-09T14:45:54-08:00</updated><id>http://localhost:4000/adPelicansFailure</id><content type="html" xml:base="http://localhost:4000/adPelicansFailure">&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ad_pels/cover.jpg&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Despite having one of the top-five players in the NBA, the New Orleans Pelicans struggled for seven years to surround &lt;a href=&quot;https://stats.nba.com/player/203076/&quot;&gt;Anthony Davis&lt;/a&gt; with enough talent to consistently make the playoffs. In 2015, the Pelicans - without &lt;a href=&quot;https://stats.nba.com/player/201950/&quot;&gt;Jrue Holiday&lt;/a&gt; - were swept by the first iteration of the current Warriors Dynasty. Davis's only other postseason appearance came in 2018, when the Pelicans upset the 3-seed Portland Trailblazers in a stunning sweep. Although the Pelicans lost to the Warriors again in the next round, their second round exit was viewed as a success after the enormous loss of DeMarcus Cousins in late January due to a ruptured Achilles.&lt;/p&gt;
+
+&lt;p&gt;However, the Pelicans' success did not continue into the 2018-2019 season. After the Pelicans dropped to 22-28 and 5.5 games out of the playoffs, &quot;The Brow&quot; decided he had seen enough and requested a trade.&lt;/p&gt;
+
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ad_pels/pic1.png&quot; alt=&quot;picture 1&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The Pelicans &quot;entertained&quot; several trade offers from the Los Angeles Lakers, but ultimately decided to keep Davis until the offseason when the Celtics can enter the bidding, hoping for more lucrative offers. Davis has made it clear he intends to play for the Pelicans the rest of the season since he is still under contract, and the Pelicans &quot;plan to allow Davis back into the lineup for the rest of the season&quot;, according to Wojnarowski. Despite this, the Pelicans are still six games out of the 8-seed and behind the Kings, Lakers, Mavericks, and Timberwolves. Unless the Pelicans go an a magical run, they will likely still miss the playoffs.&lt;/p&gt;
+
+&lt;p&gt;The easiest explanation for the Pelicans' struggles this season is a constant plague of injuries to key rotation pieces. Davis, &lt;a href=&quot;https://stats.nba.com/player/202703/&quot;&gt;Nikola Mirotic&lt;/a&gt;, and &lt;a href=&quot;https://stats.nba.com/player/203901/&quot;&gt;Elfrid Payton&lt;/a&gt; all sustained serious injuries, missing 14, 23, and 36 games so far this season, respectively. They have only deployed one of their ideal fives of Payton, Holiday, &lt;a href=&quot;https://stats.nba.com/player/202734/&quot;&gt;E'Twaun Moore&lt;/a&gt;, Mirotic/&lt;a href=&quot;https://stats.nba.com/player/203944/&quot;&gt;Julius Randle&lt;/a&gt;, and Davis in 11 games this season and were 7-4 in such games (the Pelicans dealt Nikola Mirotic to the Milwaukee Bucks on the morning of the NBA trade deadline on February 7).&lt;/p&gt;
+
+&lt;p&gt;But every team encounters injuries - the Nuggets led the West for most of the first half of the season despite injuries to &lt;a href=&quot;https://stats.nba.com/player/203914/&quot;&gt;Gary Harris&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/203115/&quot;&gt;Will Barton&lt;/a&gt;, and &lt;a href=&quot;https://stats.nba.com/player/200794/&quot;&gt;Paul Millsap&lt;/a&gt; because of the &lt;a href=&quot;http://www.bruinsportsanalytics.com/jokicrisingstar&quot;&gt;brilliance of Nikola Jokic&lt;/a&gt;. &lt;a href=&quot;https://stats.nba.com/player/201935/&quot;&gt;James Harden&lt;/a&gt; took injuries to &lt;a href=&quot;https://stats.nba.com/player/101108/&quot;&gt;Chris Paul&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/201569/&quot;&gt;Eric Gordon&lt;/a&gt;, and &lt;a href=&quot;https://stats.nba.com/player/203991/&quot;&gt;Clint Capela&lt;/a&gt; in stride and averaged 43.6 (!) points per game in January. However, most (if not all) NBA experts would agree that Davis is a better two-way player than Jokic and Harden, so how did the Pelicans fall to the 13-seed in the Western Conference?&lt;/p&gt;
+
+&lt;p&gt;One reason is the Pelicans lacked much of any depth this season beyond Davis, Holiday, Randle, and Mirotic. The Pelicans' bench only scores 30.7 points per game, ahead of only the Rockets and Warriors.&lt;/p&gt;
+
+&lt;p&gt;E'twaun Moore was scorching from three in October and November, but has been in a major slump since. &lt;a href=&quot;https://stats.nba.com/player/203121/&quot;&gt;Darius Miller&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/1628402/&quot;&gt;Frank Jackson&lt;/a&gt;, and &lt;a href=&quot;https://stats.nba.com/player/204025/&quot;&gt;Tim Frazier&lt;/a&gt; have averaged 31, 20, and 17 minutes over the Pelicans' last 15 games.&lt;/p&gt;
+
+&lt;p&gt;One bright spot is that &lt;a href=&quot;https://stats.nba.com/player/1626143/&quot;&gt;Jahil Okafor&lt;/a&gt; has stepped up admirably in Davis's absence and improved his defense from &lt;a href=&quot;https://stats.nba.com/player/202683/&quot;&gt;Enes Kanter&lt;/a&gt; levels of unplayable to sneakily impressive. Opponents are shooting only 48.4% on shots within 6 feet of the rim against Okafor (a better mark than &lt;a href=&quot;https://stats.nba.com/player/203497/&quot;&gt;Rudy Gobert&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/1626167/&quot;&gt;Myles Turner&lt;/a&gt;, and Davis), per NBA.com.&lt;/p&gt;
+
+&lt;p&gt;The Pelicans' second best player, Jrue Holiday, is averaging 20.9 points, 8 assists, and 5.1 rebounds per game this season. In the last nine games without Davis, Holiday has kept the Pelicans in every game, with five of their six losses in that span decided by only six points or less.&lt;/p&gt;
+
+&lt;p&gt;When either Davis or Holiday sat out this season, the Pelicans had an abysmal point differential (points scored - points allowed): -5.1 when Holiday played without Davis and -21.4 when Davis played without Holiday. The Pelicans had a net rating[1] of 10.1 and an offensive rating of 115.3 when both Holiday and Davis shared the floor, ranking 15th and 7th in the NBA, respectively, out of 84 pairs of teammates who have played at least 1000 minutes this season, per NBA.com.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ad_pels/pic2.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The Pelicans' inability to surround Davis with consistent talent the last seven years is a result of a series of poor decisions and win-now moves. For example, in 2015, the Pelicans resigned &lt;a href=&quot;https://stats.nba.com/player/201600/&quot;&gt;Omer Asik&lt;/a&gt; to a five-year, $60 million deal and &lt;a href=&quot;https://stats.nba.com/player/201582/&quot;&gt;Alexis Ajinca&lt;/a&gt; to a four-year, $20.2 million contract, severely depleting their cap space. In 2016, the Pelicans let Eric Gordon and &lt;a href=&quot;https://stats.nba.com/player/201583/&quot;&gt;Ryan Anderson&lt;/a&gt; leave in free agency to become key rotation shooters for the Houston Rockets. The Pelicans also signed &lt;a href=&quot;https://stats.nba.com/player/203524/&quot;&gt;Solomon Hill&lt;/a&gt; for $48 million over four years, further restricting their cap space.&lt;/p&gt;
+
+&lt;p&gt;The only first round pick New Orleans has drafted in that span was &lt;a href=&quot;https://stats.nba.com/player/1627741/&quot;&gt;Buddy Hield&lt;/a&gt; in 2016, who the Pelicans proceeded to trade at the trade deadline in 2017. Hield is currently having a breakout season with the Sacramento Kings, canning 3.4 three pointers per game (behind only &lt;a href=&quot;https://stats.nba.com/player/201939/&quot;&gt;Stephen Curry&lt;/a&gt;, James Harden, and &lt;a href=&quot;https://stats.nba.com/player/202331/&quot;&gt;Paul George&lt;/a&gt;) on 45.5% shooting from behind the arc. Hield is a consistent threat from deep, something the Pelicans have desperately lacked around Anthony Davis.&lt;/p&gt;
+
+&lt;p&gt;The Pelicans did make some good moves. Trading for DeMarcus Cousins was an unexpected gamble that looked promising until Cousins ruptured his Achilles. In the summer of 2017, the Pelicans signed &lt;a href=&quot;https://stats.nba.com/player/200765/&quot;&gt;Rajon Rondo&lt;/a&gt; to a one-year deal. Shortly after Cousins tore his Achilles, the Pelicans traded for Nikola Mirotic, who seamlessly paired alongside Anthony Davis. The quartet of Rondo, Holiday, Mirotic, and Davis propelled the Pelicans to a 20-11 record and the 6-seed in the Western Conference.&lt;/p&gt;
+
+&lt;p&gt;During the 2018 offseason, the Pelicans did not re-sign Rondo or Cousins (who signed with the Warriors after not receiving other serious offers), instead signing Payton and Randle.&lt;/p&gt;
+
+&lt;p&gt;The main issue with the Pelican's 2018-2019 roster was three of their best four players are most comfortable playing power forward or center, so Alvin Gentry hesitated playing Mirotic, Randle, and Davis all at the same time. In the few games between Mirotic's return and Davis's finger injury, the Pelicans experimented with an enormous lineup, featuring all of Holiday, Mirotic, Davis, and Randle at the same time. In the 58 minutes those four shared the court, the Pelicans had a net rating of 17.1 (the Warriors' lineup of Curry, Klay Thompson, Kevin Durant, and Draymond Green have a net rating of 15.1 this season). Had the Pelicans not been decimated by injuries and continued deploying their ultra-big lineup, they may have remained closer in the playoff race and Davis may have waited to divulge his desire to be traded. Instead, the Pelicans were forced to look towards the future and traded Mirotic to the Bucks for four future second round picks.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ad_pels/pic3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ad_pels/pic4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ad_pels/pic5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The other reason for the Pelicans' struggles this season is an absurd inability to execute in close games. The Pelicans have lost 22 out of the 32 games in which the score is within five points with five minutes or less remaining, the second-worst winning percentage ahead of only the last place New York Knicks.&lt;/p&gt;
+
+&lt;p&gt;In these &quot;clutch situations&quot;, the Pelicans have been outscored by 59 points (second-worst), have a -21.5 net rating (second-worst), an offensive rating of 86.4 (worst), shot 35.6% from the field (worst), and shot 14.8% from three (worst).&lt;/p&gt;
+
+&lt;p&gt;The Pelicans foul opponents too much, with opponents attempting 7.2 free throws for every 10 field goal attempts in clutch situations, per NBA.com.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/ad_pels/pic6.png&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With Davis returning to the lineup, some Pelicans fans might be hoping for a magical run that lifts New Orleans back into the playoffs and changes Davis's mind about wanting a trade. ESPN's BPI Playoffs Odds estimates the Pelicans have a 9.5% chance at making the playoffs, while FiveThirtyEight projects the Pelicans to have a 12% chance of making the playoffs. If the Pelicans can stay healthy and perform better in close games, Anthony Davis is the superstar who could pull off such a ridiculous feat with only 27 games remaining.&lt;/p&gt;
+
+&lt;p&gt;However, the most likely ending to this fiasco is the Pelicans missing the playoffs and reopening trade discussions with teams around the draft and free agency. The Celtics hold the best potential return for Davis if they include &lt;a href=&quot;https://stats.nba.com/player/1628369/&quot;&gt;Jayson Tatum&lt;/a&gt; with &lt;a href=&quot;https://stats.nba.com/player/203935/&quot;&gt;Marcus Smart&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/201143/&quot;&gt;Al Horford&lt;/a&gt;, and multiple future first round picks. The Lakers &quot;kitchen sink&quot; offer of &lt;a href=&quot;https://stats.nba.com/player/1627742/&quot;&gt;Brandon Ingram&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/1628366/&quot;&gt;Lonzo Ball&lt;/a&gt;, &lt;a href=&quot;https://stats.nba.com/player/1628398/&quot;&gt;Kyle Kuzma&lt;/a&gt; and their own first round picks will most likely still be available. Another team not on &lt;a href=&quot;https://twitter.com/ShamsCharania/status/1092505032199688192&quot;&gt;Davis's list&lt;/a&gt; may shock the league and go all-in for a year to convince Davis to resign. Regardless, the Pelicans must maximize the return on their superstar, and when they get the next &quot;Anthony Davis&quot;, they better not waste it.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Statistics updated through February 6, 2019&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;________________&lt;/p&gt;
+
+&lt;p&gt;[1] Net rating is one of the best indicators of a team's success, representing the difference between a team's offensive rating and defensive rating, where offensive and defensive ratings are the number of points scored and the number of points allowed per 100 possessions, respectively.&lt;/p&gt;</content><author><name>Chad Shimozaki</name></author><summary type="html">Despite having one of the top-five players in the NBA, the New Orleans Pelicans struggled for seven years to surround Anthony Davis with enough talent to consistently make the playoffs. In 2015, the Pelicans - without Jrue Holiday - were swept by the first iteration of the current Warriors Dynasty. Davis's only other postseason appearance came in 2018, when the Pelicans upset the 3-seed Portland Trailblazers in a stunning sweep. Although the Pelicans lost to the Warriors again in the next round, their second round exit was viewed as a success after the enormous loss of DeMarcus Cousins in late January due to a ruptured Achilles.</summary></entry></feed>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">An In-Depth Analysis of Cristiano Ronaldo</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/kevinhahn">Kevin Hahn</a>
+                      
+                    
+                      
+                      
+                    , <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/subashraman">Subash Sundar Raman</a>
+                      
+                    
+                  
+                  • 08 Mar 2018 •
+                  
+                    
+                      12 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <p>
+    One of the greatest players of this generation, Portuguese and Real Madrid forward Cristiano Ronaldo has been the topic of discussion among football pundits. The five time Ballon d’or winner has been struggling in the 2017-18 season to replicate his incredible goal scoring performances from previous seasons. With its star player facing a slump, Real Madrid is also going through a rough patch this season, currently sitting in 3rd place, 15 points off the current leader, Barcelona. As things stand, Real Madrid could be facing its worst finish in a long time, having finished outside the top 2 only once in the last 10 years. One could argue that Real Madrid and Ronaldo are not performing poorly by any means, as a top 4 finish and being in a commanding position in the round of 16 of the Champions league is no small feat. However, for a club with successive Champions League titles and for a player that averages over 25 goals a season for Real Madrid, these recent performances have been far from outstanding. Critics have pointed out several explanations for Ronaldo’s unforeseen decline, such as age, poor management, and lack of support from teammates. This article takes a closer look at noticeable changes in Ronaldo’s game over the past eight years and whether or not they are really indicative of personal decline.
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/ronaldo1.png" alt="Ronaldo"></center>
+    <figcaption>Cristiano Ronaldo</figcaption>
+</figure>
+<h4>
+    Adapting His Game
+</h4>
+<p>
+    As he has gotten older, Cristiano Ronaldo has adapted his game in a way that maximizes his output given his changing physical abilities. In his early years, he showed a lot of flair, but recently, has become more of a clinical striker, getting into the right positions and converting opportunities with his right foot, left foot or head. The following showcases a notable change in playstyle, as he is relying less on using his pace and agility to dribble past his opponent:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs1.png" alt="Dribbles/Offsides per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    His percentage of successful dribbles per game has steadily decreased since joining Real Madrid for the 2009-10 season. Roughly 84.2% of the variation in dribbles per game each season is explained by Ronaldo’s aging alone. Through this period, he has also been caught offside more often every year. This, unlike the reduction in the number of dribbles, may have a direct negative effect on his contribution to his team.
+</p>
+<p>
+    The increase in frequency of an offside shows that he has been positioning himself closer to the defensive line, and often starts his run early in an effort to beat defenders. A possible explanation for this is that he cannot sprint past defenders like he used to, and thus feels the need to make his run early in order to give him the best chance, resulting in more offsides called against him. Another possibility is his change in positioning himself on the field. In recent years, his role has changed from a winger into a more of a complete forward, if not a striker. As a result, he spends more time up the pitch rather than tracking back, looking to make runs to get into a good shooting position. As a winger, his job was not solely to score goals, and he would therefore play deeper on the field. 
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/ronaldo2.png" alt="Frustrated Ronaldo"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Interestingly, the graph below shows that Ronaldo has been dispossessed fewer times per game:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs2.png" alt="Disposessions Per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    This supports the idea that he has transitioned from a playmaker into a striker and goal scorer. This is definitely an improvement for him as he is less likely to make rash decisions and thinks before attempting a risky dribble. However, while this is a positive change in his game, this stat is skewed by the fact that he is also less likely to attempt a dribble, therefore considerably reducing his risk of getting dispossessed. Ronaldo has failed fewer dribbles over the years, but has also made fewer dribbles in total, leaving it questionable as to whether such a change is really an improvement. However, with his waning abilities in pace and dribbling, it is likely a conscious decision that still helps him compete at the highest level.
+</p>
+<p>
+    Further supporting the idea of his changing playstyle are the changes in where he generally takes his shots from each game:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs3.png" alt="Shot Location Per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Ronaldo’s percentage of shots in the 6 yard box has gone up by approximately 50% since the 2010-11 season, while the percentage of shots he takes in the penalty area has also gone up by roughly the same amount (54%). The number of shots he takes outside the box has severely declined since 2010 and he is taking a much greater percentage of his shots per game inside the penalty area and six yard box. This reflects Ronaldo’s transformation into more of a “poacher” as he more often decides to take shots closer to the goal. While it may seem that this is merely representative of maturity in Ronaldo’s game since he is taking more calculated high-percentage shots, the number of shots he takes per game has consistently hovered around the 6.5-7 mark:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs4.png" alt="Shots Per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Ronaldo has not necessarily reduced the number of shots he takes to be more efficient; he just takes them from farther up the pitch. As he has aged, Ronaldo has transformed from a pacey winger who engages in playmaking into a more of a striker who focuses on positioning himself in order to create the best goalscoring opportunities. As seen below, he has reduced the amount of passes he makes per game, presumably because he is responsible for receiving the passes and finishing chances rather than creating them:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs5.png" alt="Passes Per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    This raises a question as to whether he is becoming a more one-dimensional rather than a complete player adept in all areas of attacking. However, his goal-scoring abilities have been almost unparalleled in the last few years, to the point that it is trivial to criticize him based on his passing or dribbling abilities.
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/ronaldo3.png" alt="Triumphant Ronaldo"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Despite the sharp increase in offsides calls against Ronaldo, none of the data that we have examined thus far has truly suggested a decline in his play in recent years. His shot conversion rate, however, has been at an all-time low this season:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs6.png" alt="Shot Conversion Rate"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    This is clear-cut evidence that there has been decline in his attacking. A good portion of the change in his play can be attributed to his individual evolution with his fading abilities, but some of it should be attributed to the fact that there has been a drop in his overall level of play, at least in the Spanish La Liga. In the UEFA Champions League, Ronaldo continues to be a top threat:
+
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs7.png" alt="UCL Goals per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    He is scoring 1.6 goals per game, doubling his 2016-2017 ratio of 0.8, and is currently leading all scorers in the competition: 
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs8.png" alt="Competition"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Ronaldo’s play in La Liga, and likely overall, has taken a hit, but his play in the Champions League this season suggests that his game certainly has not fallen off a cliff of any sorts.
+</p>
+<h4>
+    What About His Supporting Cast?
+</h4>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/ronaldo4.png" alt="Friends"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Soccer is a team sport, so it would be unfair to strictly analyze Ronaldo’s growth by only looking at individual numbers. It is important to also take into account the ten other men who take the field with him and their overall level of play. While Ronaldo has been the spearhead of Real Madrid’s attack, its success in previous years came from world class players in all positions. For example, the midfield of Luka Modric, Toni Kroos, and to an extent Isco and Casimero has been instrumental in their play. The defence consists of players such as Sergio Ramos, Marcelo, and Dani Carvajal, each arguably the best in the world at their role. With their quality, it is incorrect to credit only Cristiano Ronaldo for their successes and to blame him for their failures. Despite its quality, Real Madrid is far behind its fierce Catalonian rivals and have declined so sharply that they have no glimpse whatsoever of the La Liga title. Here is a graph of its scoring over the years:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs9.png" alt="Goals Scored Per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Real Madrid’s scoring per game has fallen from nearly to 2.8 goals to less than 2.5, which is its lowest over this 7 year period. The team has also conceded more than twice as many goals per game as the current leaders Barcelona:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs10.png" alt="Goals Conceded Per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    It has conceded the same amount of goals per game as it did in its 2017 championship campaign, suggesting that the backline has not let the team down this season. In this regard, there seems to be an improvement from Barcelona’s side, going from conceding 0.97 goals per game to 0.49, rather than a decline from Real Madrid, which has remained fairly consistent. In terms of goals scored however, both Real Madrid and Barcelona have gone down from the 2016-17 season. This may just be an indication of overall improvement in the defensive capabilities of the league. If this is the case, the fault could still lie with Real Madrid’s defence, which has failed to adapt to this trend, as they are conceding just as many goals as they did last season. 
+</p>
+<p>
+    The average goals conceded per game last season was 1.47 with teams keeping clean sheets 26% of the time, while this season’s average goals conceded per game dropped to 1.35 with the clean sheet percentage increasing to 31%. Real Madrid’s clean sheet percentage has increased from 26% to 30% over the year, while both Barcelona and Atletico Madrid show much greater increases, with Barcelona going from 34% to 59% and Atletico going from 53% to 63%. While the blame cannot be pinpointed on the team’s defence, it has failed to keep up with the rest of the league. However, another statistic about Real Madrid's attack reveals a steep drop:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs11.png" alt="Scoring Breakdown Per Game"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Last year, the team had scored in every game in the La Liga. This year however, they have failed to score in 6 games (22%), with 11 games remaining in the regular season. Although their goals per game ratio has not dropped by much, it could be concluded that Real Madrid’s goals per game statistic has been skewed by its scoring big in certain games while failing to score in others. For example, they have scored 4+ goals 6 times this season. This graph corroborates that they tend to score multiple goals in games they win, but also fail to score occasionally. Therefore, this is indicative of a drop in consistency, which appears to be the team’s biggest downfall this season, for it has already lost more games so far this season than it did in the entirety of last season. 
+</p>
+<p>
+    A lot of Real Madrid’s failures lie in its attacking capabilities. With Ronaldo facing a dip in form this season, the decline in his play and the team’s attack are probably related. While it can be argued that he has not been receiving much support in the attack, Ronaldo’s lack of contribution towards Real Madrid’s attack plays a major part in their poor showing in La Liga. However, with soccer being the team sport that it is, several players such as the midfielders who supply the attackers, and arguably the defence, who fail to keep up with the top teams in the league should also share the blame.
+</p>
+<h4>
+    How Does Ronaldo Fare with the Rest of La Liga?
+</h4>
+<p>
+    When compared to the rest of La Liga’s elite players, Ronaldo’s modifications of his overall playstyle are much more apparent. Here are his shooting numbers, aerial duel numbers, and overall attack score stacked up against Gareth Bale, Lionel Messi, Luis Suarez, and Antoine Griezmann:
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs12.png" alt="Competition"></center>
+    <figcaption></figcaption>
+</figure>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs13.png" alt="Per game averages"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Ronaldo’s shot accuracy is the lowest of the five, but he has compensated by utilizing more of his aerial game as he leads the five players in percentage of aerial duels won this season at an efficient clip of 61.22%. Additionally, Ronaldo’s inside shots per game have increased substantially to 5.24 inside attempts. This is indicative of Ronaldo becoming more of a poacher, as he now turns to headers and close range shots in the box for scoring goals. 
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/ronaldo5.png" alt="Competition Faces"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Despite his steady decrease in percentage of outside shots in each season, Ronaldo still ranks second among the five La Liga stars, trailing only Messi in outside shots per game this season. However, his inside shooting has not taken a hit either, as his per-game average of 0.76 is still on par with the likes of Messi and Suarez. Furthermore, Ronaldo’s attack score, which is the offensive aspect of a performance score that quantifies a player’s positive influence in the game by taking all his attacking events into consideration (shots, crosses, take-ons, etc), is still one of the highest in the league: 
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/graphs14.png" alt="Overall Attack Score"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    His attack score of 46.10 is second only to Messi, who is 2 years younger. Relative to the rest of the league, it is evident that Ronaldo can still compete at an elite level in La Liga even at 33 years of age. 
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/cristiano/ronaldo6.png" alt="Number 1"></center>
+    <figcaption></figcaption>
+</figure>
+<p>
+    Cristiano Ronaldo is past his prime as a footballer, but it is unfair to create an equivalency between that and poor play. A declining Ronaldo is still one of the top players in La Liga and in the world, especially as he continues to be a top threat in the UEFA Champions League. When discussing great athletes, it is easy to constantly hold them to their own lofty standards because there really is not much else to compare them to. By his own standards, Ronaldo’s game has definitely taken a step back, but he is doing as good a job can be done in fighting the aging curve. His high soccer IQ and experience have let him adapt his game to one that is more suited to his physical abilities at 33. Cristiano Ronaldo will continue to be a fantastic player for the foreseeable future, and Real Madrid isn’t going away anytime soon.
+</p>
+<div id="cited">
+    <p>
+        Sources: whoscored.com, soccerstats.com, worldfootball.net, squawka.com
+    </p>
+  </div>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

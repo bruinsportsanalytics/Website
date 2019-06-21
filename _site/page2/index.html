@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+
+  </head>
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="body">
+
+      <head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+  <link rel="stylesheet" href="/css/blog.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+  <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    
+
+</head>
+
+<body>
+<div class="wrapper">
+  <main>
+    <div id="bloghome">
+      <section class="module content">
+        <div id="consult" style="width: 50%; float: left;">Official Consulting Partners of <b>USA Hockey</b><img src="assets/usa_hockey.png" style="max-width: 10%; max-height: 20%;"></div>
+        <div id="github-link" style="width: 32%; float: right">
+          <a href="https://github.com/bruinsportsanalytics/Resource-Folder">Our Resource Folder on GitHub</a><br>
+        </div>
+        <br><br>
+        <figure>
+            <center><img src="/assets/bsa_full_1819.png" alt="BSA Logo" style="max-width: 95%;">
+              <figcaption></figcaption>
+            </center>
+          </figure>
+          <!--
+         <div id="hm description">
+          <center><h2 style="color: #ffab40;">Data Journalism</h2></center>
+          <hr>
+        </div>
+      -->
+
+          <div id="posts">
+            
+            <h2 ><a href="/Goalkeeper-Passing">Goalkeeper Passing- What’s been done so far</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/salilakundi">Salil Akundi</a>
+                      
+                    
+                    
+                  • 27 Jan 2019 •
+                    
+                      
+                        8 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/pass/image3.png" alt="cover photo"></center><p>It is true that a goalkeeper's main job is to keep the ball out of the net. However, in the modern game, where margins are much tighter and errors are easily punished, it is a valuable advantage for a goalkeeper to be an adept passer of the ball. This is particularly useful when a team plays a style with the intent of creating spaces to attack by drawing the opposition to press high, such as the style employed (with success, in the past with Napoli) by Chelsea manager Maurizio Sarri. It is no coincidence, either, to see big clubs spending record sums of money on goalkeepers these days, goalkeepers that are not just shot-stoppers, but also excellent footballers.</p>
+                  
+            <h2 ><a href="/PitchesOffensiveProduction">The Impact of Pitches Seen on Offensive Production</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/maxblane">Max Blane</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/bornanazari">Borna Nazari</a>
+                      
+                    
+                    
+                  • 23 Jan 2019 •
+                    
+                      
+                        6 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/pitch_off/cover.png" alt="cover photo"></center><p>Due to the effects of a major knee surgery suffered during a September 2016 matchup vs. the <i>Toronto Blue Jays</i>, and a reinjury that was followed by a second surgery in April of 2017, the 2018 season came and went with Boston Red Sox second baseman Dustin Pedroia compiling thirteen total plate appearances; he accumulated just a single hit.</p>
+                  
+            <h2 ><a href="/nbaclust2">Constructing My All-Time NBA Lineup Through K-Means Clustering, Part 2</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                      
+                    
+                    
+                  • 15 Jan 2019 •
+                    
+                      
+                        6 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/nbaclust2/cover.png" alt="cover photo"></center><p>A few months ago, I wrote an article where I used k-means clustering to help choose five NBA players from 1980 to the present to constitute an all-time starting lineup.</p>
+                  
+            <h2 ><a href="/relieversTodaysMLB">Relievers in Today's MLB</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                      
+                    
+                    
+                  • 05 Dec 2018 •
+                    
+                      
+                        6 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/relievMLB/pic1.jpg" alt="cover photo"></center><p>In Major League Baseball (MLB), a reliever is defined as any pitcher who is substituted for a starting pitcher to help finish a game. Ideally, even as of a few years ago, relievers were meant to be brought in after the starter had pitched at least 6 or more innings. However, as the game has evolved, relievers have expanded their respective roles. For instance, teams like the Tampa Bay Rays have implemented relievers in a starting role, where the relievers are known as "openers." Starters, who used to go much deeper in the game, are being pulled in the 5th inning--sometimes earlier--more often than ever. After all, starters are limited to a certain number of pitches, meaning that you'll rarely see pitchers venture into triple-digit pitch counts to prevent injuries that may require Tommy John surgery. Consequently, relievers are being used more often and for longer periods of time. But, the volatility amongst MLB relievers hasn't gone away, which means consistency might be hard to find in a reliever. This variability brings about an important question for MLB front offices&#58; is it worth paying extra for free agent relievers in today's game? Through an examination of past and present player salaries and performance, I will try to see whether inflated salaries for relievers are really worth it.</p>
+                  
+            <h2 ><a href="/russPgOrSg">Russell Westbrook: Point Guard or Shooting Guard?</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/jackma">Jack Ma</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                      
+                    
+                    
+                  • 04 Dec 2018 •
+                    
+                      
+                        11 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/russ/pic1.png" alt="cover photo"></center><p>Russell Westbrook has become one of the NBA's top players in the past decade. He has been a marvel to watch, as his thrilling athleticism has allowed him to churn out highlight after highlight. On top of his exhilarating play-style, he has become a fan favorite due to his <a href="https://www.youtube.com/watch?v=sfQylEBg-bg">curt interviews</a> and his redemptive MVP season after Kevin Durant so infamously <a href="https://i.ytimg.com/vi/TiojPTwxeBg/maxresdefault.jpg">snaked</a> Russ and the Thunder.</p>
+                  
+            <h2 ><a href="/possessionPlayStyle">How Effective is a Possession-Based Play Style in the UEFA Champions League?</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/farazmurshed">Faraz Murshed</a>
+                      
+                    
+                    
+                  • 04 Dec 2018 •
+                    
+                      
+                        6 min read
+                      </h6>
+                      <center><img class="materialboxed responsive-img" src ="/assets/possStyle/pic1.jpg" alt="cover photo"></center><p>In soccer, there is no club competition that rivals the prestige and history of the UEFA Champions League (UCL). Each year, the highest ranked teams from all European leagues automatically qualify or enter the preliminary stages of this tournament. In the end, 32 teams participate in a grueling group stage, where every team plays each other twice. The top two teams from all 8 groups make the first knockout stage. Each knockout matchup has two games, other than the final which has one. As a result, the UCL format generally ensures that the team who wins must consistently play well.</p>
+                  
+            <h2 ><a href="/defenseNFL">Defense in the Modern NFL (or Lack Thereof)</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/armanabrishamchian">Arman Abrishamchian</a>
+                      
+                    
+                    
+                  • 03 Dec 2018 •
+                    
+                      
+                        5 min read
+                      </h6>
+                      <center><img class="excerptpics" src ="/assets/nflDef/pic1.png" alt="cover photo"></center><p>The Ray Lewis Ravens, '85 Bears, and Belichick Giants are some of the greatest defenses the National Football League has ever seen. They were stone walls, high-powered, and champions. Scoring more than ten points against any of these teams was an accomplishment- a win in and of itself. However, scoring less than twenty against any team nowadays is almost always another notch in the loss column.</p>
+                  
+            <h2 ><a href="/summerBall">Can Summer Ball Indicate Professional Success?</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/haleyrao">Haley Rao</a>
+                      
+                    
+                    
+                  • 03 Dec 2018 •
+                    
+                      
+                        4 min read
+                      </h6>
+                      <center><img class="materialboxed responsive-img" src ="/assets/sumBall/pic1.jpg" alt="cover photo"></center><p>Every summer, hundreds of college baseball players participate in summer leagues around the country. One of the most acclaimed of these leagues is the Cape Cod Baseball League, which consists of 10 teams across the Cape Cod peninsula. Collegiate summer leagues have support from both Major League Baseball and the NCAA, and are intended to help advance players from the collegiate to professional level.</p>
+                  
+            <h2 ><a href="/youngCore">Keys to Success for the Young Lakers Core</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/justinyee">Justin Yee</a>
+                      
+                    
+                    
+                  • 03 Dec 2018 •
+                    
+                      
+                        6 min read
+                      </h6>
+                      <center><img class="materialboxed responsive-img" src ="/assets/youngC/pic1.png" alt="cover photo"></center><p>With Lebron coming to Los Angeles, the expectations surrounding the Lakers havent't been this high since the Kobe Bryant, Dwight Howard, and Steve Nash team-up. After missing the playoffs for blank consecutive years, the Lakers look to make a playoff run and possibly contend for a championship title with the addition of the NBA's most prominent star. In addition to Lebron James, the Lakers added notable veterans such as Rajon Rondo, Javale McGee, and Lance Stephenson. However, the Lakers remain at their core a very young team, with blossoming players with high potentials.</p>
+                  
+            <h2 ><a href="/summaryStatisticsTennis">Do Summary Statistics Really Mean Anything in Tennis?</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/gauthampasupathy">Gautham Pasupathy</a>
+                      
+                    
+                    
+                  • 01 Dec 2018 •
+                    
+                      
+                        5 min read
+                      </h6>
+                      <center><img class="materialboxed responsive-img" src ="/assets/summTennis/pic1.png" alt="cover photo"></center><p>Four times a year, the entire tennis community gathers to witness one of the most spectacular events&#58; The Grand Slams. Fans young and old crowd around laptops and televisions, host watch parties with friends, and some even witness the magic in person if lucky enough. From watching new upcomers like Denis Shapovalov and Borna Coric, to legends such as Roger Federer and Novak Djokovic, each match is always fun to watch. Of course, just like with every other sport, debating and betting about who will win each match in casual settings as well as in fantasy draws is a crucial part of the entire experience.</p>
+                  
+            
+            
+          <center>
+          <div class="pagination">
+            
+              <a href="/" class="previous">&laquo; Previous</a>
+            
+        
+            <span class="page_number">Page: 2 of 5</span>
+        
+            
+              <a href="/page3" class="next">Next &raquo;</a>
+            
+          </div>
+        </center>
+        </ul>
+          </div>
+      </section>
+    </div>
+  </main>
+
+</div>
+</body>
+
+
+
+      <hr>
+      <!---
+      <center>
+      <div class="newsletter-container">
+            <form action="https://getsimpleform.com/messages?form_api_token=cdd07db5b90f967b9271a5c7ef3fd573" method="post">
+              <ul>
+                <input type="email" placeholder="Email:" id="email" style="font-family: Roboto Slab, serif;"/>
+                <input type="submit" value="Subscribe" id="submit" style="font-family: Roboto Slab, serif;" />
+              </ul>
+            </form>
+          </div>
+        </center>
+      -->
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center>
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+    </div>
+  </body>
+</html>

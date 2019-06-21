@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Andy Murray: A “Big Four” Member, but the Weakest One</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/stephenchen">Stephen Chen</a>
+                      
+                    
+                  
+                  • 03 Apr 2019 •
+                  
+                    
+                      6 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_1.png" alt="cover photo"><figcaption>Source: The Indian Express</figcaption></center>
+</figure>
+
+<p>At the end of 2016, Andy Murray raised the Paris Masters 1000 trophy after defeating John Isner in 3 sets, cementing his status as the world's No. 1 tennis player for the first time in his career. Murray had racked up 9 singles titles to end the 2016 season, including his second Wimbledon trophy and his third Grand Slam title. Murray seemed primed to dominate the tour for the next few years, but a hip injury in the middle of the 2017 season would derail what remained of that season and the next, losing the No. 1 ranking and dropping past rank 800.</p>
+
+<p>In an emotional interview before the start of the 2019 Australian Open, Andy Murray announced to the media that he planned to retire after Wimbledon, citing that his quality of play through hip pain was not at a level he could satisfyingly sustain. In Murray's absence from the tour, the other three members of the "Big Four" (Roger Federer, Rafael Nadal, and Novak Djokovic) have all risen to dominance, with each player collecting 3 Grand Slam titles since the beginning of 2016. With the recent success of these players, the distance in achievements between them and Andy Murray seemed to widen and the notion of a "Big Four" began to dissolve into a "Big Three."</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/GIMgKz6UQ4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>However, was Murray ever a legitimate "Big Four" member, or was he just a really good player?</p>
+
+<p>Let's first examine Murray's rise to dominance: 2008 - 2016.</p>
+
+<p>In 2008, Andy Murray began his campaign as an emerging star after defeating Rafael Nadal in four sets to advance his first Grand Slam final. Although beaten by Roger Federer in straight sets, he ended his 2008 campaign sitting at No. 4 in the rankings. Along with two ATP Masters 1000 titles (Cincinnati and Madrid), Murray had established himself as a dominant player who contend with the likes of the three players ahead of him, defeating both Federer and Djokovic in those Masters 1000 tournaments. In 2009, Murray improved the consistency of quality tennis as he reached the fourth round or better at all four Grand Slams, including a semifinal berth at Wimbledon. Murray also collected six singles tournament titles - a tour-best that year- including two ATP Masters 1000 titles (Miami and Canadian Open), beating Djokovic and del Potro.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption>Source: DailyMail</figcaption></center>
+</figure>
+
+
+<p>From there, Murray joined Federer, Nadal, and Djokovic as the four most dominant players on the tour, the "Big Four".</p>
+
+<p>In 2010 to 2011, Murray found continued success, winning four ATP Masters 1000 titles, reaching the semifinals in all Grand Slams including a finals berth in the Australian Open, and back-to-back titles in Shanghai. Then in 2012, Murray finally won his first Grand Slam in New York, defeating Djokovic in five sets in the finals. In addition, Murray also won an Olympic gold medal in men's singles, dispatching Federer in straight sets. That year, he inched up in the rankings to No. 3.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>From 2013 to 2016, Andy Murray found himself on the precipice of a career-defining run, only to be riddled with significant injuries. He started the 2013 season winning the Brisbane title and made it to the finals of the Australian Open, defeating Federer in a 5-set thriller but then beaten by Djokovic. He then won another Masters 1000 title in Miami later that year, and won his first Wimbledon title, his second career Grand Slam. However, a back injury would hamper him, forcing him to pull out of the French Open and get surgery to fix his problem. His 2014 season was then riddled with inconsistent play, although he won a few small tournaments. He lost to Federer, Djokovic, or Nadal before ever reaching a Grand Slam final or a semifinal at a Masters 1000 and dropped to No. 6 in the rankings at the end of the year. Murray made a return to form in 2015, reaching the finals of the Australian Open and semifinals of the French Open and Wimbledon before losing to Djokovic and Federer. He also defeated Djokovic and Nadal later in the year to collect two Masters 1000 titles. He rose in the rankings back up to No. 2. 2016 saw Andy Murray in top shape, although against a tour that had an injured Federer and a struggling Nadal. Still, Murray was able to defeat Djokovic in two Master 1000 tournaments, collect his second Wimbledon and third career Grand Slam, and win his second Olympic gold medal.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption>Source: USA Today</figcaption></center>
+</figure>
+
+<p>Then, an elbow and hip injury bothered him for most of 2017, which led to inconsistent play, inability to compete at a number of major tournaments, and the loss of his No. 1 ranking. Murray only won one singles title and saw his ranking drop to No. 16. Murray got hip surgery in 2018, which meant he was unable to compete for the first half of the season. However, when he returned to action, he stumbled out opening rounds, losing to lesser-known names. Murray's magical dominance on the tour seemed to fade away.</p>
+
+<p>Even still, Murray racked up impressive statistics during this run: 45 singles titles, a top 5 seed for most of his 2008-2016 career, 11 Grand Slam final appearances (won 3), 21 Masters 1000 final appearances (won 14), and two Olympic gold medals, a feat that no other "Big Four" player has matched.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_9.png" alt="picture 8" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>However, it is difficult to say that Murray was ever a formidable threat to the other three players, in terms of head-to-head matchups. Murray has a 11-25 record against Djokovic, 7-17 record against Nadal, and a 11-14 record against Federer. Combined, he only wins 34.1 % of these matchups.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>Looking at individual achievements, Murray looks to be far behind the others. Federer has 100 singles titles, 30 Grand Slam final appearances (won 20), and 27 Masters 1000 titles. Nadal has 80 singles titles, 25 Grand Slam final appearances (won 17), and 33 Masters 1000 titles. Djokovic has 73 singles titles, 24 Grand Slam final appearances (won 15), and 32 Masters 1000 titles. With these numbers, Murray's accomplishments outside of the Olympics seem somewhat small in comparison.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_7.png" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>However, Murray is far ahead of some of the tougher opponents on tour today and in prior years in individual achievements. Stan Wawrinka comes closest in comparison, with 16 career singles titles, 4 Grand Slam final appearances (won 3), and 1 Masters 1000 title. Del Potro also has a solid resume with 22 career singles titles, 1 Grand Slam, and 1 Masters 1000 title. Cilic has 18 singles titles, 1 Grand Slam, and 1 Masters 1000 title. Other solid players including Berdych, Ferrer, and Tsonga have not even won a Grand Slam in their career.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_8.png" alt="picture 8" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Thus, Andy Murray is a difficult player to rank among the field. He is far behind his elite peers in individual success, but he is far ahead of the rest of the tour. In fact, he wins about 78% of his matches, only bested by Federer (82%), Djokovic (83%), and Nadal (83%). The only other player with an overall winning percentage above 70% is del Potro (72%). Against top-10 players, Murray is the only other player besides Federer, Nadal, and Djokovic with a winning percentage over 50%. When healthy, Murray is at least the fourth best player on the tour.</p>
+
+<p>While he can't necessarily defeat Federer, Nadal, and Djokovic on a consistent basis, the gap between him and the rest of the tour is so large that it is safe to conclude that Murray is definitely a clear step ahead of them. Andy Murray isn't the best of the mid-pack players; he's a legitimate "Big Four" contender, but he is by far the worst of the four.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

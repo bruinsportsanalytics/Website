@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">NBA Midseason Reflections</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/ronaqvirdi">Ronaq Virdi</a>
+                      
+                    
+                  
+                  • 05 Feb 2018 •
+                  
+                    
+                      9 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <p>The All Star lineups have been announced, most teams have played well over 45 games, we finally have a team openly tanking, and the Cavs all hate each other. So with that it's safe to say that the midway point of the NBA season has come and now would be a great time to reflect on the past couple months of the 2017-2018 season. By now everyone knows how great the Warriors are, how dysfunctional LeBron's team is, and that the Sacramento Kings are once again irrelevant. I wanted to take this time to deviate away from the major storylines in the season thus far and analyze some trends, statistics, coaching decisions, and quite simply things that really stand out to me. </p>
+<hr />
+<h4>Houston's Unstoppable Harden, CP3, and  …. Capela? Trio</h4>
+<p>Prior to the season Darryl Morey said it best when he mentioned that teams would have to increase their risk profile if they wanted to compete with the Warriors. He followed through with his proclamation when he acquired Chris Paul this summer in a move that many people questioned with the classic "there's only one ball" argument. So far the trade has paid off for Morey and the Rockets have clearly been the second best team in the league and have even beaten the Warriors twice this season. 50.6% of the Rockets field goal attempts are coming from three and James Harden is again having an MVP caliber season (if the season ended today, Harden's 29.6 PER would be one the top 30 single season PER performances in the NBA history). Despite all that, the most alarming fact about the 2017-2018 Houston Rockets is that they are 19-0 when Harden, Chris Paul, and Clint Capela play. </p>
+<p>Despite their current record, Harden's MVP campaign, and this trio's +57 plus/minus, all that matters for the Rockets is how they perform in the playoffs. For the past 2 seasons, this Rockets squad has done what all great Mike d'Antoni teams do: underachieve in the playoffs. So far the two victories against the Warriors have been a great sign for the team. They had an outrageous 41, 50, and 37 three point field goals attempted respectively in each of the three games and the best sign was how well Chris Paul played in the last two games. It will be interesting to see how long this trio can keep up their streak, but more importantly how this team competes deep in the playoffs (unless, of course, they choke in the second round versus the Spurs again).</p>
+<hr />
+<h4>Carmelo's Falling Off</h4>
+<p>
+    By this point in the season every sports show and radio host has talked about how OKC needs to break up their trio and more importantly bench Carmelo. Early in the season the team was clearly dysfunctional; Westbrook had trouble deciding when to go into "2016-2017 Highest Usage Rate in NBA History" mode or whether to defer to his teammates. Paul George was uncomfortable playing off ball, which was something he rarely did in Indiana and Carmelo was doing his normal routine spending seven to eight seconds holding the ball, followed by a series of jab steps all while his other four teammates watched an eventual contested 17 footer.
+</p>
+<div class="video-container">
+<iframe width="1425" height="641" src="https://www.youtube.com/embed/-qRdXc11jqE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<p>
+    The team has turned it around after their lackluster 8-12 start and are currently sitting at fifth in the West. Definitely the biggest adjustment was that Carmelo took a back seat to Westbrook and George. Carmelo ranks 156th in the league with a PER of 14.51. Whatever your opinion of Carmelo is, seeing his name on a list below Tyler Cavanaugh and Jerian Grant is unexpected to say the least. 
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nbamidseason18/chart1.png" alt="Carmelo Drop-off"></center>
+    <figcaption>Source: Basketball-Reference</figcaption>
+</figure>
+<p>
+    My purpose for bringing up Carmelo's regression this season is not to make him the scapegoat for the Thunder's slow start, but instead to analyze how the league has changed as a whole. Carmelo, whether you love or hate his game, is undoubtedly one of the most talented scorers (and underrated clutch performers) in NBA history. His post game and midrange allowed him to score effortlessly in his career en route to 25,000 points. But in a league where the Warriors have more than five players that can guard every position, the Rockets are shooting 42.8 three point shots a game and the overall pace of offenses throughout the league has gone up, Carmelo's offensive play style no longer has a place. Teams that have a dynamic ball-handler (Lebron, Westbrook, Harden) are full of spot up shooters and defensive minded players. Carmelo is a solid shooter (45% FG% and 34.7% 3FG% for his career) but has never been considered a spot up shooter and discussing his defense (or lack there of) is just laughable. The league just doesn't have space for a 33-year-old stretch four that plays no defense, who kills eight seconds off the shot clock before making any move on offense.
+</p>
+<p>
+    Conversely, DeMar DeRozan has been a great example of a player who has evolved his game this season to fit the current play style in the NBA, particularly in terms of 3 point shooting. DeRozan has always been known for his midrange game and footwork in the post. But this season much of the Raptors success has to be attributed to DeRozan's willingness and effectiveness shooting the three.
+</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nbamidseason18/chart2.png" alt="DeRozan aka Kobe"></center>
+    <figcaption>DeMar DeRozan's career 3 point shooting (Source: Basketball-Reference)</figcaption>
+</figure>
+<p>
+    Unless Carmelo is willing to change his game and act more as a spot up shooter for Westbrook and George, we may have seen the last of Carmelo as an elite NBA scorer. Looking at his 156th rank PER is not an indictment on Carmelo, but more so a reflection on how the NBA has evolved and how the ball stopping wing player is no longer effective in the league today. 
+</p>
+<hr />
+<h4>Timberwolves and the Andrew Wiggins Question</h4>
+<p>
+    The Timberwolves currently sit at the fourth seed in the West and finally appear to be utilizing their talent effectively. Typically with Tom Thibodeau teams defense and heavy minutes for starters is the norm. For instance he orchestrated the defensive schemes for the Celtics back in 2008-2009 and created a strong defensive foundation during his time in Chicago. Complaints that he plays his starters too many minutes have been well documented throughout his time as head coach. If you need more convincing take a look at the following chart (or just ask Derrick Rose about his knees).   
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nbamidseason18/chart3.png" alt="Spooky Wolves Stats"></center>
+    <figcaption>Three Minnesota players are in the top 20 in minutes per game. (Source: NBA.com)</figcaption>
+</figure>
+<p>
+    It is evident that during Thibodeau's time in Minnesota and Chicago, his players have consistently been among the league leaders in minutes per game. For instance Luol Deng, during his time on the Bulls, never averaged less than 37.9 minutes per game from the four seasons spanning 2009 to 2013 (though I think Deng is doing just fine now that the Lakers are paying him $18 million a year to stay at home). 
+</p>
+<p>
+    However, with the Timberwolves what really interests me is not the heavy minutes or defense, but instead the team's offense. Early in the season Towns and Wiggins were the two highest scorers for the team and Butler was definitely taking a step back offensively. The team hovered around .500 early on in the season. Around December (conveniently when rumblings about Jimmy Butler and Taj Gibson calling out Towns' effort on defense surfaced) the team started to turn around mostly because Butler started to take the lead role as the primary scorer on offense. 
+</p>
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nbamidseason18/chart4.png" alt="Jimmy G. Buckets stats"></center>
+    <figcaption>Jimmy Butler's scoring increase by month (Source: ESPN.com)</figcaption>
+</figure>
+<p>
+    What remains the biggest question is how the team plans to use their $150 million forward, Andrew Wiggins. The Timberwolves are performing better with Butler leading the offense and Wiggins settling more as a spot up shooter and cutter to the basket. However, with Wiggins shooting only 32.2% from three and struggling on the defensive end (even though he was projected to be a great defender out of Kansas), it begs the question of how Thibodeau plans on using Wiggins going forward. Would he consider trading Wiggins for some solid role players to fill out the bench and therefore lessen the minutes for Butler and Towns? I would not advocate trading away a 21 year old with the potential that Wiggins has, but it will be interesting to see how Wiggins fits in with the Butler-led offense going forward and into the playoffs. 
+</p>
+<hr />
+<h4>Hook shots are cool again?</h4>
+<p>
+    Three pointers are cool, fancy layups and 3-point plays are great, but sometimes I wish the NBA did not feel so one dimensional in terms of teams only shooting threes or shots in the paint. Of course, if the team has the personnel of the Warriors or Rockets it makes sense to shoot almost 50% of your shots from three, but when I watch the league it feels like many front offices and coaching staffs are trying to fit players in a system that doesn't fit their playing style. For example, there's no reason that a team like Dallas or Chicago, with their personnel, should be shooting over 30 threes per game. It would be great to see some more midrange game, more post-ups and attention to great footwork. 
+</p>
+<p>
+    One of my favorite aspects of the season is seeing the resurgence of the running hook shot. Watching players like Kyle Kuzma and Ben Simmons attempt the shot exemplifies the skill and finesse moves that make the NBA great. The running hook shots that stick out to me this season are not the traditional baby hook shots that many post players shoot today (the one where the player gets the ball at the block about 5 feet from the basket, takes a couple power dribbles to the center of the key, and flings a mini hook shot). The shots that I am referring to are the ones where the offensive player starts with the ball outside the paint, takes 3 to 4 dribbles and floats in a high arching shot like Kuzma and Simmons in the videos below. 
+</p>
+<div class="video-container">
+    <iframe width="1425" height="641" src="https://www.youtube.com/embed/Cq956iN-zlU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<br />
+<div class="video-container">
+    <iframe width="1425" height="641" src="https://www.youtube.com/embed/f8XTJYhAB4w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<p>
+    In the modern NBA, watching teams like the Rockets that live off dribble drives for three pointers (or that stand around while Harden flails his arms to draw fouls) can get repetitive. It has been refreshing to see young players show off their skill by attempting and converting finesse shots like the running hook. 
+</p>
+<hr />
+<p>
+    The second half of the season will surely bring more drama and excitement on top of what has already been a great season. There has already been so many storylines (the Rockets/Clippers (fake) fight, Jason Kidd getting fired) and the trade deadline will hopefully bring many more. Going forward it will be interesting to see what teams will challenge the Warriors out West and whether the Celtics or Raptors will finally dethrone Lebron in the East. But with all that said, does anybody really see a team that will beat the Warriors four times out of seven games? 
+</p>
+<div id="cited">
+    <p>
+        (Sources: Basketball-Reference, ESPN, NBA.com)
+    </p>
+  </div>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

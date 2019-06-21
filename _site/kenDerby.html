@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Kentucky Derby 2018: History, Trends, and Predictions</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                      
+                    
+                  
+                  • 01 May 2018 •
+                  
+                    
+                      7 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/kent/cover.jpg" alt="Horses Charging"></center>
+    <figcaption>horseracingnation.com</figcaption>
+</figure>
+
+<p>Described as “The Most Exciting Two Minutes in Sports”, the Kentucky Derby never fails to capture the attention of sports and gambling enthusiasts alike each May. First held in 1875, the world famous race at Churchill Downs has become ingrained in American sports culture. Thoroughbreds that have gone on to become immortalized in history used the Derby as a stepping stone to greatness. The 144th Kentucky Derby will take place on Saturday, May 5.</p>
+
+<p>The 2018 field is shaping up to be a strong one. Two horses will come in undefeated. A few others come from notable pedigrees. Qualification for the Derby nowadays is based on a points system implemented in 2012. <i>The Road to the Kentucky Derby</i> is a series of 30-40 prep races that begin in late September and conclude in April. Each is worth a certain amount of points (i.e. 10-4-2-1 for 1st-2nd-3rd-4th place). The races become more valuable deeper into the season (50-20-10-5). Winning one of these will typically cement a horse’s spot in the field.</p>
+
+<p>Horses come from stables across the country; there is usually one or two from overseas as well. Trainers will sometimes qualify multiple runners as the prize money for first place is well over a million dollars. Handicapping the sport in general is serious business. Some companies offer top-of-the-line data (for top-of-the-line dollar) to hobbyists and professionals hoping to gain an edge over the general public. This article will focus less about the strategies of picking a winner and more about recent trends that could shed some light into how the 2018 Kentucky Derby will unfold.</p>
+
+<p>The following data was obtained through this <a href="https://docs.google.com/spreadsheets/d/1TxAZq-RMvFMcgmgUtIC6rl9aaxs1czvjCFm6Iw4medc/pub#">Google Sheet</a>. It lists more than 20 different factors for every horse that has raced in the Derby since 2003. 288 of them, to be exact. After importing the data into R, I trimmed it down, keeping the most applicable variables such as performance in 2 and 3-year-old seasons, odds heading into the race, career starts/wins, etc. Here is an overview of how much experience the horses have going into the first Saturday of May.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/kent/im1.png" alt="Total Starts going into Ken Derby"></center>
+</figure>
+
+<p>The Derby is a race for 3-year olds. Most, but not all, run for the first time as a 2-year old. The above histogram shows the distribution of experience in terms of career starts and races as a 3-year old. 2-4 prep races before the ‘Run for the Roses’ and 5-8 total races seem to be the most common usage tactic by trainers. Of course, horses need time to rest and recover after a physically taxing sprint. This usually entails going multiple weeks, or even months, between races.</p>
+
+<p>It’s been 135 years since a horse who did not make a start as a 2-year old won the Kentucky Derby. The infamous “Curse of Apollo” refers to this fact; not since 1882 when the horse Apollo accomplished the feat. A storyline this year is the very real possibility of that streak coming to an end. Justify, the 2/1 favorite, has burst onto the scene as a 3-year old. Undefeated and flashing ‘super-horse’ potential, the colt has generated a lot of excitement in the racing world over the past couple months.</p>
+
+<p>Magnum Moon will also come in without a loss in four races to date. Coincidentally, he did not race as a 2-year old either. While not as hyped as Justify, he is still given the third best odds. Entering the Derby as the favorite is by far the top predictor of success given the variables we have to work with. Look no further than the chart below.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/kent/im2.png" alt="Result of Favorite Horse"></center>
+</figure>
+
+<p>The favorite has won the past five years, and has finished no worse than second in 10 out of 15 Derby’s since 2003. Justify looks primed to continue this trend, although there have been many instances of promising horses that end up falling flat. The talent in this Derby has diversified the betting scene, as it will be considered safer to take the field over any particular horse. Magnum Moon, Mendelssohn, Bolt d’Oro, Good Magic, and Audible all have legitimate shots to beat Justify. And of course, every competition has its underdogs.</p>
+
+<p>The biggest longshot to ever win the Kentucky Derby was Donerail, who won the 1913 edition with odds of 91-1. Twice in the last 15 years a horse with odds of 50-1 has come through with the upset; Giacomo in 2005 and Mine that Bird in 2009. But of the 28 others with odds of 50-1 or higher, only one finished in the top-4. They are called longshots for a reason. This year, potential sleepers who could make some noise include Promises Fulfilled (win over Good Magic in key prep race), Free Drop Billy (plenty of experience and success as a 2-year old), and Hofburg (excellent pedigree). We’ll see if any of them can join the group of three horses with odds of 30/1 or greater that have finished second or better in the past five years.</p>
+
+<p>Does starting position create advantages and disadvantages among the field?</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/kent/im3.png" alt="Wins and top 4 finishes"></center>
+</figure>
+
+<p>Post position may not be the make-or-break factor for most horses, but there is still considerable angst among owners and trainers going into the randomly drawn selection a few days before the Derby. Generally, the four outside spots (#1, #2, #19, and #20) are least desired. Those are occupied by Firenze Fire, Free Drop Billy, Noble Indy, and Combatant respectively this year. All with odds of 30-1 or greater.</p>
+
+<p>No horse has ever won from gate #17. Solomini will occupy that unlucky spot. Gate #5 was the spot of last year’s winner, Always Dreaming, and narrowly edges out gate #10 for highest total winning percentage. Audible will start from 5 and My Boy Jack from 10. Justify drew post #7 and the other serious contenders are sprinkled in from 6-14, so this should be an even race right off the bat.</p>
+
+<p>A horse has no control over its post position, but performance leading up to the Derby could be looked at to determine predictive factors.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/kent/im4.png" alt="Conditional Probabilities"></center>
+</figure>
+
+<p>This is a lot to digest at first glance. These are conditional probabilities in the form P(X|Y) = probability that X happened given Y happened. Example: P(Win|Favorite) is the probability a horse won given it was a favorite. Find the Favorite row via the y-axis, then go across and line it up with the Win column from the x-axis. This value is .533. So if a horse is a favorite, they have won the Derby 53.3% of the time. Note that these are based on outcomes from the last 15 years and do not represent the true probability of an event occurring. The purpose is to find trends that could hint at a certain result.</p>
+
+<p>Looking at the Win column and F1-F8 rows, we see that winning as a 3-year old (F3) and winning your final prep race (F8) both translate to a higher winning % in the Derby than the other F variables. Many of the top contenders have indeed won their final prep race. Having experience (F5, 5+ career starts) does not appear to matter much. Overall, winning as a 3-year old seems like the best indicator of success when looking at wins, place (top-2), show (top-3), and top-4.</p>
+
+<p>Winning the Kentucky Derby is a remarkable feat, but it’s just the first leg of a trio of conquests en route to becoming an all-time great.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/kent/im5.png" alt="Triple Crown Winners"></center>
+</figure>
+
+<p>Following the Derby is the Preakness Stakes in Baltimore and the Belmont Stakes in New York. The three races make up the Triple Crown. Only 12 horses have ever won the Triple Crown (winning all three of the aforementioned races), which include some legendary names. Secretariat is considered the greatest thoroughbred racehorse of all time. Citation racked up 31 wins in four years. Seattle Slew is still the only horse to remain undefeated while winning the Triple Crown.</p>
+
+<p>The most recent point on that chart is American Pharoah in 2015. Many thought they would never see another Triple Crown winner in their lifetime in the midst of a 37-year drought. American Pharoah dispensed that notion and breathed life into a sport that was gradually becoming an afterthought. Last year’s Kentucky Derby pulled in a record $139.2 million. A star-studded field this year could deliver plenty of excitement. No doubt many will be rooting for the Derby winner to take the Preakness. If that happens, the Triple Crown watch will be on for the third time in five years (California Chrome won the Derby and Preakness in 2014).</p>
+
+<p>Tune in to NBC on Saturday, May 5, to watch the race. Post time is 3:34pm Pacific. My prediction for the 2018 Kentucky Derby:</p>
+
+<p><b>1st – Justify | 2nd – Mendelssohn | 3rd - Hofburg | 4th – Good Magic</b></p>
+
+<p>(Picking the top-4 horses correctly in last year’s Derby would have returned a massive $151,949 on a $2 bet.)</p>
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

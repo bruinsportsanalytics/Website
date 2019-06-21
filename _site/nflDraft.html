@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">NFL Draft 2018: Bruin Prospects</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                      
+                    
+                  
+                  • 20 Apr 2018 •
+                  
+                    
+                      22 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/cover.png" alt="NFL Draft Logo"></center>
+    <figcaption>NFL.com</figcaption>
+</figure>
+
+<p>It’s that time of year, again. The 2018 NFL Draft is right around the corner, as the event will take place this year on April 26th in Arlington, Texas at the Dallas Cowboys’ stadium. The draft is a chance for all teams to improve in their own ways; teams at the top of the draft like the Cleveland Browns have to fill a litany of position needs, while teams at the bottom of the draft like the Super Bowl LII Champion Philadelphia Eagles just need to polish their already strong squads. The draft is also a crucial time for general managers around the league, who all bear the responsibility of determining the fates of their respective teams for many years to come. Millions of dollars are at stake for each franchise, so it’s important for these executives to make the right calls when it comes to drafting players. In addition, it’s an exciting time for hundreds of draft prospects who have worked for years to hone their football skills. These kids are eager to join the best football league in the world, where big bucks are made and lifelong dreams come true. Seeing that UCLA was recently named the best value college of 2018 by Forbes, I decided to look exclusively at the NFL prospects coming out of Westwood this year. Specifically, there are five top UCLA prospects I would like to highlight: Josh Rosen, Kolton Miller, Jordan Lasley, Scott Quessenberry, and Kenny Young. I will look at how each player compares with prospects at their same positions and how their skill sets may translate to the next level. Through an examination of these five individuals, I hope to provide both brief scouting reports and projections for when each prospect will be drafted based on the numbers.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image1.jpg" alt="Josh Rosen"></center>
+    <figcaption>LA Times</figcaption>
+</figure>
+
+<p>The first prospect I will analyze is Josh Rosen, the quarterback everybody knows will be going in the 1st round. The question many are wondering, however, is how early the UCLA product will go. Many coaches like his polished passing style and football intellect, as they believe these traits will translate well to the NFL. Mock draft experts, such as Mel Kiper Jr. and Todd McShay, like Rosen for the same reasons, and as a result, they have consistently placed him at the top of their draft boards. Obviously, Rosen’s accuracy and competent arm strength bode well for him, but there are concerns as well. First of all, he has interests outside of football, like the environment, that may interfere with his desire to play football. This isn’t unprecedented, however, as last year’s 1st overall pick, Myles Garrett, had a passion for paleontology, but he performed well in his rookie year. Another criticism of Rosen is his perceived immaturity, as there have been rumors that teammates may not like him due to his arrogance and perceived family wealth. Furthermore, Rosen may be under question due to his slim frame; he has taken some big hits during his college career that have left him with several injuries. Hopefully for Rosen these concerns don’t become reasons for teams to pass on him, especially since this is projected to be one of the most quarterback-heavy drafts in recent memory.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image2.png" alt="TD/int"></center>
+    <figcaption></figcaption>
+</figure>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image3.png" alt="Completion Percentage"></center>
+    <figcaption></figcaption>
+</figure>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image4.png" alt="Passing Rating"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>With this in mind, I have put together some histograms to compare Rosen to other top quarterback prospects around the country. Namely, Rosen is being measured against Sam Darnold (USC), Baker Mayfield (Oklahoma), Josh Allen (Wyoming), and Lamar Jackson (Louisville). Specifically, I have looked over three statistical categories in particular: touchdown to interception (TD/Int) ratio, completion percentage, and passer rating on the college scale for each player over their college careers at their current schools (for Mayfield, I didn’t include his time at Texas Tech). The justification for these metrics is that none of them take into account the volume of games played, so regardless of how many games each quarterback played, these categories should still be good comparisons. Plus, the TD/Int ratio measures how well each player takes care of the ball, which is vital at the next level, the completion percentage shows how accurate and poised a quarterback is, and passer rating on the college scale takes into account a number of statistics to show how efficient a quarterback is with the ball. After looking at each of these categories for the aforementioned players, I found that Rosen is in the middle of the pack statistically speaking. Out of the five prospects, he ranks 4th in Td/Int ratio, 3rd in completion percentage, and 4th in passer rating on the college scale. For TD/Int ratio, although Rosen threw for a healthy 59 touchdowns at UCLA, his 26 interceptions hint to his proclivity to do too much with the football. As for completion percentage, Rosen did hit the coveted 60 percent threshold that executives like to see from incoming prospects, but a lack of help at the receiver position might factor into why he is behind Baker Mayfield and Sam Darnold in this category. Finally, in terms of passer rating on the college scale, Rosen has a respectable 140.1 mark, but again, the lack of offensive weapons might have hurt him in comparison to the other quarterbacks. Overall, these stats suggest that although Rosen might be a bit overrated, he still has the potential to succeed at the next level.</p>
+
+<p>In terms of where Josh Rosen could be selected in the draft, there are a few teams within the top 15 selections that are in need of a quarterback. First, there are the Cleveland Browns, who have the 1st overall selection; they will more than likely go with Sam Darnold, the safest quarterback pick. Then, at the 3rd slot, there are the New York Jets, who probably will choose between Josh Allen and Baker Mayfield at quarterback. Rosen has an outside shot to be a Jet, but Jets no-nonsense head coach Todd Bowles may take issue with Rosen’s character. The Miami Dolphins at the 11th position will be the most likely landing spot for Rosen, as he would fit nicely behind current quarterback Ryan Tannehill, who has had injury issues recently. Plus, Dolphins’ head man Adam Gase is known as an offensive specialist, so I could see him developing Rosen quite well. Another possibility would be the Buffalo Bills at the 12th spot, but they could also make a trade to get Rosen earlier if they are confident he will outperform the recently-acquired A.J. McCarron. If I had to guess, I would say Rosen ends up going to Miami, but there’s a chance he lands in Buffalo.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image5.jpg" alt="Number 77"></center>
+    <figcaption>Sacramento Bee</figcaption>
+</figure>
+
+<p>The other potential first-rounder coming out of UCLA is offensive tackle Kolton Miller, a big left tackle with great athleticism for a guy his size. Despite being 6 foot 9 and 310 pounds, the man put on a clinic at the NFL Combine in March. Although offensive linemen don’t have conventional in-game statistics like quarterbacks and wide receivers do, they showcase their talent through measurables at the combine. For instance, Miller was a top-4 performer among all offensive linemen in the 40-yard dash (4.95 s), the vertical jump (31.5”), the broad jump (121”), and the 20-yard shuttle (4.49 s). In fact, he broke a combine record for the broad jump for offensive linemen by a full 2 inches. So, not only is he big, but he’s seemingly more agile than guys at his position who are both shorter and lighter than him. This kind of athleticism is very rare for an offensive lineman, so Miller could be a versatile blocker who could play different positions and in different offensive schemes. Also, it doesn’t hurt that he has good football instincts, which just strengthens the argument that he could be a versatile lineman. The only concern with him is that he is extremely tall, so it might be difficult for him to get low and block against smaller, faster pass rushers like Aaron Donald. Kolton Miller reminds me a lot of Nate Solder, who also came into the league from the Pac-12 and was similar with respect to size and athleticism. If teams see Miller as the next coming of Solder, this would be a great sign for the Bruin product.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image6.png" alt="Best Broad Jumps"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>In the above graph, we have the top five offensive linemen from this year’s combine in terms of the broad jump compared to the historical average of broad jumps of all offensive line positions. This was the event that Miller broke the combine record with his amazing 121-inch leap, which is considered above-average even for wide receivers and running backs. In the past 12 years, the next-longest jump was by current Philadelphia Eagles lineman Lane Johnson, whose leap was 2 inches shorter than Miller’s. But to give everyone an idea of how impressive this feat was in the context of this year’s combine, Miller dominated his fellow offensive linemen, as the next-closest competitor was Wyatt Teller from Virginia Tech, who had a jump seven inches shorter. Even more impressive, Teller is roughly 5 inches shorter and 10 pounds lighter than Miller. In fact, Miller is the tallest of the five offensive linemen listed, and he is third-heaviest among them. In addition to his record-breaking broad jump, Miller impressed in the 40-yard dash, where his 4.95-second gallop ranked third among offensive linemen. To put this into context, a sub-5 second time is above-average for an offensive lineman of any size, but Miller did this despite being one of the largest humans currently playing football in the world. The same goes for the other two events he excelled in; his 31.5-inch vertical jump exceeded the impressive 30-inch mark for guys at his position, and his 4.49-second shuttle easily beat the respectable 4.7-second time that most O-linemen would expect. Clearly, Miller is a physical specimen who has vastly improved his draft stock due to his athleticism and hard work. </p>
+
+<p>If I were to have projected Miller before the combine, there’s no way he would have sniffed the first two rounds. Now, there’s talk that some teams in need of big bodies might consider drafting him in the 1st round. Some squads that might take a look at Miller are the Green Bay Packers, the Los Angeles Chargers, and the New England Patriots, who have the 14th, 17th, and 23rd picks, respectively. Each team has dealt with injuries on their offensive fronts as of late, so by drafting Kolton Miller, these teams could at least bolster their O-line depth. Yet, these are unlikely scenarios so early in the draft, as the Packers, Chargers, and Patriots might have more pressing needs than an offensive lineman. However, one team that would really make sense is the Minnesota Vikings at the 30th spot. The Vikings simply don’t have the quality of linemen to protect their new quarterback, Kirk Cousins, so one of their priorities is to get a big guy up front. With an already stellar defense, the Vikings could really contend this upcoming year with some help on offense. Also, since Miller seems to be a relatively versatile player, the Vikings could plug him in where they need him most on the line. I’m going to say the Vikings take him, but don’t be surprised if a team like the Patriots snatches him up earlier than anticipated.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image7.jpeg" alt="Number 2"></center>
+    <figcaption>gojoebruin.com</figcaption>
+</figure>
+
+<p>Moving on, one of the nation’s most explosive receivers was Jordan Lasley, perhaps the number one target for Josh Rosen. His ability to create offense after the catch is easily his best trait as a football player. Lasley is able to not only secure the ball quickly, but he also has playmaking ability that is similar to many kick returners. He ran a 4.5-second 40-yard dash, which is decent for his position, but his speed and elusiveness on the football field with pads really shows on film. After all, he averaged 8.8 yards after catch (YAC) this past season, which makes him very dangerous in the open field. Plus, he is a great route runner, as he takes efficient angles to holes in coverage. His explosiveness was demonstrated at the combine with an impressive 34.5-inch vertical leap, which shows that he has the ability to finish plays high in the air. However, Lasley has his fair share of detractors due to his character off the field. After all, he was suspended for 3 games this year, and he has had some run-ins with the law in years past. We have seen too many times how great talents like Justin Blackmon and Aldon Smith have ruined their careers with off-the-field issues, so I’m not sure if teams will be willing to take the risk with a prospect like Jordan Lasley. Another criticism is that he drops the ball with a higher frequency than most, which could be a red flag for teams who are looking for a dependable option at wide receiver. Only time will tell if his football skills will outweigh the criticisms.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image8.png" alt="Distribution of UCLA Offense"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Lasley was a consistent target as a deep threat for the Bruins in 2017, as he averaged 18.3 yards per reception, good for 28th in the nation. He also had quite a bit of volume as the primary option for Rosen, as Lasley caught 69 passes with 9 receiving touchdowns in the 9 games that he played. When you put together volume and explosiveness, you get a high total for yards amassed; in Lasley’s case, he accrued a total of 1,264 receiving yards, which was 9th among college football receivers with at least 1.875 receptions per game. Above I’ve prepared a pie chart that shows the distribution of yards for the Bruin offense in the 2017 season to show the impact of Jordan Lasley’s skills. In total, UCLA gained 5,961 total yards in the 13 games they played, with 4,479 (75%) of them being through the air and the remaining 1,482 (25%) yards being of the ground. This makes sense since Josh Rosen was the focal point of the offense, and the ground game never really gained momentum. As for Lasley, his receiving yards (1,264) in only 9 games made up a staggering 21% of the total offense. The fact that Lasley missed significant time and still put a dent in the Bruins’ offensive totals shows just how impressive he has been when on the field. He put up at least 100 yards receiving in a total of 7 games this year, and out of these games, 2 of them happened to be for 200+ yards receiving. That’s what I’d call explosiveness.</p>
+
+<p>Now Jordan Lasley is a really difficult evaluation when it comes to projecting when he will be drafted. While he does have great potential to be a Pro Bowl-caliber wideout, he also possesses some glaring issues that will definitely steer some teams away from him. My best guess is that he goes in the 4th round, because by that time, some desperate teams in need of a playmaker might take the risk on Lasley. And quite frankly, some of the better receivers of the class like Courtland Sutton will be off the board by then. I’m not sure Lasley could fall to the 5th, 6th or 7th rounds because at least one team in need of a wide receiver is probably high on him. His upside is undeniable, and he deserves to be drafted sooner rather than later due to his potential. As for a team he could land on, Lasley would be a good fit for the Dallas Cowboys for a couple of reasons. First, the Cowboys just released Dez Bryant, so they need somebody to step in his place and be productive. Also, the team has a rising star at quarterback in Dak Prescott, and I feel as if they could potentially be a solid tandem for years to come. Overall, the possibilities for Jordan Lasley are endless, but if he can keep his act together both on and off the field, he is destined to have a bright future at the next level.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image9.jpg" alt="Number 52"></center>
+    <figcaption>247sports.com</figcaption>
+</figure>
+
+<p>Next up is Scott Quessenberry, the heart of the Bruins’ offensive line for the past four years or so. He has been a solid presence at center with decent size and above-average agility; his bulky frame and decent height provide a near-ideal stature for an NFL center. In addition, he uses his hands very well in pass protection, and he is mobile enough to be a good run blocker as well. Plus, he has made the Director’s Honor Roll several times, and he was a finalist for the Senior CLASS Award, which is presented to a senior athlete who excels in athletics, academics, and leadership. Yet, there are some concerns that come along with Quessenberry. First of all, he has relatively short arms (31.25 inches), which could be a problem against lanky, athletic defensive linemen. Lengthy arms give linemen their leverage, so this could be a disadvantage for Scott at the next level. Another possible concern could be his injury history; he had to take off the 2015 season to get surgery on both of his shoulders, which is worrisome for an offensive lineman’s durability. The guys up front have to use their shoulders to extend and block just about every play, so if Scott’s shoulders can’t hold up for whatever reason, he’ll be rendered ineffective against anybody he plays. Nevertheless, Scott’s character and passion for football should give him a shot to compete for a starting job a few months from now.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image10.png" alt="Best Vertical Jumps"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Above is a histogram representing the top 8 vertical jumps among offensive linemen compared with the historical average of all offensive line positions. Quessenberry was tied for second in the vertical jump among guys at his position with a very impressive 33.5-inch leap. Despite being well north of 300 pounds, Scott was able to display his athleticism and explosiveness at the combine, as he outperformed the historical average by a sizable 5.1-inch margin. He matched Auburn lineman Braden Smith and was only behind Texas big man Connor Williams by a half-inch, who is projected as a potential first-round pick. As for names he beat out, there is the aforementioned Kolton Miller, NC State product Will Richardson, Iowa center James Daniels, Ole Miss tackle Rod Taylor, and Oregon alum Tyrell Crosby. In fact, the only center besides Quessenberry on this chart is James Daniels, who is a relatively light 295 pounds in comparison to Quessenberry’s 315-pound frame. Even then, Quessenberry beat Daniels by a full three inches in this event. So, he could be considered one of the most athletic centers in the draft, especially when you consider his strength as well. With 25 repetitions in the 225-pound bench press, he answered questions about his ability to block bigger defenders, which he will definitely encounter in the NFL.</p>
+
+<p>Of course Scott isn’t as highly touted as his fellow UCLA lineman Kolton Miller, but he does have potential to be a consistent center in the league. Although many of his skills are seen as average to scouts currently, his character and coachability could make him a decent developmental prospect for teams looking to bolster offensive line depth. I wouldn’t slot him in as a starter immediately; this way he can learn from veterans who have been at the highest level for years. Teams have to be patient with Scott in order to help him grow as a player; this is the most likely way for him to be successful in the NFL. With this in mind, I would slot him in the later rounds of the draft; I’d say the 6th round is a good spot for him to be taken. As I mentioned in Miller’s section, there are some teams out there who need big bodies, like the Green Bay Packers, the Los Angeles Chargers, and the New England Patriots. In particular, I could envision the Patriots taking a stab at Scott; this past season, their starting center, David Andrews, was out for an extended time, and the team scrambled to find a backup for him. Plus, Andrews could be a good mentor for Quessenberry to learn the in’s and out’s of NFL football, so coach Bill Belichick could be looking not only for immediate depth, but also for a potential successor to Andrews. Overall, Scott’s talent level may not be up to par with many of this year’s prospects, but his grit and great intangibles may enable him to become a consistent force in the NFL for years to come.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image11.jpg" alt="Number 42"></center>
+    <figcaption>LA Sentinel</figcaption>
+</figure>
+
+<p>Perhaps one of the most consistent four-year defensive starters in recent memory for the UCLA Bruins has been Kenny Young, a star inside linebacker prospect. A first-team All-Pac-12 selection, Young kept a struggling UCLA defense afloat with his versatility at the linebacking spot. He did well in coverage with his above-average speed (4.6-second 40-yard dash), and he made plenty of tackles near the line of scrimmage during run plays. Another positive is that he has prototypical size for a guy at his position; he’s a shade above six feet, and he comes in at a solid 235 pounds, so it would be hard to argue that he’s undersized. In addition to his skills on the field, Young has a tremendous amount of character. He’s been named to the Director’s Honor Roll a number of times, and he received the 2017 Academic Student Services Success Award. Plus, he’s active in the community, he was a member of the school’s debate team at one point, and he is the last athlete to wear Jackie Robinson’s #42 at UCLA due to his character. However, critics point to his perceived lack of physicality on some plays, which could hurt him in the future. He has to get better with confronting blocks as opposed to shying away from them, or he will be eaten alive by bigger, faster athletes in the NFL. Also, he needs to be able to recognize plays more quickly so he can react appropriately and take appropriate angles to the ball. Hopefully this skill will improve with good coaching and a willingness on Young’s part to study the game. If anything, Young has a shot at being a special teams contributor with his athleticism if things don’t work out at linebacker; this added value gives him a great shot at being an NFL player in the upcoming years</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/nflDraft/image12.png" alt="Top Career Tacklers"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Here we have a graph representing the UCLA players with the most career tackles over the past 13 years. Only two individuals have over 300 career tackles: Eric Kendricks, a standout linebacker with the Minnesota Vikings, and Kenny Young. While Kendricks had an amazing 476 tackles, Young still had a very respectable 304 total tackles during his time as a Bruin. He beat out former teammate Jaleel Wadood, NFL veteran and 2013 All-Pro Alterraun Verner, former Bruin standouts Reggie Carter and Dennis Keyes, and newly-minted Super Bowl LII Champion Randall Goforth. This is an impressive list, and being near the top speaks volumes about Young’s usage, versatility, and dedication to UCLA football. In addition, the 2017 season was the most prolific for Young in terms of tackles; it was the first time he eclipsed 100 tackles in a single season, with 77 solo tackles and 33 assists for a total of 110 tackles, which was good for 9.2 tackles per game (2nd best in the Pac-12). This all-league campaign included 8.5 tackles for loss (TFL), one of which was a sack, three passes defensed, and a fumble recovery. Although this was his best season, Young had a respectable 90-tackle year in 2016, a 69-tackle year in 2015, and a 35-tackle year in 2014. And finally, when you look at the top tacklers since 2005 in the Pac-12 Conference as a whole, Young’s 304 tackles still rank an impressive 10th place, behind the likes of NFL standouts Patrick Chung (New England Patriots), Hayes Pullard (Los Angeles Chargers), and Deone Bucannon (Arizona Cardinals).</p>
+
+<p>Although Kenny Young is a decent inside linebacker, it’s hard to say if his skills will translate to the NFL. He definitely has a future in special teams, where he could contribute on kickoffs, punts, and field goals, but there are too many linebackers in this draft class that have more talent than Young. When potential Pro-Bowlers like Roquan Smith and Tremaine Edmunds are the best linebackers in this draft, more obscure players like Young sometimes go undrafted. Also, teams might overlook him due to his main flaw, which is his lack of physicality. But, I have a feeling that at least one team in need of a linebacker will enjoy what they see both on tape and in character evaluations, so I predict Young will be drafted at some point in the 7th and final round. As for a team looking for extra linebackers, the Chicago Bears could use some depth at the position, as they only have three guys listed at inside linebacker: 2016 draft pick Nick Kwiatkoski, NFL veteran Danny Trevathan, and 2015 undrafted pickup John Timu. While Kwiatkoski and Timu are relatively new to the league, Trevathan has been in the league for a while and starred in the Denver Broncos’ Super Bowl 50 win as part of that ferocious defense. So, perhaps Young can be mentored by Trevathan if the Bears draft him.</p>
+
+<p>In summary, the UCLA class of 2018 looks to make a splash in this year’s draft with five prospects in particular. First, Josh Rosen is a lock to be selected in the 1st round, as there are several teams that are desperate for a franchise quarterback. Then, Kolton Miller looks to be selected in the 1st round by a team that needs a big, athletic lineman, and his combine performance was absolutely legendary. Next, there’s Jordan Lasley, a talented yet undisciplined wide receiver who could end up in a multitude of rounds due to his troubles off the field, but due to his upside, it’s likely a team takes a chance on him in the 4th round. Moreover, Scott Quessenberry is a solid prospect at center, and teams looking for extra bodies at that position could select him in the 6th round due to both his skill and high character. Likewise, Kenny Young has great intangibles, but his skill set makes it difficult to see him as a starting linebacker; for this reason, he could find himself selected in the 7th round by a team that is in need of depth at linebacker and/or special teams. Overall, the draft is a time for all sides to be excited about, as it has enormous implications for teams and prospects alike. Here’s to a successful draft for the UCLA Bruins this year.</p>
+
+<div id="cited">
+    <p>
+        All statistics courtesy of sports-reference.com, NFL.com, nflsavant.com, and uclabruins.com.
+    </p>
+</div>
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

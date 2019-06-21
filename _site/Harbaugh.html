@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">What Happens to Jim Harbaugh in Big Games?</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                      
+                    
+                  
+                  • 13 Feb 2019 •
+                  
+                    
+                      10 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image9.png" alt="pic 1"><figcaption></figcaption></center>
+</figure>
+
+<p>After finishing the 2010 NFL season with a losing record yet again, the San Francisco 49ers finally decided it was time for a new head coach. They needed to win games to become relevant again and, more importantly, they needed to bring life back to a fan base that had not had a winning team since 2002. So they went with a man whom they thought could bring all of that to the table: Jim Harbaugh.</p>
+
+<p>Having coached a dominant Stanford football team for years in the Pac-12, the former quarterback was primed for a head coaching job in the NFL. He brought an energy and intensity that the Forty-Niner Faithful had not seen for a very long time and in his first season, he took the Niners to the playoffs with a record of 13-3. They ultimately lost the NFC championship game to the New York Giants, but Harbaugh was the Coach of the Year and the Niners were once again in the mix of legitimate contenders.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image15.png" alt="pic 2"><figcaption></figcaption></center>
+</figure>
+
+<p>The very next season, after the injury of his starting quarterback midway through the season, Harbaugh saw an opportunity for even more growth and engineered the most versatile offense in the NFL with Colin Kaepernick, a hot talent from Nevada, at the wheel. The Niners eventually found themselves in Super Bowl XLVII against the Baltimore Ravens, where they would come within five yards of the trophy but eventually lose to the AFC champs. They were back in full form in 2013 but once again fell just short, this time in the NFC Championship to the Seattle Seahawks. After an injury-riddled 2014 campaign and issues within the front office, Harbaugh and the Niners organization decided to mutually part ways, but Harbaugh still had a lot of coaching left in him.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image10.png" alt="cover photo"><figcaption></figcaption></center>
+</figure>
+
+<p>He made one of the biggest splashes in college football when he announced that he would be coaching at his alma mater, the University of Michigan. With the school's excitement through the roof, Harbaugh took the losing Wolverines to the Big Ten Championship game where he would lose to the dominant Ohio State University, but go on to win the Citrus Bowl against Florida. Each year for the next three years, Harbaugh's season ended with the same result: a loss in the Big Ten Championship to Ohio State followed by a loss in a bowl game, which brings us to the present day. Jim Harbaugh is clearly an exceptional football coach, but one glaring pattern hovers over that excellence: he's never won the big game, whether it be a Super Bowl, a national title, or even a Big Ten title. So, the big question here is rather simple: why? What goes wrong for him year after year that keeps him from entering the circle of championship head coaches? Football is certainly a random and difficult sport, but considering how close he has come for so many years, it's intriguing that he may walk away from his coaching career with nothing but a Citrus Bowl trophy. To derive any kind of explanation for this, it's important to try and have a complete understanding of exactly what kind of coach Jim Harbaugh is.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image13.png" alt="cover photo"><figcaption></figcaption></center>
+</figure>
+
+<p><h4>The Steroid Effect</h4></p>
+
+<p>Whether it is in the college or professional ranks, Harbaugh has demonstrated the ability to tremendously increase the quality of his team upon arrival:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image11.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The immediate spike in regular season wins from the year before Harbaugh's arrival to his first year as head coach is clear with both the Niners and the Wolverines. There are of course many factors not related to coaching that could have caused this; often times a team can experience a turnaround as a result of some key personnel changes or recovering injured players that significantly improve the roster heading into the next season. But a closer look shows that Harbaugh was able to take squads with few expectations and low ratings, and raise their quality to elite levels. Below is a chart of the ratings of all NFL teams based on roster and performance as per this <a href="https://www.pro-football-reference.com/blog/index4837.html?p=37">Simple Rating System</a> in 2010 versus in 2011 (Harbaugh's first year in San Francisco):</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image6.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>With the dashed line representing no change in a team's quality from 2010 to 2011, Harbaugh's 49ers exceeded their previous season's performance more than any other team in the NFL. Their SRS improved by 14.1 points, 2 points more than the next best improvement. And four years later, the exact same thing happened in Ann Arbor. Below is the same metric, this time from 2014 to 2015 (Harbaugh's first year at Michigan) with all CFB teams from the Power Five Conferences shown:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image1.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>With the 49ers being in the unpredictable league that is the NFL and Michigan having a drastically new roster from year to year (as is the nature of college sports), the one thing that these clubs had in common in their sudden jolts of success was Jim Harbaugh. They didn't just improve in Harbaugh's first year; they were among the highest-rated teams in their respective leagues, with the Niners being ranked 2nd in the NFC and Michigan being ranked 12th in the country. It is no coincidence that Harbaugh was the head coach as they both suddenly went from irrelevance to championship contention.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image5.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p><h4>Late Season Failure</h4></p>
+
+<p>Being in championship contention is one thing and being a champion is another. Despite doing the former in an impressive fashion, Harbaugh has never really been able to do the latter.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image7.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>In football, all games are subject to many factors that have absolutely nothing to do with coaching. From injuries to terrible refereeing to crowd noise, there are many ways for a football team to lose that do not result from coaching decisions. It's entirely possible that Jim Harbaugh is just the most unlucky coach of the decade when it comes to high-stakes football games, but that seems unlikely and rather bland. Thankfully, upon research, there <i>does</i> appear to be something interesting happening with Harbaugh's play calling in big games.</p>
+
+<p>Splitting offensive play calling in the most basic way, passing and running, the charts below show the play selection of NFL teams and Big Ten teams in the Jim Harbaugh eras:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image3.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image8.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Football is played differently in the professional ranks versus in college and the game in general has evolved over the last 8 years, but one thing is clear: Jim Harbaugh loves running the ball. The Niners under him were one of just two teams in his era that ran the ball more than they threw it. It's the focal point of his offense and he's been more committed to it than almost every other team in his league in both the NFL and NCAA. But when it comes to important games (playoff games, Big Ten title games, and bowl games), that commitment seems to disappear:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image14.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Harbaugh has coached 8 big games with the Niners and 8 with Michigan. With both teams, 7 of those 8 games featured a running percentage lower than every regular season game that year. A man who called running plays 52.3% of the time with the Niners and 59.1% of the time with the Wolverines dropped to 44.1% and 44.8% respectively in big games. This pattern is simply too glaring to ignore, and upon deeper research into these big games, an even more conclusive pattern is uncovered regarding key drives in these games. For the purpose of this article, we define a 'key drive' as the following:</p>
+
+<ul>
+	<li>A drive on which a team must score points, whether it is to take a late lead, maintain a late lead, stay in the game, and/or reverse the momentum of the game</li>
+	<li>A drive where the clock is not yet a factor that affects play calling</li>
+</ul>
+
+<p>Of importance is the fact that by this definition time is not a factor, so a run percentage is not skewed by the fact that when time is low, a coach will either be more inclined or less inclined than usual to run the ball depending on the score. It is also important to note that there are multiple drives per game that can be considered key drives as per the provided definition. Since the point here is to simply look at the more important drives of these important games, only one key drive from each of Harbaugh's big games is listed below:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image12.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Examining his run percentage in these specific drives, his apparent tendency to call significantly fewer running plays in big games becomes even more clear:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image2.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>While nothing can be determined with absolute certainty in football, the pattern here is quite clear. In important games Harbaugh runs the ball far less than usual, and in the important moments of those important games he runs it even less than <i>that</i>. The 44.1% and 44.8% that he dropped to in big games with the Niners and Wolverines respectively became 22.3% and 24.1% in those key drives. In a couple of those drives, he didn't even run the ball at all. While Harbaugh has still won big games this way, it's not sustainable because it's simply not his identity, hence his failure every year to go all the way. He seems to get way more trigger-happy on the big stage, wanting to put the ball in his quarterback's hands and move it through the air in large chunks rather than methodically move it on the ground as he's used to doing.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/harbaugh/image4.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>It's actually rather suiting. Jim Harbaugh can be described as an incredibly powerful steroid; he enters the locker room of a mediocre team and injects an intensity and attitude that immediately turns those players into winners. He wins games with old school football and dares the opposition to stop him. But when he gets to the big dances, he falls victim to himself. Perhaps his throwing the ball far more than usual in big games is the result of a million other small factors that just happen to create this coincidental pattern. But knowing Jim Harbaugh, it really isn't. It's the curse of his nature as a head coach. The very intensity and daring that brought him there undoes him as he goes one step too far, trying to win the game at the same speed with which he changed his team's fortunes when he took over. Jim Harbaugh's general coaching success can be attributed to many things, but a cool head has never been one of them.</p>
+
+<p>With Ohio State head coach <a href="http://www.espn.com/college-football/story/_/id/25449933/ohio-state-buckeyes-head-coach-urban-meyer-retire-coaching-rose-bowl">Urban Meyer retiring</a> and Clemson and Alabama not going away anytime soon, there is nothing left for Harbaugh at Michigan. It would be surprising if he's not on the move again soon, and it will be interesting to see where he ends up. The word "overrated" has become constantly associated with Jim Harbaugh's name, but the fact is that great football coaches are rare and there are NFL teams as well as colleges that would hire him in an instant. He may not have a great track record in postseason play, but he knows the game, he's animated on the sideline, and he winds up on national television more often than not. The entertainment value coupled with the guaranteed appearance in important games is too good to deny. Regardless of the end results, football needs Jim Harbaugh.</p>
+
+<p>Sources: sports-reference, pro-football-reference, ESPN</p>
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "An Analysis of Score Inflation in NCAA Women’s Gymnastics"
+date:   2019-04-12 17:51:49 -0700
+authors:
+- joey_maurer
+categories: jekyll update
+excerpt_separator: <!-- end excerpt here -->
+excerpt: <center><img class="excerptpics" src ="/assets/InflationGymnastics/cover.jpg" alt="cover photo"></center><p>As the 2019 Women's Gymnastics Championship approaches, a cloud of controversy looms over the sport. Many fans believe that the scores being handed out this year are misrepresentative of actual routines. The issue of score inflation seems to creep into every discussion about college gymnastics. Judges across the country have been put under a microscope, being scrutinized for scoring routines higher than they deserve. Among reasons to do this would be to attract more casual fans, thus increasing revenue for the NCAA. After all, who doesn't want to see a perfect 10?</p>
+---
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/InflationGymnastics/cover.jpg" alt="picture 1" style="max-width: 95%;"><figcaption>Bruins Nation</figcaption></center>
+</figure>
+
+<p>As the 2019 Women's Gymnastics Championship approaches, a cloud of controversy looms over the sport. Many fans believe that the scores being handed out this year are misrepresentative of actual routines. The issue of score inflation seems to creep into every discussion about college gymnastics. Judges across the country have been put under a microscope, being scrutinized for scoring routines higher than they deserve. Among reasons to do this would be to attract more casual fans, thus increasing revenue for the NCAA. After all, who doesn't want to see a perfect 10?</p>
+
+<p>Women's collegiate gymnastics is a niche sport, though popularity has grown in recent years (you might've seen Katelyn Ohashi's floor routine). There is limited available public data, and even less research into applying more advanced analytical techniques that are making progress in other sports. However, a great website for scoring data is <a href="http://www.roadtonationals.com">www.roadtonationals.com</a>, the official statistical site of NCAA gymnastics. I used web scraping via Python to gather every score for every gymnast from every Division-I school from 2014-2019.</p>
+
+<p>In stats language, this article is dealing with population parameters, not statistics of random samples. So doing fancy inference methods like t-tests and ANOVAs is not necessary. Simple descriptive statistics will tell us all we need to know about scoring and how much of an issue score inflation has, or hasn't, become.</p>
+
+<p>For those who have not been exposed to women's gymnastics before, you are missing out. UCLA is the defending national champion and heads into the championship alongside Oklahoma on a tier above everyone else. A quick rundown of how it works: There are four events: Vault, uneven bars, balance beam, and floor. Teams cycle through these events with six gymnasts competing and the lowest score dropped. Some gymnasts are specialists on one or two events, others do All-Around (every event). Rankings for postseason are based on total team scores, wins and losses only matter in the sense that if you win, you probably got a higher score. After a conference championship, the top-32 teams advance to regionals, which is cut down to eight for semi-finals and then four for the final meet. (Note that I did not include the championship meet scores from past years in the analysis because it hasn't happened yet this year.)</p>
+
+<p>Gymnastics is very different from other sports in the fact that you have no control over the opponent's performance. Because scores are aggregated and routines independent of each other, a lot of 'luck' is taken out of the equation. Upsets are extremely rare, and the better team almost always wins. This is not a sport kind to underdogs. The current rankings look very similar to the preseason rankings. As mentioned above, it's pretty much been a two-team race this season.</p>
+
+<p>Scores are the only 'gameplay' variable available to work with, for better or worse. For reference, a 9.700 and above is usually considered a 'hit' routine, i.e. no major mistakes/falls. At top schools, anything below a 9.800 would prefer to be dropped. The best gymnasts consistently hit 9.900+. The argument of score inflation is that many scores that should be in the 9.700s-9.800s range end up higher, and there is a ridiculous amount of 10's given out. The latter is easier to address, so we start there.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/InflationGymnastics/pic_1.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The number of tens has been on the rise in each of the last three years, but this isn't the best way to look at things. There is variance in the total number of routines per year which may skew results. A better route is to look at the number of 10's given per 1000 routines to adjust for the different amount of routines each year.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/InflationGymnastics/pic_2.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>I narrowed in on top-5 schools because they are the subject of the score inflation argument. Allegedly, some routines are given a bump based on the name/popularity of the gymnast or color of their leotard.</p>
+
+<p>The rate of 10's being given this year is almost double that of 2014-2016. Either the best teams from 2017-2019 are just way better than those of the previous three years, or tens are being handed out more loosely. If you are comfortable saying that the talent level of top-5 schools does not change drastically year-to-year, then the arrow points to score inflation.</p>
+
+<p>But it may not be that easy. UCLA's Kyla Ross has 14 perfect 10's this year, accounting for a large chunk of the total amount given, en route to becoming the first collegiate gymnast to record a Double Gym Slam in a single season (at least two 10's on all four events). Remove her and things look a little more normal. It could be that exceptionally skilled gymnasts like Ross and Oklahoma's Maggie Nichols are skewing the 10-counts in recent years.</p>
+
+<p>Just looking at 10 counts disregards a lot of data. It is probably better to check the proportion of scores in certain ranges.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/InflationGymnastics/pic_3.png" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The proportion of routines that are given 9.900's or higher has risen for all events since 2016. In particular, beam has seen the greatest increase during this time frame. Is it due to the fact that there are more gymnasts now with better executed beam routines, or are beam scores receiving an unnecessary bump?</p>
+
+<p>I do not know enough about the technical aspects of gymnastics to give a concrete answer. Perhaps someone who has been following the sport for a long time and watches a considerable amount of meets can say "Yes, there are more gymnasts capable of putting up huge routines now than there were a few years ago". Or maybe say that is not true, and we are seeing the effects of score inflation.</p>
+
+<p>What I can give though is evidence that this is not just a top-school debate. While Oklahoma and UCLA take a lot of flak for "outrageous" judging, the scores of middle-tier teams are also on the rise.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/InflationGymnastics/pic_4.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>This is the exact same format as the line graph above, except now looking at schools ranked 11-20 and number of scores above 9.850 per 100 routines. Beam stands out again as the most significant increase in this timeframe.</p>
+
+<p>So if gymnasts at this level are also seeing similar tendencies in scores received, you can't really single out the best schools as beneficiaries of unfair judging. Good gymnasts are receiving higher scores in recent years, it's not a surprise that better gymnasts are receiving higher scores too.</p>
+
+<p>It is not outlandish to suggest that gymnasts nowadays are more skilled and athletic with every passing year. We see this occurring in other sports like football and hockey. The score inflation controversy has no simple answer. We know 10's are being given out at a much higher rate. We know beam scores are on the rise. We also know that some of the best athletes this sport has seen in a long time are currently competing. Remember that a similar trend can be seen at mid-tier schools before criticizing UCLA and Oklahoma. Perhaps it is best to just sit back and enjoy the perfection.</p>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "Russell Westbrook: Point Guard or Shooting Guard?"
+date:   2018-12-04 23:56:44 -0700
+authors:
+-  jack_ma
+-  nikhil_sharma
+categories: jekyll update
+excerpt_separator: <!-- end excerpt here -->
+excerpt: <center><img class="excerptpics" src ="/assets/russ/pic1.png" alt="cover photo"></center><p>Russell Westbrook has become one of the NBA's top players in the past decade. He has been a marvel to watch, as his thrilling athleticism has allowed him to churn out highlight after highlight. On top of his exhilarating play-style, he has become a fan favorite due to his <a href="https://www.youtube.com/watch?v=sfQylEBg-bg">curt interviews</a> and his redemptive MVP season after Kevin Durant so infamously <a href="https://i.ytimg.com/vi/TiojPTwxeBg/maxresdefault.jpg">snaked</a> Russ and the Thunder.</p>
+---
+<figure><center><img class="materialboxed responsive-img" src ="/assets/russ/pic1.png" alt="cover photo"><figcaption>Sean Gardner, Getty Images</figcaption></center>
+</figure>
+
+<p>Russell Westbrook has become one of the NBA's top players in the past decade. He has been a marvel to watch, as his thrilling athleticism has allowed him to churn out highlight after highlight. On top of his exhilarating play-style, he has become a fan favorite due to his curt interviews and his redemptive MVP season after Kevin Durant so infamously snaked Russ and the Thunder.</p>
+
+
+<p>However, his role as a point guard has drawn some ire from basketball fans. Although point guards are generally defined as floor generals who control the offense of the team, Russ has somewhat defied this tradition, as he plays the position with a ball-dominant style that has limited his efficiency. Currently, Russ leads the league in <a href="https://www.foxsports.com/nba/stats?season=2017&category=SCORING&group=1&sort=7&time=0&pos=0&team=0&qual=1&sortOrder=0&opp=0&page=1">field goal attempts</a> at 21.2 per game, and was the second in the league in <a href="https://stats.nba.com/players/touches/?Season=2017-18&SeasonType=Regular%20Season&sort=TOUCHES&dir=1">touches</a> at 95.3 per game in the 2017-18 season. As a player with such a high usage, the <a href="https://clutchpoints.com/would-russell-westbrook-have-had-a-better-career-if-he-was-a-shooting-guard/">question</a> comes up somewhat frequently: would Russ be better as a shooting guard?</p>
+
+<p>To bring a unique perspective to this debate, we decided to tackle it with a logistic regression model. Logistic regression is a form of regression that predicts a binary dependent variable from an independent variable or a collection of them. We figured that we could consider the classification of a guard as a point guard or shooting guard as a binary regression problem, and create a model around this. Then, we could run Russ's stats through our model and see what it classifies Russ as.</p>
+
+<p>We collected advanced and basic statistics of all guards since the 1979-80 season. We chose the 1979-80 season as the starting point because this was the first season where the 3-point line was introduced; thus, all of the advanced statistics for players from that season onwards are complete. To predict the position, we first included all of the 43 predictors in the logistic model. Next, we removed the highly correlated predictors, then conducted a stepwise variable selection process using AIC as our criterion. We ended up with 14 variables that constituted our new model. To check the accuracy of our new model, we split the data into training and testing sets, then calculated the mean squared error of the predictions of testing data. The result showed that our model was 89% accurate in classifying guards as either point guards or shooting guards. After building the classification model, we applied the model onto Westbrook's statistics for each year to classify his position, and the results proved to be very interesting.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic2.png" alt="cover photo"><figcaption></figcaption></center>
+</figure>
+
+
+<p>Our model classified him as a shooting guard only in the 2011-12 season, which is particularly noteworthy, since this is the only season in his career that one of his teams made the NBA Finals. Thus, we decided to focus our deeper analysis on this season and the 2016-17 season, when he won the MVP award. We also chose to mostly examine his offensive traits, since this is the side of the ball where his status as a guard is contentious.</p>
+
+<p>The fundamental difference between these two seasons is the team that surrounded Russ. Just take a look at how the Thunder's win shares were distributed over these two seasons:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic3.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic4.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>Clearly, he had a lot more talent surrounding him in 2012 than in 2017. With three future MVPs on the squad in Russ himself, Kevin Durant, and James Harden, the 2012 Thunder team was very stacked, and allowed for a more even distribution of contribution throughout the season.</p>
+
+<p>On any given day, any one of Durant, Harden, or Westbrook could go off and give the opposing defense hell.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/sCUwuSwmcck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>This allowed for some of the most dynamic basketball we have seen in the last few decades. Take <a href="https://youtu.be/R_Voow0DDmg?t=228">this incredible play</a> from the 2012 Western Conference Finals against the Spurs. Here, Harden gets the ball on a swing pass and decides to drive into the teeth of the defense. When he sees three Spurs collapse on him, he sneaks an incredibly difficult skip-pass to an open Russ on the wing. Instead of popping the three, Russ blows by the senior citizen Tony Parker, who has no hope in keeping up. Then, he craftily maneuvers around Tim Duncan's attempted charge to finish an insane layup. While Kevin Durant was not directly involved in this play, his gravity plays a massive role in this layup coming to fruition. Note that as Russ goes in for the layup, Kawhi Leonard has two choices: help on the drive and leave Durant wide open from the arc, or stay home on his man. If he helps, he leaves an elite 3-point shooter wide open; if he doesn't help, he gives an elite penetrator a fairly clear lane (which is what happened in this case).</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic5.png" alt="picture 2" style="max-width: 95%;"><figcaption>SLAM Magazine</figcaption></center>
+</figure>
+
+<p>Having these three players on the floor at once opened up so many avenues of attack for Oklahoma City. Either all three could get involved in the play (which often didn't happen because of Scott Brooks's abysmal coaching, but that's material for another article), or two of them could run a nice two-man game with the floor opened up due to the third player. Also, with three marquee players who could bring the ball up and initiate offense, the Thunder did not have to rely solely on Russ to make something happen every possession.</p>
+
+<p>After Harden and Durant left, this changed dramatically. In his MVP season, Russ's best offensive companions were Enes Kanter, Steven Adams and Victor Oladipo. These players, while good in their own rights, were a far cry from the MVP-calibre talents that were Durant and Harden. As a result, the Thunder ran as Russ ran.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic6.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+<p>As we see here, Westbrook shared a relatively larger piece of the pie for his team in points, assists, and rebounds in 2017 than in 2012. Also, between the two seasons, his assist percentage (the percentage of teammate field goals a player assisted while he was on the floor) nearly doubled, from 29.8% in 2012 to 57.3% in 2017. His usage percentage also increased, but not as dramatically (32.7% to 41.7%). Still, his 41.7% usage good enough to be the highest mark in the league that season.</p>
+
+<p>For the team to be successful, they had to feed the ball to Russ and let him work his magic. In many ways, this philosophy did work. Watching Russ run the fast-break was (and still is) an absolute delight. Often, Kanter and Adams would either grab rebounds, or box out opponents so that Russ himself could get the ball. Then, Russ would streak down the floor, display some supreme ball-handling talents and either <a href="https://youtu.be/Dtb10PeLF2s?t=85">lay it in with ease</a> or <a href="https://youtu.be/Jmc4KMDs2CA?t=64">smash in a scintillating dunk</a>. In addition to being a lethal scorer on the fast-break, Russ also had great vision in transition, where he could <a href="https://www.youtube.com/watch?v=5rnCCLRMK-8">weave the ball through nearly impossible passing lanes</a> when his team got running.</p>
+
+<p>In the half-court, Russ also utilized some excellent tools. With his big men, Adams and Kanter, Russ often ran the pick-and-roll, where he could either <a href="https://youtu.be/paJ85RCJDh4?t=1431">find one of them on the roll</a> or finish himself, either on the <a href="https://youtu.be/paJ85RCJDh4?t=84">mid-range pull-up</a> that he has mastered or on a <a href="https://youtu.be/paJ85RCJDh4?t=194">layup/dunk in the paint</a>. His vision also assisted him in the half-court game, where he could <a href="https://youtu.be/3KLWle7B8wo?t=65">find his teammates cutting backdoor with slick passes</a>.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic7.png" alt="picture 2" style="max-width: 95%;"><figcaption>Steven Adams, Twitter</figcaption></center>
+</figure>
+
+<p>In the 2016-17 season, Russ famously averaged a triple double, won the MVP award and lead the Thunder to 47 wins, keeping his team in the playoff hunt after Kevin Durant left the team in cowardly fashion the previous offseason. However, while they had relative success with Russ at the helm, the Thunder also suffered at the hands of their star. As anyone who watches Westbrook with any regularity knows, he is not always the best decision maker on the floor, as he often barrels into the rim for <a href="https://youtu.be/9TO4yjEfMUg?t=76">reckless shots</a>, turns the ball over in <a href="https://www.youtube.com/watch?v=8GnJ7xe-2MY">extraordinary fashion</a> or generally just does <a href="https://www.youtube.com/watch?v=8jz9M4LIRD0">things that should not be done on a basketball court</a>.</p>
+
+<p><a href="https://youtu.be/9TO4yjEfMUg?t=47">This play</a> encapsulates many of the criticisms of Russell Westbrook. As the play sets up, you can see some nice action off the ball, as Alex Abrines cuts towards the basket at the top of the key off a nice screen. He is clearly looking at Russ, expecting him to slip the ball in for either an easy layup or a kick-out to Jerami Grant if Klay Thompson helped one pass away. Instead, Russ barrels into the basket and takes an ill-advised layup on three Warriors that gets swatted into oblivion.</p>
+
+<p>Russ's boneheaded decisions certainly hurt his stock as a point guard. Even in his incredible MVP season, while had quite a few <a href="https://www.youtube.com/watch?v=raDYzXmmQEA">memorable late-game moments</a>, he also had an equal amount of not-so-memorable late-game moments, where he would miss deep, off-balance 3s and heavily contested layups when better shots were available. Though he was the reason OKC won the majority of their games, he was also often the reason they lost the games they did.</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/o5iRmnl4mpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+<p>And as we saw, a team that lived by the Russ and died by the Russ petered out in the first round of the playoffs, losing to James Harden's Rockets in five games. When he was forced to be the ultimate floor general, he stuffed the stat sheet for himself, but his team did not do as well.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic8.png" alt="picture 2" style="max-width: 95%;"><figcaption>Troy Taormina, USA TODAY Sports</figcaption></center>
+</figure>
+
+<p>Granted, he did not have two other MVPs by his side. And, a lot of his decision-making woes existed even in the season when he played more of a "shooting guard" role (according to our model). After Game 2 of the 2012 NBA Finals, when Russ chucked up 26 shots in a loss, Magic Johnson famously called Russ "<a href="https://thebiglead.com/2017/08/10/magic-johnson-on-russell-westbrook-in-2012-finals-worst-point-guard-in-nba-finals-history/">the worst point guard in a Championship Finals</a>" he had ever seen. While his teammates Durant and Harden had 32 and 21 on 54.5% and 63.6% shooting (respectively), Russ only shot 38.4% from the field. For obvious reasons, Magic was angry at the fact that the Russ kept on shooting on an off night instead of feeding the hot hands, as a point guard should do.</p>
+
+<p>Perhaps those numbers would be easier to stomach if he weren't playing the role of a floor general. Most volume scorers have nights of inefficiency, but also have more leeway in terms of shooting themselves back into the game, since scoring is their main offensive role. However, elite point guards who are expected to run their offense with gravitas and poise should engage their hot players, especially when they are in shooting slumps. Maybe if Russ stuck to the role closer to a shooting guard after the 2011-12 season, he might have been able to hone his scoring skills and avoid the brunt of learning how to become a better facilitator on offense. With a more off-ball role, he could have risen to even higher highs than he already has in his great career. And possibly, if he had done these things, he could have <a href="https://bleacherreport.com/articles/2779267-kevin-durant-on-2016-free-agency-meeting-with-warriors-i-needed-that-validation">convinced Kevin Durant to stay</a> in Oklahoma City.</p>
+
+<p>Still, it might not be too late to fall back on his shooting guard roots. As a point guard, his offense relies heavily on his explosive athleticism. Our classification model shows that as age increases, the proportion of point guards in each age group decreases. After 28 years old, which is around the peak of players' athleticism, guards are more likely to be shooting guards (Russ is 30 years old right now, FYI).</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic9.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>As Russ passes the peak of his athleticism, his offensive efficiency might decrease if he continues to play the way he does now. Russ possess the qualities to become a good off-ball player, as we saw in his relatively successful 2011-12 "shooting guard" season. Looking more currently, his catch-and-shoot scoring has been improving over the past few years. According to NBA.com, in the 2017-18 season, Russ ranked in the 87.6th percentile in spot-up shooting, with 1.16 points per possession. However, this play-type only made up 4.7% of Westbrook's offensive plays last season. Given his offensive awareness and off-ball scoring ability, if he tries to play more off-ball at the shooting guard position, it might be more efficient for him as a scorer and beneficial for the team.  Even though Kevin Durant and James Harden aren't walking through that door again, OKC has an All-Star in Paul George, a capable point guard in Dennis Schroder, a tank in Steven Adams, a four who is better than Melo in Jerami Grant, and more. The squad has a lot of potential, and Russ can potentially unlock that potential by shifting his play-style a bit.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/russ/pic10.png" alt="picture 2" style="max-width: 95%;"><figcaption>Layne Murdoch, Getty Images</figcaption></center>
+</figure>
+
+<p>As fellow Bruins, we love Russ and want him to succeed more than anything. It would be so heartwarming if Russ could get over the hump of the first round of the playoffs that he hasn't been able to conquer without Durant at his side. He won the MVP award without Durant; now it's time for him to win in the playoffs without him.</p>
+
+<p>If you are interested in out code, you can check it out <a href="https://github.com/nikhil348/Russell-Westbrook-Guard-Type">here</a>.</p>

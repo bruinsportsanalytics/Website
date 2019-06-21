@@ -1,0 +1,32 @@
+
+
+@media all and (min-width: 768px) {
+    #bodycontent {
+        font-family: 'Lora', serif;
+        font-size: 20px;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        line-height: 35px;
+    }
+  }
+
+
+@media all and (max-width: 420px) {
+    #bodycontent {
+        font-family: 'Lora', serif;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        line-height: 30px;
+    }
+    img {
+        max-width: 100%;
+    }
+  }
+
+#pagetitle {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+#footer {
+    font-size: 12px;
+}

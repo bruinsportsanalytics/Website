@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">2018 Ballon d'Or: A Look at the Contenders and their Numbers</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/vedantsahu">Vedant Sahu</a>
+                      
+                    
+                  
+                  • 28 Nov 2018 •
+                  
+                    
+                      15 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/messiDor/cover.jpg" alt="cover photo"><figcaption>Lionel Messi winning the 2016 Ballon d'Or (Credit: Getty Images)</figcaption></center>
+</figure>
+
+<h3><b>What is it?</b></h3>
+
+<p>On December 3, 2018, the French publication France Football will announce the winner of this year's Ballon d'Or, which translates to the "Golden Ball". The award, which recognizes the best male footballer in the world, has been around for a while now.  In fact, this will be the 53rd time that it will be awarded. Every year, the speculation around who the eventual winner will be creates a ton of buzz, and this year is no different. Before we join in on that hype train, let's take a look at how the "Golden Ball" has exchanged hands over the last of couple of years.</p>
+
+<p>To any football fan, it would come as no shock to learn that ever since 2008, the award has been shared by just two players - Cristiano Ronaldo and Lionel Messi. Both have secured 5 Ballon d'Ors each (or the FIFA Ballon d'Or, as it was known from 2010 to 2015) in the last decade. Ever since Kaka picked up the award in 2007 after a terrific season with A.C. Milan, Ronaldo and Messi's sheer dominance of the game has made the Ballon d'Or a two-horse race, with the rest of the world just battling to earn a place alongside them in the top three. This year, however, that could very well change.</p>
+
+
+<figure>
+		<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_1.png" alt="picture 1" style="max-width: 95%;"><figcaption>Cristiano Ronaldo with his 5 Ballon d'Ors (Credit: AFP/Getty Images)</figcaption></center>
+</figure>
+
+<p>When France Football announced the 30-man shortlist on October 9, there were not many surprises. The usual suspects including Ronaldo, Messi, Luis Suarez, Neymar were all included. However, the members of the World Cup winning France team are the ones making headway in the race to win the prestigious award. With only a week to go, the press is speculating that Ronaldo and Messi will not even finish in the top three. So if Ronaldo and Messi aren't the favorites, who can snag up the Ballon d'Or?</p>
+
+<h3><b>Who are the contenders?</b></h3>
+
+<p>If you ask the bookmakers, it is the Croatian midfielder Luka Modric who is by far the favorite. Winning his fourth UEFA Champions League with Real Madrid was probably enough to earn him a nomination, but it was his incredible display in Russia that has made him the favorite in the eyes of the press, as well as the bookies. Under his leadership, Croatia became the runners up in what was a fairytale run up to the finals of the 2018 FIFA World Cup . Modric picked up 3 Man of the Match trophies along the way, while also snatching the award for the Best Player of the Tournament, which is also coincidentally titled the Golden Ball. He also led the field in terms of the most miles covered during the tournament, which goes to show how much work he put in.</p>
+
+
+<figure>
+		<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption>Luka Modric with his Best Player of the Tournament Award (Credit: Reuters)</figcaption></center>
+</figure>
+
+<p>Following the incredible performance in Russia, he received a lot of praise and accolades, as he went on to beat his Real Madrid teammate Ronaldo and Liverpool's Mohamed Salah to win both the UEFA Men's Player of the Year and The Best FIFA Men's Player awards. Winning these two individual awards have bolstered his chances of picking up the Ballon d'Or as well. However, a poor start to the new season with Real Madrid, which resulted in the sacking of the newly appointed manager Julen Lopetegui, and Croatia's relegation to League B in the inaugural season of the UEFA Nations League, have shown that Modric has failed to capitalize on an amazing summer. While this poor post-World Cup performance might deter some people to vote for him, most believe that it won't be enough to deny him his first Ballon d'Or.</p>
+
+<p>Considering the fact that it was Modric's World Cup performance that has put him in front of the race, it isn't shocking that the other front runners also had a tremendous World Cup campaign. The French World Cup winning trio of Antoine Griezmann, Kylian Mbappe, and Raphael Varane are hot on Modric's tail to get the nod for the honor. Griezmann, the Atletico Madrid forward, has been consistently performing at the top level for years now, and 2018 for him wasn't any different. He helped Atletico lift the UEFA Europa League and was named the Europa League's Player of the Season for his efforts. He continued his exceptional form in Russia as well. By scoring 4 goals and chipping in with 2 assists, he helped France secure the World Cup. He also snatched up the Man of the Match award in the World Cup final.</p>
+
+
+<figure>
+		<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_3.jpg" alt="picture 3" style="max-width: 95%;"><figcaption>>Antoine Griezmann, Raphael Varane and Kylian Mbappe representing France in the 2018 FIFA World Cup (Credit: Goal.com)</figcaption></center>
+</figure>
+
+<p>While Griezmann was the focal point of the French forward line, it was the 19 year old Paris Saint-Germain winger who was garnering a lot of attention for all the right reasons. The 2017-18 season ended with Mbappe lifting the Ligue 1 title as well as the Coupe de France in what was a really successful first season for him in Paris. He quickly followed that up with a stunning World Cup performance. He scored two against Argentina and scored with a brilliant 25 yard strike against Croatia in the final, which led to him winning the FIFA World Cup Best Young Player Award. The 2018-19 season has gone off to a blistering start for him. His numbers are a lot higher as compared to the previous season in almost every aspect. While he is a strong contender to win the Ballon d'Or, he is also the outright favorite to lift the Kopa Trophy, which is awarded by France Football to the best performing player under the age of 21.</p>
+
+<p>Finally, the third member of the French team who has also been in the limelight is the Real Madrid centre-back Varane. Along with Sergio Ramos, he formed the backbone of Real Madrid's defense as they lifted the UEFA Champions League trophy in yet another successful campaign in Europe. He carried that success over in Russia as he helped the French defense keep 4 clean sheets on their way to victory. He was the anchor of the French defense, and he even scored the opening goal in the quarterfinal win against Uruguay. If he does win, he will be the first defender since Fabio Cannavaro to do so, who had led Italy as they were crowned the 2006 FIFA World Cup champions. However, Varane's bid to win the award has suffered the same blow as Modric's, as Real Madrid's dismal performance during the start of this 2018-19 season has left them in 6th place in the La Liga standings. Madrid's shaky defense has played a significant role in their poor form, and Varane hasn't done nearly enough to be immune from the blame.</p>
+
+<p>Ronaldo and Messi haven't had a bad year either by any standards. Cristiano Ronaldo, along with his Real Madrid teammates, won the UEFA Champions League for the third consecutive year. Moreover, he had a decent performance in Russia as well, scoring 4 goals (including a hattrick) against Spain. Following the World Cup, Ronaldo again made headlines by transferring to Juventus. While many were skeptical about how successful he'd be in Italy, he has proved his critics wrong by quickly adapting to the Series A and he's currently the joint top scorer while also being second in terms of assists. Messi, on the other hand, won the domestic double as he played an integral role in another one of FC Barcelona's dominant seasons in Spain. Although a disappointing summer in Russia hampered his hopes of ever winning the biggest tournament in football, it has been business as usual for Messi and his Barcelona teammates. They are at the top of their Champions League group and second in La Liga, trailing Sevilla by just one point. While they aren't the favorites anymore, it can't be denied that both of them have again had a tremendous year individually, while also picking up some silverware along the way. These two have perennially been at the top of the football world, and even though the dynamics are changing, they aren't leaving anytime soon.</p>
+
+
+<figure>
+		<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_4.jpg" alt="picture 4" style="max-width: 95%;"><figcaption>Salah celebrating after scoring a goal (Credit: Reuters)</figcaption></center>
+</figure>
+
+<p>Rounding up the list of possible contenders is Liverpool forward Mohamed Salah. He took the Premier League by storm last year as he became the top scorer with 32 goals, which is the highest tally since Alan Shearer's 34 goal haul during the 1994-95 season. Add to that the fact that Liverpool completely surpassed expectations and reached the UEFA Champions League finals, and you've got yourself the perfect candidate for the Ballon d'Or. Unfortunately for Salah, he was subbed in the first half of the Champions League final after suffering a shoulder injury, and had to watch his teammates suffer defeat at the hands of  Real Madrid. The injury also played a role in limiting his participation in the World Cup. Despite that, he managed to score both of Egypt's goals in the tournament. The fact that he was nominated in the top three for both the UEFA Men's Player of the Year and The Best FIFA Men's Player should have paved the way for him to be a serious contender for the Ballon d'Or, but the sheer dominance of the French trio mentioned above has pushed him down the list of favorites.</p>
+
+<h3><b>What do the stats say?</b></h3>
+
+<p>The Ballon d'Or takes into consideration a player's performance during the calendar year. So we're going to focus on the stats beginning from January 1, 2018. Furthermore, in a year like this, where the center of attention has undoubtedly been the FIFA World Cup, the year can be looked at as a tale of two halves. Separating the players' stats into what happened before, during, and after the World Cup can help us better analyze the numbers. Since the players play in different countries and participate in different competitions, it can often skew the statistics. For instance, the domestic cup in different countries follow different formats. England has two domestic cups in which a single knockout game decides the outcome of each game, whereas in Spain, there's only one domestic cup in which there are knockout rounds played over two legs. Since the domestic league and the UEFA Champions League are at the top of the clubs' and players' priorities, focusing on the stats from just these two competitions, along with the FIFA World Cup, can help us better make sense of each player's performance.</p>
+
+<p>Our pool of probable winners consists of 5 forwards, 1 midfielder, and 1 defender. Now the most important statistic in any football game is the number of goals. Looking at the chart for the total goals scored in the domestic league, Champions League ( Europa League in Griezmann's case), and the World Cup since January 1, it will come as no surprise that Ronaldo and Messi are comfortably leading. Obviously one can't expect a creative midfielder like Modric to match the numbers achieved by such prolific forwards.</p>
+
+<figure>
+		<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_5.jpg" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Looking at the Shot Accuracy (Shots On Target/Total Attempts) and the Shots Attempted per game, it makes sense why it is highly unlikely for a player like Modric to ever reach Ronaldo's or Messi's numbers. Unsurprisingly, Ronaldo has more attempts per game than the rest. Modric attempts less than a fifth of the numbers of shots that his former Real Madrid teammate does. The far fewer attempts, which is typical for a creative midfielder, explains why he trails the others by such a huge margin in terms of goals. Messi is the only player with a shot accuracy of over 50%, whereas Modric has the worst percentage. This can be attributed to the fact that more than half of Modric's attempts come from outside the box, whereas the others have a much higher percentage of their attempts coming from inside the box.</p>
+
+
+<figure>
+		<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_6.jpg" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+		<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_7.jpg" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>One might expect Modric with his incredible passing, link-up play, and set piece duty to comfortably led the charts for assists and chances created, but that is not the case. Messi, Griezmann, and Salah all have created more chances and have more assists in all competitions. One interesting point that is evident from the graphs is that Mbappe's performance before the World Cup wasn't anywhere close to his competitors. It is his recent burst of form, a continuation of his World Cup exploits, which has helped him gain a lot of ground in the Ballon d'Or race.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_8.jpg" alt="picture 8" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+	
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_9.jpg" alt="picture 9" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>If these aren't the categories in which Modric is producing the best figures, then one might wonder why he is the favorite to lift the Ballon d'Or. His role as a playmaker compels him to focus more on building the attack. Receiving the ball from the defense and channeling it to the forwards is something that he is really good at, and his role in the center of the pitch allows him to connect both the flanks as well. This is made evident through the passing stats. He has completed the most passes per game, with Messi close behind him. Furthermore, Modric also helps out the team defensively, which is also an important factor. For instance, looking at the interception numbers, we can see that his defensive contributions outweigh that of the rest by quite a margin.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_10.jpg" alt="picture 10" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+	
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_11.jpg" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Varane is the only defender in our list of favorites. Unlike his Real Madrid teammate Marcelo, who bursts forward down the left wing quite a bit and chips in with goals and assists, Varane sticks to his centre-back duties. Looking at the data of goals conceded and the number of clean sheets can hence provide a good understanding of actually how successful he has been during this year. Comparing his stats to that of fellow La Liga centre-backs, Atletico Madrid's Diego Godin and FC Barcelona's Samuel Umtiti can help us gauge his performance relative to his peers. Looking at the graphs, it is clear that fellow Ballon d'Or nominee Godin's performances have been much more solid defensively. Even Varane's partner in the French back line, Umtiti, who wasn't even in the 30-man shortlist, has produced better numbers. As it is evident from these stats, Varane's defensive abilities don't measure up to that of his counterparts. This does bring his candidacy for the award into question.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_12.jpg" alt="picture 12" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+	
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/messiDor/pic_13.jpg" alt="picture 13" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<h3><b>What can we expect?</b></h3>
+
+<p>The Ballon d'Or is notorious for creating controversy. Disagreements over who the winner should be always takes center stage, and this year is no different. The Ballon d'Or uses the following criteria to rank players and select the eventual winner: (1) Individual and collective performances (winners) during the year, (2) Player class (talent and fair play), and (3) Overall judgment of the player's career. While the first is something that we can quantitatively measure, the other two are rather subjective, which might make it seem to the uninitiated that the Ballon d'Or is awarded quite arbitrarily. Most of the criticism regarding the selection process has often been about favoritism of one player over the other. The second and third criterions do allow some intrinsic factors to play a role in the decision. Due to this, it is entirely possible for the numbers to tell a story completely different than what the journalists deciding the winner choose to see.</p>
+
+<p>All seven of the players that I've talked about have had an outstanding year and while it would be justifiable if any one of them received the honor, it would be a surprise for most if Modric fails to add to his collection of accolades that he has received this year. It can be argued that his stats aren't the most impressive, but a lot of what he adds to the team, whether it be in terms of skill or leadership, can't be quantified through mere numbers. For each of the last 5 years, the Ballon d'Or has gone to a member of the UEFA Champions League winning team, which also bodes well for Modric. This does show how much stress they put on "collective performances" and the fact that this was a World Cup year, it is bound to play even more of a role.</p>
+
+<p>With France winning the World Cup, Griezmann, Mbappe, and Varane have all cemented their names in the history books. However, the fact that France had a strong overall squad takes the spotlight away from their individual brilliance. They might not win the Ballon d'Or this year, but they are all young and still have a lot of years ahead of them, and it will be interesting to see how much they can improve in the seasons to come. Similarly, Salah also had a tremendous season and no one expected him to achieve the feats that he did. He could also potentially be a Ballon d'Or winner in the near future.</p>
+
+<p>While Ronaldo and Messi aren't the favorites, they do have the stats on their side. Both have won prestigious silverware and have displayed excellent form throughout the year. The last 10 years of Ballon d'Or have just been about these 2 extraordinary legends of the sport and both of them are still a force to be reckoned with. They show no signs of fading away as they continue to dominate the top-tiers of football in Europe. Despite their strong display, it is almost certain that on December 3, we will have a new heir to the football throne. This year has surely signaled a change in the footballing landscape and with new talents being discovered every single season, we might not have a duopoly, like the one we've seen for the past decade, for years to come.</p>
+
+<p>Sources: Goal.com, Squawka.com, Soccerstats.com, Footystats.org, Francefootball.fr</p>
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

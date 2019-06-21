@@ -1,0 +1,75 @@
+---
+---
+
+<!DOCTYPE html>
+{% assign author = site.data.authors[page.author] %}
+<html lang="en">
+  <head>
+    <title>{{ site.name }}</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  {% include header.html %}
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">{{ page.title }}</h2>
+            <p style="text-align:left;">{% assign authorCount = page.authors | size %}
+                  {% if authorCount == 0 %}
+                    No author
+                  {% else %}
+                    {% for author in page.authors %}
+                      {% assign person = site.data.authors[author] %}
+                      {% if forloop.first %}
+                       By <a href="{{person.web}}">{{ person.name }}</a>
+                      {% elsif forloop.last %}
+                      and <a href="{{person.web}}">{{ person.name }}</a>
+                      {% else %}
+                    , <a href="{{person.web}}">{{ person.name }}</a>
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                  • {{ page.date | date_to_string }} •
+                  {% assign words = content | number_of_words %}
+                    {% if words < 360 %}
+                      1 min read
+                    {% else %}
+                      {{ words | divided_by:200 }} min read
+                    {% endif %}
+                </p>
+            <!--
+            {% if authors %}
+            <p>By: <a href="{{author.web}}">{{author.name}}</a> | {{ page.date | date_to_string }}</p>
+            {% endif %}
+          -->
+
+            {{ content }}
+
+      <hr>
+    </div>
+      {% include subscription-form.html %}
+      <center id="footer">
+      © {{ site.time | date: '%Y' }} {{ site.author }}.
+      <a href="https://twitter.com/{{ site.twitter }}">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

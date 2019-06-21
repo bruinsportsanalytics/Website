@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">On the Road Again: The Myth of Neutrality in NHL Scheduling</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/joedunham">Joe Dunham</a>
+                      
+                    
+                  
+                  • 10 Mar 2019 •
+                  
+                    
+                      9 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling/cover.jpg" alt="cover photo"><figcaption>The Canadian Press</figcaption></center>
+</figure>
+
+<p>With the NHL season inching closer to the playoffs, the format of the regular season is perhaps not the first thought on most fans' minds. However, this year's notable lack of inter-conference parity has drawn attention from casual and knowledgeable fans alike -- the point cutoff to make the playoffs in the Eastern Conference is currently on pace to be a relatively standard 96 points; the Western Conference, on the other hand, is on pace to have an 83 point cutoff. This would easily be the lowest bar to qualify for the postseason in the salary cap era. An 83 point team under most circumstances has well below a winning record, and would be over six games back from the eighth seed in the East. These anomalies beg the question: what factors influence a team's record at the end of the season?</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling//pic_1.png" alt="picture 1" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Although skill contributes the most to a team's end-of-season record, there is always some element of luck involved. Most of the luck is "earned luck," the type of luck you see when a player hits the inside of the post on a breakaway right before the other team heads down the ice and scores. It's unlucky, but if the players aim had been one centimeter better the score would've reflected it. Another type of luck has nothing to do with the on-ice play at all. In fact, it is created before the season even starts, in the form of team schedules. There is no doubt that NHL scheduling is flawed at least slightly, but it is harder to determine the extent of which it is flawed.</p>
+
+<p>The idea that the NHL schedule is imperfect is by no means a groundbreaking claim. A perfect schedule is a rabbit hole theoretically and impossible logistically. It is, however, entirely possible to create a better schedule than the one currently in use. It should be asked, of course, what makes one schedule "better" than another? There are two important attributes: game balance and overall fairness. Ideal game balance would have both teams in each individual game having a theoretical 50% probability to win without regard to the actual skill of the teams. This sounds easy enough, but practically this is never true. The home team, on average, wins about 55% of NHL games, and on some nights one team will have played the prior evening and flew in the same day with little rest. Even with functionally identically-skilled teams, true 50% win probability does not really exist. Thus, focus must be placed on overall fairness of the schedule as well. Does it matter much that the home team wins more on average than the away team if, at the end of the season, each team has played the same number of home and away games? The goal of schedule-making should be to first maximize game balance, and what randomness is left over should be minimized by the overall fairness of the season. How well does the NHL achieve these goals?</p>
+
+<p>As mentioned above, game balance is greatly impacted by the existence of home/away games. Of course, there is no way to feasibly prevent the impact of playing on home ice, but it should be noted that not all away games are created equal. Growing up as a southern California hockey fan, I would frequently hear disdain for how the Los Angeles Kings and Anaheim Ducks were treated "unfairly" by the schedule-makers. Southern California fans dread road trips. As a general rule, the road trips that teams in the Western Conference take tend to be long and drawn out. Eastern teams, on the other hand, experience short, frequent road trips that alternate with short homestands. Analysis of this distinction between Western and Eastern teams is not necessary; it is clear that the number and length of road trips taken by different teams is decidedly unequal, as seen below.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling//pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The number of road trips a team must take in a season varies from as few as 12 to as many as 24. The schedules these teams are given before the season begins cause drastically different playing experiences. The announcement that the NHL was expanding into Seattle in upcoming years brought this issue to light. Due to its location, Seattle would clearly be expected to be placed in the NHL's Pacific division. However, the Pacific, along with the Metropolitan and the Atlantic divisions, already contains eight teams, while the Central division only has seven. To facilitate Seattle, the Arizona Coyotes were selected to be moved from the Pacific division to the Central; however, this change angered Coyotes fans, as the move would result in a significant increase of travel time over the course of a season, likely resulting in longer average road trips.</p>
+
+<p>To determine the effect of these differences, I gathered data from every regular season game in the salary cap era (that is, the 2005-06 season and beyond). The length of the road trip was introduced into the data by assigning a number to each of the 31,042 games (Note that each game was counted twice, once from the perspective of the home team and once from the away team). If the game was played at home, it was assigned a 0. The first game of each road trip was assigned a 1, the second game was assigned a 2, etc. Both the win-rate and average goal differential were determined for each group of games.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling//pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Amazingly, despite the clear difference in the experiences of playing the first and last game of two-week long road trips that cover upwards of seven different cities in two countries, the numbers do not show any sort of trend that would suggest a team is more or less likely to win any given away game. The goal differential shows similar results:</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling//pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The NHL, be it by design or by luck, has generated a system that, despite different teams playing under completely different travelling schedules, does not sacrifice overall season fairness. Fans' intuition that the southern California teams were punished by being forced to play much longer road trips than other teams was incorrect. The length of road trips does not affect team win-rate. The anger of Arizona Coyotes fans can be at least partially squelched. In similar fashion and with similar results, the length of homestands was also analyzed.</p>
+
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling//pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling//pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>While it is certainly encouraging to know that the manner in which a team's home and away games are composed in a season is not particularly important with regards to overall fairness, it is still clear in these charts that the balance of individual games is not at all perfect. It might not matter where the previous games were played, but regardless, the home team scores on average a third of a goal more than their opponents and, as a result, win a bit over 55% of their games. On top of the regular advantage stemming from just playing at home, the NHL provides minor advantages in the rules to the home team, such as the ability to make the last line change at every whistle. Despite this, the home-ice advantage has made less and less of an impact over recent years.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling//pic_7.png" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>With the importance of home games on the decline and the influence of road trip length nearly nonexistent, it seems fair to say that the NHL has produced a remarkably unbiased schedule. This would not be entirely correct. One variable that has a historically strong effect on team win-rate is the number of days a team gets to rest in between games. There is little difference between the performance of teams after one, two, or even five days of rest, but when teams have to play games with no day of rest in between, win-rate drops by about 5%. These back-to-back games are a byproduct of the logistics involved in creating 82-game seasons for 31 different teams that each have their own arenas scattered across a continent -- the arenas often having other events or even one or two other professional teams that occupy scheduling time. Though unavoidable, we would expect that the NHL would have each team play the same amount of back-to-back games. This is not the case.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling//pic_8.png" alt="picture 8" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>As seen in the chart, the number of back-to-back games a team plays in a season can vary from as little as nine to as many as sixteen. The amount of these games is also distributed rather uniformly; it is not as if there are several teams with the same number and only a few differ. Back-to-back games in a season grants some teams a points expected value which can be multiple points higher than other teams before even factoring in skill. This is a league where it is commonplace for teams to miss the playoffs by a single point -- just look at the Florida Panthers and the St. Louis Blues last season. The failure to standardize back-to-back games is much more impactful to seasons than it reasonably should be. Because they cannot be avoided, the NHL should more strictly adhere to two strategies to minimize their effect: make each team play the same number of back-to-backs, and more frequently schedule teams on back-to-backs to play each other. The first maximizes the overall fairness of the season, and the second cancels out the negative effect altogether.</p>
+
+<p>Unfortunately, while a perfectly balanced schedule is the dream of many fans and analysts alike, it is unlikely the NHL deems maximal balance a priority. The divisional realignment of the 2013-14 season highlights the blatant disregard for unbiased scheduling. Even with a theoretically perfect schedule, it is of little benefit when the top two teams in the league are forced to play each other in the second round of the playoffs. Such a scenario has become almost expected in the last few years, and with the massive discrepancy between divisions seen this year and the plans to continue the format in the upcoming expansion, future considerations toward maximum game balance from the NHL seem grim. Nevertheless, it does not take complete realignment of formats to help fix the NHL schedule, but a change of philosophy. Even if the league does not care much about the vastly different playoff pictures of the two conferences, the schedules for the 2019-20 season should be made with reduction in back-to-back games in mind. Since the data shows that a consistent travel schedule is not necessary to create a level playing field , the NHL could take more risk with the schedule by varying the length of homestands and road trips in an attempt at making the overall season more equitable and minimizing the effect of the "schedule losses" resulting from back-to-back games. But until the NHL is willing to make such changes, the old adage remains; all is fair in love and war, but, for now at least, not in hockey.</p>
+
+
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

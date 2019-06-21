@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Why Has Alexander Zverev Failed to Deliver at Grand Slams?</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/kevinhahn">Kevin Hahn</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                      
+                    
+                  
+                  • 09 May 2018 •
+                  
+                    
+                      8 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/cover.png" alt="zverev backhand"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Since 2004, the ATP “World Number 1” ranking in tennis has been controlled by four men. In fact, no one else has been able to even enter the top 2 over the last decade and a half. But all good things must come to an end. The Big Four are not getting any younger, and they cannot sustain this era of unparalleled dominance forever. So what’s next for men’s tennis? Who will take up the mantle of world number 1 after Federer, Nadal, Djokovic, and Murray can no longer play as they have? Look no further than Alexander “Sascha” Zverev Jr, the 21 year old German youngster who took the tennis world by storm this past year. Of all of the “Next Gen” players on tour, Zverev has made the most progress as he is currently ranked number 3 in the world. In 2017, at just 20 years old, he legitimized his potential for greatness when he finished the year at world number 4. Along the way, he captured 5 singles titles overall, including 2 Masters 1000 titles over Djokovic and Federer in each final, respectively.</p>
+
+<p>With a six-foot-six frame, excellent footwork and speed, fantastic mechanics, and an engaging personality, Zverev has everything it takes to be the face of the sport for many years to come. However, there is one glaring issue. Despite all of his success last year, he has been unable to make any kind of mark on the most prestigious part of the ATP world tour: Grand Slams. Having never made it past the 4th round of a major, he has given many people reason to doubt his capability of someday becoming the best player in the world. This article takes a closer look at his game and what to take away from this young man’s career thus far.</p>
+
+<h4>
+	<b>Best of 3 Dominance</b>
+</h4>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic1.png" alt="confetti"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>In best of 3 matches (all matches not including Slams and Davis Cup) since the beginning of 2017, Zverev has been on cruise control. He has played in more tournaments than any other player on tour and had incredible success. The chart below shows the performance of 32 of the top ranked players in best of 3 matches, where the size of the bubbles represents how much above 1800 their average opponent’s elo rating is:</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic2.png" alt="bubbles"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Despite playing more matches than anyone else, Zverev boasts a fantastic win percentage of 73.2%. He has also accomplished this against more difficult opposition, with his average opponent’s elo rating sitting at 2010.4 (his own elo being 2129.4 and the highest being 2380.1).</p>
+
+<p>Zverev’s speed in best of 3 matches is also noteworthy. Since the beginning of 2017, no player in the current ATP top 10 has won more games per minute than he:</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic3.png" alt="games per minute"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Not only is he winning a lot against difficult opposition, but he is also winning games at the highest rate. The combination of his stellar consistency throughout the tour and the speed with which he wins games underscores how dominant he has been in all matches outside of Grand Slams on the tour. It is the reason why he has reached more rounds of 32, rounds of 16, quarter-finals, and semifinals than any other man since the beginning of 2017.</p>
+
+<h4>
+	<b>Grand Slam Disappointment</b>
+</h4>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic4.png" alt="break that racket"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>It’s not as if Zverev’s game falls off of a cliff the second he enters a Grand Slam; it’s just that he has never reached the quarterfinal of a Grand Slam, let alone won one. He has posted very similar in-game numbers in his Grand Slam matches as he has during the rest of the tour. There must be a reason, then, for his disproportionate lack of success in Slams. There are a few important differences in the spider chart below that can explain this:</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic5.png" alt="spider chart"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>In Grand Slams, Zverev sees roughly 4 more break point opportunities than in his best of 3 set matches. Moreover, he saves 7% more break points faced in Slams at a clutch 69.7% clip. If he holds his serve this well and has more break point chances, then why is he consistently coming up short in these Grand Slam matches? One possible factor is a nearly 9% decrease in break points won, or in other words, a 9% increase in break point opportunities squandered. Fewer break point conversions entails much tighter sets and possibly longer matches. Coupled with a 5% decrease in tiebreaks won, Zverev’s wasted break point opportunities have proven to be costly. Consequently, he finds himself in more high-pressure situations with even smaller margins of error because losing a tiebreaker, which can literally come down to just one bad service point, can easily change the momentum of an entire match and be extremely demoralizing for the player who loses it.</p>
+
+<p>Another interesting indicator of his dip in form in Grand Slams is seen through 2 key ratios:</p>
+<ol>
+	<li>Points Dominance (% of return points won divided by % of service points lost)</li>
+	<li>Break Points Ratio (% of break points converted divided by % of faced break points lost)</li>
+</ol>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic6.png" alt="key ratios"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>These 2 ratios progressively decline and dip below tour average (1.00) as he advances to deeper stages of slams. However, in best-of-3 contests, his ratios stabilize and still remain well above the tour average as he goes further into the tournaments. Though one may argue that the quality of opposition likely increases in the later phases of a tournament, Zverev’s freefall in Grand Slams detracts from his consistency in all rounds of best-of-3 tournaments and accentuates his shortcomings on tennis’ brightest stage.</p>
+
+<h4>
+	<b>Time is the Enemy...</b>
+</h4>
+
+<p>It’s clear that Zverev’s numbers drop in Grand Slams enough to derail his prospects of groundbreaking success so far in any of the four majors. But why? Our guess is fatigue and a lack of mental and physical endurance. The most obvious difference between a 3 set match and a 5 set match is the most important one for Zverev: match time. In 3 set matches, he spends 96 minutes on the court in wins and 99 in losses. Win or lose, he is on the court for a little more than an hour and a half. In Grand Slams, however, he spends 160 minutes on the court in wins and 202 minutes in losses. He tends to lose matches when they drag on past 3 hours. A lack of ability to perform well in very long matches strongly suggests a lack of the physical conditioning that is required to succeed at this level.</p>
+
+<p>More intriguingly, when a Grand Slam match is tied 1-1 in the set score, it essentially becomes a best of 3 match. Considering the fact that Zverev is a phenomenal 3 set player, he should be able to win most of his Slam matches when they go 1-1. But he doesn’t. Of his six Slam matches that have gone 1-1 through the first two sets, he has won a grand total of one. The only difference between this type of 3 set match and a normal 3 set match is the extra hour or so that Zverev has spent on the court. A match in a grand slam is a marathon and players need to manage their bodies to go the distance if necessary. Zverev does not yet have the ability to do that.</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic7.png" alt="mad zverev"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Taking all of this into consideration, it’s not just a physical issue with Zverev. Here are the scores of the final set in Grand Slam matches that Zverev has lost:</p>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic8.png" alt="table"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>Except for his 4 set loss to Coric last year, he’s gotten annihilated in the final set of matches that he loses. This is demonstrative not only of exhaustion physically but also of a lack of mental toughness. It appears as though Zverev loses interest towards the later sets of matches that are not quite going his way and therefore ends up getting demolished in the final sets of losing efforts. It’s a combination of relatively poor endurance and a lack of mental discipline and concentration that cause his Grand Slam numbers to drop, denying him the opportunity to reach the second week of a Major.</p>
+
+<h4>
+	<b>But Time is Also a Friend</b>
+</h4>
+
+<figure>
+    <center><img class="materialboxed responsive-img" src ="/assets/zverev/pic9.png" alt="fist pump"></center>
+    <figcaption></figcaption>
+</figure>
+
+<p>It is important to note through all of this that Alexander Zverev is still 21 years old. Although Grand Slam success continues to elude him, he is still the future of men’s tennis and is spearheading the Next Gen youth movement. The tour has not seen a player as young as Zverev dominate the way he has since the Big Four made their mark. At the moment, he may lack the necessary stamina for five set matches, but with more experience and gameplay, he can only become better. To put things into perspective, at 21 years of age, Rafael Nadal and Novak Djokovic certainly weren’t the unbreakable five-set marathoners that they are now. Roger Federer didn’t even crack the top 3 until a month before his 22nd birthday. Andy Murray didn’t win his first Grand Slam until he was 25. Time is on Zverev’s side.</p>
+
+<p>Moreover, there are virtually no weaknesses in Zverev’s game technique-wise. The dual-threat of the speed with which he wins games and covers the court for someone of his size is just one of many weapons in his burgeoning arsenal. His blistering groundstrokes are enough to blast his opponent off the court. His agile, towering 6’6” frame allows for impeccable precision of serve placement. One can only expect so much early on from a generational talent like Zverev, who has certainly not disappointed through his age-21 season so far, relative to other highly touted youngsters like Nick Kyrgios and Hyeon Chung. Zverev himself has admitted to suffering from mental issues during decisive moments at Slams, which gives us additional context for his fifth set meltdowns. He has all the right tools but simply doesn’t know how to put them altogether just yet. With a great ATP ranking comes great expectations, and it is up to Zverev to make the necessary adjustments to prove his doubters wrong.</p>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>

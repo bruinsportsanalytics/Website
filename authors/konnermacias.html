@@ -1,0 +1,83 @@
+---
+author: konner_macias
+layout: default
+permalink: /konnermacias
+---
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <meta content="description" name="">
+  <link rel="stylesheet" href="/css/blog.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+  <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+<style>
+p.ex1 {
+	padding-left: 50px;
+}
+
+div.ex1 {
+	padding-top: 50px;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 5px;
+}
+</style>
+</head>
+{% assign author = site.data.authors[page.author] %}
+
+<div class="group">
+	<div class="text">
+		<h3 style="font-family: Roboto slab, serif; color: #ffab40;">
+			{{ author.name }}
+		</h3>
+	</div>
+
+	<div class="prof-pic">
+		<img src="../assets/konner.jpg" alt=graph  height="65%" width="65%">
+	</div>
+</div>
+
+
+
+<div class="ex1">
+	<main>
+		<section class="module_content">
+			<b><h5 style="font-family: Roboto slab, serif;">About: </h5></b>
+			<p class="module-text" style="font-family: Roboto slab, serif;">
+			{{ author.bio }}
+			</p>
+		</section>
+	</main>
+</div>
+
+{% assign author = site.posts | where: 'authors', 'konner_macias' %} 
+
+<div class="ex1">
+	<main>
+		<section class="module_content">
+			<b><h5 style="font-family: Roboto slab, serif;">Articles: </h5></b>
+			{% for post in author %}
+			<h2 style="font-family: Roboto slab, serif;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+            <h6 style="font-family: Roboto slab, serif;">{{ post.date | date_to_string }} • {% assign words = post.content | number_of_words %}
+                    {% if words < 360 %}
+                      1 min read
+                    {% else %}
+                      {{ words | divided_by:200 }} min read
+                    {% endif %}</h6>
+            {{ post.excerpt }}
+			{% endfor %}
+		</section>
+	</main>
+</div>
+
+
+
+
