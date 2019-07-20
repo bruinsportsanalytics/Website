@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--
+   <div class="navbar-fixed">
+        <nav>
+          <div class="container-fluid">
+          <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+          </div>
+          <ul id="days" class="right hide-on-med-and-down">
+              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
+              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
+              <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
+                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
+                <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a href="../../officers" 
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Officers
+                </a></li>
+                  <li><a href="../../speakers"
+                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
+                  Speakers
+                </a></li>
+                </ul>
+              </li>
+                
+          </ul>
+      </div>
+    </div>
+    </nav>
+  -->
+  <!--
+    style="font-family: Roboto slab, serif;"
+    
+    <nav id="navbar" class="collapse navbar-collapse">
+      <div class="leftbox">
+            <a href="../../" class="left navlink">
+              <img id="logo" src="../../assets/logo1.png" /> 
+              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              Bruin Sports Analytics
+            </span>
+            </a>
+        </div>
+
+           <ul class="right nav navbar-nav">
+                
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/blog/index.html">Blog</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="">
+                            <a href="/research/index.html">Research</a>
+                        </li>
+                    
+                
+                    
+                    
+                    
+                        <li class="dropdown ">
+                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li>
+                                            <a href="/officers/index.html">Officers</a>
+                                        </li>
+                                    
+                                
+                                    
+                                        <li role="separator" class="divider"></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a href="/speakers/index.html">Speakers</a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+    </nav>
+  -->
+
+</header>
+
+<script>
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">How to Maximize Your Investment in Top Sports Stocks</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/breannaramos">Breanna Ramos</a>
+                      
+                    
+                  
+                  • 19 Jul 2019 •
+                  
+                    
+                      6 min read
+                    
+                </p>
+            <!--
+            
+          -->
+
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sportsstock/pic_1.jpg" alt="cover photo"><figcaption>Under Armour</figcaption></center>
+</figure>
+
+<p>Earlier this year, Nike became the official uniform and footwear supplier of Major League Baseball (MLB). This means that Nike now dominates three of the four major professional sports leagues within the U.S.: MLB, NBA, and NFL. When I learned that Nike had secured its third major deal, I was curious about its recent stock performance. Using portfolio analysis and optimization techniques, my goal was to create an efficient sports stocks portfolio. For those who are unfamiliar with portfolio analysis, a portfolio is essentially a group of assets. The assets, or stocks, that I included in my analysis were: Nike (NKE), Under Armour (UAA), Disney (DIS), Adidas (ADDYY), and Foot Locker (FL).  Identifying the most efficient portfolio is an optimization problem, and there are two main objectives involved. The first is to select a portfolio that yields high returns, whereas the second is to assure that these returns are stable. For this reason, my goal is to determine which combination of sports assets will yield minimum risk and high expected return. The data is composed of monthly adjusted close prices, which are adjusted for dividends paid or stock splits. It ranges from May 2013 to May 2019.</p>
+
+<p>Even though Nike secured its NFL deal in April of 2012, I chose to begin with 2013 data because another rather interesting deal occurred this year: Steph Curry signed a $4 million per year deal with Under Armour. Compared to other major shoe deals, such as Lebron James's $90 million Nike deal when he was first drafted from high school, Curry's contract seems highly insignificant. When Nike first attempted to <a href="https://www.google.com/url?q=https://www.espn.com/nba/story/_/id/15047018/how-nike-lost-stephen-curry-armour&sa=D&ust=1563565539073000">extend their initial endorsement deal</a> with Curry, they not only mispronounced his name during the pitch, but also forgot to remove Kevin Durant's name from a pivotal slide. The Swoosh would not back down from its $2.5 million deal, and refused to match Under Armour's offer. For this reason, Steph Curry decided to partner with Under Armour, and it has proven to be vastly successful. In fact, the Curry One grossed $153 million within its first three months on the market. I can imagine that after three NBA championships, two NBA MVP awards, and <a href="https://www.google.com/url?q=https://www.businessinsider.com/steph-curry-worth-14-billion-to-under-armour-2016-3&sa=D&ust=1563565539074000">being worth approximately $14 billion to Under Armour</a>, Nike must have some major regrets.</p>
+
+<p>Despite the missed opportunity, Nike's stocks are still doing well. This comes as no surprise considering that Nike not only supplies the MLB, NBA, and NFL uniforms, but also dominantes the sports market due to major endorsements from Lebron James, Kevin Durant, and Michael Jordan. In 2015, James extended his initial $90 million contract and the deal could be worth approximately $1 billion in the near future. Durant also secured a ten year extension to his initial contract, which was a seven year, $60 million deal, and the new contract could be worth a whopping $300 million. Then, there is Michael Jordan who is in a league of his own. According to <a href="https://www.google.com/url?q=https://www.businessinsider.com/how-michael-jordan-spends-his-money-2015-3%23nike-founder-phil-knight-called-signing-jordan-the-best-decision-he-ever-made-nabbing-the-nba-rookie-for-250000-a-year-in-1984-11&sa=D&ust=1563565539075000">Business Insider</a>, the Jordan brand generates more than $3 billion per year. Of this net revenue, Jordan pockets approximately $110 million. Evidently, the Swoosh and its ambassadors remain vastly successful. In the graph directly below, the Nike stock is the optimal pick. Although Adidas has the highest expected value, the Nike stock has both low risk and high returns. Within the last six years, the Foot Locker sports stock actually demonstrates the worst performance. It has the highest risk, and the lowest expected value of the five sports stocks. In fact, Foot Locker's earnings have recently declined by approximately 20% since the last official report.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sportsstock/pic_2.jpg" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Although Nike's stock performance has been impressive over the past six years, I would strongly advise against investing all of your money in the Swoosh. When Zion Willamson's Nike shoe tore apart within the first minute of the Duke v. North Carolina match and resulted in a knee-sprain injury, the Nike stock plummeted by approximately $1.1 billion. Due to unpredictable incidents and stock market variability, it is vital that investors create a strategically diversified portfolio.</p>
+
+<p>The Portfolio Possibilities Curve, which is located directly below, is the first step towards identifying an efficient portfolio consisting of the top five sports stocks. An investor could hypothetically invest anywhere along the curve because it is constructed using several different combinations of the five sports stocks. The graph also exemplifies the performance of the five sports stocks, the minimum risk portfolio, and the efficient frontier. The five points furthest to the right are the sports stocks, whereas the triangular point is the minimum risk portfolio. The purpose of the minimum risk portfolio is to determine which combination of stocks yields the lowest risk. In other words, let's say that you have $1,000,000 to invest in the five sports stocks. The minimum risk portfolio divides your $1,000,000 investment into each respective stock at the lowest possible risk. The efficient frontier begins at the minimum risk portfolio and extends to the maximum expected return. It is the upper half, or concave portion, of the portfolio possibilities curve. As you travel along the efficient frontier, both the expected return and risk increase. Because the risk increases significantly, it might be best to play it safe and invest in the minimum risk portfolio.</p>
+
+<p>Ultimately, however, the decision lies in the hands of the investor. Investing further along the efficient frontier may result in a higher expected return. For instance, a risk of 0.10 is projected to result in an expected return of approximately 0.25, which is greater than the minimum risk portfolio's return. However, the associated risk severely increases. When seeking the optimal portfolio, it is important that investors maintain low risk in order to maximize their investment.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sportsstock/pic_3.jpg" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>Rather than investing in the minimum risk portfolio, there is also the possibility of investing in the portfolio that is tangent to the line on the efficient frontier. In the graph below, I have created several portfolios using various combinations of the five sports stocks. These portfolios are indicated by the black points. The large green points are the five sports stocks, and the large blue point is the tangent point. It is advantageous for an investor to invest his money in the point that is tangent to the efficient frontier because it signifies slightly higher risk for an even greater expected return. The tangent point divides the investment as follows: 22.04% is invested into Disney, 5.29% into Under Armour, 45.99% into Nike, 29.81% into Adidas, and -3.14% into Foot Locker. The model that my data is based on allows for riskless lending and borrowing, which is why my investment into Foot Locker is negative. In other words, 3.14% is borrowed from the Foot Locker stock.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/sportsstock/pic_4.jpg" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+
+<p>The likelihood of receiving a $90 million endorsement from powerhouses like Nike or Under Armour is slim. Nevertheless, using portfolio analysis, the average person can create a strong portfolio and obtain a solid return. In regards to the five sports stocks, I would argue that the most efficient portfolio lies tangent to the efficient frontier. Investing the majority of your money into the Swoosh's stock appears to be the most efficient method.</p>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>
