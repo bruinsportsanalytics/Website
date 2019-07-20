@@ -19,7 +19,41 @@
 
   </head>
   
-  <header>
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
@@ -38,6 +72,7 @@
 
         <ul id="days" class="right hide-on-med-and-down">
           <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
           <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
           <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
           <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
@@ -49,6 +84,7 @@
         <ul class="side-nav" id="mobile-demo">
           <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
           <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
           <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
           <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
           <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
@@ -57,113 +93,34 @@
       </div>
     </nav>
   </div>
-  <!--
-   <div class="navbar-fixed">
-        <nav>
-          <div class="container-fluid">
-          <div class="nav-wrapper">
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <div class="leftbox">
-            <a href="../../" class="left navlink">
-              <img id="logo" src="../../assets/logo1.png" /> 
-              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
-              Bruin Sports Analytics
-            </span>
-            </a>
-          </div>
-          <ul id="days" class="right hide-on-med-and-down">
-              <li id="Blog"><a class="navlink" href="../../blog" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Blog</a></li>
-              <li id="Research"><a class="navlink" href="../../research" style="font-family: 'Roboto Slab', serif;font-size: 15px;">Research</a></li>
-              <li class="dropdown">
-
-                <a class="dropdown-toggle" data-toggle="dropdown" href="../../about"
-                style="font-family: 'Roboto Slab', serif;font-size: 15px;">About
-                <span class="caret"></span>
-                </a>
-
-                <ul class="dropdown-menu">
-                  <li><a href="../../officers" 
-                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
-                  Officers
-                </a></li>
-                  <li><a href="../../speakers"
-                    style="font-family: 'Roboto Slab', serif;font-size: 15px;">
-                  Speakers
-                </a></li>
-                </ul>
-              </li>
-                
-          </ul>
-      </div>
-    </div>
-    </nav>
-  -->
-  <!--
-    style="font-family: Roboto slab, serif;"
-    
-    <nav id="navbar" class="collapse navbar-collapse">
-      <div class="leftbox">
-            <a href="../../" class="left navlink">
-              <img id="logo" src="../../assets/logo1.png" /> 
-              <span id="homemenuitem" style="font-family: Roboto slab, serif;">
-              Bruin Sports Analytics
-            </span>
-            </a>
-        </div>
-
-           <ul class="right nav navbar-nav">
-                
-                
-                    
-                    
-                    
-                        <li class="">
-                            <a href="/blog/index.html">Blog</a>
-                        </li>
-                    
-                
-                    
-                    
-                    
-                        <li class="">
-                            <a href="/research/index.html">Research</a>
-                        </li>
-                    
-                
-                    
-                    
-                    
-                        <li class="dropdown ">
-                            <a href="/about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                
-                                    
-                                        <li>
-                                            <a href="/officers/index.html">Officers</a>
-                                        </li>
-                                    
-                                
-                                    
-                                        <li role="separator" class="divider"></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a href="/speakers/index.html">Speakers</a>
-                                        </li>
-                                    
-                                
-                            </ul>
-                        </li>
-                    
-                
-            </ul>
-    </nav>
-  -->
-
 </header>
 
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
 <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
   $(document).ready(function () {
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
