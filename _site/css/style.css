@@ -17,16 +17,42 @@ body {
 
 .text {
   padding-top: 17.5%;
-  padding-left: 25vw;
+  padding-left: 20vw;
   float: left;
   width: 60%;
 }
 
-.prof-pic {
+.profile {
+  padding-left: 20%;
+  padding-right: 20%;
   padding-top: 10%;
-  float: right;
-  width: 40%;
 }
+
+.prof-pic {
+  padding-top: 5%;
+  width: 60%;
+}
+
+.ppic {
+  display: block;
+  max-width: 240px;
+  max-height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.prof-name {
+  font-family: Roboto Slab, serif;
+  color: #ffab40;
+}
+
+.prof-bio {
+  font-family: Roboto Slab, serif;
+  padding-left: 240px;
+}
+
 @media (max-width: 625px) {
   .text, .prof-pic {
     float: none;

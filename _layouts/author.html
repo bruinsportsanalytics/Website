@@ -38,19 +38,26 @@
 
     {% if author.image %}
     <div class="group">
-        <div class="text">
-            <h3 style="font-family: Roboto slab, serif; color: #ffab40;">
-                {{ author.name }}
-            </h3>
-        </div>
+            <center>
+                    <div class="prof-pic">
+                        <img src="{{author.image}}" alt=graph style="max-width: 450px;max-height:400px">
+                    </div>
+        </center>
+        <center>
+            <div class="prof-name">
+                <h3 style="font-family: Roboto slab, serif; color: #ffab40;">
+                    {{ author.name }}
+                </h3>
+            </div>
+        </center>
+    
+    
+    
+</div>
 
-        <div class="prof-pic">
-            <img src="{{author.image}}" alt=graph height="65%" width="65%">
-        </div>
-    </div>
     {% else %}
     <center>
-        <h4 style="font-family: Roboto slab, serif;">{{ author.name }}</h4>
+        <h4 style="font-family: Roboto slab, serif;color: #ffab40;">{{ author.name }}</h4>
     </center>
     {% endif %}
 

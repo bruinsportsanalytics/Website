@@ -12,12 +12,13 @@ alex_veroulis:
     world one day.
   name: Alex Veroulis
   web: http://www.bruinsportsanalytics.com/alexveroulis
+  image: ../assets/members_1819/alexveroulis.jpg
 anirudh_mani:
-  bio: ''
+  bio: null
   name: Anirudh Mani
   web: http://www.bruinsportsanalytics.com/anirudhmani
 arman_abrishamchian:
-  bio: ''
+  bio: null
   name: Arman Abrishamchian
   web: http://www.bruinsportsanalytics.com/armanabrishamchian
 ben_messinger:
@@ -28,40 +29,43 @@ ben_messinger:
     passionate about his basketball-centered nonprofit, Hoops with Heart.
   name: Ben Messinger
   web: http://www.bruinsportsanalytics.com/benmessinger
+  image: ../assets/members/benM.jpg
 borna_nazari:
-  bio: ''
+  bio: null
   name: Borna Nazari
   web: http://www.bruinsportsanalytics.com/bornanazari
 breanna_ramos:
-  bio: ''
+  bio: null
   name: Breanna Ramos
   web: http://www.bruinsportsanalytics.com/breannaramos
+  image: ../assets/members/breannaR.jpg
 chad_shimozaki:
-  bio: ''
+  bio: null
   name: Chad Shimozaki
   web: http://www.bruinsportsanalytics.com/chadshimozaki
+  image: ../assets/members_1819/chadshimozaki.jpg
 don_vu:
   bio: null
   name: Don Vu
   web: http://www.bruinsportsanalytics.com/donvu
 faraz_murshed:
-  bio: ''
+  bio: null
   name: Faraz Murshed
   web: http://www.bruinsportsanalytics.com/farazmurshed
 gautham_pasupathy:
-  bio: ''
+  bio: null
   name: Gautham Pasupathy
   web: http://www.bruinsportsanalytics.com/gauthampasupathy
 haley_rao:
-  bio: ''
+  bio: null
   name: Haley Rao
   web: http://www.bruinsportsanalytics.com/haleyrao
 jack_ma:
-  bio: ''
+  bio: null
   name: Jack Ma
   web: http://www.bruinsportsanalytics.com/jackma
 joe_dunham:
-  bio: ''
+  bio: null
   name: Joe Dunham
   web: http://www.bruinsportsanalytics.com/joedunham
 joey_maurer:
@@ -74,8 +78,9 @@ joey_maurer:
     a school like UCLA that is a powerhouse in academics and athletics.
   name: Joey Maurer
   web: http://www.bruinsportsanalytics.com/joeymaurer
+  image: ../assets/members_1819/josephmaurer.jpg
 justin_yee:
-  bio: ''
+  bio: null
   name: Justin Yee
   web: http://www.bruinsportsanalytics.com/justinyee
 kathir_ilango:
@@ -85,6 +90,7 @@ kathir_ilango:
     and discuss are football, basketball, tennis, boxing, and soccer.
   name: Kathir Ilango
   web: http://www.bruinsportsanalytics.com/kathirilango
+  image: ../assets/members_1819/kathirIlango.jpg
 kevin_hahn:
   bio: My name is Kevin Hahn, and I'm a first-year Math/Econ major and Statistics
     minor. My favorite sports are baseball, basketball, and tennis. Ideally, my dream
@@ -92,6 +98,7 @@ kevin_hahn:
     ultimately helping the team bring a World Series championship back to LA.
   name: Kevin Hahn
   web: http://www.bruinsportsanalytics.com/kevinhahn
+  image: ../assets/members_1819/kevinhahn.JPG
 konner_macias:
   bio: "I\u2019m a fourth year Mathematics of Computation major and Statistics minor\
     \ at UCLA, aiming to become a software engineer. I\u2019m from the Sacramento\
@@ -106,13 +113,15 @@ konner_macias:
   web: http://www.bruinsportsanalytics.com/konnermacias
   image: ../assets/konner.jpg
 kristen_ahmann:
-  bio: ''
+  bio: null
   name: Kristen Ahmann
   web: http://www.bruinsportsanalytics.com/kristenahmann
+  image: ../assets/members_1819/kristenahmann.jpg
 max_blane:
-  bio: ''
+  bio: null
   name: Max Blane
   web: http://www.bruinsportsanalytics.com/maxblane
+  image: ../assets/members_1819/maxblane.jpg
 nikhil_sharma:
   bio: "I\u2019m a third-year Statistics major from Cherry Hill, New Jersey. My favorite\
     \ sport is basketball, as I\u2019ve been obsessively following the NBA since I\
@@ -124,6 +133,7 @@ nikhil_sharma:
     \ include Pusha T, ScHoolboy Q, Danny Brown, and Denzel Curry."
   name: Nikhil Sharma
   web: http://www.bruinsportsanalytics.com/nikhilsharma
+  image: ../assets/members/nikhilS.jpg
 qijing_yap:
   bio: null
   name: Qi Jing Yap
@@ -135,6 +145,7 @@ ronaq_virdi:
     \ team."
   name: Ronaq Virdi
   web: http://www.bruinsportsanalytics.com/ronaqvirdi
+  image: ../assets/members/ronaqV.jpg
 salil_akundi:
   bio: I'm Salil and I'm a first year Computer Science and Engineering major. In addition
     I'm a pianist and would like to pursue my interest in classical music at a professional
@@ -142,6 +153,7 @@ salil_akundi:
     games tactically as when Liverpool FC win!
   name: Salil Akundi
   web: http://www.bruinsportsanalytics.com/salilakundi
+  image: ../assets/members/salilA.JPG
 stephen_chen:
   bio: null
   name: Stephen Chen
@@ -155,12 +167,15 @@ subash_raman:
     \ analyze any topic that I am interested in."
   name: Subash Sundar Raman
   web: http://www.bruinsportsanalytics.com/subashraman
+  image: ../assets/members/subashR.jpg
 vedant_sahu:
-  bio: ''
+  bio: null
   name: Vedant Sahu
   web: http://www.bruinsportsanalytics.com/vedantsahu
+  image: ../assets/members_1819/vedantsahu.jpg
 zane_winston:
   bio: Zane is a first year-business economics student at UCLA. He has been interested
     in sports since a young age, and loves writing about basketball.
   name: Zane Winston
   web: http://www.bruinsportsanalytics.com/zanewinston
+  image: ../assets/members/zaneW.jpg
