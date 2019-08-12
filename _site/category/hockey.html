@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+
+  </head>
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="body">
+
+      <head>
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+    <link rel="stylesheet" href="/css/blog.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <div id="bloghome">
+                <section class="module content">
+                    <div id="consult" style="width: 50%; float: left;font-family: Roboto slab, serif;">Official
+                        Consulting Partners of <b>USA Hockey</b><img src="../assets/usa_hockey.png" style="max-width: 10%; max-height: 20%;"></div>
+                    <div id="github-link" style="width: 32%; float: right;font-family: Roboto slab, serif;">
+                        <a href="https://github.com/bruinsportsanalytics/Resource-Folder">Our Resource Folder on GitHub</a><br>
+                    </div>
+                    <br><br>
+                    <figure>
+                        <center><img src="../assets/bsa_full_1819.png" alt="BSA Logo" style="max-width: 45%;">
+                            <figcaption></figcaption>
+                        </center>
+                    </figure>
+
+                    <div id="selector">
+                        <form name="jump">
+                            <center style="font-family: Roboto slab, serif;">
+                                Select A Category:
+                                <select id="categorySelect" onchange="gotoPage(this)">
+                                    <option value="http://localhost:4000">All</option>
+                                    <option value="../../category/basketball.html">Basketball</option>
+                                    <option value="../../category/football.html">Football</option>
+                                    <option value="../../category/baseball.html">Baseball</option>
+                                    <option value="../../category/hockey.html" selected>Hockey</option>
+                                    <option value="../../category/tennis.html">Tennis</option>
+                                    <option value="../../category/soccer.html">Soccer</option>
+                                    <option value="../../category/fantasy.html">Fantasy</option>
+                                    <option value="../../category/other.html">Other</option>
+                                </select>
+                            </center>
+                        </form>
+                    </div>
+
+                    <div id="posts">
+                        
+                        <h2><a href="/KnightsvsSharksBrainstorm">How the Sharks’ Versatility Led them to the Conference Finals</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/haleyrao">Haley Rao</a>
+                            
+                            
+                            
+                            
+                            , <a href="http://www.bruinsportsanalytics.com/kristenahmann">Kristen Ahmann</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/joedunham">Joe Dunham</a>
+                            
+                            
+                            
+                            • 29 May 2019 •
+                            
+                             23 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/sharks_versatility/pic_1.jpg" alt="cover photo"></center><p>One of the thrills of watching playoff hockey is the emotional aspect, following a team through several games against the same opponent with everything on the line, and an especially close series makes the thrill even higher. The San Jose Sharks playing the Vegas Golden Knights in the first series of the playoffs was notable for its excitement, intensity, and controversy. The series was highly anticipated as a rematch of the previous year's second round, where the Knights won in six games. This time around, the Sharks were a much improved team, adding key players Erik Karlsson and Gustav Nyquist, while Vegas had more-or-less kept the same lineup as the previous year's Stanley Cup Final-bound team, with the notable addition of top line forward Mark Stone. The Golden Knights took early control of the series, finishing Game 4 with a 3-1 lead in games won. The Sharks managed to battle back, scoring a miraculous overtime goal in Game 6 to force a deciding game in San Jose. A close, hard-fought series was expected on the outset, but the conclusion shocked everyone.</p>
+                    </div>
+                    
+                        <h2><a href="/nhl_scheduling">On the Road Again: The Myth of Neutrality in NHL Scheduling</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/joedunham">Joe Dunham</a>
+                            
+                            
+                            
+                            • 10 Mar 2019 •
+                            
+                             9 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/nhl_scheduling/cover.jpg" alt="cover photo"></center><p>With the NHL season inching closer to the playoffs, the format of the regular season is perhaps not the first thought on most fans' minds. However, this year's notable lack of inter-conference parity has drawn attention from casual and knowledgeable fans alike -- the point cutoff to make the playoffs in the Eastern Conference is currently on pace to be a relatively standard 96 points; the Western Conference, on the other hand, is on pace to have an 83 point cutoff. This would easily be the lowest bar to qualify for the postseason in the salary cap era. An 83 point team under most circumstances has well below a winning record, and would be over six games back from the eighth seed in the East. These anomalies beg the question&#58; what factors influence a team's record at the end of the season?</p>
+                    </div>
+                    
+                        <h2><a href="/NHLContracts">Can the Toronto Maple Leafs Pay Up?</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/joedunham">Joe Dunham</a>
+                            
+                            
+                            
+                            • 28 Nov 2018 •
+                            
+                             9 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/nhlCon/pic_1.jpeg" alt="cover photo"></center><p>It's no secret that William Nylander has held out on signing a contract with the Toronto Maple Leafs. As a restricted free agent about to enter into his first non-entry level NHL contract, Nylander is very limited in his options, sign with the Leafs, or don't play at all. Players rarely choose not to play at all, with many top six players opting for bridge deals - three-to-four year contracts typically valued far less than they wish in exchange for an opportunity to prove themselves more capable of a future contract more extensive in both term and salary. It is also common for players to begin negotiations asking for high pay, only to settle for what they were actually hoping for. What makes Nylander's situation unique isn't that he reportedly asked for upward of $8 million per year (money typically reserved for roughly top two talent on a team), but that he has not since backed down and signed for less. Against everyone's expectations, it is now late November, the Leafs have played over a quarter of the season, and they are still without the 22 year old Swede.</p>
+                    </div>
+                    
+                        <h2><a href="/vegasGK">Vegas Golden Knights: The Most Successful Expansion Team in NHL History</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                            
+                            
+                            
+                            • 08 Jun 2018 •
+                            
+                             9 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/vegas/cover.jpg" alt="golden knights"></center><figcaption>The Associated Press</figcaption><p>This wasn’t supposed to happen. The first major professional sports team to ever grace the city of Las Vegas wasn’t supposed to be this good. Hockey wasn’t meant to be played in the desert. A team full of disposable parts and cast-offs wasn’t supposed to mesh this well together. It must be a fluke.</p>
+                    </div>
+                    
+                        <h2><a href="/joeThornton">Joe Thornton: The Bearded Legend</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/joeymaurer">Joey Maurer</a>
+                            
+                            
+                            
+                            • 27 Feb 2018 •
+                            
+                             11 min read </h6> <div style="font-family:Lora"><img class="materialboxed responsive-img" src ="/assets/thornton/cover_1.jpg" alt="Bearded Hockey Player"></center><p>Throughout his 20 years in the National Hockey League (NHL), Joe Thornton has proven time and time again that he is one of hockey’s best players. Drafted first overall in the 1997 NHL Draft by the Boston Bruins, Thornton was highly-touted, but nobody thought he would turn out to be such a legendary player. With a large frame and an insane ability to distribute the puck to his teammates, he has been and continues to be remarkably consistent. As a result, he has won numerous awards, including the Hart Memorial Trophy (League MVP), the Art Ross Trophy (Most Points), 6 All-Star Team nominations, and a gold medal at the 2010 Olympics with Team Canada.</p>
+                    </div>
+                    
+
+
+                    <center>
+                        <div class="pagination">
+                            
+
+                            <span class="page_number">Page:  of </span>
+
+                            
+                        </div>
+                    </center>
+                    </ul>
+            </div>
+            </section>
+    </div>
+    </main>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    function gotoPage(select) {
+        console.log(select.value);
+        window.location = select.value;
+    }
+</script>
+
+      <hr>
+      <!---
+      <center>
+      <div class="newsletter-container">
+            <form action="https://getsimpleform.com/messages?form_api_token=cdd07db5b90f967b9271a5c7ef3fd573" method="post">
+              <ul>
+                <input type="email" placeholder="Email:" id="email" style="font-family: Roboto Slab, serif;"/>
+                <input type="submit" value="Subscribe" id="submit" style="font-family: Roboto Slab, serif;" />
+              </ul>
+            </form>
+          </div>
+        </center>
+      -->
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center>
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+    </div>
+  </body>
+</html>

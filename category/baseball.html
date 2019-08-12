@@ -1,0 +1,114 @@
+---
+layout: default
+title: Home
+---
+
+<head>
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+    <link rel="stylesheet" href="/css/blog.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <div id="bloghome">
+                <section class="module content">
+                    <div id="consult" style="width: 50%; float: left;font-family: Roboto slab, serif;">Official
+                        Consulting Partners of <b>USA Hockey</b><img src="../assets/usa_hockey.png" style="max-width: 10%; max-height: 20%;"></div>
+                    <div id="github-link" style="width: 32%; float: right;font-family: Roboto slab, serif;">
+                        <a href="https://github.com/bruinsportsanalytics/Resource-Folder">Our Resource Folder on GitHub</a><br>
+                    </div>
+                    <br><br>
+                    <figure>
+                        <center><img src="../assets/bsa_full_1819.png" alt="BSA Logo" style="max-width: 45%;">
+                            <figcaption></figcaption>
+                        </center>
+                    </figure>
+
+                    <div id="selector">
+                        <form name="jump">
+                            <center style="font-family: Roboto slab, serif;">
+                                Select A Category:
+                                <select id="categorySelect" onchange="gotoPage(this)">
+                                    <option value="{{site.url}}">All</option>
+                                    <option value="../../category/basketball.html">Basketball</option>
+                                    <option value="../../category/football.html">Football</option>
+                                    <option value="../../category/baseball.html" selected>Baseball</option>
+                                    <option value="../../category/hockey.html">Hockey</option>
+                                    <option value="../../category/tennis.html">Tennis</option>
+                                    <option value="../../category/soccer.html">Soccer</option>
+                                    <option value="../../category/fantasy.html">Fantasy</option>
+                                    <option value="../../category/other.html">Other</option>
+                                </select>
+                            </center>
+                        </form>
+                    </div>
+
+                    <div id="posts">
+                        {% for post in site.categories['baseball'] %}
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">{% assign authorCount =
+                            post.authors | size %}
+                            {% if authorCount == 0 %}
+                            No author
+                            {% else %}
+                            {% for author in post.authors %}
+                            {% assign person = site.data.authors[author] %}
+                            {% if forloop.first %}
+                            By <a href="{{person.web}}">{{ person.name }}</a>
+                            {% elsif forloop.last %}
+                            and <a href="{{person.web}}">{{ person.name }}</a>
+                            {% else %}
+                            , <a href="{{person.web}}">{{ person.name }}</a>
+                            {% endif %}
+                            {% endfor %}
+                            {% endif %}
+                            • {{ post.date | date_to_string }} •
+                            {% assign words = post.content | number_of_words %}
+                            {% if words < 360 %} 1 min read {% else %} {{ words | divided_by:200 }} min read {% endif
+                                %}</h6> <div style="font-family:Lora">{{ post.excerpt }}
+                    </div>
+                    {% endfor %}
+
+
+                    <center>
+                        <div class="pagination">
+                            {% if paginator.previous_page %}
+                            <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>
+                            {% endif %}
+
+                            <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+                            {% if paginator.next_page %}
+                            <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
+                            {% endif %}
+                        </div>
+                    </center>
+                    </ul>
+            </div>
+            </section>
+    </div>
+    </main>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    function gotoPage(select) {
+        console.log(select.value);
+        window.location = select.value;
+    }
+</script>

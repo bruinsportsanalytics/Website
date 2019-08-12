@@ -142,6 +142,7 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    
 
+  
 </head>
 
 <body>
@@ -159,7 +160,25 @@
               <figcaption></figcaption>
             </center>
           </figure>
-          
+
+          <div id="selector">
+            <form name="jump">
+              <center style="font-family: Roboto slab, serif;">
+                Select A Category:
+                <select id="categorySelect" onchange="gotoPage(this)">
+                    <option value="" selected>All</option>
+                    <option value="category/basketball.html">Basketball</option>
+                    <option value="category/football.html">Football</option>
+                    <option value="category/baseball.html">Baseball</option>
+                    <option value="category/hockey.html">Hockey</option>
+                    <option value="category/tennis.html">Tennis</option>
+                    <option value="category/soccer.html">Soccer</option>
+                    <option value="category/fantasy.html">Fantasy</option>
+                    <option value="category/other.html">Other</option>
+                  </select>
+              </cente>
+            </form>
+            </div>
 
           <div id="posts">
             
@@ -203,7 +222,12 @@
 </div>
 </body>
 
-
+<script type="text/javascript">
+  function gotoPage(select){
+    console.log(select.value);
+      window.location = select.value;
+  }
+  </script>
 
       <hr>
       <!---

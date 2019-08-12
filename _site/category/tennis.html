@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+
+  </head>
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="body">
+
+      <head>
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+    <link rel="stylesheet" href="/css/blog.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <div id="bloghome">
+                <section class="module content">
+                    <div id="consult" style="width: 50%; float: left;font-family: Roboto slab, serif;">Official
+                        Consulting Partners of <b>USA Hockey</b><img src="../assets/usa_hockey.png" style="max-width: 10%; max-height: 20%;"></div>
+                    <div id="github-link" style="width: 32%; float: right;font-family: Roboto slab, serif;">
+                        <a href="https://github.com/bruinsportsanalytics/Resource-Folder">Our Resource Folder on GitHub</a><br>
+                    </div>
+                    <br><br>
+                    <figure>
+                        <center><img src="../assets/bsa_full_1819.png" alt="BSA Logo" style="max-width: 45%;">
+                            <figcaption></figcaption>
+                        </center>
+                    </figure>
+
+                    <div id="selector">
+                        <form name="jump">
+                            <center style="font-family: Roboto slab, serif;">
+                                Select A Category:
+                                <select id="categorySelect" onchange="gotoPage(this)">
+                                    <option value="http://localhost:4000">All</option>
+                                    <option value="../../category/basketball.html">Basketball</option>
+                                    <option value="../../category/football.html">Football</option>
+                                    <option value="../../category/baseball.html">Baseball</option>
+                                    <option value="../../category/hockey.html">Hockey</option>
+                                    <option value="../../category/tennis.html" selected>Tennis</option>
+                                    <option value="../../category/soccer.html">Soccer</option>
+                                    <option value="../../category/fantasy.html">Fantasy</option>
+                                    <option value="../../category/other.html">Other</option>
+                                </select>
+                            </center>
+                        </form>
+                    </div>
+
+                    <div id="posts">
+                        
+                        <h2><a href="/ATPTour">What It Takes To Be World Number 1: An Analysis of the ATP Tour</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/kevinhahn">Kevin Hahn</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                            
+                            
+                            
+                            • 27 May 2019 •
+                            
+                             12 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/ATPTour/cover.png" alt="cover photo"></center><p>When it comes to individual sports, the title of “World Number One” is the ultimate feat an athlete can achieve. Tennis may be the most popular example of such a sport, as it is played worldwide and is heavily driven by rankings from its lowest tiers to the professional stage. While the World Number One and other top players are very famous and appear in widely-known tournaments, the complex structure of men’s professional tennis and its ranking system are by no means common knowledge. The Association of Tennis Professionals (ATP) is the governing body that organizes the events and rankings that tennis fans are so familiar with. ATP tennis is unique in that it runs year-round with a higher activity level than most other professional sports, as tournaments take place on a weekly basis. While the four Grand Slams are the most prestigious of these events, every tournament throughout the year can impact a player’s world ranking.</p>
+                    </div>
+                    
+                        <h2><a href="/andy_murray">Andy Murray: A “Big Four” Member, but the Weakest One</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/stephenchen">Stephen Chen</a>
+                            
+                            
+                            
+                            • 03 Apr 2019 •
+                            
+                             6 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/amurray/pic_1.png" alt="cover photo"></center><p>At the end of 2016, Andy Murray raised the Paris Masters 1000 trophy after defeating John Isner in 3 sets, cementing his status as the world's No. 1 tennis player for the first time in his career. Murray had racked up 9 singles titles to end the 2016 season, including his second Wimbledon trophy and his third Grand Slam title. Murray seemed primed to dominate the tour for the next few years, but a hip injury in the middle of the 2017 season would derail what remained of that season and the next, losing the No. 1 ranking and dropping past rank 800.</p>
+                    </div>
+                    
+                        <h2><a href="/summaryStatisticsTennis">Do Summary Statistics Really Mean Anything in Tennis?</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/gauthampasupathy">Gautham Pasupathy</a>
+                            
+                            
+                            
+                            • 01 Dec 2018 •
+                            
+                             5 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/summTennis/pic1.png" alt="cover photo"></center><p>Four times a year, the entire tennis community gathers to witness one of the most spectacular events&#58; The Grand Slams. Fans young and old crowd around laptops and televisions, host watch parties with friends, and some even witness the magic in person if lucky enough. From watching new upcomers like Denis Shapovalov and Borna Coric, to legends such as Roger Federer and Novak Djokovic, each match is always fun to watch. Of course, just like with every other sport, debating and betting about who will win each match in casual settings as well as in fantasy draws is a crucial part of the entire experience.</p>
+                    </div>
+                    
+                        <h2><a href="/zverevGS">Why Has Alexander Zverev Failed to Deliver at Grand Slams?</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/kevinhahn">Kevin Hahn</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                            
+                            
+                            
+                            • 09 May 2018 •
+                            
+                             8 min read </h6> <div style="font-family:Lora"><img class="materialboxed responsive-img" src ="/assets/zverev/cover.png" alt="zverev backhand"></center><figcaption></figcaption><p>Since 2004, the ATP “World Number 1” ranking in tennis has been controlled by four men. In fact, no one else has been able to even enter the top 2 over the last decade and a half. But all good things must come to an end. The Big Four are not getting any younger, and they cannot sustain this era of unparalleled dominance forever. So what’s next for men’s tennis? Who will take up the mantle of world number 1 after Federer, Nadal, Djokovic, and Murray can no longer play as they have? Look no further than Alexander “Sascha” Zverev Jr, the 21 year old German youngster who took the tennis world by storm this past year. Of all of the “Next Gen” players on tour, Zverev has made the most progress as he is currently ranked number 3 in the world. In 2017, at just 20 years old, he legitimized his potential for greatness when he finished the year at world number 4. Along the way, he captured 5 singles titles overall, including 2 Masters 1000 titles over Djokovic and Federer in each final, respectively.</p>
+                    </div>
+                    
+                        <h2><a href="/wawrinka">An In-Depth Analysis of Stan Wawrinka</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/kathirilango">Kathir Ilango</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/kevinhahn">Kevin Hahn</a>
+                            
+                            
+                            
+                            • 27 Jan 2018 •
+                            
+                             9 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/stananalysis/wawrinka.png" alt="Stan Wawrinka"></center><p>In the era of the Big Four, tennis has seldom seen a Grand Slam Championship claimed by a player not named Novak Djokovic, Roger Federer, Andy Murray, or Rafael Nadal. The Big Four have won 50 of the last 58 Grand Slam tournaments, dating back to the 2003 Wimbledon. Ever since then, the spotlight in men’s tennis has only shifted between these four champions. With a combined career record of 3443-782 (81.5%) and a combined total of $377,087,356 in prize money, the Big Four have dominated tennis in a way never before seen in the sport. However, despite such dominance, it may be time to start considering that world tennis may really have a Big Five.</p>
+                    </div>
+                    
+                        <h2><a href="/ao2018">Predictions for the 2018 Australian Open</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/alexveroulis">Alex Veroulis</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/stephenchen">Stephen Chen</a>
+                            
+                            
+                            
+                            • 25 Jan 2018 •
+                            
+                             7 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/ao18/cover.png" alt="Australian Open 18"></center><p>In a game where individuals, not teams, play one another, parity should rule the day. However, living legends of tennis still remain amidst a flurry of youngsters emerging onto the scene. After eight days of action, the results provided a mix of predictable yet unpredictable results. </p>
+                    </div>
+                    
+
+
+                    <center>
+                        <div class="pagination">
+                            
+
+                            <span class="page_number">Page:  of </span>
+
+                            
+                        </div>
+                    </center>
+                    </ul>
+            </div>
+            </section>
+    </div>
+    </main>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    function gotoPage(select) {
+        console.log(select.value);
+        window.location = select.value;
+    }
+</script>
+
+      <hr>
+      <!---
+      <center>
+      <div class="newsletter-container">
+            <form action="https://getsimpleform.com/messages?form_api_token=cdd07db5b90f967b9271a5c7ef3fd573" method="post">
+              <ul>
+                <input type="email" placeholder="Email:" id="email" style="font-family: Roboto Slab, serif;"/>
+                <input type="submit" value="Subscribe" id="submit" style="font-family: Roboto Slab, serif;" />
+              </ul>
+            </form>
+          </div>
+        </center>
+      -->
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center>
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+    </div>
+  </body>
+</html>

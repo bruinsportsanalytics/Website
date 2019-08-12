@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+
+  </head>
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="body">
+
+      <head>
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+    <link rel="stylesheet" href="/css/blog.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <div id="bloghome">
+                <section class="module content">
+                    <div id="consult" style="width: 50%; float: left;font-family: Roboto slab, serif;">Official
+                        Consulting Partners of <b>USA Hockey</b><img src="../assets/usa_hockey.png" style="max-width: 10%; max-height: 20%;"></div>
+                    <div id="github-link" style="width: 32%; float: right;font-family: Roboto slab, serif;">
+                        <a href="https://github.com/bruinsportsanalytics/Resource-Folder">Our Resource Folder on GitHub</a><br>
+                    </div>
+                    <br><br>
+                    <figure>
+                        <center><img src="../assets/bsa_full_1819.png" alt="BSA Logo" style="max-width: 45%;">
+                            <figcaption></figcaption>
+                        </center>
+                    </figure>
+
+                    <div id="selector">
+                        <form name="jump">
+                            <center style="font-family: Roboto slab, serif;">
+                                Select A Category:
+                                <select id="categorySelect" onchange="gotoPage(this)">
+                                    <option value="http://localhost:4000">All</option>
+                                    <option value="../../category/basketball.html" selected>Basketball</option>
+                                    <option value="../../category/football.html">Football</option>
+                                    <option value="../../category/baseball.html">Baseball</option>
+                                    <option value="../../category/hockey.html">Hockey</option>
+                                    <option value="../../category/tennis.html">Tennis</option>
+                                    <option value="../../category/soccer.html">Soccer</option>
+                                    <option value="../../category/fantasy.html">Fantasy</option>
+                                    <option value="../../category/other.html">Other</option>
+                                </select>
+                            </center>
+                        </form>
+                    </div>
+
+                    <div id="posts">
+                        
+                        <h2><a href="/NBAConferenceFinalsPreview">NBA Conference Finals Preview</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/chadshimozaki">Chad Shimozaki</a>
+                            
+                            
+                            
+                            • 14 May 2019 •
+                            
+                             9 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/confPrev/pic_1.jpg" alt="cover photo"></center><p>Following the first ever game-winning buzzer beater in Game 7 of a playoff series, Kawhi "Four-Bounce" Leonard and the Toronto Raptors will face the Milwaukee Bucks, who have patiently waited for a week since defeating the Celtics last Wednesday.</p>
+                    </div>
+                    
+                        <h2><a href="/The3PointShot">The Three Point Shot & the NBA</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/maxblane">Max Blane</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/bornanazari">Borna Nazari</a>
+                            
+                            
+                            
+                            • 21 Apr 2019 •
+                            
+                             5 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/3ptShot/cover.jpg" alt="cover photo"></center><p>The 3-point shot, instituted into the NBA in 1979, significantly impacted the future and the direction of the league. In the shot's inaugural year, Hubie Brown's '79-80 Hawks attempted a season total of 75 three-pointers, making just 13, for a three-point shooting percentage of 17.33%. This equates to an average of 1 three pointer made every 6 games. That same Hawks team went on to the Eastern Conference Semifinals with an overall record of 50-32. 38 years later, on March 3rd 2018, over one half of the Houston Rockets' total shots in their three point victory over the Boston Celtics came from beyond the arc, as they attempted 49 three-pointers, compared to just 38 mid-range shots/layups.</p>
+                    </div>
+                    
+                        <h2><a href="/adPelicansFailure">Why Anthony Davis and the Pelicans Failed</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/chadshimozaki">Chad Shimozaki</a>
+                            
+                            
+                            
+                            • 09 Feb 2019 •
+                            
+                             8 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/ad_pels/cover.jpg" alt="cover photo"></center><p>Despite having one of the top-five players in the NBA, the New Orleans Pelicans struggled for seven years to surround Anthony Davis with enough talent to consistently make the playoffs. In 2015, the Pelicans - without Jrue Holiday - were swept by the first iteration of the current Warriors Dynasty. Davis's only other postseason appearance came in 2018, when the Pelicans upset the 3-seed Portland Trailblazers in a stunning sweep. Although the Pelicans lost to the Warriors again in the next round, their second round exit was viewed as a success after the enormous loss of <a href="https://stats.nba.com/player/202326/">DeMarcus Cousins</a> in late January due to a ruptured Achilles.</p>
+                    </div>
+                    
+                        <h2><a href="/nbaclust2">Constructing My All-Time NBA Lineup Through K-Means Clustering, Part 2</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                            
+                            
+                            
+                            • 15 Jan 2019 •
+                            
+                             6 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/nbaclust2/cover.png" alt="cover photo"></center><p>A few months ago, I wrote an article where I used k-means clustering to help choose five NBA players from 1980 to the present to constitute an all-time starting lineup.</p>
+                    </div>
+                    
+                        <h2><a href="/russPgOrSg">Russell Westbrook: Point Guard or Shooting Guard?</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/jackma">Jack Ma</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                            
+                            
+                            
+                            • 04 Dec 2018 •
+                            
+                             11 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/russ/pic1.png" alt="cover photo"></center><p>Russell Westbrook has become one of the NBA's top players in the past decade. He has been a marvel to watch, as his thrilling athleticism has allowed him to churn out highlight after highlight. On top of his exhilarating play-style, he has become a fan favorite due to his <a href="https://www.youtube.com/watch?v=sfQylEBg-bg">curt interviews</a> and his redemptive MVP season after Kevin Durant so infamously <a href="https://i.ytimg.com/vi/TiojPTwxeBg/maxresdefault.jpg">snaked</a> Russ and the Thunder.</p>
+                    </div>
+                    
+                        <h2><a href="/summerBall">Can Summer Ball Indicate Professional Success?</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/haleyrao">Haley Rao</a>
+                            
+                            
+                            
+                            • 03 Dec 2018 •
+                            
+                             4 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/sumBall/pic1.jpg" alt="cover photo"></center><p>Every summer, hundreds of college baseball players participate in summer leagues around the country. One of the most acclaimed of these leagues is the Cape Cod Baseball League, which consists of 10 teams across the Cape Cod peninsula. Collegiate summer leagues have support from both Major League Baseball and the NCAA, and are intended to help advance players from the collegiate to professional level.</p>
+                    </div>
+                    
+                        <h2><a href="/youngCore">Keys to Success for the Young Lakers Core</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/justinyee">Justin Yee</a>
+                            
+                            
+                            
+                            • 03 Dec 2018 •
+                            
+                             6 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/youngC/pic1.png" alt="cover photo"></center><p>With Lebron coming to Los Angeles, the expectations surrounding the Lakers havent't been this high since the Kobe Bryant, Dwight Howard, and Steve Nash team-up. After missing the playoffs for blank consecutive years, the Lakers look to make a playoff run and possibly contend for a championship title with the addition of the NBA's most prominent star. In addition to Lebron James, the Lakers added notable veterans such as Rajon Rondo, Javale McGee, and Lance Stephenson. However, the Lakers remain at their core a very young team, with blossoming players with high potentials.</p>
+                    </div>
+                    
+                        <h2><a href="/kmeansAllNBA">Constructing My All-Time NBA Lineup Through K-Means Clustering</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                            
+                            
+                            
+                            • 30 Nov 2018 •
+                            
+                             15 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/kmeansAll/cover.png" alt="cover photo"></center><p>It's a debate that pervades all cultures, ages and creeds. From every barbershop to lunch table in the world, the question rings&#58; what is your best all-time starting five? Who can construct the best lineup to put on the hardwood using any player from any time?</p>
+                    </div>
+                    
+                        <h2><a href="/jokicRisingStar">The NBA’s ‘Perfect Game’ by One of Basketball’s Rising Superstars</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/chadshimozaki">Chad Shimozaki</a>
+                            
+                            
+                            
+                            • 24 Nov 2018 •
+                            
+                             5 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/jokicRS/pic_2.png" alt="cover photo"></center><p>In baseball, a "perfect game" is achieved when a pitcher does not allow an opposing player to reach base -27 up, 27 down. While basketball does not have an easily recognizable equivalent, NBA fans were treated to a perfect game this season on Oct. 20. In an easily overlooked rout of the Phoenix Suns, Nikola Jokic recorded a 31-point triple-double with no turnovers while shooting a perfect from the field (11-11), joining Wilt Chamberlain as one of the only two players to ever achieve such a feat, according to a tweet from @ESPNStatsInfo.</p>
+                    </div>
+                    
+                        <h2><a href="/pred_NBA_salaries_journey">BSA Exclusive: Our Journey Through Research</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/konnermacias">Konner Macias</a>
+                            
+                            
+                            
+                            
+                            , <a href="http://www.bruinsportsanalytics.com/benmessinger">Ben Messinger</a>
+                            
+                            
+                            
+                            
+                            , <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/ronaqvirdi">Ronaq Virdi</a>
+                            
+                            
+                            
+                            • 03 Jun 2018 •
+                            
+                             13 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/salJourney/avgSalDensity.png" alt="Salary Distribution"></center><figcaption></figcaption><p>With this article, we hope to detail our process as members of Bruin Sports Analytics to work towards getting a well-done research paper completed, with guidance given by our club advisor, Professor Almohalwas of the UCLA Statistics department. We wish to detail our journey, and all the lessons we have taken from each one to move us closer to completing our desired task. In hopes of creating a paper worthy of being published in an official sports analytics journal, we have decided to take more time in working towards our final result. However, we have decided to write this extended article to provide a checkpoint of where currently stand in hopes for others to get inspired to do research as an undergrad, and learn more about the interesting attempts we have tried to solve our problem.</p>
+                    </div>
+                    
+                        <h2><a href="/defChamp">Does Defense Really Win Championships? An In-Depth Analysis of the NBA Playoffs</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/donvu">Don Vu</a>
+                            
+                            
+                            
+                            • 22 May 2018 •
+                            
+                             14 min read </h6> <div style="font-family:Lora"><img class="materialboxed responsive-img" src ="/assets/defense/cover.jpg" alt="2004 Pistons"></center><figcaption>Jed Jacobsohn/Getty Images</figcaption><p>With 2 minutes left on the clock, Richard Hamilton stepped up to the free throw line.  He dribbled the ball a few times and calmly knocked down both shots to seal one of the most stunning upsets in playoff history.  The Detroit Pistons had defeated the heavily favored Los Angeles Lakers to become the 2004 NBA Champions.  Hardly anyone could have predicted that this team would overcome the combined talents of Kobe Bryant and Shaquille O’Neal along with the brilliance of Phil Jackson.  Most analysts give credit to the outstanding defense the Pistons displayed.  Though their offense just placed 7th, this Pistons team had the best ranked defense throughout the playoffs and actually had the highest average defensive rating in postseason history.</p>
+                    </div>
+                    
+                        <h2><a href="/blakegriffin">Blake Griffin: Sharpshooter or Bricklayer?</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                            
+                            
+                            
+                            • 11 Mar 2018 •
+                            
+                             5 min read </h6> <div style="font-family:Lora"><img class="materialboxed responsive-img" src ="/assets/griffin/image4.png" alt="Blake Griffin"></center><p>From a decorated high-school recruit, to Naismith College Player of the Year, to apparent resuscitator of the Dunk Contest, to slugger of an equipment manager, to highly controversial trade chip, Blake Griffin’s basketball career has had quite the peaks and valleys.</p>
+                    </div>
+                    
+                        <h2><a href="/sunsRockets">An In-Depth Comparison of the 06-07 Phoenix Suns and 17-18 Houston Rockets</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/ronaqvirdi">Ronaq Virdi</a>
+                            
+                            
+                            
+                            
+                            , <a href="http://www.bruinsportsanalytics.com/nikhilsharma">Nikhil Sharma</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/benmessinger">Ben Messinger</a>
+                            
+                            
+                            
+                            • 09 Mar 2018 •
+                            
+                             16 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/dantoni/cover.png" alt="Nash/Harden"></center><p>In Game 6 of the 1998 NBA Finals, Michael Jordan’s last game in a Chicago Bulls jersey, the Bulls attempted 67 field goals in the entire game, including only 10 three-point attempts. Fast forward to 2017-18, and the Houston Rockets are <i>averaging</i> 42.6 three-point field goal attempts per game. In the 20 years since Jordan’s last game, saying that professional basketball has changed would be an understatement. In today’s NBA, the “pace and space” style of play with an emphasis on a primary ball handler surrounded by shooters is the norm; all 30 teams are attempting at least 22 three-point field goals per game compared to the 2004 season, where only one team attempted more than 22 per game. Many of the offensive principles that are prevalent throughout the league can be attributed to current Rockets head coach, Mike D’Antoni. D'Antoni's success with the mid 2000s “Seven Seconds or Less” Phoenix Suns has had a lasting impact on the league today, as many of the same offensive philosophies have been commandeered by other coaches.</p>
+                    </div>
+                    
+                        <h2><a href="/mcconnell">TJ McConnell Should Not Be In the NBA</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/zanewinston">Zane Winston</a>
+                            
+                            
+                            
+                            • 01 Mar 2018 •
+                            
+                             5 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/mcconnell/tj.png" alt="TJ McConnell"></center><p>Quite frankly, TJ McConnell shouldn't be in the NBA. He has proven us wrong time and time again; he started his college career at Duquesne, he wasn't drafted, he was picked up as a rotation player on the worst team in the league, and he's a short point guard who can't shoot threes. That's not to say that he's a bad player; he averages 24.5 minutes per game on a Sixers team likely to make the playoffs. </p>
+                    </div>
+                    
+                        <h2><a href="/nbamidseason18">NBA Midseason Reflections</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/ronaqvirdi">Ronaq Virdi</a>
+                            
+                            
+                            
+                            • 05 Feb 2018 •
+                            
+                             9 min read </h6> <div style="font-family:Lora"><p>The All Star lineups have been announced, most teams have played well over 45 games, we finally have a team openly tanking, and the Cavs all hate each other. So with that it's safe to say that the midway point of the NBA season has come and now would be a great time to reflect on the past couple months of the 2017-2018 season. By now everyone knows how great the Warriors are, how dysfunctional LeBron's team is, and that the Sacramento Kings are once again irrelevant. I wanted to take this time to deviate away from the major storylines in the season thus far and analyze some trends, statistics, coaching decisions, and quite simply things that really stand out to me. </p>
+                    </div>
+                    
+                        <h2><a href="/oneonone">One-on-one: Tyreke Evans works his way back to relevance, Nicolas Batum having worst season since rookie year</a></h2>
+
+                        <h6 style="font-family: Roboto slab, serif;font-size: 1.2vw">
+                            
+                            
+                            
+                            
+                            By <a href="http://www.bruinsportsanalytics.com/benmessinger">Ben Messinger</a>
+                            
+                            
+                            
+                            
+                            , <a href="http://www.bruinsportsanalytics.com/zanewinston">Zane Winston</a>
+                            
+                            
+                            
+                            
+                            and <a href="http://www.bruinsportsanalytics.com/albertpan">Albert Pan</a>
+                            
+                            
+                            
+                            • 25 Jan 2018 •
+                            
+                             6 min read </h6> <div style="font-family:Lora"><center><img class="materialboxed responsive-img" src ="/assets/oneonone/reke.png" alt="One-on-one"></center>
+                    </div>
+                    
+
+
+                    <center>
+                        <div class="pagination">
+                            
+
+                            <span class="page_number">Page:  of </span>
+
+                            
+                        </div>
+                    </center>
+                    </ul>
+            </div>
+            </section>
+    </div>
+    </main>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    function gotoPage(select) {
+        console.log(select.value);
+        window.location = select.value;
+    }
+</script>
+
+      <hr>
+      <!---
+      <center>
+      <div class="newsletter-container">
+            <form action="https://getsimpleform.com/messages?form_api_token=cdd07db5b90f967b9271a5c7ef3fd573" method="post">
+              <ul>
+                <input type="email" placeholder="Email:" id="email" style="font-family: Roboto Slab, serif;"/>
+                <input type="submit" value="Subscribe" id="submit" style="font-family: Roboto Slab, serif;" />
+              </ul>
+            </form>
+          </div>
+        </center>
+      -->
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center>
+      © 2019 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+    </div>
+  </body>
+</html>
