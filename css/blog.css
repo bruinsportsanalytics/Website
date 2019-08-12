@@ -1,8 +1,8 @@
 
 @media only screen and (min-width: 768px) {
     #bloghome {
-        padding-left: 20vw;
-        padding-right: 20vw;
+        padding-left: 15vw;
+        padding-right: 15vw;
     }   
     .excerptpics {
         max-width: 100%;
