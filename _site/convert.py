@@ -62,7 +62,7 @@ def print_cover(title, authors, my_date, cov_par):
     body += 'categories: jekyll update\n'\
         'excerpt_separator: <!-- end excerpt here -->\n'\
         'excerpt: '
-    body += '<center><img class=\"excerptpics\" src =\"/assets\" alt=\"cover photo\"></center>'
+    body += '<center><img class=\"materialboxed responsive-img\" src =\"/assets\" alt=\"cover photo\"></center>'
     body += '<p>{}</p>\n'.format(cov_par)
     body += '---\n'
     return body
@@ -86,45 +86,7 @@ def add_video():
     :input:
             video number (int)
     """
-    return '<div class=\"video-container\"><iframe width=\"1425\" height=\"641\" src=\"embed_link\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe></div>\n\n'
-
-
-def add_profile_content(name):
-    return "<head>\n\
-      <meta charset=\"utf-8\">\n\
-      <meta content=\"width=device-width,initial-scale=1.0\" name=\"viewport\">\n\
-      <meta content=\"description\" name=\"\">\n\
-      <link rel=\"stylesheet\" href=\"/css/blog.css\">\n\
-      <!-- css -->\n\
-      <link rel=\"stylesheet\" href=\"http://fonts.googleapis.com/css?family=Roboto+Slab\">\n\
-      <link rel=\"stylesheet\" href=\"/css/style.css\" type=\"text/css\">\n\
-      <script src=\"https://code.jquery.com/jquery-2.1.4.min.js\"></script>\n\
-      <script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js\"></script>\n\
-      <style>\n\
-      p.ex1 {{\npadding-left: 50px;\n}}\n\
-      div.ex1 {{\npadding-top: 50px;\npadding-right: 15%;\npadding-left: 15%;\npadding-bottom: 5px;\n}}\n\
-      </style>\n\n\
-      </head>\n\n\
-      {{% assign author = site.data.authors[page.author] %}}\n\n\
-      <center><h4 style=\"font-family: Roboto slab, serif;\">{{ author.name }}</h4></center>\n\n\
-      {{% assign author = site.posts | where: 'authors', '{}' %}}\n\n\
-      <div class=\"ex1\">\n\
-	  <main>\n<section class=\"module_content\">\n\
-			<b><h5 style=\"font-family: Roboto slab, serif;\">Articles: </h5></b>\n\
-			{{% for post in author %}}\n\
-			<h2 style=\"font-family: Roboto slab, serif;\"><a href=\"{{ post.url }}\">{{ post.title }}</a></h2>\n\
-            <h6 style=\"font-family: Roboto slab, serif;\">{{ post.date | date_to_string }} • {{% assign words = post.content | number_of_words %}}\n\
-                    {{% if words < 360 %}}\n\
-                      1 min read\n\
-                    {{% else %}}\n\
-                      {{ words | divided_by:200 }} min read\n\
-                    {{% endif %}}</h6>\n\
-            {{ post.excerpt }}\n\
-			{{% endfor %}}\n\
-		</section>\n\
-	</main>\n\
-    </div>".format(name)
-
+    return '<div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/<put end of embed link here>\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>\n\n'
 
 def create_profile(underscore_name):
     """
@@ -143,7 +105,6 @@ def create_profile(underscore_name):
         'layout: default\n'\
         'permalink: /{}\n'\
         '---\n'.format(underscore_name, name)
-    body += add_profile_content(underscore_name)
 
     # create author page
     author_page = open('{}.html'.format(name), 'w')
@@ -154,7 +115,7 @@ def create_profile(underscore_name):
         underscore_name : {
             'name': ' '.join(underscore_name.split('_')),
             'web' : 'http://www.bruinsportsanalytics.com/{}'.format(name),
-            'bio' : ''
+            'bio' : None
         }
     }
     with open('_data/authors.yaml', 'r') as yamlFile:
@@ -187,8 +148,6 @@ def main():
     content = [x.strip() for x in content]  # get rid of \n
     content[0] = content[0].replace(u'\ufeff', '')  # get rid of \ufeff
 
-    # TODO: get rid of '' inside content
-
     # gather titles
     title = content[0].split("Title:")[1].strip()
     authors = content[1].strip().split("Authors: ")[1].split(',')
@@ -212,7 +171,7 @@ def main():
 
     # set up picture frames
     num_pics = int(sys.argv[2])
-    for i in range(1, num_pics + 1):
+    for i in range(2, num_pics + 1):
         body += add_pic(i)
 
     # num of video frames
