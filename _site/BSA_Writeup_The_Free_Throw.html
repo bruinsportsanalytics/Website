@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">The Evolution of the Free Throw</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/ethanallavarpu">Ethan Allavarpu</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/kyleboal">Kyle Boal</a>
+                      
+                    
+                  
+                  • 06 Jan 2020 •
+                  
+                    
+                      9 min read
+                    
+                </p>
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/shaq_freethrow.png" alt="cover photo"><figcaption>From Wikimedia</figcaption></center>
+</figure>
+
+<p>The Free Throw: the only shot in basketball that is theoretically free, but players continue to show that it's more difficult than it originally appears. In the early 2000's, the idea of "hack-a-shaq" was introduced. This strategy had players intentionally foul poor free throw shooters, such as Shaquille O'Neal to send them to the charity line. The hope: at least one missed free throw, and an opportunity to seize possession once more. However, as this strategy became popular, teams sent their poor foul shooters to the bench at late moments in a game. Fast forward to 2015: Stephen Curry became the eighth player to join the 50/40/90 club (50% field goal, 40% three-point, 90% free throw), and many shooters began to score at an all-time high rate. With shooting success becoming fundamental to an increasingly offensive game, we thought it would be interesting to look at how the free throw differs from years, stars, position, and three-point shooting.</p>
+
+<h4>PROCEDURE</h4>
+
+<p>To evaluate and compare how the free throw differs from years, stars, position, and three-point shooting, we decided to look at the evolution of the free-throw percentage over two different three-year spans separated by nearly 20 years (2000-2003 and 2016-2019). The question: were players getting better at shooting percentages or was there simply a higher volume of shots and, importantly, how does that relate to the free throw? We compared each individual year of the three-year spans to one another, in order to get an idea of what year-to-year variation in shooting looked like. Next, we compared the two decades with one another to see how the game was truly changing.</p>
+
+<p>Notably, however, Stephen Curry and Shaquille O'Neal are very different players and should not be compared directly with each other--and thus should be categorized as such. To accommodate for this, we created groups in accordance with the main player's position (e.g. center, point guard).</p>
+
+<p>Additionally, we thought it would be worthwhile to delineate between the Matthew Dellavedova's of the world and the Lebron James' of the world--those that are high scoring versus those that are not. To do so, we looked at the variation between "stars" (defined as top 20 in points or top 10 in rebounds or top 10 in assists) versus the variation in non-"stars" (people who are not in any of the above categories).</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption>From si.wsj.net</figcaption></center>
+</figure>
+
+<p>During garbage time, the trailing team can sometimes rack up an unusually high tally of statistics, leading the respective box score to be misleading with respect to their actual game performance. To limit the players we are analyzing, we added the following caveats to exclude garbage time players: a player must play at least 20 games, average at least 10 minutes per game, have a minimum of one free throw attempt per game, and strictly shoot more than 0.5 three point attempts per game.</p>
+
+<h4>OUR PREDICTIONS</h4>
+
+<p>Initially, especially because of the "hack-a-shaq" era of the early 2000s, we anticipated a large discrepancy in the free throw percentage by position; we expected guards to have the highest percentage (~85%), followed by forward (~75%), and lastly centers (~65%). Furthermore, it seemed reasonable to conclude that if players shoot the three-point shot at a higher rate and percentage, then hopefully, those same players would spend equal time practicing the one shot they should be guaranteed to make every time: the free throw.</p>
+
+<p>Additionally, we believe that non-stars will have less variation in free throw percentage, as stars don't need to focus on the free throw, given their tremendous impact to other facets of the game. Non-stars, however, have less room for error--and should practice, seize, and execute at an opportunity of free points.</p>
+
+<h4>DATA</h4>
+
+<p>Before crunching numbers, we noticed an interesting trend in the amount of players who qualified for our study over the years. For example, whereas the average number of centers who met our shooting qualification (as defined above) in the 2000's was 5.67, the average number of centers for the 2010's was 29.67. Likely, this can be attributed to centers shooting the three point shot more often as time went on, and thus, more qualified under the "3PTA > 0.5" requirement.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The variation in the year-to-year data within the early 2000s--the first of two time periods in this article--remained relatively low, with the greatest variation across the three years occurring at the forward position, but it was still within 1% (76.88% to 77.72%). The data from the early 2000s also emphasizes the general trend which we expected, specifically, that centers had the lowest free throw percent (hovering around 74%), followed by forwards (~77%), and guards with the highest (~79.5%). Although the data did not have the percentages which we expected at the outset of the investigation, there was still a delineation between each position. Further, since the variability between these individual years remained low, any difference between these years and the decades could be attributed to a difference across basketball eras as opposed to the accumulation of annual differences; each position had a dip in free throw percentage either in the 2001-2002 season or the 2002-2003 season.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>At the tail end of the 2010s--the second of two time frames studied in this article--the data appears murkier when comparing the positions. In terms of variation by year, each position still remained relatively steady with the largest range of ~3% occurring at the guard position (81.11% vs. 78.08%). Although the variation did increase--as shown through the higher standard deviations--the data remained constant enough to compare this time frame to that of the early 2000s to look for the desired change in free throw percentage, at least by position. The aspect of this table which surprised us was the free throw percentage of centers compared to forwards, as they were approximately equal, with centers having a slight edge, not forwards; the guards had a higher percentage than the other two groups but by less than earlier in the NBA's history.</p>
+
+<p>2000's v. 2010's:</p>
+
+<p>To concatenate the data for the two basic time periods: 2000s and 2010s, we took an average of the three year periods we originally studied, for each decade period. This combined data is shown below:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>This data highlights the surprising lack of difference within each of the three positions from the early 2000s time frame to the late 2010s. In the 2000s, at least, the data appeared exactly how we expected: centers, then forwards, then guards, albeit at a lesser degree than what we anticipated; there was only a 2% difference when grouping by position as opposed to our expected 10% difference. However, in the 2010s, the data paint a distinctly different story, as the centers increased their free throw percentage, while guards and forwards actually had a decrease in their free throw percentages as a position group, making their free throw percentages all occur within a 3% range. Furthermore, the players during the 2010 era exhibited greater variation, as their standard deviations increased by about 1.5 percentage points: thus, players in today's NBA occur across a broader range of the spectrum, as there are some elite free throw shooters (e.g. Steph Curry, James Harden), but also some horrendous ones (e.g. Lonzo Ball).</p>
+
+<h4>STARS v. NONSTARS</h4>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption>From NYDailyNews</figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_7.png" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The data shows that the stars in the NBA have a higher free throw percentage by a margin of almost 2% in both decades. Likewise, in both decades, the standard deviation for stars is less by a notable margin of at least 0.5%. Unexpectedly, both the free throw percentage of stars and nonstars went down by a factor of at least 0.5% from the 2000s to the 2010s. Moreover, shooters in the 2000's were much more consistent, as demonstrated by an increase of 1% in standard deviations from the players in the 2000s to 2010's.</p>
+
+<h4>THREE POINT CORRELATION</h4>
+
+<p>It was our hypothesis that there would be a correlation between three point percentages and free throw percentages.  To show this correlation, we created graphs conveying each player as a dot, placed according to his free throw and three-point percentage. Additionally, we have created a line of best fit, showing the general trend for each decade in question.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_8.png" alt="picture 8" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The 2000's exemplify consistency. The line of best fit shoots a free throw possession from around 73% to up to around 82%. Additionally, there is a large clump of players all in the same spot. With few outliers, the data leads to the conclusion that the 2000's was very consistent.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_9.png" alt="picture 9" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The 2010's are much more turbulent. This can likely be attributed to higher shooting volume. Here, the line of best fit for free throw percentage spans from as low as 60% to as high as 87%. This is a much different range than in the 2000's where the deviation is 9 points as opposed to the 2010's where the deviation is 27 points. Additionally, there are more outliers than the 2000's, as well as a generally larger clump.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_10.png" alt="picture 10" style="max-width: 95%;"><figcaption>From NBC Pro Basketball Talk</figcaption></center>
+</figure>
+
+<p>We overlaid the graphs, as shown below, to get a visual of what the two decades looked like:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_11.png" alt="picture 11" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The 2000's seem more consistent, as the line of best fit seems to go from around 74% to up to 85%. However, as shooting as increased over the decades, the 2010's graph shows a different story. Not only are there more points in the 2010's--due to higher shooting volume--there is also more inconsistency. At the top end, in the 2010's, shooters have higher three-point-to-free-throw percentage ratio, such as Lonzo Ball. While the visual is an eye sore, it shows the correlation and development over the years; the game has progressed such that there is a higher volume of shooters, but with the increase in volume there is a much higher variance in percentages.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/freeThrow/pic_12.png" alt="picture 12" style="max-width: 95%;"><figcaption>From i.pinimg.com</figcaption></center>
+</figure>
+
+<h4>CONCLUSION</h4>
+
+<p>Ultimately, our data paint a picture that is in stark contrast to our initial expectations. No single position has completely distanced itself from the other two in terms of free throw percentage; in fact, in today's game there is less of a difference in free throw percentage amongst different positions than there was in the 2000s. More variability in our data also emphasizes that, although we have better players at the line today, we also have worse ones. The average for guards and forwards decreased between the two time frames, while centers had an increase. These results lead us to question the "hack-a-Shaq" method which has become so renowned -- the fouling of big men in crunch time. Perhaps centers have responded to that method of "bullying" by bolstering their free throw percentage, especially when compared with players at other positions. Maybe the adage should simply be revised, as free throw percentage is not as position-dependent as it seems on TV. Maybe the adage for today's NBA should not be "hack-a-Shaq."</p>
+
+<p>Maybe it should be "hack-a-Lonzo."</p>
+
+<p>Sources: NBA (NBA.com), ESPN (espn.com)</p>
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2020 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>
