@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">Christian Yelich and the Rise to Stardom</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/maxblane">Max Blane</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/bornanazari">Borna Nazari</a>
+                      
+                    
+                  
+                  • 15 Jan 2020 •
+                  
+                    
+                      9 min read
+                    
+                </p>
+            <p>Drafted as a Florida Marlin 23rd overall in 2010, Christian Yelich was a very highly touted prospect with loads of potential. As predictions usually go for players drafted in the first few rounds, he was expected to eventually reach the Major Leagues and be a top of the order bat, hitting in a fierce and intimidating Marlins lineup (80-82, 3rd in NL East in 2010) that was supposed to include Giancarlo Stanton, Hanley Ramirez, Emilio Bonifacio, Cameron Maybin, and eventually Marcell Ozuna.</p>
+
+<p><a href="https://www.minorleagueball.com/2012/5/23/3037479/prospect-of-the-day-christian-yelich-of-miami-marlins-scouting-report" target="_blank">A scouting report compiled by John Sickles on minorleagueball.com</a> in 2012 stated that Yelich has a "decent feel for the strike zone and is tapping into his natural power with greater efficiency. Although he isn't likely to develop into an overwhelming home run masher, Yelich should hit for average, get on base at a good clip, and produce above-average power." Florida (then Miami after the 2012 season) began it's rebuild late into 2017, sending both Stanton and Ozuna away. In early 2018, Yelich was traded to the Brewers in exchange for a plethora of top prospects, including outfielder Lewis Brinson, the Brewers top prospect at the time. The Brewers, anticipating a leadoff man in return from Miami, were actually in store for much more than they bargained for. Yelich became one of the most dangerous hitters in the MLB, now a perennial MVP leader with a massive uptick in power and Batting Average, whos also one of the leaders in stolen bases in the National League. On July 19th, Yelich had batted 60 Home Runs and stolen 33 bases in his previous 162 games, the first MLB player to ever launch 60+ HR and swipe 30+ SB in that time span.</p>
+
+<p>So how was he able to do this? How did Christian Yelich change his approach at the plate, shifting him from a slightly above average MLB player with the Miami Marlins to one who is seemingly on track to become a first ballot Hall of Famer with the Brewers?</p>
+
+<p>In this article, we take a dive into the mind of Milwaukee's Starting Right Fielder, understanding the slight tweaks that have created such dominance.</p>
+
+<p>We begin with the way in which Yelich has changed his approach at the plate. Following the trade from Miami to Milawukee, the right fielder has decreased the average amount of pitches that he seen per plate appearance, with the number now falling under 4. A rate of less than 4 pitches per at bat means Yelich has clearly seen the ball better and attacked early, not letting himself get too deep into counts, where he could be in danger of seeing tough offspeed pitches (sliders, curveballs, changeups) that are known for producing swings and misses. This strategy in the batters box is further evidenced by Yelich's 1st pitch swing percentage. His swing rate has shot up from an average of 19.4% over his 5 seasons with the Marlins to tallies of 28.8% and 29.7% respectively in his first two campaigns with the Brewers.</p>
+
+<p>There simply do not exist enough players in baseball who swing on the first pitch, as most hitters take in order to get a sense of how the pitcher is throwing. However, a large portion of the time, when a pitcher hurls in his first pitch of an at bat, they do so with the intention of getting a sense of the strike zone. This is where hitters like Yelich have now begun to cash in.</p>
+
+<p>Despite his tendency to swing early and often, Yelich has also walked in a substantial 13.8% of his at bats, good enough for a rate that clocks in as the 14th highest in the Major Leagues. It certainly makes sense why this number is very high, as pitchers are scared to throw hittable pitches to the star right fielder. However, his slight adjustments in the off season prior to Milwaukee have clearly added an effective plate discipline to Yelich's aggressive approach, leading to the productivity that can be seen from his results at the plate.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/christianYelich/pic_1.png" alt="picture 1"><figcaption></figcaption></center>
+</figure>
+
+<p>One of the biggest contributors to Yelich's exponential boost in offensive production has to do with launch angle. It's a known phenomenon that an increase in launch angle has a positive correlation with an increase in extra base hits. Many thought that Yelich would regress slightly from his 2018 campaign, playing off his MVP season as a fluke, calling him a magician on the offensive side.</p>
+
+<p>However, Yelich has frankly gotten even better in 2019. In his 2018 campaign, his launch angle was ranked 445th in the MLB at 4.7 degrees. In 2019, he has more than doubled his launch angle degree to 11.2, a statistic that ranked him 278th in the MLB. An increase in launch angle leads to an increase in fly balls which leads to an increase in home runs and extra base hits. As we can see in the below graph, as his launch angle increased, his ratio of XBH to hits has also followed suit. Because of this, he has seen less of his batted balls hit the ground in comparison to the amount that are skyrocketed into the air. Yelich, in his MVP year, had 57 of the balls that he put into play hit the barrel of his bat (8.8%), ranking 18th in the big leagues. This year, in less games and 71 fewer at-bats, Yelich has had 59 of his batted balls hit the barrel of his bat (10.2%) ranking him 7th in the majors.</p>
+
+<p>Eric Hosmer and Christian Yelich had once been very similar players based on their style of play and their approach at the plate. However, the reason that Yelich is accelerating into the peak and prime of his career and Hosmer is on the decline (his peak coming with the Kansas City Royals from 2013 to 2017) is because unlike Hosmer, Yelich has made the necessary adjustments to his launch angle (Hosmer ranks 451st in the MLB with an average launch angle of 2.1%).</p>
+
+<p>Yelich is now hitting 3x the amount of homers as Hosmer and grounding into now about 2/3 of the amount of double plays as Hosmer.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/christianYelich/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/christianYelich/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>As seen in the two graphs below, before joining the Brewers, Yelich didn't contribute much towards his respective teams' win rate as he was hovering around 50% for the majority of his career. However, largely contributed to his adjustments at the plate, since joining the Brewers, Yelich is hovering around a 55% win rate, so he is contributing to 5% more wins for a .500 team. A correlation can be drawn between the steady rise of Yelich's OPS and the fluctuations in the added winning percentage he brings to an average team. The raise in OPS seen in Yelich's stat line since joining Milwaukee can be attributed partially to his decreasing AB/HR rate, meaning Yelich is hitting with an increased amount of power as a result of the changes he has made to his swing.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/christianYelich/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/christianYelich/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>In talking about the Brewers as a team, Milwaukee finished the 2018 season at 95-67, 1st in the NL Central, advancing to the NLCS before losing the pennant in 7 games to the Los Angeles Dodgers, who eventually lost in the World Series to the Boston Red Sox. Now, in 2019, at the time of initial data collection, the Brewers stood at 78-69, 4.0 games off of the division lead, and tied with Chicago for the 2nd wild card spot. With Yelich's performance, it begs the question as to where the team would be without his production at the plate. Yelich's WAR for the 2018 clocked in at 7.6, and he had already accumulated a total of 7.1 up to August 10th, in about 15 fewer games, when he suffered a fractured knee cap, ending his season.</p>
+
+<p>Removing Yelich from the Brewers roster resulted in an NLDS lineup of:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/christianYelich/pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Using the WAR statistic as a numerical measure of how this team would perform, rather than just looking at the potential lineup and observing that the Brewers look much less threatening without Yelich, the Brewers would have finished last season around a mark of 87-75, and would currently be a sub-.500 team at 71-76 overall at this point in the year. This would have left the Brewers completely out of last year's playoffs (forget their first division title since 2011) and second in the last 36 years or their NLDS win, and near advancement to the World Series. This season, they would be 11 games behind the Cardinals at the top of the division, and another 7 games back of the wild card, clearly a seller at the trade deadline, and not a team that reached the NL Wild Card Game. His 0.543% Waa, which indicates the winning percentage of a .500 club if they added Christian Yelich to their roster, is a good representation of how just his bat alone can turn an average team into a contender. With Yelich locked up until the 2023 season, being paid just upwards of $7M annually, the Brewers have a considerable amount of money to work with to add in the missing pieces that are halting World Series contention. Consider the 6 position players, other than Yelich (#8) who landed within the top 10 for WAR last season:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/christianYelich/pic_7.png" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Of the 6, only 2 of them have also won an MVP like Yelich, while 4 of the 6 have higher salaries than the Brewers right fielder. The two who have lower salaries, Ramirez and Chapman, are both just coming off of, or still on their rookie deals which is why they haven't reached max salary potential yet. Yelich, who just exchanged his rookie deal for a 7 year, $49M offer, is considerably underpaid in comparison to the $20M to $35M range expected for a player of his caliber. If the Brewers choose to keep Yelich on the contract, they save a solid $13M to $25M that could be spent on improving other areas of need on the team. While the 2019 Brewers are in the top half of teams for most batting statistics (R, OPS, OBP, etc), they fall into the bottom half for both Starting Pitchers statistics and Reliever stats. Players such as Gerritt Cole, Madison Bumgardner, Zach Wheeler, Cole Hamels, Rick Porcello and Dellin Betances will all be free agents come this next offseason, and it is reasonable to think that with a maximum of $25M of wiggle room, just alone from Yelich's contract, to both complement a blooming Zach Davies and Chase Anderson in the starting rotation with a front end and back end of the rotation starter and a reliever to provide some bullpen depth.</p>
+
+<p>Christian Yelich has become one of if not the best players in the MLB following his trade to Milwaukee, and it is up to the Brewers to take advantage of that before his contract expires.</p>
+
+<p>Sources: baseball-reference.com, mlb.com/stats and mlb.com/statcast.</p>
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2020 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>
