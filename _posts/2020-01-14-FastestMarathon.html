@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "An In-Depth Analysis of the Fastest Marathon Ever"
+date:   2020-01-14 19:36:08 -0700
+authors:
+- donald_chung
+categories: jekyll update other
+excerpt_separator: <!-- end excerpt here -->
+excerpt: <center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_1.png" alt="cover photo"></center><p>On October 12, 2019, it was still early morning as the world watched as Elliot Kipchoge put one foot in front of another, gracefully passing the finish line and becoming the first person ever to run a marathon in under two hours. He finished in a blistering fast time of 1:59:40.</p>
+---
+
+<p>On October 12, 2019, it was still early morning as the world watched as Elliot Kipchoge put one foot in front of another, gracefully passing the finish line and becoming the first person ever to run a marathon in under two hours. He finished in a blistering fast time of 1:59:40.</p>
+
+<p>Many factors came together to shatter the two hour time barrier in the marathon. First and foremost, Kipchoge is the best marathoner in the world, as he currently holds the official world record at 2:01:39. He was close to closing in on the barrier, but not quite there yet. The race organizers (INEOS) needed a way to trim down his time by at least 1:40. That equates to about 6 seconds faster per mile than the world record. INEOS was able to accomplish this by having the following: an army of pacers to swap in and out every couple of miles, a car with a laser to keep the pacers in check, an unreleased pair of shoes Nike specifically engineered for the race, an extremely flat course with minimal turns, and an optimal temperature that was cool and not too humid. While most marathon runners cannot expect the same level of support that was made available to Kipchoge, the last two factors seem to be more variable to regular marathon runners.</p>
+
+<p>To investigate the effects of the elevation of courses and weather on marathon times, we will consider the results from the Boston, Berlin, and Chicago marathons.</p>
+
+<h4>Effects of Weather</h4>
+
+<p>To look at the effects of weather, it is best to look at the Boston marathon. The Boston Marathon is infamous for it's volatile year to year weather conditions.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_1.png" alt="picture 1"><figcaption></figcaption></center>
+</figure>
+
+<p>The median finishing times year to year are almost uniform except for a few standout years. The median finishing times in 2004, 2005 and 2012 are higher than those of the other years shown. During these years, races all share a common factor: the temperature at the starting time was in the 70s with the high of that day reaching the 80s and 90s. Another interesting year is 2013, where the median finishing time was well below the other years'. We can also see that the spread of the times was much lower than the rest of the other results; the starting temperature was 37 degrees and only went up to 55 degrees.</p>
+
+<p>These observations from the graph are summarized when we place these race years in bins of categorical temperatures.  This presented a problem because in a 2+ hour race, the temperature did not remain constant throughout the race. The solution was to bin these races with <a href="https://findmymarathon.com" target="_blank">FindMyMarathon</a>, where it shows the temperature at the start of the race and the high for that day. The races were placed into three bins: cold, moderate, and hot:</p>
+
+<p>		• Cold races indicate races with a start temperature below 59 degrees fahrenheit and the daily high below 60 degrees.</p>
+
+<p>		• Moderate races were a little trickier, where I considered starting temperatures below 59 degrees but also having a daily high over 60.</p>
+
+<p>		• Hot races had starting temperatures of over 70 degrees with daily highs of over 70.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Immediately, we see the difference of the means between the three bins. To verify that the difference is statistically significant, I ran an Analysis of Variance (ANOVA) test to find that the p-value was approximately zero. Therefore, the difference of means is indeed statistically significant. In other words, there is a very low probability that the difference in the means would appear by chance alone.</p>
+
+<h4>Effects of Elevation</h4>
+
+<p>Before diving into the analysis of the effects of course elevation, it is important to clear up a common misconception. While the difficulty of running up hills is widely recognized, the challenge of running downhill must also be accounted for. Running downhill requires your legs to "catch" you at every step you take to prevent you from falling over. This creates more wear and tear on the leg muscles, which is especially prevalent in long races such as marathons. Thus, the optimal course is one that is as flat as possible.</p>
+
+<p>To look at the effects of elevation, we will look at the Boston and Berlin marathons, two drastically different race courses in terms of elevation.</p>
+
+<p>First, let's look observe the elevation maps of the respective courses:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption>Boston Marathon Elevation</figcaption></center>
+</figure>
+
+<p>Here we see that the Boston Marathon experiences drops of elevation throughout the entire race, showing that the course is mostly downhill.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption>Berlin Marathon Elevation</figcaption></center>
+</figure>
+
+<p>Here we see that the Berlin Marathon elevation is mostly consistent throughout the entire race, showing that it is a relatively flat course.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption>Berlin Marathon Times 2005-2013, Boston Marathon Times 2001-2014</figcaption></center>
+</figure>
+
+<p>Here we see that the Boston Marathon has a lower median, twenty fifth percentile, and seventy fifth percentile than the Berlin marathon. We can infer that the downhill course typically speeds up overall times in marathons. This is peculiar, as this same logic does not apply to elite runners, as they actually run slower on the downhill Boston course relative to the flat Berlin course. Perhaps this suggests a fundamental difference between the average runner and an elite runner when running uphill or downhill.</p>
+
+<p>Aside from your individual fitness, the current weather and course itself does play a role in the finishing times. The ideal race temperature for when you're hoping to achieve a new personal best probably should be below 60 degrees. The fastest courses should also be those with the most downhill. However, with more data attributing other variables such as wind, splits and heart rate, we can find more specific relationships. But besides that, the next time you want to run a fast time, hope for a cool day and pick a downhill marathon.</p>
+
+<p>Sources: FindMyMarathon</p>

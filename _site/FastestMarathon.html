@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">An In-Depth Analysis of the Fastest Marathon Ever</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/donaldchung">Donald Chung</a>
+                      
+                    
+                  
+                  • 14 Jan 2020 •
+                  
+                    
+                      5 min read
+                    
+                </p>
+            <p>On October 12, 2019, it was still early morning as the world watched as Elliot Kipchoge put one foot in front of another, gracefully passing the finish line and becoming the first person ever to run a marathon in under two hours. He finished in a blistering fast time of 1:59:40.</p>
+
+<p>Many factors came together to shatter the two hour time barrier in the marathon. First and foremost, Kipchoge is the best marathoner in the world, as he currently holds the official world record at 2:01:39. He was close to closing in on the barrier, but not quite there yet. The race organizers (INEOS) needed a way to trim down his time by at least 1:40. That equates to about 6 seconds faster per mile than the world record. INEOS was able to accomplish this by having the following: an army of pacers to swap in and out every couple of miles, a car with a laser to keep the pacers in check, an unreleased pair of shoes Nike specifically engineered for the race, an extremely flat course with minimal turns, and an optimal temperature that was cool and not too humid. While most marathon runners cannot expect the same level of support that was made available to Kipchoge, the last two factors seem to be more variable to regular marathon runners.</p>
+
+<p>To investigate the effects of the elevation of courses and weather on marathon times, we will consider the results from the Boston, Berlin, and Chicago marathons.</p>
+
+<h4>Effects of Weather</h4>
+
+<p>To look at the effects of weather, it is best to look at the Boston marathon. The Boston Marathon is infamous for it's volatile year to year weather conditions.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_1.png" alt="picture 1"><figcaption></figcaption></center>
+</figure>
+
+<p>The median finishing times year to year are almost uniform except for a few standout years. The median finishing times in 2004, 2005 and 2012 are higher than those of the other years shown. During these years, races all share a common factor: the temperature at the starting time was in the 70s with the high of that day reaching the 80s and 90s. Another interesting year is 2013, where the median finishing time was well below the other years'. We can also see that the spread of the times was much lower than the rest of the other results; the starting temperature was 37 degrees and only went up to 55 degrees.</p>
+
+<p>These observations from the graph are summarized when we place these race years in bins of categorical temperatures.  This presented a problem because in a 2+ hour race, the temperature did not remain constant throughout the race. The solution was to bin these races with <a href="https://findmymarathon.com" target="_blank">FindMyMarathon</a>, where it shows the temperature at the start of the race and the high for that day. The races were placed into three bins: cold, moderate, and hot:</p>
+
+<p>		• Cold races indicate races with a start temperature below 59 degrees fahrenheit and the daily high below 60 degrees.</p>
+
+<p>		• Moderate races were a little trickier, where I considered starting temperatures below 59 degrees but also having a daily high over 60.</p>
+
+<p>		• Hot races had starting temperatures of over 70 degrees with daily highs of over 70.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Immediately, we see the difference of the means between the three bins. To verify that the difference is statistically significant, I ran an Analysis of Variance (ANOVA) test to find that the p-value was approximately zero. Therefore, the difference of means is indeed statistically significant. In other words, there is a very low probability that the difference in the means would appear by chance alone.</p>
+
+<h4>Effects of Elevation</h4>
+
+<p>Before diving into the analysis of the effects of course elevation, it is important to clear up a common misconception. While the difficulty of running up hills is widely recognized, the challenge of running downhill must also be accounted for. Running downhill requires your legs to "catch" you at every step you take to prevent you from falling over. This creates more wear and tear on the leg muscles, which is especially prevalent in long races such as marathons. Thus, the optimal course is one that is as flat as possible.</p>
+
+<p>To look at the effects of elevation, we will look at the Boston and Berlin marathons, two drastically different race courses in terms of elevation.</p>
+
+<p>First, let's look observe the elevation maps of the respective courses:</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption>Boston Marathon Elevation</figcaption></center>
+</figure>
+
+<p>Here we see that the Boston Marathon experiences drops of elevation throughout the entire race, showing that the course is mostly downhill.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption>Berlin Marathon Elevation</figcaption></center>
+</figure>
+
+<p>Here we see that the Berlin Marathon elevation is mostly consistent throughout the entire race, showing that it is a relatively flat course.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/fastestMarathon/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption>Berlin Marathon Times 2005-2013, Boston Marathon Times 2001-2014</figcaption></center>
+</figure>
+
+<p>Here we see that the Boston Marathon has a lower median, twenty fifth percentile, and seventy fifth percentile than the Berlin marathon. We can infer that the downhill course typically speeds up overall times in marathons. This is peculiar, as this same logic does not apply to elite runners, as they actually run slower on the downhill Boston course relative to the flat Berlin course. Perhaps this suggests a fundamental difference between the average runner and an elite runner when running uphill or downhill.</p>
+
+<p>Aside from your individual fitness, the current weather and course itself does play a role in the finishing times. The ideal race temperature for when you're hoping to achieve a new personal best probably should be below 60 degrees. The fastest courses should also be those with the most downhill. However, with more data attributing other variables such as wind, splits and heart rate, we can find more specific relationships. But besides that, the next time you want to run a fast time, hope for a cool day and pick a downhill marathon.</p>
+
+<p>Sources: FindMyMarathon</p>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2020 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>
