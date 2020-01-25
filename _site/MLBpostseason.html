@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">A Brief History of MLB Postseason Format Changes</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/fischersherrod">Fischer Sherrod</a>
+                      
+                    
+                  
+                  • 25 Jan 2020 •
+                  
+                    
+                      7 min read
+                    
+                </p>
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/mlbPostseason/pic_1.png" alt="cover photo"><figcaption>Source: cnycentral.com</figcaption></center>
+</figure>
+
+<p>For many baseball fans, the MLB postseason&mdash;the World Series in particular&mdash;is the ultimate test of skill and teamwork. Over the course of a month, the best teams battle it out to become the World Series champion. Dating back to the first MLB postseason in 1884, the title of World Series champion has been the highest achievement that a professional baseball team can attain. Thus, the importance of the postseason to MLB teams and baseball enthusiasts alike cannot be understated. This, however, has not kept the MLB from changing the postseason format every 10 to 20 years. As expected, these changes are met with criticism and controversy, roster and strategy changes, and&mdash;in rare cases&mdash;MLB dynasties.</p>
+
+<p>When the MLB postseason was first introduced to the professional league in 1884, it was very simple. After a few years of simple exhibition matches, the MLB decided on a postseason format that consisted of only one series&mdash;later to be called the World Series. In this format, the top-seeded teams from the American League and the National League would face off in a single best-of-seven series (in 1903, 1919, 1920, and 1921 a best-of-nine was played). This oversimplified version was used for nearly a hundred years before it was modified. In 1969, when each of the MLB leagues were split into two regions, the postseason was extended to become a two round best-of-seven series. In this format, the top teams of each league would compete against one another in the ALCS and the NLCS before advancing to the World Series.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/mlbPostseason/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption>Source: britannica.com</figcaption></center>
+</figure>
+
+<p>When a new region was again added to each MLB league in 1995, a third round, this time a best-of-five was added to the postseason. To accomodate for the odd numbers, a wild card team was added to each league; the wild card team would play the divisional champion in the best-of-five Division Series. Finally, in 2012 a second wild card was added to each league.</p>
+
+<p>As you have probably concluded, the MLB's postseason format quickly became one of the most variable in all of American sports history. The ramifications of these changes were felt far and wide among the baseball community. One of the most direct impacts of these changes was on match variation.</p>
+
+<p>Before 1969, when the MLB postseason was comprised of a single series, match variation was nonexistent. At the end of each season, the top-seeded of the American League or the National League was guaranteed to win the World Series. However, as the MLB postseason was extended to accommodate for internal league changes, more and more teams gained access to the once elite MLB postseason. Resultantly, the World Series became unpredictable. As of 2019, ten teams participate in the MLB postseason, each fighting for the title of World Series champion. No teams are guaranteed a spot in the World Series, or even the ALCS and NLCS.</p>
+
+<p>Any advantage that top-seeded teams once had in the MLB postseason is slowly diminishing. Let's take a look at how the probability of a top team winning the World Series has changed since 1969.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/mlbPostseason/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>For the most part, these results are fairly straightforward. As the leagues split into more distinct regions and wild card teams were added to the MLB postseason, the top-seeded teams struggled to stay consistent. If more spots are made available in the MLB postseason in the future, this trend will likely continue; the title of top seed will lose the little competitive edge that it now provides. Even if the current format remains unchanged for years to come, the spike seen in the 2012-2019 seasons will likely drop off as more data is made available. But what does this trend mean for MLB fans and teams today?</p>
+
+<p>For casual fans, this trend is nothing but beneficial. The expansion of the MLB postseason has provided baseball fans with content that was previously unavailable. Furthermore, the changes made to the MLB postseason have made the games more enticing&mdash;no games are unwinnable and no spots are secure.  The MLB postseason can take any number of turns before a World Series champion is crowned, as the Washington Nationals showed us this year.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/mlbPostseason/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption>Source: washington.org</figcaption></center>
+</figure>
+
+<p>For MLB teams, things are a bit more complicated. In recent years, the postseason format has come to influence team play styles and strategies. Due to the expansion of the MLB postseason, many teams have attempted to adopt a more conservative, consistent play style. In today's three round best-of-seven series format, consistency is more important than ever. To win the World Series, a team must be able to play at the highest level at all times.</p>
+
+<p>Although the format changes have resulted in an extended MLB postseason, they have not always resulted in the most competitive games. When wild card teams and the Division Series were first introduced to the postseason in 1995, competition levels took a turn for the worst. Under this new format, the wildcard teams&mdash;often considered the underdog teams of each league&mdash;would immediately face off against the top-seeded divisional champion of their respective league. In recent years, these matchups have given top teams an easy route to the ALCS or NLCS. Consequently, many top-seeded teams arrive to the ALCS or NLCS unprepared for the competition and pressure that the series will surely bring.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/mlbPostseason/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>While the differences may be subtle, they cannot be ignored. For the ALCS and the World Series, there is little to be said. The average number of games played per series has remained relatively constant, despite postseason format changes. The NLCS, however, brings up questions for concern. From 1985 to 1993, the average number of games played per NLCS was 6.3. In today's postseason format, this number is almost a whole game lower at 5.5. In a simple best-of-seven series, this change is quite drastic. Although we cannot be sure what brought about this change, it is likely that MLB postseason format changes&mdash;specifically the addition of wild card teams&mdash;had a direct impact.</p>
+
+<p>But how could something as impartial as format changes possibly have such an impact?</p>
+
+<p>One explanation is the prevalence of baseball dynasties or 'dream teams' in recent years. As the postseason format has changed over the years, so has the importance of consistent play. When the postseason was first introduced to the MLB, inconsistent teams won the World Series quite frequently. However, in today's three round best-of-seven series, consistency is more or less a requirement. Thus, as consistent play gradually became more and more important, select teams were able to find their niche among a particular postseason format. The result was an absolute domination of MLB league and postseason play. Let's see if any baseball dynasties formed from 1995 to 2011 in which the three series best-of-seven (with one wild card team for each league) format was used.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/mlbPostseason/pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Clearly, the New York Yankees were able to find great success in the MLB postseason throughout these years. Whether or not this success was due the postseason format cannot be known for sure. However, the history of the New York Yankees and their performance in previous MLB postseasons support the claim that the postseason format played a major role in their success.</p>
+
+<p>From 1985 to 1993, when the postseason was a two round best-of-seven series, the New York Yankees were unable to win a single World Series. When this format was changed, however, the Yankees looked like an entirely new team. In the early years of this new format, the Yankees were unstoppable; they were crowned World Series champion three years in a row, beginning in 1998. Without the postseason format change of 1995, it is unlikely that the Yankees would have been so dominant in these years. When the postseason format was changed in 2012, their success came to an end. Since these changes, the New York Yankees have not won, or participated in, the World Series.</p>
+
+<p>While many professional baseball teams and fans dream of a time when the MLB stops altering the postseason format, it is unlikely that this dream will come true any time soon. While previous format changes have resulted in lower levels of postseason competition and occasional dynasties, the MLB has only benefited from the changes. By extending the postseason format and introducing wild card teams, the MLB is raking in more cash than ever. The MLB has no reason to halt the postseason changes that they have profited so greatly from.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/mlbPostseason/pic_7.png" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>Since 2001, the MLB has seen annual increases in revenue. In more recent years, this trend has only become more apparent. Every year, the MLB seems to outperform themselves, pushing their annual revenue to unprecedented levels. With this in mind, I would not be surprised to see the MLB postseason expanded even further in upcoming years.</p>
+
+<p>Sources: baseball-reference.com, statista.com</p>
+
+
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2020 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>
