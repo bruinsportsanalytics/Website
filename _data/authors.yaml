@@ -80,6 +80,10 @@ jack_ma:
   bio: null
   name: Jack Ma
   web: http://www.bruinsportsanalytics.com/jackma
+jaden_nguyen:
+  bio: null
+  name: Jaden Nguyen
+  web: http://www.bruinsportsanalytics.com/jadennguyen
 joe_dunham:
   bio: null
   name: Joe Dunham
@@ -154,6 +158,10 @@ nikhil_sharma:
   image: ../assets/members/nikhilS.jpg
   name: Nikhil Sharma
   web: http://www.bruinsportsanalytics.com/nikhilsharma
+pieter_van_tol:
+  bio: null
+  name: Pieter van Tol
+  web: http://www.bruinsportsanalytics.com/pietervantol
 qijing_yap:
   bio: null
   name: Qi Jing Yap
@@ -197,6 +205,10 @@ vishal_sundaram:
   bio: null
   name: Vishal Sundaram
   web: http://www.bruinsportsanalytics.com/vishalsundaram
+wilson_yu:
+  bio: null
+  name: Wilson Yu
+  web: http://www.bruinsportsanalytics.com/wilsonyu
 zane_winston:
   bio: Zane is a first year-business economics student at UCLA. He has been interested
     in sports since a young age, and loves writing about basketball.

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">The Team With the Best Clutch Gene</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/wilsonyu">Wilson Yu</a>
+                      
+                    
+                      
+                      
+                    , <a href="http://www.bruinsportsanalytics.com/jadennguyen">Jaden Nguyen</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/pietervantol">Pieter van Tol</a>
+                      
+                    
+                  
+                  • 30 Mar 2020 •
+                  
+                    
+                      9 min read
+                    
+                </p>
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/clutchGene/pic_1.png" alt="cover photo"><figcaption>Source: wallpapersafari.com</figcaption></center>
+</figure>
+
+<p>In the 2013 NBA Finals, Ray Allen hit arguably one of the most significant shots of the decade. With the rival San Antonio Spurs just seconds away from another NBA championship, Allen converted an offensive rebound into a 3 point shot to tie the game, send it to overtime and eventually secure a vital win. The Heat ended up winning the series and the championship and as a result, Ray Allen's three became one of the most memorable shots in recent history.</p>
+
+<p>Not only did that shot change the outcome of the series, but it also fundamentally altered the narrative surrounding Lebron James "taking his talents to South beach", creating the Big three, and marking the beginning of the superteam era. Without that shot, that "superteam" , having already fallen short once to an underdog Dallas Mavericks team, would once and for all have been labelled an underwhelming, failed endeavour.</p>
+
+<p>NBA games consist of 2 and 3 point shots, but the context and time at which these shots are taken play a crucial role in determining the idea of clutch. According to the NBA, "clutch time" is defined as the last 5 minutes of a game in which the point differential is 5 or less. While discussions on the topic of clutch are usually centered around individual players, we shift our focus to teams and their ability to close out games in crunch time. We will spend more time discussing the teams' overall statistics during clutch time rather than specific plays made by individuals.</p>
+
+<h5>Absolute vs Relative Clutch Win Percentage</h5>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/clutchGene/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption>Figure 1 - Absolute Clutch Win Percentage</figcaption></center>
+</figure>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/clutchGene/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption>Figure 2 - Relative Clutch Win Percentage</figcaption></center>
+</figure>
+
+<p>Figure 2 shows the value of a team's win percentage in clutch games subtracted by its overall win percentage. This is essentially the change in a team's win probability as they enter clutch time. A positive value would indicate that the team usually performs better in clutch situations than in regular games while a negative value would suggest that the team typically performs worse in clutch games. This method allows us to figure out which teams truly excel in clutch time by adjusting for their typical win percentage. For example, if we only look at the Charlotte Hornets's win percentage in the clutch, they come in at the middle of the pack at 51.9%. However, if we compare this to their season win percentage at 33.3%, we can observe that the Hornets have high relative success in clutch games and are deserving of being considered as more than just your average team in the clutch.</p>
+
+<p>This leads us to the question of whether a team's absolute or relative clutch win percentage reveals more about the clutchness of a team. To start off, we will define a team's clutchness to be its ability to adapt and perform better in the final moments of a close game. By this definition, a very clutch team should be a team that is able to take advantage of the close game they are in and play more efficiently than in other situations. We believe that the relative clutch win percentage (RCWP) would be able to model this quality of a team better than the absolute clutch win percentage (ACWP) because the RCWP accounts for the fact that not all teams are equally skilled.</p>
+
+<p>For example, the Toronto Raptors are currently 4th in the league with a season win percentage of 72.7%. They also happen to be 4th when ranked by ACWP at 64.3%, so does this mean that they are the 4th clutchest team in the league? Well, if we look at how they usually perform versus their clutch performances, we can see that their win percentage dips by 8.4% in the latter, which may suggest that they might not be as good in the clutch as we thought. It is clear that the Raptors are 4th in ACWP rankings primarily because they are a very skilled team and are usually able to win games. However, since their performance in clutch situations suffers a considerable amount relative to all other games, they should not be considered a top clutch team. By using the RCWP to rank our teams, we are able to assess how well a team is able to improve its chances of winning in clutch games by isolating its clutch factor from its regular performance. The point here is that the team that wins the highest percentage of clutch games is not necessarily the team with the best clutch gene. As long as teams perform better in clutch time than in other situations, they are candidates of being considered as one of the top clutch teams.</p>
+
+<h5>Adjusted Offensive Rating</h5>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/clutchGene/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption>Figure 3 - Adjusted Offensive Rating</figcaption></center>
+</figure>
+
+<p>The offensive rating is how many points the team scores per 100 possessions. The adjusted offensive rating (AOR) is the value obtained when the clutch offensive rating is subtracted by the overall offensive rating. This value is basically how many more points a team scores in the clutch per 100 possessions than in other situations. The Charlotte Hornets lead this chart with a 15.2 point rating increase, and the Dallas Mavericks suffer the most with a 21 point rating decrease.</p>
+
+<h5>Adjusted Defensive Rating</h5>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/clutchGene/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption>Figure 4 - Adjusted Defensive Rating</figcaption></center>
+</figure>
+
+<p>The defensive rating is how many points their opponent scores per 100 possessions. The adjusted defensive rating (ADR) is the value calculated when the overall defensive rating is subtracted by the clutch defensive rating. This value is essentially the decrease in their opponent's points per 100 possessions, so the higher the value of this decrease, the better. The Atlanta Hawks lead this metric with a 17.4 point decrease and the Chicago Bulls' defense suffers the most in clutch with a 14.8 point increase.</p>
+
+<h5>Adjusted Net Rating</h5>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/clutchGene/pic_6.png" alt="picture 6" style="max-width: 95%;"><figcaption>Figure 5 - Adjusted Net Rating</figcaption></center>
+</figure>
+
+<p>The net rating is calculated by subtracting the defensive rating from the offensive rating, with a higher offensive rating and a lower defensive rating being desirable. Applying the same principle as the adjusted win percentage, we believe that the best metric to determine the team with the best clutch gene is the team with the highest adjusted net rating (ANR) during clutch moments. The offensive rating and defensive rating are essentially measures of a team's efficiency. By using this metric instead of the adjusted win percentage, we are not discounting any losing teams who may have had a great performance in the clutch. Since we previously defined clutch to be a team's ability to perform well in clutch moments, a measure of their improvement in efficiency dictated by the points scored by both teams, whether they won or lost, would best fit our definition to determine the team with the best clutch gene.</p>
+
+<h5>Relative Clutch Win Percentage Based on Number of All-Star Appearance</h5>
+
+<p>(excluded players with less than 10 games)</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/clutchGene/pic_7.png" alt="picture 7" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>While looking at contributing factors for clutchness, we wanted to see whether the amount of talent or star power plays a role in a team's ability to close out in the clutch. We tested this by plotting the total number of All Star appearances for each team against their win percentage in "clutch time". From the graph, most of the teams with a high clutch win percentage are heavily on the left, with fewer All Star appearances. This shows that teams' wins in the clutch aren't impacted by an individual star's performance; it is independent of how much talent an individual player may have. A possible explanation could be that overall team performance in clutch time overshadows individuals' performance.</p>
+
+<h5>Conclusion</h5>
+
+<p>From the relative clutch win percentage, we can see that the Charlotte Hornets' win percentage in the clutch increases by 18.6% when compared to their overall win percentage, the highest improvement in the league. This was followed closely by their change in field goal percentage. With an increase of 6% in the clutch, this was also the best improvement among all NBA teams, with the average change in field goal percentage being a 3.81% decrease in the clutch. However, since we want to look at each team's performance during clutch time rather than if they just won or lost, we should look at their adjusted offensive and defensive ratings.</p>
+
+<p>The Charlotte Hornets still lead the league with an adjusted offensive rating of 15.2 with the Oklahoma City Thunder following closely behind at 13.9. These two teams' AORs are more than double the value of any other team, making them top contenders to be the top clutch team. If we move to the teams' adjusted defensive rating, we can observe that the Atlanta Hawks are at the top with a score of 17.4, but since their AOR is a -13.4, they are not a top candidate. The Milwaukee Bucks are at second in ADR rankings at 16, and the Thunder and the Philadelphia Sixers are tied in 3rd place at 13.3. The Hornets' ADR rank at 11th at 6.4, which severely hurts their contention of being the best clutch team. Finally, if we look at the adjusted net rating, the Thunder come out on top with a score of 27.3 and the Hornets place second with a score of 21.6.</p>
+
+<p>With these observations, we have come to the conclusion that the Oklahoma City Thunder are deserving of being named the team with the best clutch gene. Even though the Hornets perform very well offensively and are able to improve their win percentage greatly in clutch moments, their defensive performance hinders their stock of being the top clutch team. The Thunder have the greatest overall improvement in efficiency during clutch time as they have the best offensive efficiency and the third best defensive efficiency. In contrast, the Dallas Mavericks is the team with the worst clutch gene based off adjusted net rating, which is also reflected in their last place standing in adjusted win percentage.</p>
+
+<p>An assumption we made to arrive at our result was that during clutch moments, all teams face the same advantages and disadvantages against all opponents. However, this is unrealistic as this would change with each match. For example, a team with bad perimeter defense would be at a bigger disadvantage if the opponent specializes in 3-point shooting. Had they not faced a team that specializes in 3-point shooting during the clutch, their defensive rating might have been better. Given this assumption, we found that the Oklahoma City Thunder have the best ability to adapt and perform better in the final moments of a close game.</p>
+
+<p>Sources: stats.nba.com</p>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2020 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>
