@@ -141,6 +141,10 @@ kyle_boal:
   bio: null
   name: Kyle Boal
   web: http://www.bruinsportsanalytics.com/kyleboal
+luke_ito:
+  bio: null
+  name: Luke Ito
+  web: http://www.bruinsportsanalytics.com/lukeito
 max_blane:
   bio: null
   image: ../assets/members_1819/maxblane.jpg
@@ -182,6 +186,10 @@ salil_akundi:
   image: ../assets/members/salilA.JPG
   name: Salil Akundi
   web: http://www.bruinsportsanalytics.com/salilakundi
+sean_lashkari:
+  bio: null
+  name: Sean Lashkari
+  web: http://www.bruinsportsanalytics.com/seanlashkari
 stephen_chen:
   bio: null
   name: Stephen Chen
