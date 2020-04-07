@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bruin Sports Analytics</title>
+    <!-- <link rel="stylesheet" href="/css/base.css" type="text/css">     -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="/css/posts.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="../assets/bsa_logo_short_1819.png">
+
+  </head>
+  
+  <style>
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: yellow;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .formTitle {
+  font-family: Roboto slab, serif;
+  font-size: 16px;
+}
+
+.form-container .bth:hover,
+.open-button:hover {
+  opacity: 1;
+}
+</style>
+
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="leftbox">
+          <a href="../../" class="left navlink">
+
+            <img id="logo" src="../assets/bsa_logo_short_1819.png" style="position: absolute; left: 10px; top: 5px;" />
+            <span id="homemenuitem" style="font-family: Roboto slab, serif;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;Bruin Sports Analytics
+            </span>
+
+          </a>
+        </div>
+
+        <ul id="days" class="right hide-on-med-and-down">
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+
+        </ul>
+
+
+        <ul class="side-nav" id="mobile-demo">
+          <li id="Home"><a class="navlink" href="../../" style="font-family: Roboto slab, serif;">Home</a></li>
+          <li id="Blog"><a class="navlink" href="../../blog" style="font-family: Roboto slab, serif;">Blog</a></li>
+          <li id="Projects"><a class="navlink" onclick="openForm()" style="font-family: Roboto slab, serif;">Projects</a></li>
+          <li id="Research"><a class="navlink" href="../../research" style="font-family: Roboto slab, serif;">Research</a></li>
+          <li id="Officers"><a class="navlink" href="../../officers" style="font-family: Roboto slab, serif;">Officers</a></li>
+          <li id="About"><a class="navlink" href="../../about" style="font-family: Roboto slab, serif;">About</a></li>
+          <li id="Speakers"><a class="navlink" href="../../speakers" style="font-family: Roboto slab, serif;">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="return checkPswd()" class="form-container">
+    <h1 class="formTitle">Password:</h1>
+    <input type="password" placeholder="Enter Password" id="pswd" required>
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function checkPswd() {
+    // lol, dont peek
+    var password = "lovemesomegene";
+    var input = document.getElementById("pswd").value;
+    if (input == password) {
+      window.location = '../../projects_secret';
+    } else {
+      alert("Password does not match");
+    }
+    return false;
+  }
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+  });     
+</script>
+  <body>
+    <div id="bodycontent">
+
+            <h2 id = "pagetitle">The Faces of Tomorrow’s NBA?: A Comparison of the Atlanta Hawks’ and Dallas Mavericks’ Offenses</h2>
+            <p style="text-align:left;">
+                  
+                    
+                      
+                      
+                       By <a href="http://www.bruinsportsanalytics.com/oscarobrien">Oscar O'Brien</a>
+                      
+                    
+                      
+                      
+                      and <a href="http://www.bruinsportsanalytics.com/masonweinstein">Mason Weinstein</a>
+                      
+                    
+                  
+                  • 07 Apr 2020 •
+                  
+                    
+                      7 min read
+                    
+                </p>
+            <figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/hawksMavs/pic_1.png" alt="cover photo"><figcaption>Photo by Kyle Terada</figcaption></center>
+</figure>
+
+<p>When All-Stars Trae Young and Luka Doncic were swapped for each other on the day they were drafted in 2018, nobody could have predicted the offensive numbers they both would be putting up today. They weren't traded for each other straight up, with the Mavericks forking over a draft pick along with the rights to Trae Young. Doncic was highly valued at the time because he was dominant in the second-most competitive basketball league in the world, winning the Euroleague MVP before his 20th birthday. He was generally viewed as a polished, NBA-ready prospect. Trae Young, on the other hand, had popular media questioning both his defense and the sustainability of his uncanny long-range shooting ability. Some media outlets pointed at him as one of the prospects with a chance of flopping in the NBA.</p>
+
+<p>Over halfway through the 2019-20 season, both Doncic and Young are averaging better than an eye-popping 28.5 points and 8.5 assists per game, numbers that have only been seen from a few select offensive juggernauts: Oscar Robinson, Tiny Archibald, LeBron James, Russell Westbrook, and James Harden. Neither Doncic nor Young is great on the defensive side of the ball, so it's more entertaining to focus on what they're doing to help their teams score.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/hawksMavs/pic_2.png" alt="picture 2" style="max-width: 95%;"><figcaption>Photo by Scott Cunningham</figcaption></center>
+</figure>
+
+<p>The sensational sophomores have been the beneficiaries of an offensive trend that some NBA teams are leaning into. To sum it up, these teams are running their offenses more than ever before through their single biggest playmaking and scoring threat. They're spacing the floor around them with shooters so that the star player has room to either score or disrupt the defense enough to find an open teammate, taking the role of a point guard to the next level.</p>
+
+<p>This trend can be seen statistically by the recent rise in players with high scoring and assist rates per 100 possessions. The graph below shows that the levels of pace adjusted scoring and assisting we're seeing from individual players in today's NBA are historically unprecedented. This increase in reliance on the best offensive player on the court has led to awesome levels of production from the modern NBA stars we all know and love like Giannis, Damian Lillard, and LeBron.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/hawksMavs/pic_3.png" alt="picture 3" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>For Doncic and Young, who are both exceptional passers and crafty scorers with seemingly limitless range, this offensive philosophy has led to their teams putting them in tons of pick and roll ball-handling situations, and both have performed brilliantly.</p>
+
+<p>It is hard to miss the greatness of superstar Slovenian, Luka Doncic. His Mavericks have by far the best offensive rating in the league, which measures a team's offensive efficiency. Their current mark of 116.1 is the best offensive rating according to NBA.com since 1996 where their data ends. Doncic is already regarded among the NBA elite with only the Greek Freak having better odds to win 2019-20 NBA MVP.</p>
+
+<p>The Hawks, on the other hand, have struggled mightily to score the ball, and this lack of success has tainted the reputation Trae Young deserves as one of the league's top offensive players. The Hawks offensive struggles can be seen by their 105.6 offensive rating, which puts them near the bottom of the league. It takes a bit of below-the-surface analysis to see that the inefficiency of the Hawks offense led by Trae Young has had a lot to do with the pieces that surrounded the sharpshooter, or more accurately, the lack thereof.</p>
+
+<p>The pre-trade deadline Atlanta Hawks and Dallas Mavericks without their young stars are polar opposites in terms of their depth. The Hawks completely lacked a second scoring option with their productive power forward John Collins suspended for 25 games. As a result, the 43 year-old Vince Carter is averaging more than 15 minutes per game, which illustrates the Hawks' lack of options. Without another player with a significant offensive impact, Young is forced to carry the load offensively for the Hawks. This makes Young's success even more impressive as he is averaging nearly 30 points per game at the All-Star break, even though opposing teams are solely preparing to stop him.</p>
+
+<p>Alternatively, the Dallas Mavericks have Kristaps Porzingis to shoulder some of the offensive load and draw the defense's attention away from Doncic. Porzingis is a problem to stop because his size allows him to bully guards, and he can stretch more traditional post players with his outside shooting. So far this season he is averaging almost 20 points-per-game with a 35% three-point field goal percentage. Recently, he has been putting up bigger numbers, possibly catching his stride as he did not play all of last season due to an ACL tear. In 6 of the last 11 games that he has played in, he has scored more than 25 points, and has reached 38 points twice during that stretch. The Mavs offense is multi-dimensional, which softens up defenses for Doncic to pick apart. Additionally, role players such as Seth Curry, Tim Hardaway, Dorian Finney-Smith and Maxi Kleber are limiting defense's help-side willingness with their 38% or greater three-point field goal percentages.</p>
+
+<p>The following chart illustrates the discrepancy between the offensive production by each player on the Mavericks and the Hawks for players who have played in at least 15 games. Box plots are shown for each team comparing their Offensive Box Plus/Minus (OBPM). Basketball-Reference defines OBPM as "[a] box score estimate of the offensive points per 100 possessions a player contributed above a league-average player, translated to an average team." Clearly Young and Doncic standout as high-side outliers, which demonstrates their enormous offensive impacts. More importantly, though, the Atlanta Hawks mean OBPM is about the same as the lowest value for the Mavericks. Nearly all Hawks players are below league average compared with the Mavericks, whose median player OBPM is above league average. Young just lacks the support from his teammates on offense that Doncic benefits from.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/hawksMavs/pic_4.png" alt="picture 4" style="max-width: 95%;"><figcaption></figcaption></center>
+</figure>
+
+<p>The Hawks noticed their shortcomings at the trade deadline and doubled down on building a supporting cast for Young. They brought in five new players with the idea that their roster could be competitive as soon as next year. Jeff Teague and Treveon Graham were added from Minnesota. Teague, the former Hawk, is a capable backup point guard, even as he gets up there in years. In a four-team trade, Atlanta managed to snag Clint Capela and Nene Hilario. Capela is the key part of this trade because he is a big body in the point that blocks shots and pulls down rebounds. Additionally, he is a lob threat in the pick-and-roll game that has had plenty of practice in a similar position with James Harden. He should fit in with Atlanta's offense too because he allows John Collins to be a lethal perimeter threat. The Hawks' final move was acquiring the seven-foot Dewayne Dedmon, who can fill in as Capela's back up.</p>
+
+<p>Atlanta's offense looks to be much more deadly after the All-Star break as Young will have two new centers to use in the pick-and-roll. To help space the floor, they still have Kevin Huerter, who shoots 3 pointers at a 41% clip, and John Collins, who is still establishing himself after his suspension and now can spend more time on the perimeter. The Hawks will not become a multi-dimensional scoring machine like the Dallas Mavericks overnight, but they are taking steps in the right direction to help Young be successful.</p>
+
+<figure>
+	<center><img class="materialboxed responsive-img" src ="/assets/hawksMavs/pic_5.png" alt="picture 5" style="max-width: 95%;"><figcaption>Photo by Kyle Terada</figcaption></center>
+</figure>
+
+<p>Looking at the coming off-season, the Hawks could still grow more because of their significant cap space available. John Hollinger of The Athletic reports that Atlanta will have the most cap space of any team this off-season with nearly $48 million. They could be a very enticing landing spot for a skilled player, who is looking to cash-in on their talent and support a team that could be starting to trend upward. Moreover, even if the Hawks do not turn around this season for whatever reason, they are in a perfect position to receive a high lottery pick and either add young talent to their roster or trade it away for a proven player. The Atlanta Hawks have decided that they are Trae Young's team and are finding ways to put offensive weapons around him.</p>
+
+<p>Looking back at the 2018 NBA Draft, it is impossible to know what would have happened if Young and Doncic were not traded for each other that night. However, it is an interesting thought-experiment to consider if Young's offensive talent would have translated to helping the Maverick's offense develop into what it currently is. They are both offensively-gifted, young players who will continue to grow and impact the NBA, but the talent surrounding them thus far in their careers is vastly different. The remaining part of this season and next year could provide telling signs for what Young is able to accomplish with more weapons around him.</p>
+
+<p>Sources: basketball-reference.com, theathletic.com, stats.nba.com</p>
+
+      <hr>
+    </div>
+        
+
+    <!-- HTML Code for Subscription form provided by MailChimp -->
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://bruinsportsanalytics.us19.list-manage.com/subscribe/post?u=1c6c5d99801c7e0ec0c0aab92&amp;id=dbc3ba420e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL" style="font-family: Roboto slab, serif; color: #ffab40;">Subscribe to our newsletter!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c6c5d99801c7e0ec0c0aab92_dbc3ba420e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-family: Roboto slab, serif;"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+      <center id="footer">
+      © 2020 Bruin Sports Analytics.
+      <a href="https://twitter.com/bruinanalytics">Follow us on Twitter!</a></center>
+
+      <!-- add icons here -->
+  </body>
+  <script>
+      $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+</html>
