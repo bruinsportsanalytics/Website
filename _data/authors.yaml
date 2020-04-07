@@ -145,6 +145,10 @@ luke_ito:
   bio: null
   name: Luke Ito
   web: http://www.bruinsportsanalytics.com/lukeito
+mason_weinstein:
+  bio: null
+  name: Mason Weinstein
+  web: http://www.bruinsportsanalytics.com/masonweinstein
 max_blane:
   bio: null
   image: ../assets/members_1819/maxblane.jpg
@@ -162,6 +166,10 @@ nikhil_sharma:
   image: ../assets/members/nikhilS.jpg
   name: Nikhil Sharma
   web: http://www.bruinsportsanalytics.com/nikhilsharma
+oscar_obrien:
+  bio: null
+  name: Oscar O'Brien
+  web: http://www.bruinsportsanalytics.com/oscarobrien
 pieter_van_tol:
   bio: null
   name: Pieter van Tol
