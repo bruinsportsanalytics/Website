@@ -1,4 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-07T12:09:51-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bruin Sports Analytics</title><author><name>Bruin Sports Analytics</name></author><entry><title type="html">The Faces of Tomorrow’s NBA?: A Comparison of the Atlanta Hawks’ and Dallas Mavericks’ Offenses</title><link href="http://localhost:4000/HawksMavs" rel="alternate" type="text/html" title="The Faces of Tomorrow’s NBA?: A Comparison of the Atlanta Hawks’ and Dallas Mavericks’ Offenses" /><published>2020-04-07T12:04:51-07:00</published><updated>2020-04-07T12:04:51-07:00</updated><id>http://localhost:4000/HawksMavs</id><content type="html" xml:base="http://localhost:4000/HawksMavs">&lt;figure&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-26T22:37:48-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bruin Sports Analytics</title><author><name>Bruin Sports Analytics</name></author><entry><title type="html">Assessing the Tiers of Modern NFL Receivers With the Help of Machine Learning</title><link href="http://localhost:4000/modernreceivers" rel="alternate" type="text/html" title="Assessing the Tiers of Modern NFL Receivers With the Help of Machine Learning" /><published>2020-05-26T21:57:15-07:00</published><updated>2020-05-26T21:57:15-07:00</updated><id>http://localhost:4000/modernreceivers</id><content type="html" xml:base="http://localhost:4000/modernreceivers">&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_1.jpg&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;Source: SFGate&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Much like what has happened to basketball during Stephen Curry's career, the offensive philosophy of football has changed over the last few years. The traditional usage of wide receivers that has been around for decades is slowly fading away as football enters a new era of play calling and receivers in general are becoming far more versatile. Given all of this, I decided to look into how the tiers of receivers in the modern NFL can be better classified and how different they are from the traditional roles we have known for years. With the help of some analysis I did to classify advanced receiver data, I was able to find some pretty interesting things.&lt;/p&gt;
+
+&lt;h4&gt;The Basics&lt;/h4&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_2.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Source: viqtorysports.com&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Traditionally, there are three main receivers in an offense: the X, the Y, and the Z. The X receiver is the number one guy; he typically lines up on the weak side of the formation and right on the line of scrimmage. He's expected to be a physical player that's great with his hands and savvy enough to get off the ball and his man when jammed at the line of scrimmage. The Y receiver is usually a tight end; he's a blocker with pass-catching abilities and typically lines up closest to an offensive tackle. And lastly, the Z receiver is known as the 'flanker' or the number two guy. He typically lines up on the strong side of the formation about a yard off the ball and has the ability to motion in and out of the formation. He's usually relatively fast and can utilize that speed without worrying about getting jammed at the line of scrimmage to generate separation from his man. These are the labels by which plays have largely been called in the NFL for decades, but the actual roles of receivers within offenses have become far more convoluted than a simple X, Y, and Z classification.&lt;/p&gt;
+
+&lt;p&gt;Take the two teams that participated in this year's Super Bowl as examples. The Kansas City Chiefs' number one receiver is actually their &lt;i&gt;tight end&lt;/i&gt; Travis Kelce; play caller Andy Reid simply puts him all over the field as if he's a top wideout. It's actually more accurate to say that the Chiefs have two number one receivers (Kelce and Tyreek Hill) rather than a simple X, Y, and Z. Their opponent, on the other hand, has zero X receivers. The 49ers' receiving corps is made up of three number two guys, a freakishly athletic tight end, and a fullback that had more yards per target than any of the starting receivers in 2019. And yet, these two rather unconventional offenses were in the top three in net yards gained per pass attempt last season before ultimately squaring off in a Super Bowl. In many ways, that game was indicative of the current trajectory of football.&lt;/p&gt;
+
+&lt;p&gt;Reid, Niners play caller Kyle Shanahan, and many of their peers today subscribe to the following mindset: on any given play you have five eligible receivers; which five you roll with and how you choose to deploy them is entirely up to your creativity. There aren't really any other rules to this chess game. Tight ends can play like wide receivers, wide receivers can play like running backs, and fullbacks can play like tight ends. The NFL has changed, but by how much?&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_3.gif&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Source: NFL (Youtube)&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt;Methodology&lt;/h4&gt;
+
+&lt;p&gt;I started with advanced data from the NFL's &lt;a href=&quot;https://nextgenstats.nfl.com/stats/receiving&quot; target=&quot;_blank&quot;&gt;NextGenStats&lt;/a&gt; database of every wide receiver and tight end in the NFL over the last four years (2016-2019) who averaged at least 2.5 targets per week. The categories of data I took for each receiver along with their name, the year, their team, and their position were:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 45%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The goal was to create a k-means clustering of this data to see what patterns I could find in the groups that the algorithm split the receivers into. The way a K-means algorithm works is by initially choosing the desired number of centroids (mean values of clusters) and then constantly adjusting these centroids as it takes in more data points by using the Euclidean distance between points to place them into clusters. But with high-dimensional data, the calculation of this distance becomes more and more meaningless. To reduce the data to a few meaningful variables, I used Principal Component Analysis, a method that represents a given dataset with orthogonal vectors that explain the original dataset's variance. A subset of these orthogonal vectors (components) can then be used to represent a given percentage of the variance in the data. To determine the exact number of components that would be used in the k-means algorithm, I plotted the cumulative sum of the explained variance as the number of components increases:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Three components explained 73.6% of the variance in the data. After that, the increase in explained variance was not significant enough to warrant the inclusion of another component in the model, so I decided to proceed with three principal components for this data set.&lt;/p&gt;
+
+&lt;p&gt;Once that was complete, an optimal number of clusters for the k-means algorithm needed to be determined as well. To do this, I simply ran the algorithm 20 times with a different number of clusters each time and stored the within-cluster sum of squares (WCSS) for each run. WCSS is the sum of the squared deviations from each data point and its cluster centroid, which essentially makes it a metric for how distinctive each cluster is (the smaller the WCSS, the more compact the clusters are). Plotting these values revealed that the drop in WCSS began to level off at around three clusters, so that's how many clusters I decided to use in the algorithm. With three principal components and three desired clusters, the k-means clustering produced the following classifications of NFL receivers over the last four years:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_6.png&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The interesting part had finally arrived. The receivers had been split up into three groups as shown above, but what exactly are the groups? After spending some time looking through the names and stats in the different groups, I arrived at some loose conclusions about what kind of receivers were in each group.&lt;/p&gt;
+
+&lt;h4&gt;Cluster 1: Tight Ends and YAC Monsters (211 players)&lt;/h4&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_7.png&quot; alt=&quot;picture 7&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In general, these receivers do not have the highest share of the team's air yards and they work closer to the line of scrimmage (lower Avg. TAY), but they create more separation per play and have more yards after the catch (YAC) per reception than any other cluster. This assessment has 'Tight End' written all over it and surely enough, most of the tight ends in the data set fell into this cluster. But these statistics also accurately capture faster wide receivers that are number two or number three guys within their respective offenses and who are great after the catch, so many notable YAC specialists over the years fell into this group as well.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_8.png&quot; alt=&quot;picture 8&quot; style=&quot;max-width: 65%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt;Cluster 2: Unproductive Speedsters and Old/Injured Stars (156 players)&lt;/h4&gt;
+
+&lt;p&gt;This cluster is characterized by players who have more targeted air yards but a lower catch percentage and less YAC per reception than any other cluster. This was easily the most interesting cluster of the three because for the most part, it seemed like the worst receivers in the dataset appeared here, with some notable names also appearing. As far as the bulk of the receivers in this group goes, their commonality seems to be that they are generally very fast players that have no other dimension to their games than their speed (in that particular year).&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_9.png&quot; alt=&quot;picture 9&quot; style=&quot;max-width: 65%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But this does not explain why certain popular receivers that have been known to be very productive throughout their careers fell into this group. Looking closer at these names, almost all of them appear to have something in common. I've listed a few examples below:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_10.png&quot; alt=&quot;picture 10&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Almost every surprising name in this cluster was in the final year(s) of his career, injured, or both (almost every player in the above table was once a Pro Bowler). As a result, they got put into the same group as the generally unproductive receivers because their overall value to their passing offense is roughly the same.&lt;/p&gt;
+
+&lt;h4&gt;Cluster 3: The Best Receivers in Football, True Number Ones (139 players)&lt;/h4&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_11.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It looks like the modern NFL does still have the concept of the X receiver in terms of number one guys, even if the way these players line up is not always how the traditional X lines up. These players have the highest share of their teams' air yards and they lead the league in catches, targets, total yards, and touchdowns. They are some of the most recognizable names in football.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_12.png&quot; alt=&quot;picture 12&quot; style=&quot;max-width: 65%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt;Additional Thoughts&lt;/h4&gt;
+
+&lt;p&gt;The clusters do a decent job of capturing the development of receivers over the four years of data. For example, Tyler Lockett was a Cluster 1 receiver in 2016 and 2017 but transitioned into a Cluster 3 receiver in 2018 and 2019 as he became the Seahawks' premier target. Moreover, the clusters also give a pretty accurate depiction of the offensive situations of the 32 teams in the NFL. Going back to our Super Bowl teams, we can see that Kansas City has two Cluster 3 receivers in Kelce and Hill, backing up what the world knows about their high-octane passing offense. San Francisco, however, has zero Cluster 3 receivers, correctly leading us to believe that they are a team that relies on scheme to move the ball through the air rather than top-tier receivers.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/modernReceivers/pic_13.png&quot; alt=&quot;picture 13&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Source: Falcons Wire&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The clustering was by no means perfect. There are still certain head-scratchers in each cluster, which can largely be attributed to the random nature of the NFL. But it is also important to note that some of the strange output can be a result of cross-season comparison of these receivers. Using four seasons worth of receiver data and treating it all the exact same way is not entirely correct given the way sports tend to change over time. All in all, it's almost impossible to entirely classify a football player's value or production based on numbers alone, but this project did a solid job in helping illuminate the status of receivers today. Circling back to the discussion of traditional receiver roles, it looks like the X receiver is very much alive and well as the alpha of the receiving group, but with the way that pre-snap motion and shifts have started to take over the league (for various reasons that can be discussed in another article), these number one guys tend to line up all over the field rather than just the typical spot for X receivers on the weak side of the formation. The traditional Y and Z roles, however, seem to be merging into one and the evolution of tight ends is likely the culprit for this. While most of the tight ends are Cluster 1 players, many tight ends have been making their ways into Cluster 3 over the years. The standard for tight end play is increasing every year in the NFL as they are becoming extremely athletic, dynamic players that play callers like to use as wildcards within their offenses. As a result, the production of tight ends is becoming extremely similar to number two and even number one wide receivers.&lt;/p&gt;
+
+&lt;p&gt;I suspect that it won't be long before Cluster 1 and Cluster 3 start to overlap as well. The Cluster 1 guys are generally better after the catch and the Cluster 3 guys are generally more physical players with better hands, but the Cluster 3 players are also tremendous YAC receivers and the Cluster 1 players are becoming number one options for many teams. The line between those two will only become more blurry as the years go on. It's not official, but football seems to be entering an era where three players that can do a little bit of everything are becoming more valuable than a group consisting of a pure X, Y, and Z. 'Positionless basketball' is one of the hot phrases in sports today, but it may not be long before we have positionless offensive football as well.&lt;/p&gt;
+
+&lt;p&gt;Sources: nextgenstats.nfl.com, pro-football-reference.com&lt;/p&gt;
+&lt;p&gt;View Code: &lt;a href=&quot;https://github.com/Kathirilango/Sports-Analytics/tree/master/receiver_cluster&quot; target=&quot;_blank&quot;&gt;Github Repository&lt;/a&gt;&lt;/p&gt;</content><author><name>Kathir Ilango</name></author><summary type="html">Much like what has happened to basketball during Stephen Curry's career, the offensive philosophy of football has changed over the last few years. The traditional usage of wide receivers that has been around for decades is slowly fading away as football enters a new era of play calling and receivers in general are becoming far more versatile. Given all of this, I decided to look into how the tiers of receivers in the modern NFL can be better classified and how different they are from the traditional roles we have known for years. With the help of some analysis I did to classify advanced receiver data, I was able to find some pretty interesting things.</summary></entry><entry><title type="html">The Faces of Tomorrow’s NBA?: A Comparison of the Atlanta Hawks’ and Dallas Mavericks’ Offenses</title><link href="http://localhost:4000/HawksMavs" rel="alternate" type="text/html" title="The Faces of Tomorrow’s NBA?: A Comparison of the Atlanta Hawks’ and Dallas Mavericks’ Offenses" /><published>2020-04-07T12:04:51-07:00</published><updated>2020-04-07T12:04:51-07:00</updated><id>http://localhost:4000/HawksMavs</id><content type="html" xml:base="http://localhost:4000/HawksMavs">&lt;figure&gt;
 	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/hawksMavs/pic_1.png&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;Photo by Kyle Terada&lt;/figcaption&gt;&lt;/center&gt;
 &lt;/figure&gt;
 
@@ -691,62 +790,4 @@
 
 &lt;p&gt;Christian Yelich has become one of if not the best players in the MLB following his trade to Milwaukee, and it is up to the Brewers to take advantage of that before his contract expires.&lt;/p&gt;
 
-&lt;p&gt;Sources: baseball-reference.com, mlb.com/stats and mlb.com/statcast.&lt;/p&gt;</content><author><name>Max Blane</name></author><summary type="html">Drafted as a Florida Marlin 23rd overall in 2010, Christian Yelich was a very highly touted prospect with loads of potential. As predictions usually go for players drafted in the first few rounds, he was expected to eventually reach the Major Leagues and be a top of the order bat, hitting in a fierce and intimidating Marlins lineup (80-82, 3rd in NL East in 2010) that was supposed to include Giancarlo Stanton, Hanley Ramirez, Emilio Bonifacio, Cameron Maybin, and eventually Marcell Ozuna.</summary></entry><entry><title type="html">Analyzing Factors That Go Into a Fast Marathon</title><link href="http://localhost:4000/FastestMarathon" rel="alternate" type="text/html" title="Analyzing Factors That Go Into a Fast Marathon" /><published>2020-01-14T18:36:08-08:00</published><updated>2020-01-14T18:36:08-08:00</updated><id>http://localhost:4000/FastestMarathon</id><content type="html" xml:base="http://localhost:4000/FastestMarathon">&lt;p&gt;On October 12, 2019, it was still early morning as the world watched as Elliot Kipchoge put one foot in front of another, gracefully passing the finish line and becoming the first person ever to run a marathon in under two hours. He finished in a blistering fast time of 1:59:40.&lt;/p&gt;
-
-&lt;p&gt;Many factors came together to shatter the two hour time barrier in the marathon. First and foremost, Kipchoge is the best marathoner in the world, as he currently holds the official world record at 2:01:39. He was close to closing in on the barrier, but not quite there yet. The race organizers (INEOS) needed a way to trim down his time by at least 1:40. That equates to about 6 seconds faster per mile than the world record. INEOS was able to accomplish this by having the following: an army of pacers to swap in and out every couple of miles, a car with a laser to keep the pacers in check, an unreleased pair of shoes Nike specifically engineered for the race, an extremely flat course with minimal turns, and an optimal temperature that was cool and not too humid. While most marathon runners cannot expect the same level of support that was made available to Kipchoge, the last two factors seem to be more variable to regular marathon runners.&lt;/p&gt;
-
-&lt;p&gt;To investigate the effects of the elevation of courses and weather on marathon times, we will consider the results from the Boston, Berlin, and Chicago marathons.&lt;/p&gt;
-
-&lt;h4&gt;Effects of Weather&lt;/h4&gt;
-
-&lt;p&gt;To look at the effects of weather, it is best to look at the Boston marathon. The Boston Marathon is infamous for it's volatile year to year weather conditions.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fastestMarathon/pic_1.png&quot; alt=&quot;picture 1&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The median finishing times year to year are almost uniform except for a few standout years. The median finishing times in 2004, 2005 and 2012 are higher than those of the other years shown. During these years, races all share a common factor: the temperature at the starting time was in the 70s with the high of that day reaching the 80s and 90s. Another interesting year is 2013, where the median finishing time was well below the other years'. We can also see that the spread of the times was much lower than the rest of the other results; the starting temperature was 37 degrees and only went up to 55 degrees.&lt;/p&gt;
-
-&lt;p&gt;These observations from the graph are summarized when we place these race years in bins of categorical temperatures.  This presented a problem because in a 2+ hour race, the temperature did not remain constant throughout the race. The solution was to bin these races with &lt;a href=&quot;https://findmymarathon.com&quot; target=&quot;_blank&quot;&gt;FindMyMarathon&lt;/a&gt;, where it shows the temperature at the start of the race and the high for that day. The races were placed into three bins: cold, moderate, and hot:&lt;/p&gt;
-
-&lt;p&gt;		• Cold races indicate races with a start temperature below 59 degrees fahrenheit and the daily high below 60 degrees.&lt;/p&gt;
-
-&lt;p&gt;		• Moderate races were a little trickier, where I considered starting temperatures below 59 degrees but also having a daily high over 60.&lt;/p&gt;
-
-&lt;p&gt;		• Hot races had starting temperatures of over 70 degrees with daily highs of over 70.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fastestMarathon/pic_2.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Immediately, we see the difference of the means between the three bins. To verify that the difference is statistically significant, I ran an Analysis of Variance (ANOVA) test to find that the p-value was approximately zero. Therefore, the difference of means is indeed statistically significant. In other words, there is a very low probability that the difference in the means would appear by chance alone.&lt;/p&gt;
-
-&lt;h4&gt;Effects of Elevation&lt;/h4&gt;
-
-&lt;p&gt;Before diving into the analysis of the effects of course elevation, it is important to clear up a common misconception. While the difficulty of running up hills is widely recognized, the challenge of running downhill must also be accounted for. Running downhill requires your legs to &quot;catch&quot; you at every step you take to prevent you from falling over. This creates more wear and tear on the leg muscles, which is especially prevalent in long races such as marathons. Thus, the optimal course is one that is as flat as possible.&lt;/p&gt;
-
-&lt;p&gt;To look at the effects of elevation, we will look at the Boston and Berlin marathons, two drastically different race courses in terms of elevation.&lt;/p&gt;
-
-&lt;p&gt;First, let's look observe the elevation maps of the respective courses:&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fastestMarathon/pic_3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Boston Marathon Elevation&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Here we see that the Boston Marathon experiences drops of elevation throughout the entire race, showing that the course is mostly downhill.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fastestMarathon/pic_4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Berlin Marathon Elevation&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Here we see that the Berlin Marathon elevation is mostly consistent throughout the entire race, showing that it is a relatively flat course.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fastestMarathon/pic_5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Berlin Marathon Times 2005-2013, Boston Marathon Times 2001-2014&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Here we see that the Boston Marathon has a lower median, twenty fifth percentile, and seventy fifth percentile than the Berlin marathon. We can infer that the downhill course typically speeds up overall times in marathons. This is peculiar, as this same logic does not apply to elite runners, as they actually run slower on the downhill Boston course relative to the flat Berlin course. Perhaps this suggests a fundamental difference between the average runner and an elite runner when running uphill or downhill.&lt;/p&gt;
-
-&lt;p&gt;Aside from your individual fitness, the current weather and course itself does play a role in the finishing times. The ideal race temperature for when you're hoping to achieve a new personal best probably should be below 60 degrees. The fastest courses should also be those with the most downhill. However, with more data attributing other variables such as wind, splits and heart rate, we can find more specific relationships. But besides that, the next time you want to run a fast time, hope for a cool day and pick a downhill marathon.&lt;/p&gt;
-
-&lt;p&gt;Sources: FindMyMarathon&lt;/p&gt;</content><author><name>Donald Chung</name></author><summary type="html">On October 12, 2019, it was still early morning as the world watched as Elliot Kipchoge put one foot in front of another, gracefully passing the finish line and becoming the first person ever to run a marathon in under two hours. He finished in a blistering fast time of 1:59:40.</summary></entry></feed>
+&lt;p&gt;Sources: baseball-reference.com, mlb.com/stats and mlb.com/statcast.&lt;/p&gt;</content><author><name>Max Blane</name></author><summary type="html">Drafted as a Florida Marlin 23rd overall in 2010, Christian Yelich was a very highly touted prospect with loads of potential. As predictions usually go for players drafted in the first few rounds, he was expected to eventually reach the Major Leagues and be a top of the order bat, hitting in a fierce and intimidating Marlins lineup (80-82, 3rd in NL East in 2010) that was supposed to include Giancarlo Stanton, Hanley Ramirez, Emilio Bonifacio, Cameron Maybin, and eventually Marcell Ozuna.</summary></entry></feed>
