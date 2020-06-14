@@ -1,4 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-13T18:16:50-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bruin Sports Analytics</title><author><name>Bruin Sports Analytics</name></author><entry><title type="html">Which Team Won the 2020 Draft?</title><link href="http://localhost:4000/DraftWinners" rel="alternate" type="text/html" title="Which Team Won the 2020 Draft?" /><published>2020-06-13T18:03:14-07:00</published><updated>2020-06-13T18:03:14-07:00</updated><id>http://localhost:4000/DraftWinners</id><content type="html" xml:base="http://localhost:4000/DraftWinners">&lt;figure&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-13T19:09:22-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bruin Sports Analytics</title><author><name>Bruin Sports Analytics</name></author><entry><title type="html">Fantasy Football and the NFL Combine</title><link href="http://localhost:4000/FantasyCombine" rel="alternate" type="text/html" title="Fantasy Football and the NFL Combine" /><published>2020-06-13T18:39:27-07:00</published><updated>2020-06-13T18:39:27-07:00</updated><id>http://localhost:4000/FantasyCombine</id><content type="html" xml:base="http://localhost:4000/FantasyCombine">&lt;figure&gt;
+	&lt;center&gt;
+	&lt;div style=&quot;width:50%; float: left;&quot;&gt;
+		&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_1.png&quot; alt=&quot;picture 1&quot;&gt;&lt;figcaption&gt;Source: Wikipedia&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;width:50%; float:right&quot;&gt;
+		&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_2.png&quot; alt=&quot;picture 2&quot;&gt;&lt;figcaption&gt;Source: ESPN&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt;Introduction&lt;/h4&gt;
+
+&lt;p&gt;The NFL combine garners popularity among football fans across the country. Players boost themselves into the public spotlight after a spectacular combine (i.e. D.K. Metcalf blew up on social media after his phenomenal combine results). The combine can affect draft stock, causing players to rise&amp;mdash;or fall&amp;mdash;depending on their performance. However, quantifying the &quot;success&quot; of players in the NFL based on the output of their physical characteristics is difficult due to the nature of the draft. Top players go early to teams who had the worst record the year before, thereby diminishing their ability to be influential on the stat sheet.&lt;/p&gt;
+
+&lt;p&gt;Likewise, millions of people in the U.S. seek information to gain the upper hand in fantasy football, a different way for fans to interact with the game of football. While most players have a proven track record in the NFL, rookies come in with no experience in the pros. Instead, most newcomers' hype relies on social media coverage and mock drafts looking to forecast the future from their college careers. That said, since the combine can sway the coverage, an excellent performance at Lucas Oil Stadium can lead to an earlier draft selection.&lt;/p&gt;
+
+&lt;p&gt;In this article, we look to explore the relationship between combine stats and player production by way of fantasy points scored in addition to rookie fantasy production over time. Specifically, we will narrow in on quarterbacks, and examine &lt;i&gt;which&lt;/i&gt; statistics from the NFL combine are the best predictors for production and just how accurate these statistical predictions are. At the end of this article, we will attempt to predict the number of fantasy points scored based &lt;i&gt;purely&lt;/i&gt; on combine statistics, with no external factors.&lt;/p&gt;
+
+&lt;h4&gt;The Procedure&lt;/h4&gt;
+
+&lt;p&gt;Defining success is a difficult process, but ultimately, we chose fantasy points during a player's rookie season as our determinant of player success.&lt;/p&gt;
+
+&lt;p&gt;We found three aspects of rookie success interesting and we decided to delve deeper. The first aspect was a prospect's mental capacity&amp;mdash;we decided to measure this by the well-known Wonderlic test. The second was the physical counterpart, as defined by a player's success and scores during the NFL combine. The last component was not related to an individual's success, but rather class success: we looked at the relationship between average rookie fantasy points scored from year to year.&lt;/p&gt;
+
+&lt;p&gt;The data for this event ranges from the 2000 NFL Draft class up until the 2019 NFL Draft class, with the 2020 Draft class used for predictions, as elaborated in the final part of this article.&lt;/p&gt;
+
+&lt;p&gt;Now, some issues arise immediately, from player non-participation to limited on-field timing during a player's rookie season. To avoid these issues, we established some baselines for the players we would look at and consider: (1) a player had to participate in a minimum of eight games during his rookie season and (2) the player must have scored at least ten fantasy points (to eliminate those who exclusively played in garbage time). There are some other issues related only to specific components that are discussed in greater detail in their respective sections.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, we thought it would be fun to end the article with a prediction for each rookie's future. We looked at the 2020 NFL QB draft class and, based on their statistics in some of these criteria, predicted how well they would perform&amp;mdash;both individually and as a draft class&amp;mdash;during their rookie seasons. It is important to note that these predictions are based on numbers alone, so we cannot include the &quot;it&quot; factor or a general feel about a player in these predictions.&lt;/p&gt;
+
+&lt;p&gt;All the relevant data, code, and images described in this article can be found &lt;a href=&quot;https://github.com/ethan-allavarpu/rookies-and-combine&quot; target='_blank'&gt;here&lt;/a&gt;, with the link also included at the end of the article.&lt;/p&gt;
+
+&lt;h4&gt;The Mental Aspect: Wonderlic Scores&lt;/h4&gt;
+
+&lt;p&gt;Football is undeniably a brutal, hard-hitting sport. Yet, as rules change over the years, fanatics and analysts alike are quick to emphasize the preference for offense, specifically the quarterback. And while rules have changed to protect the quarterback, is it the lack of physicality in the &quot;new&quot; game that allows a player like Tom Brady to play until he is 45 or is it instead his high football IQ that allows him to be one mental leap in front of his opponents before the ball has even been snapped on any given play?&lt;/p&gt;
+
+&lt;p&gt;To determine the answer to that question, we looked to the Wonderlic test, which examines an individual's understanding of reasoning, quick thinking, diction, and mathematics&amp;mdash;none of which are necessary when determining someone's ability to play football. Yet, the Wonderlic is notoriously one of the most analyzed and talked about scores a prospect can receive, and often when a player's Wonderlic score is mentioned, the value is extreme: either really high or low. Most are familiar with Texas legend Vince Young scoring a 6/50 on the Wonderlic and on the opposite end most wouldn't be surprised to find out that Harvard graduate Ryan Fitzpatrick got a 48/50. And yet, with all due respect to both Young and Fitzpatrick's careers, neither one was ever a fantasy must-have nor on track to be anywhere close to a Hall-of-Fame level player. So how much does the Wonderlic really say about a player?&lt;/p&gt;
+
+&lt;p&gt;We took fifty-four quarterbacks dating back until 2001 and plotted their Wonderlic score as compared to their rookie fantasy numbers. The original assumption, or hypothesis, was that players who scored higher on the test would perform better on the football field. However, what we found was quite the opposite:&lt;/p&gt;
+
+&lt;p&gt;It turns out that there is a negative correlation between Wonderlic performance and rookie fantasy performance. In other words, as a player's Wonderlic score went up, their performance went down. In fact, the p-value, or probability you receive a result that extreme to test against the null hypothesis, was 0.4, indicating a very weak and in this case the negative relationship between the two variables. The graphic shows, at least for quarterbacks, that the Wonderlic may not be the best way to determine a quarterback's success, which is good news for an incoming player like Tua Tagovailoa who scored low on his Wonderlic.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;After determining that the mental aspect had no tangible impact on rookie fantasy outcomes, we turned to the physical aspect of the game, which allows a player like Lamar Jackson, whose score of 13 falls below the average janitor, to dominate.&lt;/p&gt;
+
+&lt;h4&gt;The Physical Aspect: The NFL Combine&lt;/h4&gt;
+
+&lt;p&gt;The primary showcase for NFL hopefuls is the NFL Combine, which occurs near the end of February. The combine tests the physical capacities of the prospects, potentially elevating or hindering their draft stock. Main events include the forty-yard dash, the bench press, and the vertical jump, among other physical tests. To maintain a sense of continuity for the purposes of this article, we only looked at the quarterback position when choosing our sample pool of prospects.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, certain players choose not to compete in every combine event, so to remove sparsity as an issue, the criterion for selecting which combine events to initially include was that a combine event must have at least 60% of the total combine participants partake to be considered for a final model.&lt;/p&gt;
+
+&lt;p&gt;Our set combine event criterion led us to eliminate the bench press from our analysis, as 53 of the 54 eligible quarterbacks from our data source did not partake in this event. This led to the five events included in the graphs below: the forty-yard dash, the vertical jump, the broad jump, the three-cone drill, and the shuttle. For reference, the graphs below show rookie QB fantasy points scored against QB results in each event.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The above graphs indicate that, at least for quarterbacks amongst our given criteria, there does not appear to be much correlation between individual combine events and rookie fantasy points. In fact, none of the correlation coefficients r exceeded a magnitude of 0.3, indicating a weak relationship. The general random scatter shows that the combine, at least for quarterbacks, may be more for &quot;show&quot; than for actual substance.&lt;/p&gt;
+
+&lt;p&gt;While none of the combine events appeared to be &lt;i&gt;extremely&lt;/i&gt; correlated with fantasy points scored in a quarterback's rookie season, we still decided to fit a model with all of the variables as there is still a possibility that a combination of factors could demonstrate significance. However, we quickly determined that a reliance on one variable would be too volatile, so we instead decided to include at least two variables for our final equation, even if one (or both) was statistically insignificant. We performed transformations of the variables and did model selection based on the Bayes Information Criteria to determine a final model.&lt;/p&gt;
+
+&lt;p&gt;After performing the necessary modifications and statistical analysis, we ended up with the following equation: &lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_6.png&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;with the Broad Jump variable statistically insignificant (p = 0.12) while the Shuttle variable was statistically significant (p = 0.00144). One interesting component of this equation&amp;mdash;perhaps portraying its limitations or at least some external confounding variable&amp;mdash;is that as shuttle time increases, the amount of fantasy points scored &lt;i&gt;actually increases&lt;/i&gt;, even though the lower a shuttle time is, the better it is supposed to be. Also, the &lt;i&gt;Broad Jump&lt;/i&gt; variable is statistically insignificant (p = 0.12), but we included it nonetheless to ensure that we did not rely exclusively on one variable/event. The overall model has a p-value of 0.005, indicating that it is statistically significant; however, there could be&amp;mdash;and most probably are&amp;mdash;confounding variables, including college experience, performance, and play style, all of which factor into the reason for statistical significance.&lt;/p&gt;
+
+&lt;h4&gt;The Temporal Aspect&lt;/h4&gt;
+
+&lt;p&gt;To this point in the article, little of our predictions about the impact of combine events on fantasy performance had proven to be helpful. As such, we turned to fantasy performance for QB's itself and wanted to see how the realm has changed over time. We determined the mean fantasy points per year for an entire class of quarterbacks and plotted each on a year-by-year basis.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_7.png&quot; alt=&quot;picture 7&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_8.png&quot; alt=&quot;picture 8&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;While the formula under the graph may look confusing (especially with such a massive negative value of 12685 for the y-intercept), we must take into account that the data interpreted is from the years 2001 - 2019; therefore, an equivalent (and clearer) equation would be:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_9.png&quot; alt=&quot;picture 9&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This equation would be better at understanding the baseline in the year 2000, plus how much more rookie QBs appear to earn each year. The data suggest that rookie QBs (who meet our criteria) appear to be scoring, on average, 6.39 points more each year. From a practical standpoint, this makes sense and lines up with our understanding of things, as the NFL has become more pass-oriented and offense-oriented, leading to greater production on the offensive end (including at quarterback) the further we go into the future.&lt;/p&gt;
+
+&lt;h4&gt;The Predictions&lt;/h4&gt;
+
+&lt;p&gt;So if quarterbacks are putting up higher fantasy numbers than ever seen before, we thought it would be fun to attempt to use the data gathered and equations created to predict the production of rookie players in terms of fantasy points. While this prediction does omit various important aspects of success, including draft team, college career, and intangibles, it gives us a prediction on a &lt;i&gt;ceteris paribus&lt;/i&gt;, &quot;all else being equal,&quot; standard.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, in practice, our predictions missed some big-name players (Joe Burrow, for instance, as the LSU product forewent the combine as he believed he did not get the same time to train while he played in the national championship as others prepared). Thus, it's more than conceivable that a player like Burrow will show success, even if they would have had a poor combine, or even none at all. This data, however, could be used in later rounds and extremely beneficial when deciding between two fourth- or fifth-rounders.&lt;/p&gt;
+
+&lt;p&gt;The following table provides the results of our predictions when plugging in the data for their combine statistics (physical events) into our created equations:&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_10.png&quot; alt=&quot;picture 10&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;While these results do indeed appear surprising, we must also remember our criteria for applying these formulas: we applied an eight-game minimum for each position. Therefore, for quarterbacks, this would indicate that players would have to be drafted to be a starter for their rookie year. This eliminates a bunch of these prospects, some of whom will be backups and some of whom were not drafted. Again, another thing to consider is that players like Joe Burrow and Tua Tagovailoa, the two most highly-touted NFL prospects at the QB position this year, did not partake in the NFL combine events, so they could not be ranked by our formulas. Taking all of this into consideration, we decided that the starters who &lt;i&gt;could&lt;/i&gt; potentially hit the eight-game minimum were the following seven drafted quarterbacks (thus making our predictions more realistic):&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_11.png&quot; alt=&quot;picture 11&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;center&gt;
+	&lt;div style=&quot;width:47.83%; float: left;&quot;&gt;
+		&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_12.png&quot; alt=&quot;picture 1&quot;&gt;&lt;figcaption&gt;Source: Wikipedia&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;width:52.17%; float:right&quot;&gt;
+		&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/fantasyCombine/pic_13.png&quot; alt=&quot;picture 2&quot;&gt;&lt;figcaption&gt;Source: Wikipedia&lt;/figcaption&gt;
+	&lt;/div&gt;
+	&lt;/center&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Once again, three of these quarterbacks (Burrow, Tagovailoa, and Hurts) do not have sufficient data for us to make our prediction, but of the other four, three of these predictions seem somewhat plausible. Jacob Eason's prediction is unusually high (for scale, last year, outside of Lamar Jackson, the highest-scoring QB was Dak Prescott with &lt;i&gt;348.78&lt;/i&gt; points. The other three, though&amp;mdash;Love, Herbert, and Fromm&amp;mdash;all present plausible scores for their respective rookie seasons, as these are &quot;middle-of-the-pack&quot; fantasy statistics.&lt;/p&gt;
+
+&lt;p&gt;For this rookie QB class as a whole, the predicted average fantasy score of the quarterbacks who play in at least eight games is &lt;b&gt;&lt;i&gt;216.864&lt;/i&gt;&lt;/b&gt;. This indicates that the above individual predictions may be overestimates, or there could be injuries that cut some of their seasons short (i.e. they play fewer than 16 games).&lt;/p&gt;
+
+&lt;h4&gt;Conclusion&lt;/h4&gt;
+
+&lt;p&gt;Thus, from all of our analyses, one pattern appears to ring true for the pre-draft fanfare for quarterbacks: hype. Mentally, there is a negative correlation between Wonderlic score and fantasy performance which suggests that a quarterback's test result will not determine his success. Physically, none of the combine events had a high correlation with rookie fantasy scores, suggesting that none of these events are good, reliable predictors of rookie quarterback success. Thus, when taken together, it shows that these pre-draft statistics for rookies bear very little relation to their future success, indicating that all it does is inflate or deflate the hype and public attention around a player. The combine garners quite a bit of attention for football fans in part because there is no other football-related event occurring at the time. Furthermore, the few late-round gems found throughout drafts, such as Tom Brady, lead teams to pore over data in the hopes of finding a diamond in the rough. Sometimes, though, teams drafting with these later picks require something that cannot be predicted from combine performance, something we can never be able to quantify: luck.&lt;/p&gt;
+
+&lt;p&gt;Sources: Pro Football Reference, ESPN&lt;/p&gt;
+
+&lt;p&gt;View Data/Code: &lt;a href=&quot;https://github.com/ethan-allavarpu/rookies-and-combine&quot; target=&quot;_blank&quot;&gt;Github Repository&lt;/a&gt;&lt;/p&gt;</content><author><name>Ethan Allavarpu</name></author><summary type="html">The NFL combine garners popularity among football fans across the country. Players boost themselves into the public spotlight after a spectacular combine (i.e. D.K. Metcalf blew up on social media after his phenomenal combine results). The combine can affect draft stock, causing players to rise&amp;mdash;or fall&amp;mdash;depending on their performance. However, quantifying the &quot;success&quot; of players in the NFL based on the output of their physical characteristics is difficult due to the nature of the draft. Top players go early to teams who had the worst record the year before, thereby diminishing their ability to be influential on the stat sheet.</summary></entry><entry><title type="html">Which Team Won the 2020 Draft?</title><link href="http://localhost:4000/DraftWinners" rel="alternate" type="text/html" title="Which Team Won the 2020 Draft?" /><published>2020-06-13T18:03:14-07:00</published><updated>2020-06-13T18:03:14-07:00</updated><id>http://localhost:4000/DraftWinners</id><content type="html" xml:base="http://localhost:4000/DraftWinners">&lt;figure&gt;
 	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/draftWinners/pic_1.png&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;Source: Forbes&lt;/figcaption&gt;&lt;/center&gt;
 &lt;/figure&gt;
 
@@ -740,66 +874,4 @@
 
 &lt;p&gt;When looking for a team to compare this Ravens group to, it's hard not to go back to the last time the Ravens hoisted the Lombardi Trophy and see parallels to the team they beat that fateful day. Both the 2019 Ravens and the 2013 49ers had a dynamic quarterback who took the league by storm, a stifling defense stacked with difference-makers, and most importantly, a Harbaugh at head coach.  Regardless of the similarities between Lamar's and Kaepernick's supporting casts, one of these players is the presumptive league MVP, and one of them has never made a Pro-Bowl. Despite this season's disappointing end, I expect Lamar Jackson and the Ravens to keep on flying.&lt;/p&gt;
 
-&lt;p&gt;Sources: pro-football-reference.com&lt;/p&gt;</content><author><name>Vishal Sundaram</name></author><summary type="html">When tasked with winning football games, every head coach in the NFL talks about establishing an identity, as all the best teams have one. The 49ers are winning off of a multi-dimensional running game and a ferocious defense that gets to the opposing quarterback. The Saints are winning off a dink-and-dunk quick-hitter offense. The Chiefs are winning with speed on the outside and a lethal deep-ball passer. The Patriots have been &quot;doing their job&quot; for the last 2 decades. But out of all the teams in football, there's one team's identity which stands out as the most established, physical, and against-the-grain in all of football&amp;colon; the 14-2 Baltimore Ravens, the best team in the league.</summary></entry><entry><title type="html">A Brief History of MLB Postseason Format Changes</title><link href="http://localhost:4000/MLBpostseason" rel="alternate" type="text/html" title="A Brief History of MLB Postseason Format Changes" /><published>2020-01-25T13:53:48-08:00</published><updated>2020-01-25T13:53:48-08:00</updated><id>http://localhost:4000/MLBpostseason</id><content type="html" xml:base="http://localhost:4000/MLBpostseason">&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/mlbPostseason/pic_1.png&quot; alt=&quot;cover photo&quot;&gt;&lt;figcaption&gt;Source: cnycentral.com&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;For many baseball fans, the MLB postseason&amp;mdash;the World Series in particular&amp;mdash;is the ultimate test of skill and teamwork. Over the course of a month, the best teams battle it out to become the World Series champion. Dating back to the first MLB postseason in 1884, the title of World Series champion has been the highest achievement that a professional baseball team can attain. Thus, the importance of the postseason to MLB teams and baseball enthusiasts alike cannot be understated. This, however, has not kept the MLB from changing the postseason format every 10 to 20 years. As expected, these changes are met with criticism and controversy, roster and strategy changes, and&amp;mdash;in rare cases&amp;mdash;MLB dynasties.&lt;/p&gt;
-
-&lt;p&gt;When the MLB postseason was first introduced to the professional league in 1884, it was very simple. After a few years of simple exhibition matches, the MLB decided on a postseason format that consisted of only one series&amp;mdash;later to be called the World Series. In this format, the top-seeded teams from the American League and the National League would face off in a single best-of-seven series (in 1903, 1919, 1920, and 1921 a best-of-nine was played). This oversimplified version was used for nearly a hundred years before it was modified. In 1969, when each of the MLB leagues were split into two regions, the postseason was extended to become a two round best-of-seven series. In this format, the top teams of each league would compete against one another in the ALCS and the NLCS before advancing to the World Series.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/mlbPostseason/pic_2.png&quot; alt=&quot;picture 2&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Source: britannica.com&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;When a new region was again added to each MLB league in 1995, a third round, this time a best-of-five was added to the postseason. To accomodate for the odd numbers, a wild card team was added to each league; the wild card team would play the divisional champion in the best-of-five Division Series. Finally, in 2012 a second wild card was added to each league.&lt;/p&gt;
-
-&lt;p&gt;As you have probably concluded, the MLB's postseason format quickly became one of the most variable in all of American sports history. The ramifications of these changes were felt far and wide among the baseball community. One of the most direct impacts of these changes was on match variation.&lt;/p&gt;
-
-&lt;p&gt;Before 1969, when the MLB postseason was comprised of a single series, match variation was nonexistent. At the end of each season, the top-seeded of the American League or the National League was guaranteed to win the World Series. However, as the MLB postseason was extended to accommodate for internal league changes, more and more teams gained access to the once elite MLB postseason. Resultantly, the World Series became unpredictable. As of 2019, ten teams participate in the MLB postseason, each fighting for the title of World Series champion. No teams are guaranteed a spot in the World Series, or even the ALCS and NLCS.&lt;/p&gt;
-
-&lt;p&gt;Any advantage that top-seeded teams once had in the MLB postseason is slowly diminishing. Let's take a look at how the probability of a top team winning the World Series has changed since 1969.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/mlbPostseason/pic_3.png&quot; alt=&quot;picture 3&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;For the most part, these results are fairly straightforward. As the leagues split into more distinct regions and wild card teams were added to the MLB postseason, the top-seeded teams struggled to stay consistent. If more spots are made available in the MLB postseason in the future, this trend will likely continue; the title of top seed will lose the little competitive edge that it now provides. Even if the current format remains unchanged for years to come, the spike seen in the 2012-2019 seasons will likely drop off as more data is made available. But what does this trend mean for MLB fans and teams today?&lt;/p&gt;
-
-&lt;p&gt;For casual fans, this trend is nothing but beneficial. The expansion of the MLB postseason has provided baseball fans with content that was previously unavailable. Furthermore, the changes made to the MLB postseason have made the games more enticing&amp;mdash;no games are unwinnable and no spots are secure.  The MLB postseason can take any number of turns before a World Series champion is crowned, as the Washington Nationals showed us this year.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/mlbPostseason/pic_4.png&quot; alt=&quot;picture 4&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;Source: washington.org&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;For MLB teams, things are a bit more complicated. In recent years, the postseason format has come to influence team play styles and strategies. Due to the expansion of the MLB postseason, many teams have attempted to adopt a more conservative, consistent play style. In today's three round best-of-seven series format, consistency is more important than ever. To win the World Series, a team must be able to play at the highest level at all times.&lt;/p&gt;
-
-&lt;p&gt;Although the format changes have resulted in an extended MLB postseason, they have not always resulted in the most competitive games. When wild card teams and the Division Series were first introduced to the postseason in 1995, competition levels took a turn for the worst. Under this new format, the wildcard teams&amp;mdash;often considered the underdog teams of each league&amp;mdash;would immediately face off against the top-seeded divisional champion of their respective league. In recent years, these matchups have given top teams an easy route to the ALCS or NLCS. Consequently, many top-seeded teams arrive to the ALCS or NLCS unprepared for the competition and pressure that the series will surely bring.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/mlbPostseason/pic_5.png&quot; alt=&quot;picture 5&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;While the differences may be subtle, they cannot be ignored. For the ALCS and the World Series, there is little to be said. The average number of games played per series has remained relatively constant, despite postseason format changes. The NLCS, however, brings up questions for concern. From 1985 to 1993, the average number of games played per NLCS was 6.3. In today's postseason format, this number is almost a whole game lower at 5.5. In a simple best-of-seven series, this change is quite drastic. Although we cannot be sure what brought about this change, it is likely that MLB postseason format changes&amp;mdash;specifically the addition of wild card teams&amp;mdash;had a direct impact.&lt;/p&gt;
-
-&lt;p&gt;But how could something as impartial as format changes possibly have such an impact?&lt;/p&gt;
-
-&lt;p&gt;One explanation is the prevalence of baseball dynasties or 'dream teams' in recent years. As the postseason format has changed over the years, so has the importance of consistent play. When the postseason was first introduced to the MLB, inconsistent teams won the World Series quite frequently. However, in today's three round best-of-seven series, consistency is more or less a requirement. Thus, as consistent play gradually became more and more important, select teams were able to find their niche among a particular postseason format. The result was an absolute domination of MLB league and postseason play. Let's see if any baseball dynasties formed from 1995 to 2011 in which the three series best-of-seven (with one wild card team for each league) format was used.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/mlbPostseason/pic_6.png&quot; alt=&quot;picture 6&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Clearly, the New York Yankees were able to find great success in the MLB postseason throughout these years. Whether or not this success was due the postseason format cannot be known for sure. However, the history of the New York Yankees and their performance in previous MLB postseasons support the claim that the postseason format played a major role in their success.&lt;/p&gt;
-
-&lt;p&gt;From 1985 to 1993, when the postseason was a two round best-of-seven series, the New York Yankees were unable to win a single World Series. When this format was changed, however, the Yankees looked like an entirely new team. In the early years of this new format, the Yankees were unstoppable; they were crowned World Series champion three years in a row, beginning in 1998. Without the postseason format change of 1995, it is unlikely that the Yankees would have been so dominant in these years. When the postseason format was changed in 2012, their success came to an end. Since these changes, the New York Yankees have not won, or participated in, the World Series.&lt;/p&gt;
-
-&lt;p&gt;While many professional baseball teams and fans dream of a time when the MLB stops altering the postseason format, it is unlikely that this dream will come true any time soon. While previous format changes have resulted in lower levels of postseason competition and occasional dynasties, the MLB has only benefited from the changes. By extending the postseason format and introducing wild card teams, the MLB is raking in more cash than ever. The MLB has no reason to halt the postseason changes that they have profited so greatly from.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;center&gt;&lt;img class=&quot;materialboxed responsive-img&quot; src =&quot;/assets/mlbPostseason/pic_7.png&quot; alt=&quot;picture 7&quot; style=&quot;max-width: 95%;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Since 2001, the MLB has seen annual increases in revenue. In more recent years, this trend has only become more apparent. Every year, the MLB seems to outperform themselves, pushing their annual revenue to unprecedented levels. With this in mind, I would not be surprised to see the MLB postseason expanded even further in upcoming years.&lt;/p&gt;
-
-&lt;p&gt;Sources: baseball-reference.com, statista.com&lt;/p&gt;</content><author><name>Fischer Sherrod</name></author><summary type="html">For many baseball fans, the MLB postseason&amp;mdash;the World Series in particular&amp;mdash;is the ultimate test of skill and teamwork. Over the course of a month, the best teams battle it out to become the World Series champion. Dating back to the first MLB postseason in 1884, the title of World Series champion has been the highest achievement that a professional baseball team can attain. Thus, the importance of the postseason to MLB teams and baseball enthusiasts alike cannot be understated. This, however, has not kept the MLB from changing the postseason format every 10 to 20 years. As expected, these changes are met with criticism and controversy, roster and strategy changes, and&amp;mdash;in rare cases&amp;mdash;MLB dynasties.</summary></entry></feed>
+&lt;p&gt;Sources: pro-football-reference.com&lt;/p&gt;</content><author><name>Vishal Sundaram</name></author><summary type="html">When tasked with winning football games, every head coach in the NFL talks about establishing an identity, as all the best teams have one. The 49ers are winning off of a multi-dimensional running game and a ferocious defense that gets to the opposing quarterback. The Saints are winning off a dink-and-dunk quick-hitter offense. The Chiefs are winning with speed on the outside and a lethal deep-ball passer. The Patriots have been &quot;doing their job&quot; for the last 2 decades. But out of all the teams in football, there's one team's identity which stands out as the most established, physical, and against-the-grain in all of football&amp;colon; the 14-2 Baltimore Ravens, the best team in the league.</summary></entry></feed>
