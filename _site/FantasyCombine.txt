@@ -1,0 +1,184 @@
+Title: Fantasy Football and the NFL Combine 
+Authors: ethan_allavarpu,kyle_boal
+
+
+  
+  
+
+   Wikipedia (https://en.wikipedia.org/wiki/NFL_Scouting_Combine)                                  ESPN (https://fantasy.espn.com/football/welcome?ex_cid=FFL11_vanwelcome_url) 
+
+
+Introduction
+The NFL combine garners popularity among football fans across the country. Players boost themselves into the public spotlight after a spectacular combine (i.e. D.K. Metcalf blew up on social media after his phenomenal combine results). The combine can affect draft stock, causing players to rise—or fall—depending on their performance. However, quantifying the “success” of players in the NFL based on the output of their physical characteristics is difficult due to the nature of the draft. Top players go early to teams who had the worst record the year before, thereby diminishing their ability to be influential on the stat sheet.
+
+
+Likewise, millions of people in the U.S. seek information to gain the upper hand in fantasy football, a different way for fans to interact with the game of football. While most players have a proven track record in the NFL, rookies come in with no experience in the pros. Instead, most newcomers’ hype relies on social media coverage and mock drafts looking to forecast the future from their college careers. That said, since the combine can sway the coverage, an excellent performance at Lucas Oil Stadium can lead to an earlier draft selection.
+
+
+In this article, we look to explore the relationship between combine stats and player production by way of fantasy points scored in addition to rookie fantasy production over time. Specifically, we will narrow in on quarterbacks, and examine which statistics from the NFL combine are the best predictors for production and just how accurate these statistical predictions are. At the end of this article, we will attempt to predict the number of fantasy points scored based purely on combine statistics, with no external factors.
+
+
+The Procedure
+Defining success is a difficult process, but ultimately, we chose fantasy points during a player’s rookie season as our determinant of player success.
+
+
+We found three aspects of rookie success interesting and we decided to delve deeper. The first aspect was a prospect’s mental capacity—we decided to measure this by the well-known Wonderlic test. The second was the physical counterpart, as defined by a player’s success and scores during the NFL combine. The last component was not related to an individual’s success, but rather class success: we looked at the relationship between average rookie fantasy points scored from year to year.
+
+
+The data for this event ranges from the 2000 NFL Draft class up until the 2019 NFL Draft class, with the 2020 Draft class used for predictions, as elaborated in the final part of this article.
+
+
+Now, some issues arise immediately, from player non-participation to limited on-field timing during a player’s rookie season. To avoid these issues, we established some baselines for the players we would look at and consider: (1) a player had to participate in a minimum of eight games during his rookie season and (2) the player must have scored at least ten fantasy points (to eliminate those who exclusively played in garbage time). There are some other issues related only to specific components that are discussed in greater detail in their respective sections.
+
+
+Ultimately, we thought it would be fun to end the article with a prediction for each rookie’s future. We looked at the 2020 NFL QB draft class and, based on their statistics in some of these criteria, predicted how well they would perform—both individually and as a draft class—during their rookie seasons. It is important to note that these predictions are based on numbers alone, so we cannot include the “it” factor or a general feel about a player in these predictions.
+
+
+All the relevant data, code, and images described in this article can be found here, with the link also included at the end of the article.
+
+
+
+
+The Mental Aspect: Wonderlic Scores
+Football is undeniably a brutal, hard-hitting sport. Yet, as rules change over the years, fanatics and analysts alike are quick to emphasize the preference for offense, specifically the quarterback. And while rules have changed to protect the quarterback, is it the lack of physicality in the “new” game that allows a player like Tom Brady to play until he is 45 or is it instead his high football IQ that allows him to be one mental leap in front of his opponents before the ball has even been snapped on any given play?
+
+
+To determine the answer to that question, we looked to the Wonderlic test, which examines an individual's understanding of reasoning, quick thinking, diction, and mathematics—none of which are necessary when determining someone's ability to play football. Yet, the Wonderlic is notoriously one of the most analyzed and talked about scores a prospect can receive, and often when a player’s Wonderlic score is mentioned, the value is extreme: either really high or low. Most are familiar with Texas legend Vince Young scoring a 6/50 on the Wonderlic and on the opposite end most wouldn’t be surprised to find out that Harvard graduate Ryan Fitzpatrick got a 48/50. And yet, with all due respect to both Young and Fitzpatrick’s careers, neither one was ever a fantasy must-have nor on track to be anywhere close to a Hall-of-Fame level player. So how much does the Wonderlic really say about a player? 
+
+
+We took fifty-four quarterbacks dating back until 2001 and plotted their Wonderlic score as compared to their rookie fantasy numbers. The original assumption, or hypothesis, was that players who scored higher on the test would perform better on the football field. However, what we found was quite the opposite: 
+
+
+It turns out that there is a negative correlation between Wonderlic performance and rookie fantasy performance. In other words, as a player’s Wonderlic score went up, their performance went down. In fact, the p-value, or probability you receive a result that extreme to test against the null hypothesis, was 0.4, indicating a very weak and in this case the negative relationship between the two variables. The graphic shows, at least for quarterbacks, that the Wonderlic may not be the best way to determine a quarterback’s success, which is good news for an incoming player like Tua Tagovailoa who scored low on his Wonderlic.  
+
+
+  
+
+
+
+After determining that the mental aspect had no tangible impact on rookie fantasy outcomes, we turned to the physical aspect of the game, which allows a player like Lamar Jackson, whose score of 13 falls below the average janitor, to dominate. 
+
+
+The Physical Aspect: The NFL Combine
+The primary showcase for NFL hopefuls is the NFL Combine, which occurs near the end of February. The combine tests the physical capacities of the prospects, potentially elevating or hindering their draft stock. Main events include the forty-yard dash, the bench press, and the vertical jump, among other physical tests. To maintain a sense of continuity for the purposes of this article, we only looked at the quarterback position when choosing our sample pool of prospects. 
+
+
+Unfortunately, certain players choose not to compete in every combine event, so to remove sparsity as an issue, the criterion for selecting which combine events to initially include was that a combine event must have at least 60% of the total combine participants partake to be considered for a final model.
+
+
+Our set combine event criterion led us to eliminate the bench press from our analysis, as 53 of the 54 eligible quarterbacks from our data source did not partake in this event. This led to the five events included in the graphs below: the forty-yard dash, the vertical jump, the broad jump, the three-cone drill, and the shuttle. For reference, the graphs below show rookie QB fantasy points scored against QB results in each event.
+
+
+  
+
+
+
+ 
+  
+
+The above graphs indicate that, at least for quarterbacks amongst our given criteria, there does not appear to be much correlation between individual combine events and rookie fantasy points. In fact, none of the correlation coefficients r exceeded a magnitude of 0.3, indicating a weak relationship. The general random scatter shows that the combine, at least for quarterbacks, may be more for “show” than for actual substance.
+
+
+While none of the combine events appeared to be extremely correlated with fantasy points scored in a quarterback’s rookie season, we still decided to fit a model with all of the variables as there is still a possibility that a combination of factors could demonstrate significance. However, we quickly determined that a reliance on one variable would be too volatile, so we instead decided to include at least two variables for our final equation, even if one (or both) was statistically insignificant. We performed transformations of the variables and did model selection based on the Bayes Information Criteria to determine a final model.
+
+
+After performing the necessary modifications and statistical analysis, we ended up with the following equation: , with the Broad Jump variable statistically insignificant (p = 0.12) while the Shuttle variable was statistically significant (p = 0.00144). One interesting component of this equation—perhaps portraying its limitations or at least some external confounding variable—is that as shuttle time increases, the amount of fantasy points scored actually increases, even though the lower a shuttle time is, the better it is supposed to be. Also, the Broad Jump variable is statistically insignificant (p = 0.12), but we included it nonetheless to ensure that we did not rely exclusively on one variable/event. The overall model has a p-value of 0.005, indicating that it is statistically significant; however, there could be—and most probably are—confounding variables, including college experience, performance, and play style, all of which factor into the reason for statistical significance.
+
+
+The Temporal Aspect
+To this point in the article, little of our predictions about the impact of combine events on fantasy performance had proven to be helpful. As such, we turned to fantasy performance for QB’s itself and wanted to see how the realm has changed over time. We determined the mean fantasy points per year for an entire class of quarterbacks and plotted each on a year-by-year basis. 
+
+
+
+
+  
+
+
+
+
+While the formula under the graph may look confusing (especially with such a massive negative value of 12685 for the y-intercept), we must take into account that the data interpreted is from the years 2001 - 2019; therefore, an equivalent (and clearer) equation would be: 
+
+
+. 
+This equation would be better at understanding the baseline in the year 2000, plus how much more rookie QBs appear to earn each year. The data suggest that rookie QBs (who meet our criteria) appear to be scoring, on average, 6.39 points more each year. From a practical standpoint, this makes sense and lines up with our understanding of things, as the NFL has become more pass-oriented and offense-oriented, leading to greater production on the offensive end (including at quarterback) the further we go into the future.
+
+
+The Predictions
+So if quarterbacks are putting up higher fantasy numbers than ever seen before, we thought it would be fun to attempt to use the data gathered and equations created to predict the production of rookie players in terms of fantasy points. While this prediction does omit various important aspects of success, including draft team, college career, and intangibles, it gives us a prediction on a ceteris paribus, “all else being equal,” standard. 
+
+
+Unfortunately, in practice, our predictions missed some big-name players (Joe Burrow, for instance, as the LSU product forewent the combine as he believed he did not get the same time to train while he played in the national championship as others prepared). Thus, it’s more than conceivable that a player like Burrow will show success, even if they would have had a poor combine, or even none at all. This data, however, could be used in later rounds and extremely beneficial when deciding between two fourth- or fifth-rounders.
+
+
+The following table provides the results of our predictions when plugging in the data for their combine statistics (physical events) into our created equations:
+
+
+Player
+	Projected Fantasy Points
+	Jacob Eason
+	369.76
+	Kelly Bryant
+	317.01
+	James Morgan
+	310.38
+	Cole McDonald
+	296.78
+	Jordan Love
+	278.30
+	Justin Herbert
+	275.07
+	Shea Patterson
+	256.26
+	Jake Fromm
+	234.82
+	Steven Montez
+	227.91
+	Nate Staley
+	207.48
+	Brian Lewerke
+	197.11
+	Kevin Davidson
+	170.47
+	Joe Burrow, Tua Tagovailoa, Jalen Hurts, Anthony Gordon, Jake Luton
+	N/A (either didn’t participate in the combine or didn’t participate in both required events)
+	
+
+While these results do indeed appear surprising, we must also remember our criteria for applying these formulas: we applied an eight-game minimum for each position. Therefore, for quarterbacks, this would indicate that players would have to be drafted to be a starter for their rookie year. This eliminates a bunch of these prospects, some of whom will be backups and some of whom were not drafted. Again, another thing to consider is that players like Joe Burrow and Tua Tagovailoa, the two most highly-touted NFL prospects at the QB position this year, did not partake in the NFL combine events, so they could not be ranked by our formulas. Taking all of this into consideration, we decided that the starters who could potentially hit the eight-game minimum were the following seven drafted quarterbacks (thus making our predictions more realistic):
+
+
+Player
+	Projected Fantasy Points
+	Jacob Eason
+	369.76
+	Jordan Love
+	278.30
+	Justin Herbert
+	275.07
+	Jake Fromm
+	234.82
+	Joe Burrow
+	N/A
+	Tua Tagovailoa
+	N/A
+	Jalen Hurts
+	N/A
+	 
+
+
+  
+                      
+https://en.wikipedia.org/wiki/Joe_Burrow                                            https://en.wikipedia.org/wiki/Tua_Tagovailoa 
+
+
+Once again, three of these quarterbacks (Burrow, Tagovailoa, and Hurts) do not have sufficient data for us to make our prediction, but of the other four, three of these predictions seem somewhat plausible. Jacob Eason’s prediction is unusually high (for scale, last year, outside of Lamar Jackson, the highest-scoring QB was Dak Prescott with 348.78 points. The other three, though—Love, Herbert, and Fromm—all present plausible scores for their respective rookie seasons, as these are “middle-of-the-pack” fantasy statistics.
+
+
+For this rookie QB class as a whole, the predicted average fantasy score of the quarterbacks who play in at least eight games is 216.864. This indicates that the above individual predictions may be overestimates, or there could be injuries that cut some of their seasons short (i.e. they play fewer than 16 games).
+
+
+Conclusion
+Thus, from all of our analyses, one pattern appears to ring true for the pre-draft fanfare for quarterbacks: hype. Mentally, there is a negative correlation between Wonderlic score and fantasy performance which suggests that a quarterback’s test result will not determine his success. Physically, none of the combine events had a high correlation with rookie fantasy scores, suggesting that none of these events are good, reliable predictors of rookie quarterback success. Thus, when taken together, it shows that these pre-draft statistics for rookies bear very little relation to their future success, indicating that all it does is inflate or deflate the hype and public attention around a player. The combine garners quite a bit of attention for football fans in part because there is no other football-related event occurring at the time. Furthermore, the few late-round gems found throughout drafts, such as Tom Brady, lead teams to pore over data in the hopes of finding a diamond in the rough. Sometimes, though, teams drafting with these later picks require something that cannot be predicted from combine performance, something we can never be able to quantify: luck.
+
+
+Sources: Pro Football Reference (pro-football-reference.com), ESPN (espn.com)
+Link to GitHub Repository: https://github.com/ethan-allavarpu/rookies-and-combine
